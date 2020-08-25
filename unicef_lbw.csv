@@ -1,0 +1,203 @@
+iso3_code,nation,pct_low_birthweight,unicef_subregion,least_developed,pct_no_birthweight
+AFG,Afghanistan,NA,South Asia,1,86.27
+ALB,Albania,4.59,Eastern Europe and Central Asia,0,13.17
+DZA,Algeria,7.25,Middle East and North Africa,0,11.43
+AND,Andorra,7.45,Western Europe,0,3.01
+AGO,Angola,15.26,Eastern and Southern Africa,1,44.8
+AIA,Anguilla,NA,Latin America and Caribbean,0,NA
+ATG,Antigua and Barbuda,9.05,Latin America and Caribbean,0,NA
+ARG,Argentina,7.35,Latin America and Caribbean,0,3.27
+ARM,Armenia,8.98,Eastern Europe and Central Asia,0,0.36
+AUS,Australia,6.52,East Asia and Pacific,0,1.85
+AUT,Austria,6.52,Western Europe,0,0.36
+AZE,Azerbaijan,7.28,Eastern Europe and Central Asia,0,0.07
+BHS,Bahamas,13.14,Latin America and Caribbean,0,12.57
+BHR,Bahrain,11.91,Middle East and North Africa,0,4.25
+BGD,Bangladesh,27.81,South Asia,1,67.84
+BRB,Barbados,NA,Latin America and Caribbean,0,2.3
+BLR,Belarus,5.06,Eastern Europe and Central Asia,0,0.23
+BEL,Belgium,7.25,Western Europe,0,5.34
+BLZ,Belize,8.6,Latin America and Caribbean,0,2.5
+BEN,Benin,16.89,West and Central Africa,1,27.36
+BTN,Bhutan,11.66,South Asia,1,27.83
+BOL,Bolivia (Plurinational State of),7.22,Latin America and Caribbean,0,NA
+BIH,Bosnia and Herzegovina,3.4,Eastern Europe and Central Asia,0,2.15
+BWA,Botswana,15.63,Eastern and Southern Africa,0,8.86
+BRA,Brazil,8.38,Latin America and Caribbean,0,2.93
+VGB,British Virgin Islands,NA,Latin America and Caribbean,0,NA
+BRN,Brunei Darussalam,10.76,East Asia and Pacific,0,4.47
+BGR,Bulgaria,9.56,Eastern Europe and Central Asia,0,4.75
+BFA,Burkina Faso,13.14,West and Central Africa,1,36.4
+BDI,Burundi,15.13,Eastern and Southern Africa,1,42.57
+CPV,Cabo Verde,NA,West and Central Africa,0,NA
+KHM,Cambodia,12.12,East Asia and Pacific,1,9.12
+CMR,Cameroon,11.96,West and Central Africa,0,39.66
+CAN,Canada,6.38,North America,0,1.89
+CAF,Central African Republic,14.54,West and Central Africa,1,39.16
+TCD,Chad,NA,West and Central Africa,1,87.81
+CHL,Chile,6.25,Latin America and Caribbean,0,0
+CHN,China,4.95,East Asia and Pacific,0,0.5
+COL,Colombia,9.96,Latin America and Caribbean,0,17.97
+COM,Comoros,23.7,Eastern and Southern Africa,1,32.88
+COG,Congo,11.61,West and Central Africa,0,9.31
+COK,Cook Islands,3.5,East Asia and Pacific,0,NA
+CRI,Costa Rica,7.48,Latin America and Caribbean,0,2.17
+CIV,Côte d'Ivoire,15.46,West and Central Africa,0,39.78
+HRV,Croatia,5.1,Eastern Europe and Central Asia,0,NA
+CUB,Cuba,5.26,Latin America and Caribbean,0,5.18
+CYP,Cyprus,NA,Western Europe,0,27.81
+CZE,Czechia,7.82,Western Europe,0,0
+PRK,Democratic People's Republic of Korea,NA,East Asia and Pacific,0,NA
+COD,Democratic Republic of the Congo,10.84,West and Central Africa,1,23.94
+DNK,Denmark,5.34,Western Europe,0,5.79
+DJI,Djibouti,NA,Eastern and Southern Africa,1,NA
+DMA,Dominica,NA,Latin America and Caribbean,0,NA
+DOM,Dominican Republic,11.29,Latin America and Caribbean,0,3.9
+ECU,Ecuador,11.18,Latin America and Caribbean,0,18.64
+EGY,Egypt,NA,Middle East and North Africa,0,38.59
+SLV,El Salvador,10.3,Latin America and Caribbean,0,7.04
+GNQ,Equatorial Guinea,NA,West and Central Africa,0,NA
+ERI,Eritrea,NA,Eastern and Southern Africa,1,65.2
+EST,Estonia,4.34,Western Europe,0,0
+SWZ,Eswatini,10.32,Eastern and Southern Africa,0,8.78
+ETH,Ethiopia,NA,Eastern and Southern Africa,1,86.4
+FJI,Fiji,NA,East Asia and Pacific,0,NA
+FIN,Finland,4.12,Western Europe,0,6.63
+FRA,France,7.44,Western Europe,0,0
+GAB,Gabon,14.21,West and Central Africa,0,9.29
+GMB,Gambia,16.75,West and Central Africa,1,40.7
+GEO,Georgia,6.12,Eastern Europe and Central Asia,0,0
+DEU,Germany,6.65,Western Europe,0,4.97
+GHA,Ghana,14.16,West and Central Africa,0,39.67
+GRC,Greece,8.75,Western Europe,0,0
+GRD,Grenada,NA,Latin America and Caribbean,0,NA
+GTM,Guatemala,10.96,Latin America and Caribbean,0,5.76
+GIN,Guinea,NA,West and Central Africa,1,56.92
+GNB,Guinea-Bissau,21.08,West and Central Africa,1,56.3
+GUY,Guyana,15.62,Latin America and Caribbean,0,11.2
+HTI,Haiti,NA,Latin America and Caribbean,1,76.03
+VAT,Holy See,NA,Western Europe,0,NA
+HND,Honduras,10.9,Latin America and Caribbean,0,16.94
+HUN,Hungary,8.77,Western Europe,0,0
+ISL,Iceland,4.19,Western Europe,0,7.27
+IND,India,NA,South Asia,0,19.53
+IDN,Indonesia,9.97,East Asia and Pacific,0,10.02
+IRN,Iran (Islamic Republic of),NA,Middle East and North Africa,0,NA
+IRQ,Iraq,NA,Middle East and North Africa,0,47.39
+IRL,Ireland,5.89,Western Europe,0,0
+ISR,Israel,7.78,Middle East and North Africa,0,0
+ITA,Italy,6.96,Western Europe,0,1.14
+JAM,Jamaica,14.58,Latin America and Caribbean,0,3.53
+JPN,Japan,9.49,East Asia and Pacific,0,3.62
+JOR,Jordan,13.78,Middle East and North Africa,0,1.01
+KAZ,Kazakhstan,5.43,Eastern Europe and Central Asia,0,1.41
+KEN,Kenya,11.47,Eastern and Southern Africa,0,34.11
+KIR,Kiribati,NA,East Asia and Pacific,1,NA
+KWT,Kuwait,9.86,Middle East and North Africa,0,30.12
+KGZ,Kyrgyzstan,5.53,Eastern Europe and Central Asia,0,2.49
+LAO,Lao People's Democratic Republic,17.31,East Asia and Pacific,1,57.5
+LVA,Latvia,4.51,Western Europe,0,0
+LBN,Lebanon,9.24,Middle East and North Africa,0,0
+LSO,Lesotho,14.61,Eastern and Southern Africa,1,16.57
+LBR,Liberia,NA,West and Central Africa,1,76.77
+LBY,Libya,NA,Middle East and North Africa,0,NA
+LIE,Liechtenstein,NA,Western Europe,0,NA
+LTU,Lithuania,4.51,Western Europe,0,7.19
+LUX,Luxembourg,6.54,Western Europe,0,0
+MDG,Madagascar,17.14,Eastern and Southern Africa,1,NA
+MWI,Malawi,14.46,Eastern and Southern Africa,1,16.03
+MYS,Malaysia,11.35,East Asia and Pacific,0,1.97
+MDV,Maldives,11.72,South Asia,0,6.67
+MLI,Mali,NA,West and Central Africa,1,63.3
+MLT,Malta,6.32,Western Europe,0,0
+MHL,Marshall Islands,NA,East Asia and Pacific,0,NA
+MRT,Mauritania,NA,West and Central Africa,1,77.89
+MUS,Mauritius,17.06,Eastern and Southern Africa,0,4.91
+MEX,Mexico,7.87,Latin America and Caribbean,0,2.1
+FSM,Micronesia (Federated States of),NA,East Asia and Pacific,0,NA
+MCO,Monaco,5.44,Western Europe,0,0
+MNG,Mongolia,5.37,East Asia and Pacific,0,0.85
+MNE,Montenegro,5.45,Eastern Europe and Central Asia,0,1.41
+MSR,Montserrat,NA,Latin America and Caribbean,0,NA
+MAR,Morocco,17.28,Middle East and North Africa,0,25.75
+MOZ,Mozambique,13.82,Eastern and Southern Africa,1,48.75
+MMR,Myanmar,12.3,East Asia and Pacific,1,54.59
+NAM,Namibia,15.53,Eastern and Southern Africa,0,13.97
+NRU,Nauru,NA,East Asia and Pacific,0,NA
+NPL,Nepal,21.81,South Asia,1,38.71
+NLD,Netherlands,6.15,Western Europe,0,6.28
+NZL,New Zealand,5.69,East Asia and Pacific,0,3.81
+NIC,Nicaragua,10.67,Latin America and Caribbean,0,NA
+NER,Niger,NA,West and Central Africa,1,76.84
+NGA,Nigeria,NA,West and Central Africa,0,83.6
+NIU,Niue,NA,East Asia and Pacific,0,NA
+MKD,North Macedonia,9.05,Eastern Europe and Central Asia,0,3.65
+NOR,Norway,4.49,Western Europe,0,4.4
+OMN,Oman,10.54,Middle East and North Africa,0,0
+PAK,Pakistan,NA,South Asia,0,87.82
+PLW,Palau,NA,East Asia and Pacific,0,NA
+PAN,Panama,10.09,Latin America and Caribbean,0,8.82
+PNG,Papua New Guinea,NA,East Asia and Pacific,0,NA
+PRY,Paraguay,8.09,Latin America and Caribbean,0,2.34
+PER,Peru,9.4,Latin America and Caribbean,0,6.91
+PHL,Philippines,20.15,East Asia and Pacific,0,19.29
+POL,Poland,5.94,Western Europe,0,0
+PRT,Portugal,8.9,Western Europe,0,0
+QAT,Qatar,7.32,Middle East and North Africa,0,19.72
+KOR,Republic of Korea,5.77,East Asia and Pacific,0,2.7
+MDA,Republic of Moldova,5,Eastern Europe and Central Asia,0,0.81
+ROU,Romania,8.18,Eastern Europe and Central Asia,0,0
+RUS,Russian Federation,5.81,Eastern Europe and Central Asia,0,0
+RWA,Rwanda,7.87,Eastern and Southern Africa,1,7.63
+KNA,Saint Kitts and Nevis,NA,Latin America and Caribbean,0,NA
+LCA,Saint Lucia,NA,Latin America and Caribbean,0,0
+VCT,Saint Vincent and the Grenadines,NA,Latin America and Caribbean,0,NA
+WSM,Samoa,NA,East Asia and Pacific,0,NA
+SMR,San Marino,3.26,Western Europe,0,0
+STP,Sao Tome and Principe,6.6,West and Central Africa,1,6.91
+SAU,Saudi Arabia,NA,Middle East and North Africa,0,NA
+SEN,Senegal,18.46,West and Central Africa,1,46.75
+SRB,Serbia,4.53,Eastern Europe and Central Asia,0,1.62
+SYC,Seychelles,11.67,Eastern and Southern Africa,0,0
+SLE,Sierra Leone,14.42,West and Central Africa,1,52.36
+SGP,Singapore,9.64,East Asia and Pacific,0,25.81
+SVK,Slovakia,7.6,Western Europe,0,2.07
+SVN,Slovenia,6.15,Western Europe,0,0.36
+SLB,Solomon Islands,NA,East Asia and Pacific,1,NA
+SOM,Somalia,NA,Eastern and Southern Africa,1,NA
+ZAF,South Africa,14.21,Eastern and Southern Africa,0,18.34
+SSD,South Sudan,NA,Eastern and Southern Africa,1,NA
+ESP,Spain,8.27,Western Europe,0,1.95
+LKA,Sri Lanka,15.89,South Asia,0,0
+PSE,State of Palestine,8.39,Middle East and North Africa,0,0.33
+SDN,Sudan,NA,Eastern and Southern Africa,1,89.27
+SUR,Suriname,14.66,Latin America and Caribbean,0,19.47
+SWE,Sweden,2.41,Western Europe,0,6.82
+CHE,Switzerland,6.47,Western Europe,0,1.14
+SYR,Syrian Arab Republic,NA,Middle East and North Africa,0,NA
+TJK,Tajikistan,5.63,Eastern Europe and Central Asia,0,15.91
+THA,Thailand,10.52,East Asia and Pacific,0,0.99
+TLS,Timor-Leste,NA,East Asia and Pacific,1,73.69
+TGO,Togo,16.09,West and Central Africa,1,39.93
+TKL,Tokelau,NA,East Asia and Pacific,0,NA
+TON,Tonga,NA,East Asia and Pacific,0,NA
+TTO,Trinidad and Tobago,12.39,Latin America and Caribbean,0,14.09
+TUN,Tunisia,7.47,Middle East and North Africa,0,2.56
+TUR,Turkey,11.4,Eastern Europe and Central Asia,0,0.97
+TKM,Turkmenistan,4.93,Eastern Europe and Central Asia,0,0.71
+TCA,Turks and Caicos Islands,NA,Latin America and Caribbean,0,NA
+TUV,Tuvalu,NA,East Asia and Pacific,1,NA
+UGA,Uganda,NA,Eastern and Southern Africa,1,49.5
+UKR,Ukraine,5.63,Eastern Europe and Central Asia,0,2.76
+ARE,United Arab Emirates,12.68,Middle East and North Africa,0,2.7
+GBR,United Kingdom,6.95,Western Europe,0,3.9
+TZA,United Republic of Tanzania,10.5,Eastern and Southern Africa,1,36.41
+USA,United States,8.02,North America,0,1.6
+URY,Uruguay,7.62,Latin America and Caribbean,0,5.56
+UZB,Uzbekistan,5.26,Eastern Europe and Central Asia,0,NA
+VUT,Vanuatu,10.91,East Asia and Pacific,1,NA
+VEN,Venezuela (Bolivarian Republic of),9.1,Latin America and Caribbean,0,NA
+VNM,Viet Nam,8.21,East Asia and Pacific,0,5.74
+YEM,Yemen,NA,Middle East and North Africa,1,91.77
+ZMB,Zambia,11.6,Eastern and Southern Africa,1,33.6
+ZWE,Zimbabwe,12.63,Eastern and Southern Africa,0,17.86

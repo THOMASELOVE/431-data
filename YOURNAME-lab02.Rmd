@@ -1,0 +1,73 @@
+---
+title: "YOUR NAME: Lab 02 for 431"
+author: "YOUR NAME"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    code_folding: show
+---
+
+```{r setup, include=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 70)
+```
+
+```{r load_packages, message = FALSE, warning = FALSE}
+library(tidyverse)
+## always need tidyverse, can include other packages too
+```
+
+# Question 1
+
+Begin typing your answer to Question 1 here. Use complete sentences to explain what the result of your code means in terms of answering the question we asked.
+
+If you need to build some code to answer a question (as you will in Questions 1-3 and 5-6), create a chunk of code like the one below, which doesn't answer our question 1, but may be helpful to you anyway.
+
+```{r q1_count_inmetro}
+midwest %>%
+    count(inmetro)  
+```
+
+# Question 2
+
+Here's where you should type in your answer to Question 2. You will need to include some code again. Here's an approach that yields the total population of Cook County in the state of Illinois.
+
+```{r q2_density_cook_county}
+midwest %>%
+    filter(state == "IL") %>%
+    filter(county == "COOK") %>%
+    select(state, county, poptotal)
+```
+
+# Question 3
+
+Your answer to Question 3 goes here. Here's a histogram of the  natural logarithm of the population density in the available counties. Of course, again, that's not what you'll need to be doing, and the "improvements" I've made here are pretty weak. I'm hoping you'll do better.
+
+```{r q3_popdensity_histogram}
+ggplot(midwest, aes(x = log(popdensity))) +
+    geom_histogram(bins = 20, col = "white") + 
+    labs(title = "This deserves a better title.",
+         y = "Number of Counties")
+```
+
+# Question 4
+
+Replace this text with your response to Question 4.
+
+# Question 5
+
+Your code (and a brief description of your approach, written in complete sentences) for Question 5 goes here.
+
+# Question 6
+
+Replace this text with your response to Question 6.
+
+# Question 7
+
+Replace this text with your response to Question 7. 
+
+## A Few Notes
+
+Make sure you have changed the title and author of this, back in the YAML section at the very top of this file, and make sure you change this file's name by inserting your actual name, rather than just calling it `YOURNAME-lab02.Rmd`. Make the document as attractive as you can. Finally, make sure you have deleted all of the instructions, including these. 
+
