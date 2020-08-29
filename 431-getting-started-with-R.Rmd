@@ -1,0 +1,367 @@
+---
+title: "Getting Started with R"
+author: "Thomas E. Love"
+date: "`r Sys.Date()`"
+output:
+    pdf_document:
+        number_sections: yes
+        toc: yes
+    html_document:
+        number_sections: yes
+        toc: yes
+        code_folding: show
+linkcolor: blue
+---
+
+## Links to the materials discussed here {-}
+
+are found at https://github.com/THOMASELOVE/431-2020/blob/master/software/README.md
+
+- This includes the R Markdown code, the downloadable PDF, the HTML produced by the R Markdown code, and the 431-template.Rmd file I've provided.
+
+# Purpose of this Document
+
+This is meant to walk you through the steps of completing some elementary analyses using R, R Studio, and R Markdown. Working through this document will definitely help you get rolling on our labs and other assignments.
+
+## Preliminary Steps
+
+1. Install R and RStudio on your computer, using the instructions available on our website.
+2. Install the R packages we recommend, using the instructions available on our website.
+2. Select or create a subdirectory on your computer for your project. We'll call that your **project folder**.
+    + Don't use the same subdirectory/folder for multiple projects. You'll have many projects this semester.
+    + A good directory path might be something like `pqhs431/2020-08-31_my-first-R-project`
+    + You won't believe how important it is for you to understand where your files are and a well-designed naming scheme is an enormous time-saver. "A place for everything, and everything in its place" and all that...
+3. Put any data you plan to import into R, and a copy of the `431-r-template.Rmd` file into your project folder.
+4. Start R Studio and begin by opening up a **project**.
+    + Use **File ... New Project** to create a new project in your **project folder**.
+        + Create the R project in the main **project folder**, regardless of whether you've placed the data in that same folder, or in a data subdirectory of that folder.
+        + One and only one R Project per project folder is the way to happiness.
+    + When not doing this for the first time, use **File ... Open Project** to open an R Studio Project you've already created.
+
+## Use the template
+
+A R Markdown file is just a plain text document, with interspersed R code that lets you produce reports that combine narration with results, and that can be easily exported as an HTML, Word or PDF file. It's a great tool. Dr. Love builds virtually everything you'll see in this class with R Markdown. R Markdown files use the `.Rmd` extension.
+
+Open the template file `431-r-template.Rmd` by clicking on it in the **Files** tab on the lower right of your R Studio setup, or selecting **File ... Open** from the main menu.
+    + The start of the template file is a top-line set of instructions to R Markdown about how to process the rest of the document. It is referred to as the YAML material, and looks like this:
+
+```
+---
+title: "R Markdown Template"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: yes
+    code_folding: show
+---
+```
+
+Actually, next to the word `date:`, your template has a little bit of code that inserts today's date. I'd leave that as it is - that way you don't need to switch dates around, and your document will always show the date on which it was last generated.
+
+Now, edit the file to include a meaningful Title for this work, and place your actual name in the author section. Then use **File ... Save as** to save the Markdown file under a new project-specific name, rather than the generic `431-r-template.Rmd`. Your result should look something like this:
+
+```
+---
+title: "My extremely exciting first data analysis"
+author: "Chris Traeger"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: yes
+    code_folding: show
+---
+```
+
+In most cases, changing only the **title** and **author**, but otherwise leaving this as is, will work well for our purposes.
+
+To learn more about R Markdown, we recommend the tutorials at  http://rmarkdown.rstudio.com/lesson-1.html
+
+# Loading the Packages
+
+To begin, we'll load the packages (libraries) and set up an option for commenting that we will use in our analyses. 
+
+```{r set-options-and-load-packages, message=FALSE}
+knitr::opts_chunk$set(comment=NA)
+
+library(magrittr); library(tidyverse)
+```
+
+# The chickwts study
+
+The `chickwts` data, available as part of the base installation of R (in the `datasets` package) describe an experiment conducted to measure and compare the effectiveness of various feed supplements on the growth rate of chickens. For more on the `chickwts` data, type `?(chickwts)` into the R console.
+
+We'll begin by placing the data in a tibble called `chick`.
+
+```{r place-chickwts-data-into-a-tibble-called-chick}
+chick <- as_tibble(chickwts)
+chick
+```
+
+- The `weight` variable is numeric (double-precision) and gives the chick's weight.
+- The `feed` variable is categorical (a factor in R) and gives the feed type.
+
+## Summarizing the distribution of a categorical variable, `feed`
+
+The regular `summary` function can provide some useful results.
+
+```{r summary-for-feed}
+chick %>% 
+    select(feed) %>% 
+    summary()
+```
+
+There are lots of ways to generate a table for a factor (categorical variable) like this.
+
+```{r table-for-feed}
+chick %>%
+  select(feed) %>%
+    table() %>%
+    addmargins() 
+```
+
+## Describing the distribution of a continuous variable, `weight`, numerically
+
+The regular `summary` function provides a five-number summary, plus the mean. We can do this with ...
+
+```{r numerical-summary-for-weight-1}
+chick %>%
+    select(weight) %>%
+    summary()
+```
+
+Or, we can use a different pipe than the usual `%>%` - here `%$%` exposes the pieces of the `chick` tibble (the variables) to the function `summary()`.
+
+```{r numerical-summary-for-weight-2}
+chick %$% summary(weight)
+```
+
+\newpage
+
+The `favstats` function from the `mosaic` package produces a more extensive set of numerical summaries. Here, we are forced to use the new pipe `%$%` to identify the variables for the function `favstats` in `mosaic`.
+
+```{r favstats-summary-for-weight-1}
+chick %$%
+    mosaic::favstats(weight)
+```
+
+Another way to accomplish the same end is
+
+```{r favstats-summary-for-weight-2}
+mosaic::favstats(chick$weight)
+```
+
+Here is a smaller numerical summary of the weights broken down by feed category.
+
+```{r summary-weights-by-feed}
+chick %>%
+  group_by(feed) %>%
+  summarize(mean(weight), sd(weight), median(weight))
+```
+
+\newpage
+
+## Drawing an attractive histogram of the `weight` data
+
+Here is the default approach.
+
+```{r histogram-1-for-weight}
+ggplot(chick, aes(x = weight)) +
+  geom_histogram()
+```
+
+Note the warning about the number of bins with which the histogram is constructed by default. We could ignore this warning, or we could play around with the number of bins to get something that shows the variation in the data more effectively. We'll try something a little smaller than the default number of 30 bins. 
+
+As we're doing that, on the top of the next page, we'll make something that is slightly more attractive (to my eye), revise the labels, and place a title.
+
+\newpage
+
+
+```{r histogram-2-for-weight}
+ggplot(chick, aes(x = weight)) +
+  geom_histogram(bins = 10, color = "black", fill = "turquoise") + 
+  labs(x = "Chick's Weight", y = "Number of Chicks", 
+       title = "Size of 71 Chicks in the chickwts data")
+```
+
+\newpage
+
+Another option would be to plot the density function, rather than the raw counts, and compare it directly to what we would expect from a Normal model with the same mean and standard deviation as the weights in the `chick` data.
+
+```{r histogram-3-for-weight}
+ggplot(chick, aes(x = weight)) +
+  geom_histogram(aes(y = ..density..), bins = 12, color = "white", fill = "turquoise") + 
+  stat_function(fun = dnorm,
+                args = list(mean = mean(chick$weight), sd = sd(chick$weight)),
+                lwd = 1.5, col = "violetred") +
+  labs(x = "Chick's Weight", y = "Probability Density", 
+       title = "Size of 71 Chicks in the chickwts data",
+       subtitle = "with superimposed Normal density function")
+```
+
+\newpage
+
+## Drawing a Boxplot of the Weights by Feed Type
+
+A boxplot might, for instance, compare the weight distributions for each of the various types of feed.
+
+```{r boxplot-for-weight-by-feed}
+ggplot(chick, aes(x = feed, y = weight, fill = feed)) +
+    geom_boxplot() +
+    labs(title = "Weight by Feed Type in the Chickwts data")
+```
+
+We could drop the labels on the right hand side by adding `guides(fill = FALSE) +` somewhere in our `ggplot` call.
+
+\newpage
+
+## Drawing a Normal Q-Q plot of the Weights
+
+A Normal Q-Q plot of the weights is probably most easily obtained using base graphics, rather than ggplot. For example, 
+
+```{r qq-plot-of-weight}
+qqnorm(chick$weight, main = "Normal Q-Q plot of Chick Weights")
+qqline(chick$weight, col = "red")
+```
+
+\newpage
+
+# The Orange Study
+
+The Orange data frame has 35 rows and 3 columns of records of the growth of orange trees. Let's get the data into a tibble.
+
+```{r Orange-data-frame-into-a-tibble-called-orange}
+orange <- tbl_df(Orange)
+orange
+```
+
+- `tree` is an ordinal factor, which indicates the tree on which the measurement was made. The ordering is by increaing maximum diameter of the five trees.
+- `age` is a numerical variable, containing the age of the tree as measured in days since 1968-12-31.
+- `circumference` is a numerical variable, containing the trunk circumference (probably at "breast height") in mm.
+
+## Numerical Summary
+
+And here's the standard numerical summary for the full data set. 
+
+```{r numerical-summary-orange}
+summary(orange)
+```
+
+\newpage
+
+Next, we'll look at the mean age and circumference, within each of the seven measurements per tree.
+
+```{r summary-age-circumference-by-tree}
+orange %>%
+  group_by(Tree) %>%
+  summarize(mean(age), mean(circumference))
+```
+It looks like each of the trees was measured at exactly the same time (age).
+
+```{r table-age-by-tree}
+table(orange$age, orange$Tree) 
+```
+
+Yes, each tree was measured at precisely the same five times.
+
+## Correlation between Age and Circumference
+
+Here's another case that calls for the `%$%` pipe.
+
+```{r correlation-age-circ-method1}
+orange %$% cor(age, circumference)
+```
+
+Or, obtain the identical result with...
+
+```{r correlation-age-circ-method2}
+cor(orange$age, orange$circumference)
+```
+
+The Pearson correlation of age and circumference is `r signif(cor(orange$age, orange$circumference),2)` which is pretty strong, indicating that we'd expect to see a fairly positive and mostly linear association in a scatterplot. So, let's see if that's what we get.
+
+\newpage
+
+## Scatterplot predicting Circumference using Age across all Trees
+
+```{r orange_scatter_1}
+ggplot(orange, aes(x = age, y = circumference)) +
+  geom_point()
+```
+
+OK. Let's add a linear model to this plot, as well as some better labels, and we'll change from mapping the points as observed to using `geom_jitter` to add a little horizontal (x-axis) jitter to the points, so that we don't have so much overlap.
+
+\newpage
+
+## Scatterplot with Linear Fit predicting Circumference using Age across all Trees
+
+```{r orange_scatter_2}
+ggplot(orange, aes(x = age, y = circumference)) +
+    geom_jitter(width = 20, height = 0) + 
+    geom_smooth(method = "lm", col = "orange") +
+    labs(title = "Growth of Orange Trees", 
+         x = "Age (days since 1968-12-31)", 
+         y = "Circumference in mm") +
+    theme_bw()
+```
+
+\newpage
+
+## The Linear Model
+
+The linear model fitted here is summarized below:
+
+```{r orange_model_1}
+model1 <- lm(circumference ~ age, data = orange)
+summary(model1)
+```
+
+So the linear regression model is: circumference = `r signif(coef(model1)[1], 3)` + `r signif(coef(model1)[2], 3)` age.
+
+So our predicted circumference for a tree of age 1000 days is `r signif(coef(model1)[1] + coef(model1)[2]*1000,3)` mm.
+
+\newpage
+
+## Some Other Scatterplots: Assessing each Tree separately
+
+As a third option, let's fit separate smooth (`loess`) curves to each of the five individual trees, and plot each of them in different colors.
+
+```{r orange_scatter_3}
+ggplot(orange, aes(x = age, y = circumference, col = Tree)) +
+  geom_point() + 
+  geom_smooth(method = "loess", se = FALSE) +
+  labs(title = "Growth of Orange Trees, with Scatterplot Smooths", 
+       x = "Age (days since 1968-12-31)", y = "Circumference in mm")
+```
+
+\newpage
+
+Or we could facet the plots, showing multiple scatterplots, one for each Tree.
+
+```{r orange_scatter_4}
+ggplot(orange, aes(x = age, y = circumference, col = Tree)) +
+  geom_point() + 
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~ Tree) +
+  guides(col = FALSE) +
+  labs(title = "Growth of Orange Trees over Time, with Scatterplot Smooths", 
+       x = "Days since 1968-12-31", y = "Circumference (in mm)")
+```
+
+\newpage
+
+# Getting Data into R from Excel or another Software Package: The Fundamentals
+
+The easiest way to get data from another software package into R is to save the file (from within the other software package) in a form that R can read.  What you want is to end up with an Excel file that looks like this...
+
+![An Excel sheet with a tidy data set](images/sheet1.png)
+
+This *tidy* data set contains:
+
+- one row for each subject
+- variables that indicate characteristics of each of the subjects
+
+The variable names are in the first row, and the data are in the remaining rows (2-10 in this small example). Categorical variables are most easily indicated by letters (drug A or B, for instance) while continuous variables, like response, are indicated by numbers. Leave missing cells blank or use the symbol `NA`, rather than indicating them with, say, `-99` or some other code.
+
+Within Excel, this file can be saved as a `.csv` (comma-separated text file) or just as an Excel .XLS file, and then imported directly into R, via RStudio by clicking Import Dataset under the Workspace tab, then selecting From Text File. If you've saved the file in Excel as a `.csv` file, R Studio will generally make correct guesses about how to import the file.  Once imported, you just need to save the workspace when you quit RStudio and you'll avoid the need to re-import.
+
