@@ -10,10 +10,10 @@ Or, to download a single .Rmd or .csv file, click on the file you want to downlo
 
 Below, we provide detailed steps for downloading such files ...
 
-1. using the Safari browser on a Mac
-2. using Google Chrome on a Mac
-3. using Google Chrome on a PC
-4. using Microsoft Edge on a PC
+1. using the [Safari browser on a Mac](https://github.com/THOMASELOVE/431-data/blob/master/README.md#using-safari-on-a-mac)
+2. using [Google Chrome on a Mac](https://github.com/THOMASELOVE/431-data/blob/master/README.md#using-a-mac-with-google-chrome)
+3. using [Google Chrome on a PC](https://github.com/THOMASELOVE/431-data/blob/master/README.md#using-a-pc-with-google-chrome)
+4. using [Microsoft Edge on a PC](https://github.com/THOMASELOVE/431-data/blob/master/README.md#using-microsoft-edge-on-a-pc)
 
 
 ### Using Safari on a Mac
@@ -39,6 +39,7 @@ Suppose you've identified a .csv (data) file you want to download onto your PC f
     3. If you are asked whether you want to append .txt, select Don't Append, then hit Save.
 
 The resulting .csv file should work for you in RStudio.
+
 ### Using a Mac, with Google Chrome
 
 Suppose you've identified a single .Rmd (R markdown) file you want to download onto your Mac from Github using Google Chrome as your browser.
