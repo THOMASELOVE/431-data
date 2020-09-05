@@ -1,0 +1,83 @@
+---
+title: "YOUR NAME: Lab 03 for 431"
+author: "INSERT YOUR NAME HERE"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    code_folding: show
+---
+
+```{r setup, message=FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 70)
+```
+
+```{r packages, message = FALSE}
+library(MASS); library(tidyverse)
+## make sure these libraries are installed in R
+## always need tidyverse, also need MASS for Lab 03
+```
+
+```{r create_lab03_tibble}
+lab03 <- tibble(faithful)
+lab03
+```
+
+# Question 1
+
+Begin typing your answer to Question 1 here. Use complete sentences.
+
+If you need to build some code to answer a question, create a chunk of code like the one below, which looks at eruption times, rather than waiting times, so it's not helpful to us. It's also not very attractive, and not labeled effectively.
+
+```{r q01_histogram}
+ggplot(lab03, aes(x = eruptions)) +
+  geom_histogram()
+```
+
+# Question 2
+
+Here's where you should type in your answer to Question 2. You might want to include some code again. Here's an approach that yields the mean of the eruption durations after trimming away the highest 10% of the data and the lowest 10% of the data. Of course, this particular summary is also not useful to us directly, of course.
+
+```{r q02_trimmed_mean_durations}
+mean(lab03$eruptions, trim = 0.1)
+```
+
+# Question 3
+
+Answer to Question 3 goes here.
+
+# Question 4
+
+# Question 5
+
+# Question 6
+
+Now, you need to build a scatterplot. I'm looking for you to use the `ggplot2` library again, so that might start out as something like this chunk.
+
+```{r q06_scatterplot_draft}
+ggplot(lab03, aes(x = eruptions, y = waiting)) +
+  geom_point()
+```
+
+And that's a reasonable start, although it could use a title, more meaningful axis titles, and you'll need to add the straight line regression model, certainly. 
+
+# Question 7
+
+# Question 8
+
+You'll need to insert a chunk of code here to create the `lab03extra` file, using the suggestion from the instructions.
+
+# Question 9
+
+# Question 10
+
+Replace this text with your Question 10 answer here.
+
+# Session Information
+
+Adding a `sessionInfo()` chunk at the end of your document helps with reproducibility.  Just take a look to see what it produces.
+
+```{r}
+sessionInfo()
+```
