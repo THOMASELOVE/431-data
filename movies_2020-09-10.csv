@@ -21,45 +21,45 @@ film_id,film,mentions,year,imdb_categories,imdb_ratings,imdb_stars,length
 20,Face/Off,1,1997,"Action, Crime, Sci-Fi",343744,7.3,138
 21,Farewell My Concubine: the Beijing Opera,1,2014,Musical,6,6.3,97
 22,Get Smart,1,2008,"Action, Adventure, Comedy",200862,6.5,110
-23,The Greatest Showman,1,2017,"Biography, Drama, Musical",227137,7.6,105
-24,Harold and Maude,1,1971,"Comedy, Drama, Romance",69526,7.9,91
-25,The Hateful Eight,1,2015,"Crime, Drama, Mystery",499682,7.8,168
-26,Hidden Figures,1,2016,"Biography, Drama, History",193627,7.8,127
-27,Home Alone,1,1990,"Comedy, Family",451950,7.6,103
-28,Hot Fuzz,1,2007,"Action, Comedy, Mystery",454530,7.8,121
-29,House Party 2,1,1991,"Comedy, Drama, Music",5921,5.3,94
-30,How the Grinch Stole Christmas,1,2000,"Comedy, Family, Fantasy",198544,6.2,104
-31,Inception,2,2010,"Action, Adventure, Sci-Fi",2006301,8.8,148
-32,Interstellar,1,2014,"Adventure, Drama, Sci-Fi",1452479,8.6,169
-33,The King's Speech,1,2010,"Biography, Drama, History",628712,8,118
-34,La La Land,2,2016,"Comedy, Drama, Music",488793,8,128
-35,Life As We Know It,1,2010,"Comedy, Drama, Romance",120518,6.5,114
-36,Lord of the Rings: The Fellowship of the Ring,1,2001,"Action, Adventure, Drama",1621341,8.8,178
-37,Matilda,1,1996,"Comedy, Family, Fantasy",123874,6.9,102
-38,Memento,1,2000,"Mystery, Thriller",1100300,8.4,113
-39,Mission Impossible II,1,2000,"Action, Adventure, Thriller",308837,6.1,123
-40,Monte Carlo,1,2011,"Adventure, Comedy, Family",40586,5.8,109
-41,My Big Fat Greek Wedding,1,2002,"Comedy, Drama, Romance",118149,6.5,95
-42,Notting Hill,1,1999,"Comedy, Drama, Romance",265565,7.1,124
-43,The Parent Trap,1,1998,"Adventure, Comedy, Drama",117685,6.5,128
-44,Pather Panchali,1,1955,Drama,22280,8.6,125
-45,Pride & Prejudice,1,2005,"Drama, Romance",248225,7.8,129
-46,Resident Evil,1,2002,"Action, Horror, Sci-Fi",243387,6.7,100
-47,Scent of a Woman,1,1992,Drama,254233,8,156
-48,Scott Pilgrim vs. The World,1,2010,"Action, Comedy, Fantasy",369290,7.5,112
-49,Seven Psychopaths,1,2012,"Comedy, Crime",236949,7.2,110
-50,The Shawshank Redemption,1,1994,Drama,2281331,9.3,142
-51,Spirited Away,1,2001,"Animation, Adventure, Family",627696,8.6,125
-52,Still Walking,1,2008,Drama,13154,8,115
-53,Takers,1,2010,"Action, Crime, Thriller",57056,6.2,107
-54,Tangled,1,2010,"Animation, Adventure, Comedy",396473,7.7,100
-55,The Girl with the Dragon Tattoo,1,2011,"Crime, Drama, Mystery",412127,7.8,158
-56,The Godfather,1,1972,"Crime, Drama",1574476,9.2,175
-57,The Grand Budapest Hotel,1,2014,"Adventure, Comedy, Crime",688377,8.1,99
-58,The Grey,1,2011,"Action, Adventure, Drama",237662,6.8,117
-59,The Matrix,1,1999,"Action, Sci-Fi",1634039,8.7,136
-60,The Secret Life of Walter Mitty,1,2013,"Comedy, Drama, Fantasy",288768,7.3,114
-61,The Silence of the Lambs,1,1991,"Crime, Drama, Thriller",1235621,8.6,118
+23,The Girl with the Dragon Tattoo,1,2011,"Crime, Drama, Mystery",412127,7.8,158
+24,The Godfather,1,1972,"Crime, Drama",1574476,9.2,175
+25,The Grand Budapest Hotel,1,2014,"Adventure, Comedy, Crime",688377,8.1,99
+26,The Greatest Showman,1,2017,"Biography, Drama, Musical",227137,7.6,105
+27,The Grey,1,2011,"Action, Adventure, Drama",237662,6.8,117
+28,Harold and Maude,1,1971,"Comedy, Drama, Romance",69526,7.9,91
+29,The Hateful Eight,1,2015,"Crime, Drama, Mystery",499682,7.8,168
+30,Hidden Figures,1,2016,"Biography, Drama, History",193627,7.8,127
+31,Home Alone,1,1990,"Comedy, Family",451950,7.6,103
+32,Hot Fuzz,1,2007,"Action, Comedy, Mystery",454530,7.8,121
+33,House Party 2,1,1991,"Comedy, Drama, Music",5921,5.3,94
+34,How the Grinch Stole Christmas,1,2000,"Comedy, Family, Fantasy",198544,6.2,104
+35,Inception,2,2010,"Action, Adventure, Sci-Fi",2006301,8.8,148
+36,Interstellar,1,2014,"Adventure, Drama, Sci-Fi",1452479,8.6,169
+37,The King's Speech,1,2010,"Biography, Drama, History",628712,8,118
+38,La La Land,2,2016,"Comedy, Drama, Music",488793,8,128
+39,Life As We Know It,1,2010,"Comedy, Drama, Romance",120518,6.5,114
+40,Lord of the Rings: The Fellowship of the Ring,1,2001,"Action, Adventure, Drama",1621341,8.8,178
+41,Matilda,1,1996,"Comedy, Family, Fantasy",123874,6.9,102
+42,The Matrix,1,1999,"Action, Sci-Fi",1634039,8.7,136
+43,Memento,1,2000,"Mystery, Thriller",1100300,8.4,113
+44,Mission Impossible II,1,2000,"Action, Adventure, Thriller",308837,6.1,123
+45,Monte Carlo,1,2011,"Adventure, Comedy, Family",40586,5.8,109
+46,My Big Fat Greek Wedding,1,2002,"Comedy, Drama, Romance",118149,6.5,95
+47,Notting Hill,1,1999,"Comedy, Drama, Romance",265565,7.1,124
+48,The Parent Trap,1,1998,"Adventure, Comedy, Drama",117685,6.5,128
+49,Pather Panchali,1,1955,Drama,22280,8.6,125
+50,Pride & Prejudice,1,2005,"Drama, Romance",248225,7.8,129
+51,Resident Evil,1,2002,"Action, Horror, Sci-Fi",243387,6.7,100
+52,Scent of a Woman,1,1992,Drama,254233,8,156
+53,Scott Pilgrim vs. The World,1,2010,"Action, Comedy, Fantasy",369290,7.5,112
+54,The Secret Life of Walter Mitty,1,2013,"Comedy, Drama, Fantasy",288768,7.3,114
+55,Seven Psychopaths,1,2012,"Comedy, Crime",236949,7.2,110
+56,The Shawshank Redemption,1,1994,Drama,2281331,9.3,142
+57,The Silence of the Lambs,1,1991,"Crime, Drama, Thriller",1235621,8.6,118
+58,Spirited Away,1,2001,"Animation, Adventure, Family",627696,8.6,125
+59,Still Walking,1,2008,Drama,13154,8,115
+60,Takers,1,2010,"Action, Crime, Thriller",57056,6.2,107
+61,Tangled,1,2010,"Animation, Adventure, Comedy",396473,7.7,100
 62,Titanic,1,1997,"Drama, Romance",1024011,7.8,134
 63,Top Gun,1,1986,"Action, Drama",287972,6.9,110
 64,Waking Life,1,2001,"Animation, Drama, Fantasy",59953,7.8,99
