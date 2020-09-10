@@ -1,4 +1,4 @@
-id,film,mentions,year,imdb_categories,imdb_ratings,imdb_stars,length
+film_id,film,mentions,year,imdb_categories,imdb_ratings,imdb_stars,length
 1,8 1/2,1,1963,Drama,106555,8,138
 2,About Time,2,2013,"Comedy, Drama, Fantasy",290158,7.8,123
 3,Avatar,1,2009,"Action, Adventure, Fantasy",1101874,7.8,162
