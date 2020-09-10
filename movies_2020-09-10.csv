@@ -1,0 +1,67 @@
+id,film,mentions,year,imdb_categories,imdb_ratings,imdb_stars,length
+1,8 1/2,1,1963,Drama,106555,8,138
+2,About Time,2,2013,"Comedy, Drama, Fantasy",290158,7.8,123
+3,Avatar,1,2009,"Action, Adventure, Fantasy",1101874,7.8,162
+4,Avengers: Endgame,1,2019,"Action, Adventure, Drama",757530,8.4,181
+5,Avengers: Infinity War,1,2018,"Action, Adventure, Sci-Fi",798058,8.4,149
+6,Back to the Future,1,1985,"Adventure, Comedy, Sci-Fi",1028636,8.5,116
+7,Beaches,1,1988,"Comedy, Drama, Music",22854,7,123
+8,Beetlejuice,1,1988,"Comedy, Fantasy",252221,7.5,92
+9,Being John Malkovich,1,1999,"Comedy, Drama, Fantasy",305588,7.7,113
+10,The Big Lebowski,1,1998,"Comedy, Crime, Sport",714755,8.1,117
+11,Black Panther,1,2018,"Action, Adventure, Sci-Fi",600200,7.3,134
+12,Black Swan,1,2010,"Drama, Thriller",686675,8,108
+13,Castle in the Sky,1,1986,"Animation, Adventure, Drama",145515,8,125
+14,Coming To America,1,1988,"Comedy, Romance",160543,7,116
+15,The Dark Knight,1,2008,"Action, Crime, Drama",2244774,9,152
+16,The Dark Knight Rises,1,2012,"Action, Adventure",1482349,8.4,164
+17,Eternal Sunshine of the Spotless Mind,1,2004,"Drama, Romance, Sci-Fi",890923,8.3,108
+18,Eurovision Song Contest: The Story of Fire Saga,1,2020,"Comedy, Music",63118,6.5,123
+19,Everybody Wants Some!!,1,2016,Comedy,50997,6.9,117
+20,Face/Off,1,1997,"Action, Crime, Sci-Fi",343744,7.3,138
+21,Farewell My Concubine: the Beijing Opera,1,2014,Musical,6,6.3,97
+22,Get Smart,1,2008,"Action, Adventure, Comedy",200862,6.5,110
+23,The Greatest Showman,1,2017,"Biography, Drama, Musical",227137,7.6,105
+24,Harold and Maude,1,1971,"Comedy, Drama, Romance",69526,7.9,91
+25,The Hateful Eight,1,2015,"Crime, Drama, Mystery",499682,7.8,168
+26,Hidden Figures,1,2016,"Biography, Drama, History",193627,7.8,127
+27,Home Alone,1,1990,"Comedy, Family",451950,7.6,103
+28,Hot Fuzz,1,2007,"Action, Comedy, Mystery",454530,7.8,121
+29,House Party 2,1,1991,"Comedy, Drama, Music",5921,5.3,94
+30,How the Grinch Stole Christmas,1,2000,"Comedy, Family, Fantasy",198544,6.2,104
+31,Inception,2,2010,"Action, Adventure, Sci-Fi",2006301,8.8,148
+32,Interstellar,1,2014,"Adventure, Drama, Sci-Fi",1452479,8.6,169
+33,The King's Speech,1,2010,"Biography, Drama, History",628712,8,118
+34,La La Land,2,2016,"Comedy, Drama, Music",488793,8,128
+35,Life As We Know It,1,2010,"Comedy, Drama, Romance",120518,6.5,114
+36,Lord of the Rings: The Fellowship of the Ring,1,2001,"Action, Adventure, Drama",1621341,8.8,178
+37,Matilda,1,1996,"Comedy, Family, Fantasy",123874,6.9,102
+38,Memento,1,2000,"Mystery, Thriller",1100300,8.4,113
+39,Mission Impossible II,1,2000,"Action, Adventure, Thriller",308837,6.1,123
+40,Monte Carlo,1,2011,"Adventure, Comedy, Family",40586,5.8,109
+41,My Big Fat Greek Wedding,1,2002,"Comedy, Drama, Romance",118149,6.5,95
+42,Notting Hill,1,1999,"Comedy, Drama, Romance",265565,7.1,124
+43,The Parent Trap,1,1998,"Adventure, Comedy, Drama",117685,6.5,128
+44,Pather Panchali,1,1955,Drama,22280,8.6,125
+45,Pride & Prejudice,1,2005,"Drama, Romance",248225,7.8,129
+46,Resident Evil,1,2002,"Action, Horror, Sci-Fi",243387,6.7,100
+47,Scent of a Woman,1,1992,Drama,254233,8,156
+48,Scott Pilgrim vs. The World,1,2010,"Action, Comedy, Fantasy",369290,7.5,112
+49,Seven Psychopaths,1,2012,"Comedy, Crime",236949,7.2,110
+50,The Shawshank Redemption,1,1994,Drama,2281331,9.3,142
+51,Spirited Away,1,2001,"Animation, Adventure, Family",627696,8.6,125
+52,Still Walking,1,2008,Drama,13154,8,115
+53,Takers,1,2010,"Action, Crime, Thriller",57056,6.2,107
+54,Tangled,1,2010,"Animation, Adventure, Comedy",396473,7.7,100
+55,The Girl with the Dragon Tattoo,1,2011,"Crime, Drama, Mystery",412127,7.8,158
+56,The Godfather,1,1972,"Crime, Drama",1574476,9.2,175
+57,The Grand Budapest Hotel,1,2014,"Adventure, Comedy, Crime",688377,8.1,99
+58,The Grey,1,2011,"Action, Adventure, Drama",237662,6.8,117
+59,The Matrix,1,1999,"Action, Sci-Fi",1634039,8.7,136
+60,The Secret Life of Walter Mitty,1,2013,"Comedy, Drama, Fantasy",288768,7.3,114
+61,The Silence of the Lambs,1,1991,"Crime, Drama, Thriller",1235621,8.6,118
+62,Titanic,1,1997,"Drama, Romance",1024011,7.8,134
+63,Top Gun,1,1986,"Action, Drama",287972,6.9,110
+64,Waking Life,1,2001,"Animation, Drama, Fantasy",59953,7.8,99
+65,When Harry Met Sally,1,1989,"Comedy, Drama, Romance",190844,7.6,95
+66,Yeh Jawaani hai Deewani,1,2013,"Drama, Musical, Romance",37360,7.1,160
