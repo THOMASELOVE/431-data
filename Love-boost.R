@@ -1,4 +1,4 @@
-## Updated 2019-10-02 dropping require pieces
+## Updated 2020-09-20 simplifying to four functions
 
 `bootdif` <-
   function(y, g, conf.level=0.95, B.reps = 2000) {
@@ -13,50 +13,7 @@
     res
   }
 
-`Emp_Rule` <- function(x, na.rm=FALSE) {
-  tmp.overall_n <- length(x)
-  tmp.mean <- mean(x)
-  tmp.sd <- sd(x)
-  tmp.in1sd <- length(x[x > tmp.mean - tmp.sd & 
-                          x < tmp.mean + tmp.sd])
-  tmp.in2sd <- length(x[x > tmp.mean - 2*tmp.sd & 
-                          x < tmp.mean + 2*tmp.sd])
-  tmp.in3sd <- length(x[x > tmp.mean - 3*tmp.sd & 
-                          x < tmp.mean + 3*tmp.sd])
-  tmp.prop1sd <- tmp.in1sd / tmp.overall_n
-  tmp.prop2sd <- tmp.in2sd / tmp.overall_n
-  tmp.prop3sd <- tmp.in3sd / tmp.overall_n
-  res.count <- c(tmp.in1sd, tmp.in2sd, tmp.in3sd, tmp.overall_n)
-  res.prop <- c(tmp.prop1sd, tmp.prop2sd, tmp.prop3sd, 1)
-  res.exp <- c(0.68, 0.95, 0.997, 1)
-  res <- data.frame(count = res.count, proportion = res.prop)
-  row.names(res) <- c("Mean +/- 1 SD", "Mean +/- 2 SD", "Mean +/- 3 SD", "Entire Data Set")
-  return(res)
-  rm(tmp.overall_n, tmp.mean, tmp.sd, tmp.in1sd, tmp.in2sd, tmp.in3sd,
-     tmp.prop1sd, tmp.prop2sd, tmp.prop3sd, res.count, res.prop, res)
-}
 
-`fd_bins` <- function(x, na.rm=FALSE) {
-  bw <- 2 * IQR(x) / (length(x)^(1/3))
-  bins <- round((max(x) - min(x)) / bw, digits = 0)
-  return(bins)
-}
-
-qq_int <- function(tempdat, na.rm = TRUE) {
-  y <- quantile(tempdat, c(0.25, 0.75))
-  x <- qnorm(c(0.25, 0.75))
-  slope <- diff(y) / diff(x)
-  intercept <- y[1L] - slope * x[1L]
-  return(intercept)
-}
-
-qq_slope <- function(tempdat, na.rm = TRUE) {
-  y <- quantile(tempdat, c(0.25, 0.75))
-  x <- qnorm(c(0.25, 0.75))
-  slope <- diff(y) / diff(x)
-  intercept <- y[1L] - slope * x[1L]
-  return(slope)
-}
 
 `saifs.ci` <- 
   function(x, n, conf.level=0.95, dig=3)
@@ -81,10 +38,6 @@ qq_slope <- function(tempdat, na.rm = TRUE) {
     res
   }
 
-`skew1` <- function(x, na.rm=FALSE) {
-  a <- (mean(x) - median(x))/sd(x)
-  return(a)
-}
 
 `twobytwo` <-
   function(a,b,c,d, namer1 = "Row1", namer2 = "Row2", namec1 = "Col1", namec2 = "Col2", 
@@ -113,28 +66,5 @@ qq_slope <- function(tempdat, na.rm = TRUE) {
     exaggeration <- mean(abs(estimate)[significant])/A
     return(list(power=power, typeS=typeS, 
                 exaggeration=exaggeration))
-}
-
-# panel.hist and panel.cor modified from Chang
-
-`panel.hist` <- function(x, ...)
-{
-    usr <- par("usr"); on.exit(par(usr))
-    par(usr = c(usr[1:2], 0, 1.5) )
-    h <- hist(x, plot = FALSE)
-    breaks <- h$breaks; nB <- length(breaks)
-    y <- h$counts; y <- y/max(y)
-    rect(breaks[-nB], 0, breaks[-1], y, col = "cyan", ...)
-}
-
-`panel.cor` <- function(x, y, digits = 2, prefix = "", cex.cor, ...)
-{
-    usr <- par("usr"); on.exit(par(usr))
-    par(usr = c(0, 1, 0, 1))
-    r <- cor(x, y)
-    txt <- format(c(r, 0.123456789), digits = digits)[1]
-    txt <- paste0(prefix, txt)
-    if(missing(cex.cor)) cex.cor <- 0.8/strwidth(txt)
-    text(0.5, 0.5, txt, cex = cex.cor * (1 + abs(r)) / 2)
 }
 
