@@ -1,0 +1,432 @@
+subject,practice,age,race_eth,sex,insurance,income,a1c,sbp,dbp,tobacco,ldl,statin,insurance_old,income_old,a1c_old,sbp_old,dbp_old,tobacco_old,ldl_old,statin_old
+S-001,Arlington,62,Black or African-A,F,Commercial,Higher_than_50K,6.3,98,64,Former,126,1,Commercial,Between_30-50K,11.4,102,70,Former,71,1
+S-002,Bristol,54,Black or African-A,F,Uninsured,Between_30-50K,11,162,84,Current,172,1,Uninsured,Between_30-50K,16.3,100,60,NA,182,1
+S-003,Chester,47,Black or African-A,F,Uninsured,NA,8.7,154,95,Former,105,1,Uninsured,Between_30-50K,10.7,138,92,Former,127,1
+S-004,Dover,53,Non-Hispanic White,M,Commercial,Below_30K,6.5,138,87,Current,127,1,Commercial,Below_30K,5.8,120,70,Current,NA,1
+S-005,Franklin,64,Non-Hispanic White,F,Commercial,Between_30-50K,6.7,118,58,Former,100,1,Commercial,Between_30-50K,6.3,124,72,Former,86,1
+S-006,Bristol,48,Black or African-A,F,Medicare,Below_30K,5.8,124,60,Never,65,1,Medicare,Between_30-50K,6.5,135,53,Never,90,1
+S-006,Franklin,49,Black or African-A,M,Commercial,Below_30K,9.6,134,80,Former,137,0,Commercial,Below_30K,NA,128,82,NA,NA,0
+S-008,Dover,63,Black or African-A,F,Medicaid,Between_30-50K,6.1,140,59,Never,112,1,Medicaid,Below_30K,7.2,142,59,Never,79,0
+S-009,Chester,55,Non-Hispanic White,M,Medicare,Below_30K,12.9,149,74,Former,38,1,Medicare,Below_30K,7.7,136,96,Former,42,1
+S-010,Chester,63,Black or African-A,F,Uninsured,Below_30K,6.7,109,52,Former,102,1,Uninsured,Between_30-50K,6.8,121,70,Former,94,1
+S-011,Bristol,54,Black or African-A,F,Medicare,Below_30K,16.7,107,68,Never,NA,1,Medicare,Below_30K,14.6,110,60,Never,152,1
+S-012,Arlington,52,Black or African-A,F,Commercial,Below_30K,12.2,121,72,Current,89,1,Commercial,Below_30K,11.3,122,80,Current,101,1
+S-013,Bristol,55,Non-Hispanic White,F,Commercial,Higher_than_50K,8.1,127,75,Never,92,0,Commercial,Higher_than_50K,6.7,157,93,Never,124,0
+S-014,Bristol,44,Black or African-A,F,Medicaid,Between_30-50K,8.4,113,61,Never,100,1,Medicaid,Below_30K,8.6,135,91,Never,147,0
+S-015,Franklin,52,Hispanic or Latinx,F,Commercial,Between_30-50K,5.7,120,70,Never,75,0,Commercial,Between_30-50K,5.7,138,72,Never,70,0
+S-016,Dover,44,Black or African-A,M,Commercial,NA,8.4,134,88,Current,68,1,Commercial,Between_30-50K,7.7,144,100,Current,89,1
+S-017,Chester,58,Black or African-A,M,Uninsured,Between_30-50K,6.6,168,84,Never,87,0,Uninsured,Between_30-50K,6.3,136,78,Never,82,0
+S-018,Franklin,64,Non-Hispanic White,M,Commercial,Higher_than_50K,8,128,64,Former,49,1,Commercial,Higher_than_50K,7.1,124,64,Never,71,1
+S-019,Franklin,70,Non-Hispanic White,F,Medicare,Between_30-50K,7.9,126,80,Former,92,1,Medicare,Between_30-50K,6.9,108,60,Former,88,1
+S-020,Bristol,55,Black or African-A,M,Commercial,Between_30-50K,6.9,124,68,Current,124,1,Commercial,Between_30-50K,NA,133,70,Current,NA,1
+S-021,Bristol,51,Non-Hispanic White,F,Uninsured,Higher_than_50K,11.4,153,83,Former,57,1,Uninsured,Between_30-50K,8.1,134,59,Former,51,1
+S-022,Arlington,42,Black or African-A,M,Commercial,Between_30-50K,8,134,100,Current,189,1,Commercial,Between_30-50K,6.8,136,86,Current,85,1
+S-023,Arlington,58,Black or African-A,M,Commercial,Higher_than_50K,6.9,142,75,Former,99,1,Commercial,Higher_than_50K,6.2,132,68,Former,67,1
+S-024,Dover,58,Black or African-A,F,Uninsured,Between_30-50K,7.8,139,91,Never,NA,0,Uninsured,Below_30K,11.7,162,98,Never,151,1
+S-025,Arlington,56,Black or African-A,F,Commercial,Below_30K,7.6,143,83,Current,132,1,Commercial,Between_30-50K,7.3,128,70,Current,182,1
+S-026,Chester,49,Non-Hispanic White,F,Medicaid,Higher_than_50K,11.6,122,57,Current,NA,0,Uninsured,Below_30K,11.1,127,57,Current,NA,0
+S-027,Bristol,40,Hispanic or Latinx,F,Commercial,Below_30K,7.3,110,70,Never,65,1,Commercial,Below_30K,7.7,137,66,Never,62,1
+S-028,Dover,64,Non-Hispanic White,M,Medicare,Below_30K,13.5,101,73,Current,53,1,Medicare,Below_30K,8.4,114,62,Current,117,1
+S-029,Arlington,55,Black or African-A,F,Commercial,Higher_than_50K,7.7,122,65,Never,48,1,Commercial,Higher_than_50K,6.5,109,51,Never,64,1
+S-030,Bristol,63,Black or African-A,M,Commercial,Between_30-50K,7.7,116,60,Former,77,1,Commercial,Between_30-50K,7.8,143,70,Former,121,1
+S-031,Bristol,70,Black or African-A,F,Medicare,Higher_than_50K,8.6,143,56,Never,57,1,Medicare,Between_30-50K,9.4,184,110,Never,48,1
+S-032,Arlington,69,Black or African-A,F,Medicare,Higher_than_50K,7.3,150,60,Former,77,1,Medicare,Between_30-50K,6.9,115,52,Former,54,1
+S-033,Dover,49,Non-Hispanic White,F,Commercial,Higher_than_50K,8,135,82,Never,100,0,Commercial,Higher_than_50K,9.7,120,78,Never,140,0
+S-034,Chester,39,Black or African-A,F,Uninsured,Below_30K,12.6,126,70,Current,NA,0,Uninsured,Below_30K,10.1,120,76,Current,81,1
+S-035,Arlington,64,Non-Hispanic White,M,Commercial,Higher_than_50K,5.9,148,88,Former,102,0,Commercial,Between_30-50K,6.2,130,70,Former,84,0
+S-036,Arlington,62,Non-Hispanic White,M,Commercial,Between_30-50K,8.5,130,56,Former,80,1,Commercial,Below_30K,9.6,154,76,Former,64,1
+S-037,Bristol,56,Non-Hispanic White,F,Commercial,Between_30-50K,7.3,142,70,Never,91,0,Commercial,Between_30-50K,8,148,72,Never,88,0
+S-038,Bristol,54,Black or African-A,F,Commercial,Below_30K,10.9,110,70,Former,61,1,Commercial,Below_30K,8.4,129,67,Former,90,1
+S-039,Franklin,59,Non-Hispanic White,M,Commercial,Higher_than_50K,7.7,124,78,Never,85,1,Commercial,Between_30-50K,7.8,144,72,Never,110,1
+S-040,Arlington,49,Black or African-A,F,Commercial,Between_30-50K,9.8,132,80,Current,142,1,Commercial,Below_30K,9.7,130,92,Current,159,1
+S-041,Bristol,51,Black or African-A,F,Medicaid,Between_30-50K,6.4,145,81,Never,148,1,Medicaid,Higher_than_50K,NA,138,98,Never,142,1
+S-042,Dover,53,Non-Hispanic White,M,Medicare,Higher_than_50K,6.8,135,85,Former,127,0,Medicare,Higher_than_50K,7.2,120,74,Former,125,0
+S-043,Dover,56,Black or African-A,F,Medicaid,Higher_than_50K,5.6,174,99,Never,87,1,Medicaid,Between_30-50K,6.2,150,70,Never,121,1
+S-044,Chester,58,Black or African-A,F,Medicaid,Below_30K,7,157,61,Never,133,1,Medicaid,Between_30-50K,6.2,182,90,Never,124,1
+S-045,Franklin,54,Hispanic or Latinx,F,Commercial,Between_30-50K,6.7,91,58,Never,66,1,Commercial,Below_30K,6.7,139,96,Never,82,1
+S-046,Franklin,69,Non-Hispanic White,F,Medicare,Higher_than_50K,7.5,138,74,Former,68,1,Medicare,Between_30-50K,6.4,120,54,Former,61,1
+S-047,Arlington,59,Black or African-A,M,Commercial,Between_30-50K,6.9,138,78,Never,82,1,Commercial,Between_30-50K,7.2,138,78,Never,89,1
+S-048,Arlington,59,Black or African-A,F,Commercial,Higher_than_50K,9.4,166,63,Never,70,1,Commercial,Between_30-50K,10.6,128,76,Never,68,1
+S-049,Arlington,66,Black or African-A,F,Medicare,Between_30-50K,NA,102,70,Former,NA,1,Commercial,Between_30-50K,6.2,124,76,Former,77,1
+S-050,Arlington,68,Black or African-A,M,Medicare,Below_30K,7.2,118,76,Current,58,1,Medicare,Below_30K,6.9,110,74,Current,72,1
+S-051,Arlington,50,Black or African-A,F,Commercial,Below_30K,7.6,120,70,Former,81,1,Commercial,Below_30K,6.6,116,68,Former,92,1
+S-052,Arlington,43,Non-Hispanic White,M,Commercial,Higher_than_50K,4.9,116,78,Current,109,1,Commercial,Between_30-50K,7,123,74,Former,87,1
+S-053,Franklin,67,Non-Hispanic White,F,Medicare,Between_30-50K,7.9,136,82,Never,131,1,Medicare,Between_30-50K,9.3,168,88,Never,169,1
+S-054,Franklin,46,Non-Hispanic White,F,Commercial,Higher_than_50K,9.8,114,66,Never,102,1,Commercial,Between_30-50K,7.6,120,70,Never,107,1
+S-055,Chester,34,Black or African-A,F,Medicaid,Below_30K,6.4,98,70,Current,156,1,Medicaid,Below_30K,7,111,74,Current,142,0
+S-056,Bristol,45,Non-Hispanic White,F,Medicare,Higher_than_50K,13.2,124,76,Former,63,1,Medicare,Between_30-50K,10.9,112,78,Current,59,1
+S-057,Bristol,55,Black or African-A,F,Medicaid,Between_30-50K,5.8,124,85,Current,119,0,Medicaid,Between_30-50K,5.6,112,66,Current,100,0
+S-058,Dover,56,Non-Hispanic White,F,Medicare,Higher_than_50K,6.6,145,67,Former,67,1,Medicare,Higher_than_50K,5.6,103,64,Former,NA,1
+S-059,Franklin,55,Black or African-A,M,Commercial,Between_30-50K,8.6,126,66,Never,107,1,Commercial,Between_30-50K,6.9,134,76,Never,70,1
+S-060,Franklin,45,Hispanic or Latinx,M,Commercial,Higher_than_50K,7,130,84,Former,129,1,Commercial,Higher_than_50K,7.3,122,80,Never,128,1
+S-061,Arlington,46,Black or African-A,M,Commercial,Between_30-50K,7.6,148,90,Former,87,1,Commercial,Between_30-50K,6.9,114,70,Former,49,1
+S-062,Dover,52,Hispanic or Latinx,F,Uninsured,Between_30-50K,7.6,106,72,Never,181,1,Uninsured,Between_30-50K,7.7,130,89,Never,152,1
+S-063,Bristol,55,Hispanic or Latinx,F,Uninsured,Between_30-50K,6,141,73,Current,113,1,Uninsured,Below_30K,7.6,148,68,Current,125,0
+S-064,Chester,43,Black or African-A,F,Medicaid,Below_30K,11.5,158,90,Current,193,1,Medicaid,Below_30K,11.8,104,74,Current,153,1
+S-065,Chester,46,Non-Hispanic White,F,Medicaid,Between_30-50K,8.2,118,60,Current,71,0,Medicaid,Between_30-50K,7.9,108,58,Former,96,0
+S-066,Chester,55,Black or African-A,F,Medicaid,Between_30-50K,10,107,75,Current,159,1,Uninsured,Below_30K,9.4,118,77,Current,188,1
+S-067,Franklin,67,Non-Hispanic White,F,Medicare,Between_30-50K,5.4,132,70,Former,129,0,Medicare,Between_30-50K,NA,120,72,Former,NA,0
+S-068,Bristol,70,Black or African-A,F,Medicare,Below_30K,6.8,126,78,Former,92,1,Medicare,Below_30K,6.7,139,86,Former,79,1
+S-069,Franklin,62,Black or African-A,M,Commercial,Below_30K,8,135,81,Former,69,1,Commercial,Below_30K,8,136,86,Former,65,1
+S-070,Chester,56,Black or African-A,F,Medicaid,Below_30K,7.2,178,59,Current,177,0,Medicaid,Below_30K,7.8,164,80,Current,204,1
+S-071,Arlington,48,Black or African-A,F,Commercial,Below_30K,5.3,138,80,Current,86,1,Commercial,Below_30K,9.1,122,76,Current,NA,0
+S-072,Bristol,42,Black or African-A,F,Medicaid,Below_30K,13.9,127,71,Never,173,1,Medicaid,Below_30K,11.8,137,76,Never,97,1
+S-073,Arlington,60,Non-Hispanic White,M,Commercial,Higher_than_50K,6.4,152,82,Former,110,1,Commercial,Higher_than_50K,6.7,114,58,Current,69,1
+S-074,Franklin,70,Non-Hispanic White,F,Medicare,Between_30-50K,7.9,120,72,Current,107,0,Medicare,Between_30-50K,7.8,118,76,Current,97,0
+S-075,Dover,67,Hispanic or Latinx,F,Medicare,Between_30-50K,5.9,145,76,Never,76,1,Medicare,Below_30K,7.8,121,65,Never,NA,1
+S-076,Bristol,47,Non-Hispanic White,M,Uninsured,Higher_than_50K,13.5,130,92,Never,190,1,Uninsured,Higher_than_50K,12.1,144,110,Never,113,1
+S-077,Arlington,64,Black or African-A,M,Commercial,Below_30K,8,138,82,Current,NA,1,Commercial,Below_30K,6.4,116,86,Current,42,0
+S-078,Arlington,56,Black or African-A,M,Commercial,Higher_than_50K,5.4,116,76,Former,65,0,Commercial,Between_30-50K,4.2,99,60,Former,74,1
+S-079,Chester,65,Black or African-A,F,Medicare,Below_30K,6.1,106,66,Current,81,1,Uninsured,Below_30K,7.9,133,56,Current,72,1
+S-080,Bristol,56,Non-Hispanic White,M,Medicare,Between_30-50K,9.1,134,82,Current,128,1,Medicare,Between_30-50K,9.6,166,88,Current,122,1
+S-081,Franklin,56,Non-Hispanic White,M,Commercial,Higher_than_50K,8.6,137,58,Never,98,1,Commercial,Between_30-50K,7.4,128,68,Never,87,1
+S-082,Chester,53,Black or African-A,M,Medicare,NA,10.1,138,78,Former,92,0,Medicare,Below_30K,9.9,130,90,Former,98,0
+S-083,Arlington,47,Black or African-A,F,Commercial,Between_30-50K,6.9,120,70,Never,169,1,Commercial,Between_30-50K,9.2,122,80,Never,91,1
+S-084,Bristol,64,Non-Hispanic White,F,Medicare,Below_30K,7.5,138,74,Former,61,1,Medicare,Between_30-50K,6.2,126,63,Former,74,1
+S-085,Arlington,67,Black or African-A,F,Medicare,Between_30-50K,7.4,112,70,Former,107,1,Medicare,Between_30-50K,9.5,124,78,Former,85,1
+S-086,Arlington,38,Black or African-A,F,Commercial,Between_30-50K,9.7,132,66,Former,125,1,Commercial,Below_30K,11.9,116,80,Former,165,0
+S-087,Arlington,67,Black or African-A,M,Medicare,Higher_than_50K,6.5,138,80,Never,77,1,Medicare,Below_30K,6.2,130,86,Never,132,1
+S-088,Arlington,41,Black or African-A,M,Commercial,Between_30-50K,6.6,122,54,Former,91,1,Commercial,Below_30K,7.3,116,60,Never,100,1
+S-089,Arlington,58,Black or African-A,F,Commercial,Below_30K,5.9,141,76,Never,51,1,Commercial,Below_30K,8.2,122,74,Never,142,1
+S-090,Franklin,49,Non-Hispanic White,F,Commercial,Between_30-50K,8.4,157,97,Former,78,0,Commercial,Between_30-50K,6.8,122,78,Current,83,0
+S-091,Bristol,62,Non-Hispanic White,M,Uninsured,Between_30-50K,9.5,142,71,Never,106,1,Uninsured,Higher_than_50K,10.3,162,92,Never,72,1
+S-092,Bristol,64,Non-Hispanic White,M,Medicare,Between_30-50K,12.4,128,62,Current,59,1,Medicare,Below_30K,10.5,131,75,Former,115,0
+S-093,Franklin,63,Non-Hispanic White,F,Commercial,Between_30-50K,7.1,150,85,Former,128,1,Commercial,Between_30-50K,7.4,138,78,Former,127,1
+S-094,Chester,51,Black or African-A,F,Medicaid,Below_30K,6.8,121,60,Current,78,1,Medicaid,Below_30K,6.2,136,74,Current,89,1
+S-095,Arlington,69,Black or African-A,M,Medicare,Higher_than_50K,7.4,157,71,Former,84,1,Medicare,Between_30-50K,9.7,142,64,Never,91,0
+S-096,Franklin,59,Non-Hispanic White,M,Commercial,Higher_than_50K,9.2,120,60,Former,102,1,Commercial,Between_30-50K,8.3,124,70,Former,72,1
+S-097,Bristol,38,Hispanic or Latinx,F,Medicare,Below_30K,6,145,85,Never,NA,1,Medicare,Below_30K,5.6,110,74,Never,94,1
+S-098,Bristol,57,Black or African-A,M,Medicaid,Below_30K,5.6,124,80,Current,112,1,Medicaid,Between_30-50K,6,142,81,Current,116,0
+S-099,Dover,65,Hispanic or Latinx,F,Medicare,Between_30-50K,9,108,48,Never,79,1,Medicaid,Below_30K,7.1,109,67,Never,77,1
+S-100,Chester,61,Black or African-A,F,Commercial,Between_30-50K,5.7,124,80,Never,79,1,Commercial,Between_30-50K,6,136,90,Never,89,1
+S-101,Arlington,46,Black or African-A,F,Commercial,Between_30-50K,8.6,90,60,Never,76,0,Commercial,Below_30K,7.7,100,60,Never,78,0
+S-102,Franklin,37,Non-Hispanic White,M,Commercial,Between_30-50K,10.2,120,70,Never,150,1,Commercial,Between_30-50K,8.6,128,80,Never,106,1
+S-103,Bristol,58,Black or African-A,F,Uninsured,Below_30K,6.2,127,61,Current,100,0,Uninsured,Below_30K,6.1,136,73,Former,90,0
+S-104,Bristol,58,Black or African-A,M,Uninsured,Higher_than_50K,11.8,122,88,Never,122,1,Commercial,Between_30-50K,13.8,136,78,Never,138,1
+S-105,Bristol,59,Black or African-A,M,Commercial,Below_30K,6,129,62,Current,NA,1,Commercial,Below_30K,12.4,126,78,Current,113,1
+S-106,Arlington,65,Non-Hispanic White,F,Medicare,Higher_than_50K,7.2,116,62,Current,45,1,Commercial,Higher_than_50K,7.3,124,62,Current,63,1
+S-107,Arlington,64,Black or African-A,M,Commercial,Higher_than_50K,8.3,122,88,Never,120,1,Commercial,Below_30K,7.6,170,98,Never,139,0
+S-108,Arlington,54,Black or African-A,F,Commercial,Below_30K,7.3,129,88,Current,91,1,Commercial,Below_30K,7.4,126,70,Current,172,1
+S-109,Chester,46,Black or African-A,F,Uninsured,Below_30K,7.2,117,74,Never,74,0,Uninsured,Below_30K,6.4,132,74,Never,79,0
+S-110,Arlington,49,Black or African-A,F,Commercial,Below_30K,6.4,122,86,Current,87,1,Commercial,Below_30K,7.3,135,78,Current,127,1
+S-111,Bristol,61,Non-Hispanic White,F,Medicare,Between_30-50K,7.4,144,66,Never,126,1,Medicare,Higher_than_50K,6.7,140,78,Never,133,1
+S-112,Franklin,62,Non-Hispanic White,M,Commercial,Between_30-50K,8.2,122,60,Former,69,1,Commercial,Between_30-50K,7.9,124,60,Current,69,1
+S-113,Bristol,61,Hispanic or Latinx,F,Medicare,Between_30-50K,7.4,130,56,Former,NA,0,Medicare,Below_30K,6.8,140,65,Former,123,1
+S-114,Bristol,58,Non-Hispanic White,F,Medicaid,Between_30-50K,7.1,147,58,Former,48,1,Uninsured,Between_30-50K,8,128,70,Former,107,1
+S-115,Arlington,61,Black or African-A,F,Commercial,Higher_than_50K,6.7,124,62,Former,89,1,Commercial,Between_30-50K,7.3,132,64,Never,105,1
+S-116,Bristol,63,Hispanic or Latinx,M,Uninsured,Between_30-50K,6.4,110,78,Current,89,1,Uninsured,Below_30K,6.5,152,75,Current,103,1
+S-117,Dover,48,Hispanic or Latinx,M,Medicare,Below_30K,10.4,149,89,Never,80,0,Medicare,Between_30-50K,7.9,155,89,Never,NA,0
+S-118,Bristol,61,Black or African-A,F,Medicaid,Below_30K,6,127,68,Former,82,1,Medicaid,Below_30K,6.1,124,72,Former,78,1
+S-119,Bristol,57,Hispanic or Latinx,F,Medicaid,Below_30K,6.6,126,61,Never,87,0,Medicaid,Between_30-50K,5.8,147,81,Never,101,0
+S-120,Arlington,69,Non-Hispanic White,M,Medicare,Higher_than_50K,5.5,122,58,Former,43,0,Medicare,Higher_than_50K,5,96,64,Former,82,0
+S-121,Bristol,44,Non-Hispanic White,F,Commercial,Higher_than_50K,9.3,132,86,Former,124,1,Commercial,Between_30-50K,8.2,136,84,Former,80,0
+S-122,Arlington,63,Black or African-A,M,Commercial,Below_30K,6.6,144,78,Never,123,0,Commercial,Below_30K,6,112,60,Never,64,1
+S-123,Bristol,34,Black or African-A,F,Commercial,Higher_than_50K,6.4,138,70,Never,112,1,Commercial,Between_30-50K,7,156,70,Never,108,0
+S-124,Franklin,62,Non-Hispanic White,F,Commercial,Higher_than_50K,5.7,114,68,Never,73,1,Commercial,Higher_than_50K,5.8,124,80,Never,44,1
+S-125,Franklin,58,Non-Hispanic White,M,Commercial,Between_30-50K,9.9,110,60,Current,118,0,Commercial,Between_30-50K,7.8,122,80,Current,120,1
+S-126,Arlington,66,Black or African-A,F,Medicare,Higher_than_50K,6.8,120,60,Never,84,1,Commercial,Higher_than_50K,7.5,141,88,Never,82,1
+S-127,Bristol,67,Black or African-A,F,Medicare,Below_30K,7.2,122,84,Former,56,1,Medicare,Below_30K,6.6,124,82,Former,60,1
+S-128,Bristol,51,Hispanic or Latinx,F,Medicaid,Below_30K,8.1,114,60,Former,106,1,Medicaid,Below_30K,7.1,119,82,Current,61,1
+S-129,Arlington,56,Black or African-A,M,Commercial,Between_30-50K,8,134,78,Former,98,1,Commercial,Between_30-50K,7.1,106,49,Current,57,1
+S-130,Franklin,56,Non-Hispanic White,F,Commercial,Between_30-50K,8.9,126,71,Former,77,1,Commercial,Between_30-50K,7.7,128,73,Former,114,1
+S-131,Arlington,56,Non-Hispanic White,M,Commercial,Between_30-50K,6.2,106,60,Never,55,1,Commercial,Between_30-50K,6.3,126,74,Never,79,1
+S-132,Arlington,67,Black or African-A,F,Medicare,Between_30-50K,6.8,152,80,Never,81,1,Medicare,Between_30-50K,9,136,70,Never,93,1
+S-133,Bristol,50,Non-Hispanic White,M,Medicaid,Below_30K,9,118,73,Current,146,0,Medicaid,Below_30K,9,142,75,Current,108,1
+S-134,Franklin,67,Non-Hispanic White,F,Medicare,Higher_than_50K,9,133,72,Never,135,0,Medicare,Between_30-50K,6.2,120,77,Never,129,1
+S-135,Bristol,47,Black or African-A,M,Uninsured,Below_30K,6.6,134,74,Current,67,1,Uninsured,Below_30K,8.6,112,78,Current,47,1
+S-136,Franklin,64,Non-Hispanic White,F,Medicare,Higher_than_50K,6.4,153,81,Never,172,1,Commercial,Higher_than_50K,6.3,110,70,Never,55,1
+S-137,Chester,40,Black or African-A,M,Commercial,Below_30K,13.1,140,70,Never,NA,1,Commercial,Below_30K,12.7,114,51,Never,163,1
+S-138,Bristol,43,Non-Hispanic White,F,Medicaid,Below_30K,6.1,152,79,Current,124,1,Medicaid,Below_30K,6.4,127,79,Current,100,1
+S-139,Bristol,65,Non-Hispanic White,F,Medicare,Below_30K,6.8,121,42,Former,94,1,Commercial,Below_30K,8.5,140,70,Former,NA,1
+S-140,Franklin,60,Non-Hispanic White,M,Commercial,Higher_than_50K,7.5,114,62,Former,102,1,Commercial,Higher_than_50K,7.8,129,79,Former,129,1
+S-141,Bristol,57,Black or African-A,M,Uninsured,Below_30K,6.6,163,111,Never,72,0,Commercial,Below_30K,11.9,170,122,Never,NA,0
+S-142,Bristol,54,Non-Hispanic White,F,Medicaid,Between_30-50K,6.4,102,52,Never,53,1,Medicaid,Below_30K,8.4,91,58,Never,53,1
+S-143,Arlington,59,Black or African-A,M,Medicare,Between_30-50K,7.1,108,62,Never,46,1,Commercial,Between_30-50K,7,130,80,Never,35,1
+S-144,Chester,58,Black or African-A,F,Medicaid,Below_30K,12.9,166,84,Former,170,1,Medicaid,Below_30K,11.2,127,60,Former,182,1
+S-145,Bristol,61,Black or African-A,F,Medicaid,Between_30-50K,4.9,180,88,Current,57,1,Medicaid,Below_30K,5.8,150,88,Current,174,1
+S-146,Arlington,57,Black or African-A,M,Commercial,Between_30-50K,7.5,138,80,Former,89,1,Commercial,Between_30-50K,8.1,130,86,Former,90,1
+S-147,Bristol,56,Non-Hispanic White,M,Medicare,Below_30K,7.2,138,68,Current,47,1,Medicare,Below_30K,7,160,80,Current,87,1
+S-148,Bristol,38,Black or African-A,F,Commercial,Below_30K,6.5,128,62,Never,137,0,Uninsured,Below_30K,NA,117,67,Never,NA,0
+S-149,Dover,54,Hispanic or Latinx,M,Medicare,Higher_than_50K,11.6,135,75,Never,NA,1,Medicare,Between_30-50K,9.4,136,92,Never,94,1
+S-150,Chester,61,Non-Hispanic White,F,Medicare,Between_30-50K,7.1,128,60,Former,69,1,Medicare,Between_30-50K,7.2,134,67,Former,57,1
+S-151,Dover,61,Hispanic or Latinx,F,Commercial,Higher_than_50K,5.9,130,64,Never,76,1,Commercial,Higher_than_50K,6.1,134,76,Never,86,1
+S-152,Chester,55,Black or African-A,F,Medicaid,Below_30K,8.5,123,65,Former,107,1,Medicaid,Below_30K,7.2,134,80,Current,135,1
+S-153,Franklin,47,Non-Hispanic White,F,Commercial,Higher_than_50K,7.4,102,70,Current,81,1,Commercial,Higher_than_50K,7.6,90,60,NA,63,1
+S-154,Arlington,51,Black or African-A,F,Commercial,Higher_than_50K,9.5,116,74,Current,66,1,Commercial,Between_30-50K,7.9,110,76,Current,123,1
+S-155,Franklin,59,Non-Hispanic White,M,Commercial,Between_30-50K,7.3,131,60,Never,91,1,Commercial,Between_30-50K,8.5,152,66,Never,75,1
+S-156,Bristol,54,Non-Hispanic White,F,Commercial,Higher_than_50K,10.9,120,62,Never,104,1,Commercial,Higher_than_50K,10.2,120,62,Never,97,1
+S-157,Bristol,55,Non-Hispanic White,F,Medicare,Higher_than_50K,7,120,52,Never,46,1,Medicare,Between_30-50K,6.8,100,70,Never,62,1
+S-158,Bristol,62,Non-Hispanic White,F,Commercial,Higher_than_50K,7.2,110,58,Former,118,1,Commercial,Between_30-50K,7,142,69,Never,92,1
+S-159,Bristol,56,Non-Hispanic White,M,Medicaid,Between_30-50K,12.1,145,83,Former,190,1,Commercial,Higher_than_50K,7.8,152,84,Former,154,1
+S-160,Chester,54,Black or African-A,M,Uninsured,Between_30-50K,7.9,176,80,Never,54,1,Uninsured,Between_30-50K,6.7,150,80,Never,44,1
+S-161,Bristol,62,Non-Hispanic White,M,Commercial,Higher_than_50K,6.2,118,70,Never,87,1,Commercial,Between_30-50K,6,115,62,Never,82,1
+S-162,Arlington,47,Black or African-A,F,Commercial,Below_30K,6.3,100,64,Current,84,1,Commercial,Below_30K,7.1,120,65,Current,126,1
+S-163,Arlington,53,Black or African-A,M,Commercial,Below_30K,6.4,120,74,Former,134,1,Commercial,Between_30-50K,6.5,114,80,Former,99,1
+S-164,Bristol,59,Non-Hispanic White,M,Medicare,Between_30-50K,4.7,116,62,Never,63,1,Medicaid,Between_30-50K,7.1,138,86,Never,64,1
+S-165,Dover,56,Black or African-A,F,Medicaid,Higher_than_50K,6,138,82,Never,89,1,Medicaid,Below_30K,6.5,143,72,Never,96,1
+S-166,Bristol,57,Hispanic or Latinx,F,Medicaid,Between_30-50K,6.8,128,84,Former,NA,1,Medicaid,Between_30-50K,6.9,144,86,Former,129,0
+S-167,Franklin,67,Non-Hispanic White,F,Medicare,Higher_than_50K,6.7,122,58,Never,171,1,Medicare,Higher_than_50K,6.5,124,64,Never,92,1
+S-168,Bristol,54,Black or African-A,M,Commercial,Below_30K,11.6,98,64,Never,111,1,Commercial,Below_30K,5.6,110,68,Never,98,1
+S-169,Dover,66,Black or African-A,F,Medicare,Below_30K,5.6,161,48,Current,NA,1,Medicare,Between_30-50K,5.4,173,78,Current,75,1
+S-170,Arlington,63,Black or African-A,M,Commercial,Between_30-50K,5.9,102,74,Never,99,1,Commercial,Between_30-50K,6.1,118,78,Never,94,0
+S-171,Chester,52,Black or African-A,F,Medicare,Below_30K,7.3,119,72,Former,NA,1,Medicare,Below_30K,6.3,129,82,Current,64,1
+S-172,Bristol,48,Non-Hispanic White,M,Medicaid,Below_30K,6.9,150,82,Former,124,1,Medicaid,Between_30-50K,11.1,144,72,Former,151,1
+S-173,Bristol,33,Hispanic or Latinx,F,Uninsured,Below_30K,8.6,137,69,Never,51,0,Uninsured,Below_30K,10.2,116,77,Never,NA,0
+S-174,Arlington,58,Black or African-A,M,Commercial,Between_30-50K,7.3,102,60,Former,NA,0,Commercial,Between_30-50K,9.6,114,70,Former,42,0
+S-175,Arlington,69,Black or African-A,M,Medicare,Between_30-50K,7.2,116,74,Never,64,1,Medicare,Between_30-50K,8.4,110,74,Never,54,1
+S-176,Franklin,65,Black or African-A,M,Medicare,Between_30-50K,7.5,120,64,Former,72,1,Commercial,Between_30-50K,10,128,60,Former,77,1
+S-177,Dover,63,Non-Hispanic White,F,Uninsured,Higher_than_50K,6,107,70,Former,80,1,Commercial,Higher_than_50K,6.7,100,60,Current,68,1
+S-178,Arlington,61,Non-Hispanic White,F,Medicare,Higher_than_50K,8.8,95,57,Never,65,0,Commercial,Higher_than_50K,9.2,130,74,Never,100,0
+S-179,Bristol,58,Black or African-A,M,Medicare,Between_30-50K,8.1,140,88,Never,71,1,Uninsured,Between_30-50K,6.8,121,70,Never,59,1
+S-180,Arlington,54,Black or African-A,M,Commercial,Between_30-50K,6.4,129,69,Former,51,1,Commercial,Between_30-50K,6.4,138,86,Former,31,1
+S-181,Franklin,64,Non-Hispanic White,F,Commercial,Between_30-50K,6.2,110,68,Never,62,1,Commercial,Between_30-50K,6.6,130,74,Never,101,1
+S-182,Franklin,51,Non-Hispanic White,F,Commercial,Between_30-50K,8.3,124,80,Former,54,1,Commercial,Between_30-50K,6.3,119,73,Former,44,1
+S-183,Arlington,56,Black or African-A,M,Commercial,Below_30K,9.7,142,78,Never,144,1,Commercial,Below_30K,8,128,82,Never,146,1
+S-184,Arlington,53,Non-Hispanic White,F,Commercial,Between_30-50K,6.4,120,80,Never,156,0,Commercial,Below_30K,7,128,80,Never,131,1
+S-185,Arlington,57,Black or African-A,F,Commercial,Higher_than_50K,6.5,136,65,Never,124,0,Commercial,Between_30-50K,6.3,130,68,Never,171,0
+S-186,Franklin,62,Black or African-A,M,Commercial,Higher_than_50K,8,132,64,Former,48,1,Commercial,Higher_than_50K,7.7,146,72,NA,50,1
+S-187,Franklin,56,Non-Hispanic White,F,Commercial,Higher_than_50K,7.1,136,82,Current,80,1,Commercial,Higher_than_50K,10.3,124,76,Current,95,1
+S-188,Dover,53,Hispanic or Latinx,M,Commercial,Below_30K,12.4,135,99,Never,137,1,Commercial,Below_30K,8.9,157,100,Never,174,1
+S-189,Franklin,61,Non-Hispanic White,M,Commercial,Higher_than_50K,6.8,168,70,Former,67,1,Commercial,Between_30-50K,7.6,138,70,Former,51,1
+S-190,Arlington,59,Non-Hispanic White,F,Commercial,Higher_than_50K,7.2,127,55,Former,78,1,Commercial,Between_30-50K,6.8,118,64,Former,57,1
+S-191,Arlington,62,Black or African-A,M,Commercial,Between_30-50K,7.2,138,72,Former,36,1,Commercial,Between_30-50K,6.7,140,90,Former,35,1
+S-192,Bristol,68,Non-Hispanic White,F,Medicare,Below_30K,5.8,124,76,Former,NA,0,Medicare,Below_30K,5.8,138,84,Current,85,1
+S-193,Arlington,58,Black or African-A,F,Commercial,Below_30K,8.1,130,80,Never,193,1,Commercial,Below_30K,8.8,124,78,Never,113,1
+S-194,Dover,49,Hispanic or Latinx,F,Uninsured,Below_30K,10.6,163,94,Never,97,0,Uninsured,Between_30-50K,11.9,147,93,Never,83,0
+S-195,Bristol,46,Black or African-A,M,Uninsured,Below_30K,10.1,154,90,Current,134,1,Commercial,Below_30K,NA,116,72,Current,NA,1
+S-196,Arlington,52,Black or African-A,F,Commercial,Higher_than_50K,6.3,102,59,Current,78,1,Commercial,Higher_than_50K,7.8,118,68,Current,110,1
+S-197,Bristol,45,Non-Hispanic White,M,Commercial,Between_30-50K,8.7,101,61,Current,100,1,Commercial,Below_30K,9.5,155,79,Current,216,1
+S-198,Bristol,67,Non-Hispanic White,F,Medicare,Higher_than_50K,5,120,48,Never,NA,0,Medicare,Between_30-50K,5.8,170,73,Never,81,0
+S-199,Arlington,65,Black or African-A,M,Medicare,Below_30K,7.7,155,75,Former,67,1,Commercial,Below_30K,8.3,138,78,NA,67,1
+S-200,Franklin,47,Non-Hispanic White,M,Commercial,Higher_than_50K,5.6,131,78,Former,113,1,Commercial,Higher_than_50K,6,130,70,Former,61,1
+S-201,Franklin,58,Non-Hispanic White,M,Commercial,Between_30-50K,6.6,118,70,Current,76,1,Commercial,Between_30-50K,7,118,82,Current,69,1
+S-202,Chester,42,Black or African-A,M,Uninsured,Below_30K,6.3,114,54,Former,90,1,Uninsured,Below_30K,6,132,69,Former,90,1
+S-203,Arlington,70,Black or African-A,M,Medicare,Below_30K,7.4,100,60,Former,63,1,Medicare,Below_30K,6.6,102,68,Former,71,1
+S-204,Franklin,50,Non-Hispanic White,M,Commercial,Between_30-50K,7.9,126,80,Never,107,1,Commercial,Below_30K,6,122,74,Never,70,1
+S-205,Bristol,69,Hispanic or Latinx,F,Medicare,Below_30K,7.3,109,64,Former,70,0,Medicare,Below_30K,8,122,60,Former,62,1
+S-206,Arlington,50,Black or African-A,M,Commercial,Between_30-50K,7.2,118,74,Never,70,1,Commercial,Between_30-50K,6.7,124,60,Never,57,1
+S-207,Bristol,56,Non-Hispanic White,F,Commercial,Higher_than_50K,8,142,69,Never,141,1,Commercial,Higher_than_50K,8.5,124,74,Never,115,1
+S-208,Franklin,44,Black or African-A,F,Medicare,Between_30-50K,8.3,140,80,Current,132,1,Commercial,Between_30-50K,7.6,130,79,Current,127,1
+S-209,Arlington,58,Black or African-A,F,Commercial,Between_30-50K,6.1,113,71,Former,69,1,Commercial,Between_30-50K,6.5,130,68,Former,139,1
+S-210,Dover,54,Black or African-A,M,Commercial,Below_30K,10.6,150,90,Former,76,0,Commercial,Below_30K,7.5,180,120,Former,58,0
+S-211,Bristol,43,Non-Hispanic White,M,Commercial,Higher_than_50K,6.6,147,69,Never,85,1,Commercial,Higher_than_50K,7.3,134,90,Never,106,1
+S-212,Franklin,49,Black or African-A,F,Commercial,Between_30-50K,6.7,128,87,Former,123,0,Commercial,Between_30-50K,6.6,125,75,Former,127,0
+S-213,Bristol,62,Non-Hispanic White,F,Medicaid,Between_30-50K,6.5,141,71,Current,89,1,Uninsured,Below_30K,6.1,110,96,Current,76,1
+S-214,Chester,65,Black or African-A,F,Medicare,Below_30K,12.8,138,58,Current,74,0,Medicare,Below_30K,7.3,180,74,Current,81,0
+S-215,Arlington,68,Black or African-A,F,Medicare,Between_30-50K,5.4,120,72,Former,93,1,Medicare,Between_30-50K,6.3,118,62,Former,84,1
+S-216,Arlington,67,Black or African-A,F,Medicare,Higher_than_50K,7.9,110,70,Never,87,1,Medicare,Between_30-50K,6.5,118,71,Never,92,1
+S-217,Bristol,47,Black or African-A,F,Medicaid,Between_30-50K,6.8,152,84,Former,138,1,Medicaid,Below_30K,6.9,179,103,Former,71,1
+S-218,Arlington,59,Black or African-A,F,Commercial,Higher_than_50K,7.8,126,70,Never,98,1,Commercial,Higher_than_50K,7.5,140,90,Never,72,1
+S-219,Bristol,59,Hispanic or Latinx,M,Medicare,Below_30K,6.5,120,74,Former,NA,0,Medicare,Below_30K,8.2,120,76,Former,85,0
+S-220,Dover,63,Non-Hispanic White,M,Commercial,Higher_than_50K,6.8,144,75,Former,111,1,Commercial,Higher_than_50K,5.9,109,74,Former,131,1
+S-221,Chester,56,Black or African-A,M,Medicaid,Below_30K,12.4,116,64,Former,105,1,Medicaid,Below_30K,10.1,140,74,Former,111,1
+S-222,Dover,54,Non-Hispanic White,F,Commercial,Higher_than_50K,12.5,135,76,Former,119,1,Commercial,Between_30-50K,9,158,88,Former,101,1
+S-223,Arlington,52,Black or African-A,F,Commercial,Higher_than_50K,6.5,105,73,Never,97,0,Commercial,Higher_than_50K,6.4,112,72,Never,105,0
+S-224,Bristol,58,Non-Hispanic White,F,Medicaid,Below_30K,8.9,141,61,Former,100,0,Medicare,Below_30K,7.9,164,80,Former,59,0
+S-225,Arlington,50,Black or African-A,M,Commercial,Between_30-50K,6.2,148,86,Former,174,1,Commercial,Below_30K,5.9,124,80,Former,169,0
+S-226,Arlington,61,Black or African-A,F,Commercial,Between_30-50K,9,118,68,Never,81,1,Commercial,Between_30-50K,8.2,132,74,Never,95,1
+S-227,Franklin,68,Non-Hispanic White,F,Medicare,Higher_than_50K,7.2,122,54,Former,70,1,Medicare,Between_30-50K,7.1,100,46,Former,64,1
+S-228,Arlington,59,Black or African-A,M,Commercial,Between_30-50K,7.3,140,80,Never,113,1,Commercial,Below_30K,8.4,130,86,Never,97,1
+S-229,Franklin,47,Black or African-A,M,Commercial,Between_30-50K,12.2,104,68,Never,176,1,Commercial,Below_30K,9.5,124,83,Never,131,1
+S-230,Bristol,53,Non-Hispanic White,F,Uninsured,Between_30-50K,7.1,124,62,Never,103,0,Uninsured,Higher_than_50K,7.6,109,53,Never,101,0
+S-231,Franklin,63,Non-Hispanic White,M,Medicare,Between_30-50K,8.3,126,82,Former,96,1,Medicare,Between_30-50K,8.4,95,55,Current,75,1
+S-232,Franklin,69,Non-Hispanic White,F,Medicare,Between_30-50K,6.6,118,70,Never,59,1,Medicare,Between_30-50K,7,138,74,Never,76,1
+S-233,Bristol,52,Black or African-A,F,Commercial,Below_30K,5.9,122,80,Former,108,1,Commercial,Below_30K,8.2,130,80,Former,62,1
+S-234,Bristol,60,Non-Hispanic White,F,Medicaid,Between_30-50K,6.1,144,67,Never,85,1,Medicaid,Between_30-50K,6,116,68,Never,75,1
+S-235,Bristol,50,Non-Hispanic White,F,Commercial,Higher_than_50K,5,147,78,Former,85,1,Commercial,Between_30-50K,5.6,104,72,Former,92,1
+S-236,Bristol,48,Black or African-A,F,Uninsured,Below_30K,7.5,134,60,Never,92,0,Uninsured,Below_30K,6.3,142,88,Never,114,0
+S-237,Arlington,68,Black or African-A,F,Medicare,Between_30-50K,6.3,102,56,Former,46,1,Medicare,Below_30K,6.4,128,69,Current,NA,1
+S-238,Bristol,46,Black or African-A,M,Medicaid,Between_30-50K,7.4,134,86,Never,67,1,Medicaid,Below_30K,9.2,194,88,Never,88,1
+S-239,Franklin,66,Non-Hispanic White,F,Medicare,Between_30-50K,7.5,138,60,Never,95,1,Commercial,Between_30-50K,8.2,122,60,Never,75,1
+S-240,Chester,57,Black or African-A,F,Medicaid,Below_30K,8.8,132,70,Never,109,1,Uninsured,Below_30K,7.4,150,85,Never,117,1
+S-241,Arlington,65,Non-Hispanic White,F,Medicare,Between_30-50K,6.6,114,62,Never,88,1,Commercial,Between_30-50K,NA,138,70,Never,113,1
+S-242,Chester,50,Black or African-A,F,Medicaid,Below_30K,13.1,130,88,Current,NA,0,Medicaid,Below_30K,12.1,138,85,Current,91,1
+S-243,Bristol,37,Hispanic or Latinx,M,Medicare,Between_30-50K,6.4,140,92,Never,100,1,Medicare,Between_30-50K,5.5,165,91,Never,112,1
+S-244,Chester,54,Non-Hispanic White,M,Uninsured,Between_30-50K,7.6,148,91,Former,64,0,Uninsured,Between_30-50K,7.1,135,87,Former,121,1
+S-245,Bristol,42,Black or African-A,F,Medicaid,Between_30-50K,9.1,144,85,Current,102,1,Medicaid,Between_30-50K,8.2,102,60,Current,103,0
+S-246,Bristol,58,Hispanic or Latinx,M,Medicare,Between_30-50K,9.3,157,81,Former,130,0,Medicare,Below_30K,8.5,149,74,Former,125,1
+S-247,Arlington,48,Black or African-A,M,Commercial,Higher_than_50K,7.3,130,80,Never,125,1,Commercial,Between_30-50K,6.5,122,82,Never,69,0
+S-248,Chester,39,Black or African-A,F,Medicare,Between_30-50K,10.9,122,82,Never,108,1,Medicare,Below_30K,9.4,127,78,Never,83,1
+S-249,Franklin,53,Black or African-A,F,Commercial,Between_30-50K,6.7,155,90,Never,59,1,Commercial,Below_30K,6.9,141,82,Never,76,1
+S-250,Chester,40,Black or African-A,F,Medicaid,Higher_than_50K,9.4,107,67,Former,NA,1,Medicaid,Below_30K,12.3,113,87,Former,110,1
+S-251,Dover,45,Hispanic or Latinx,F,Medicaid,Between_30-50K,7.6,121,74,Never,128,1,Medicaid,Between_30-50K,7.3,116,77,Never,96,1
+S-252,Bristol,54,Non-Hispanic White,F,Medicaid,Below_30K,12.7,172,87,Current,140,0,Medicaid,Between_30-50K,9.2,144,76,Current,NA,0
+S-253,Dover,31,Hispanic or Latinx,M,Commercial,Between_30-50K,10.5,119,68,Never,78,0,Commercial,Between_30-50K,9.8,100,63,Never,99,0
+S-254,Arlington,52,Black or African-A,F,Commercial,Between_30-50K,10.7,134,80,Former,112,1,Commercial,Below_30K,8.8,120,70,Former,116,1
+S-255,Arlington,58,Black or African-A,M,Commercial,Between_30-50K,6.9,118,76,Never,88,1,Commercial,Between_30-50K,6.5,128,84,Never,66,1
+S-256,Bristol,50,Black or African-A,M,Medicare,Between_30-50K,6.8,140,98,Former,76,1,Medicare,Between_30-50K,6.8,144,88,Former,NA,1
+S-257,Arlington,50,Black or African-A,M,Commercial,Higher_than_50K,7.9,124,76,Never,68,1,Commercial,Between_30-50K,8.3,118,70,Never,170,1
+S-258,Dover,63,Non-Hispanic White,M,Commercial,Higher_than_50K,12,133,59,Former,80,1,Commercial,Higher_than_50K,6.9,108,68,Former,118,1
+S-259,Bristol,69,Hispanic or Latinx,F,Medicare,Between_30-50K,6.1,106,58,Never,143,1,Medicare,Between_30-50K,6.1,130,70,Never,92,1
+S-260,Bristol,55,Hispanic or Latinx,F,Medicaid,Between_30-50K,7.4,116,72,Former,82,1,Medicaid,Between_30-50K,6.6,116,90,Former,85,1
+S-261,Arlington,57,Black or African-A,M,Commercial,Below_30K,7.6,138,74,Current,NA,0,Commercial,Below_30K,7.2,134,76,Current,150,0
+S-262,Arlington,39,Black or African-A,F,Commercial,Higher_than_50K,6.1,132,84,Never,79,0,Commercial,Between_30-50K,NA,124,78,Never,79,0
+S-263,Arlington,63,Non-Hispanic White,M,Commercial,Higher_than_50K,7.2,132,81,Never,75,1,Commercial,Higher_than_50K,6.3,120,64,Never,44,0
+S-264,Arlington,59,Non-Hispanic White,F,Commercial,Higher_than_50K,6.5,114,68,Never,89,1,Commercial,Higher_than_50K,6.1,159,93,Never,174,1
+S-265,Franklin,69,Non-Hispanic White,F,Medicare,Below_30K,7.8,120,72,Former,75,1,Medicare,Below_30K,8.4,120,60,Former,88,1
+S-266,Bristol,59,Black or African-A,F,Medicare,Higher_than_50K,6,110,71,Former,120,1,Medicare,Between_30-50K,6.5,144,80,Former,133,0
+S-267,Bristol,44,Hispanic or Latinx,M,Uninsured,Between_30-50K,6.9,127,81,Former,45,1,Medicaid,Between_30-50K,6.8,110,61,Former,50,1
+S-268,Arlington,48,Black or African-A,M,Commercial,Between_30-50K,7.7,114,68,Never,63,1,Commercial,Between_30-50K,6.2,116,68,Never,86,1
+S-269,Arlington,61,Non-Hispanic White,M,Commercial,Higher_than_50K,8.3,120,74,Never,58,1,Commercial,Between_30-50K,7,136,76,Never,129,1
+S-270,Bristol,69,Black or African-A,F,Medicare,Higher_than_50K,6.7,157,92,Never,57,1,Medicare,Below_30K,7.2,156,89,Never,39,1
+S-271,Arlington,61,Black or African-A,M,Commercial,Higher_than_50K,7.4,132,76,Current,87,1,Commercial,Between_30-50K,10.8,120,68,Current,135,1
+S-272,Dover,62,Hispanic or Latinx,F,Medicare,Between_30-50K,11,121,59,Never,112,1,Medicare,Between_30-50K,10.3,159,76,Never,115,1
+S-273,Franklin,68,Non-Hispanic White,F,Medicare,Between_30-50K,8.2,139,54,Former,68,1,Medicare,Below_30K,7.2,126,82,Former,157,0
+S-274,Bristol,62,Non-Hispanic White,F,Commercial,Higher_than_50K,8.5,170,74,Current,140,1,Commercial,Higher_than_50K,5.9,118,52,Current,102,1
+S-275,Arlington,55,Black or African-A,F,Commercial,Below_30K,6.5,144,62,Never,104,0,Commercial,Below_30K,5.6,133,72,Never,103,0
+S-276,Bristol,57,Black or African-A,M,Medicare,Between_30-50K,10.2,147,73,Never,NA,1,Medicare,Between_30-50K,10.2,130,71,Never,NA,1
+S-277,Bristol,56,Black or African-A,F,Medicaid,Below_30K,12.5,198,83,Never,199,1,Medicaid,Below_30K,NA,177,84,Never,NA,1
+S-278,Dover,66,Black or African-A,M,Medicare,Between_30-50K,6.3,148,87,Former,60,1,Medicare,Between_30-50K,7.4,138,78,Former,81,1
+S-279,Dover,70,Hispanic or Latinx,F,Medicare,Below_30K,10.4,152,75,Current,NA,1,Medicare,Below_30K,7.3,111,72,Current,72,1
+S-280,Franklin,64,Black or African-A,M,Commercial,Between_30-50K,NA,142,88,Former,137,1,Commercial,Below_30K,NA,145,95,Current,145,1
+S-281,Bristol,58,Black or African-A,F,Commercial,Below_30K,8.2,142,88,Former,96,1,Commercial,Between_30-50K,7.4,142,92,Former,105,1
+S-282,Dover,63,Hispanic or Latinx,M,Medicare,Below_30K,14,148,73,Former,37,1,Medicaid,Below_30K,NA,138,68,Former,45,1
+S-283,Bristol,58,Non-Hispanic White,F,Uninsured,Between_30-50K,7,114,58,Former,NA,0,Uninsured,Between_30-50K,6.2,128,78,Former,90,1
+S-284,Franklin,70,Non-Hispanic White,F,Medicare,Higher_than_50K,6.1,138,72,Never,64,1,Medicare,Between_30-50K,6.9,145,82,Never,73,1
+S-285,Arlington,65,Black or African-A,F,Medicare,Higher_than_50K,6.1,100,60,Former,66,1,Commercial,Higher_than_50K,5.7,110,68,Former,58,1
+S-286,Dover,59,Hispanic or Latinx,M,Medicaid,Between_30-50K,6.8,127,68,Former,128,0,Medicaid,Between_30-50K,6.4,115,67,Former,100,0
+S-287,Bristol,69,Black or African-A,F,Medicare,Below_30K,6.7,176,86,Current,66,1,Medicare,Below_30K,5.8,140,74,Current,61,1
+S-288,Dover,58,Non-Hispanic White,F,Medicaid,Between_30-50K,7.5,128,81,Never,84,1,Medicaid,Between_30-50K,8.8,138,68,Never,NA,1
+S-289,Arlington,60,Black or African-A,M,Commercial,Higher_than_50K,11.9,128,91,Never,110,0,Commercial,Higher_than_50K,7.6,139,92,Never,109,1
+S-290,Bristol,39,Hispanic or Latinx,F,Medicaid,Below_30K,9.7,126,70,Former,147,1,Medicaid,Between_30-50K,10.9,155,83,Current,180,1
+S-291,Bristol,51,Hispanic or Latinx,F,Medicaid,Below_30K,11.5,156,89,Current,125,1,Medicaid,Below_30K,14.3,140,79,Current,142,1
+S-292,Bristol,56,Black or African-A,F,Medicare,Below_30K,12.7,170,85,Current,205,1,Medicare,Below_30K,10,134,76,Current,NA,0
+S-293,Bristol,65,Black or African-A,F,Medicare,Between_30-50K,7.1,110,62,Never,71,1,Commercial,Between_30-50K,6.5,118,70,Never,77,0
+S-294,Dover,60,Non-Hispanic White,F,Uninsured,Higher_than_50K,6.6,137,80,Never,116,1,Uninsured,Between_30-50K,7.2,141,70,Never,139,1
+S-295,Arlington,59,Black or African-A,M,Commercial,Below_30K,7.1,126,69,Never,77,1,Commercial,Below_30K,6.6,126,78,Never,85,1
+S-296,Bristol,55,Hispanic or Latinx,M,Commercial,Below_30K,6.9,108,70,Former,81,1,Commercial,Below_30K,6.2,136,74,Former,79,1
+S-297,Arlington,64,Black or African-A,M,Medicare,Below_30K,7.2,118,60,Former,99,1,Commercial,Below_30K,7.5,118,60,Former,88,1
+S-298,Dover,57,Hispanic or Latinx,F,Medicaid,Below_30K,7.2,130,78,Former,138,1,Medicaid,Below_30K,6,137,74,Former,171,1
+S-299,Arlington,57,Black or African-A,M,Commercial,Below_30K,6.9,130,80,Current,185,1,Commercial,Below_30K,6,122,62,Current,128,1
+S-300,Arlington,44,Black or African-A,M,Commercial,Higher_than_50K,7,122,78,Never,84,1,Commercial,Higher_than_50K,6.2,104,70,Never,113,1
+S-301,Chester,60,Black or African-A,F,Medicare,Below_30K,6.2,158,62,Never,NA,1,Medicare,Below_30K,7.2,138,77,Never,94,1
+S-302,Bristol,41,Non-Hispanic White,M,Medicaid,Between_30-50K,5.9,175,107,Current,116,0,Medicaid,Between_30-50K,5.3,163,95,Current,99,0
+S-303,Arlington,56,Black or African-A,F,Commercial,Below_30K,7.3,110,70,Current,171,1,Commercial,Below_30K,7.5,110,80,Current,193,1
+S-304,Franklin,58,Hispanic or Latinx,F,Commercial,Between_30-50K,7.7,134,68,Current,165,1,Commercial,Below_30K,7.9,170,82,Current,123,1
+S-305,Chester,48,Black or African-A,M,Medicare,Below_30K,7.2,145,95,Former,73,0,Uninsured,Below_30K,6.3,122,84,Former,82,0
+S-306,Arlington,63,Black or African-A,F,Medicare,Between_30-50K,6.9,153,85,Former,81,1,Commercial,Between_30-50K,7.2,138,70,Former,91,0
+S-307,Franklin,69,Non-Hispanic White,M,Medicare,Higher_than_50K,7.9,124,58,Former,70,1,Medicare,Between_30-50K,7,110,60,Former,64,1
+S-308,Bristol,54,Non-Hispanic White,F,Medicaid,Below_30K,5.6,140,60,Never,132,1,Medicare,Between_30-50K,6.2,94,51,Never,66,1
+S-309,Bristol,59,Non-Hispanic White,F,Medicaid,Below_30K,7.3,130,66,Current,54,1,Medicaid,Below_30K,9.6,117,65,Current,96,1
+S-310,Dover,58,Hispanic or Latinx,F,Uninsured,Between_30-50K,8.3,166,65,Never,144,1,Uninsured,Below_30K,10.1,140,66,Never,NA,1
+S-311,Arlington,55,Black or African-A,M,Commercial,Below_30K,10.9,126,82,Current,70,1,Commercial,Below_30K,7.7,126,76,Current,159,1
+S-312,Chester,55,Non-Hispanic White,M,Uninsured,Below_30K,6.5,126,67,Never,74,1,Uninsured,Below_30K,6.1,122,77,Never,82,1
+S-313,Arlington,62,Black or African-A,F,Commercial,Below_30K,11.6,132,76,Former,100,0,Commercial,Below_30K,10.8,152,88,Former,97,0
+S-314,Bristol,60,Black or African-A,F,Medicare,Between_30-50K,7.2,158,82,Never,111,1,Medicare,Between_30-50K,9.3,132,84,Never,68,0
+S-315,Dover,59,Black or African-A,F,Medicare,Below_30K,7,157,79,Former,101,0,Medicare,Below_30K,7.6,118,78,Former,106,0
+S-316,Arlington,53,Black or African-A,F,Commercial,Between_30-50K,8.3,181,85,Never,136,1,Commercial,Below_30K,7.4,152,87,Never,88,1
+S-317,Arlington,61,Black or African-A,F,Commercial,Below_30K,5.8,182,80,Current,56,1,Commercial,Below_30K,5.8,132,80,Current,54,1
+S-318,Bristol,57,Black or African-A,F,Medicaid,Below_30K,6.8,124,69,Former,NA,1,Medicaid,Below_30K,9,188,103,Former,89,1
+S-319,Dover,61,Non-Hispanic White,F,Commercial,Higher_than_50K,NA,200,90,Never,NA,0,Commercial,Higher_than_50K,NA,120,64,Never,NA,0
+S-320,Bristol,45,Hispanic or Latinx,M,Uninsured,Below_30K,10.7,135,83,Current,90,0,Uninsured,Below_30K,11.8,135,77,Current,106,1
+S-321,Bristol,70,Black or African-A,F,Medicare,Between_30-50K,7.1,130,75,Never,90,1,Medicare,Below_30K,7.8,130,60,Never,94,1
+S-322,Chester,49,Black or African-A,F,Commercial,Below_30K,6.6,140,71,Never,87,1,Medicaid,Below_30K,6.5,138,78,Never,116,1
+S-323,Arlington,54,Black or African-A,F,Commercial,Higher_than_50K,8.5,118,56,Never,86,1,Commercial,Between_30-50K,7.4,138,80,Never,92,1
+S-324,Bristol,62,Black or African-A,F,Medicaid,Below_30K,5.5,153,92,Never,61,1,Medicaid,Below_30K,5.8,100,74,Never,69,1
+S-325,Dover,55,Non-Hispanic White,M,Commercial,Below_30K,8.6,126,46,Current,138,1,Commercial,Below_30K,9.7,144,66,Current,158,1
+S-326,Franklin,67,Non-Hispanic White,F,Medicare,Higher_than_50K,6.7,146,80,Never,46,1,Medicare,Higher_than_50K,6.6,130,78,Never,51,1
+S-327,Chester,56,Black or African-A,F,Medicare,Between_30-50K,6.7,148,70,Current,64,0,Uninsured,Below_30K,6.7,114,61,Current,76,0
+S-328,Franklin,67,Non-Hispanic White,F,Medicare,Higher_than_50K,7.4,138,78,Former,184,1,Medicare,Higher_than_50K,8.3,130,64,Former,120,1
+S-329,Arlington,62,Non-Hispanic White,M,Commercial,Between_30-50K,7.6,128,68,Former,99,1,Commercial,Between_30-50K,7.4,114,74,Former,95,1
+S-330,Chester,42,Black or African-A,M,Commercial,Below_30K,9.2,130,94,Never,95,0,Commercial,Below_30K,11.9,150,100,Never,95,0
+S-331,Arlington,51,Black or African-A,M,Commercial,Between_30-50K,7.8,130,74,Never,143,1,Commercial,Between_30-50K,8.2,108,58,Never,67,1
+S-332,Arlington,70,Black or African-A,M,Medicare,Below_30K,6.4,140,84,Former,46,1,Medicare,Below_30K,6.4,124,80,Former,40,1
+S-333,Dover,63,Non-Hispanic White,M,Commercial,Higher_than_50K,7.3,133,70,Never,114,0,Commercial,Higher_than_50K,7.1,110,70,Never,148,1
+S-334,Arlington,49,Black or African-A,F,Commercial,Between_30-50K,10.2,108,48,Current,106,1,Commercial,Between_30-50K,8.2,144,92,Current,58,1
+S-335,Chester,53,Black or African-A,F,Medicare,Below_30K,6.6,110,64,Never,93,0,Medicaid,Below_30K,9.3,120,60,Never,77,1
+S-336,Arlington,65,Non-Hispanic White,M,Medicare,Higher_than_50K,6.7,132,62,Former,58,1,Medicare,Between_30-50K,6.4,130,88,Former,55,1
+S-337,Bristol,58,Non-Hispanic White,F,Uninsured,Higher_than_50K,10.1,126,58,Never,112,1,Uninsured,Between_30-50K,6.2,116,66,Never,88,1
+S-338,Bristol,51,Non-Hispanic White,M,Uninsured,Between_30-50K,6.5,128,82,Never,93,0,Uninsured,Between_30-50K,7.6,145,65,Never,86,0
+S-339,Bristol,64,Non-Hispanic White,F,Uninsured,Between_30-50K,5.8,143,72,Current,120,1,Uninsured,Higher_than_50K,5.8,149,77,Current,98,1
+S-340,Chester,52,Black or African-A,F,Medicare,Below_30K,9.3,112,66,Former,110,0,Medicare,Below_30K,7.8,102,66,Former,84,0
+S-341,Bristol,56,Non-Hispanic White,F,Medicaid,Below_30K,6.2,100,49,Former,66,1,Medicaid,Below_30K,11.4,90,60,Former,95,1
+S-342,Bristol,45,Non-Hispanic White,M,Medicaid,Between_30-50K,9,148,83,Current,129,1,Medicare,Between_30-50K,11.2,118,62,Current,86,0
+S-343,Bristol,55,Non-Hispanic White,F,Medicaid,Below_30K,8.3,125,67,Never,NA,1,Medicaid,Below_30K,6.7,144,81,Never,182,1
+S-344,Bristol,49,Black or African-A,F,Medicaid,Below_30K,6.7,116,74,Never,122,1,Medicaid,Below_30K,5.8,134,75,Never,244,1
+S-345,Bristol,39,Hispanic or Latinx,M,Medicaid,Between_30-50K,7.6,113,75,Current,101,0,Medicaid,Below_30K,5.7,110,70,Current,NA,0
+S-346,Arlington,67,Black or African-A,F,Medicare,Between_30-50K,8.1,130,72,Former,67,1,Medicare,Between_30-50K,6.9,128,68,Former,83,1
+S-347,Bristol,61,Non-Hispanic White,M,Medicaid,Higher_than_50K,7.9,130,66,Former,88,1,Medicaid,Between_30-50K,5.9,104,68,Former,92,1
+S-348,Chester,65,Black or African-A,F,Medicare,Between_30-50K,5.9,181,67,Former,63,1,Medicare,Below_30K,6.7,162,72,Former,82,1
+S-349,Chester,60,Black or African-A,M,Medicare,Below_30K,5.6,120,62,Current,82,1,Medicare,Below_30K,5.1,150,78,Current,137,1
+S-350,Arlington,65,Black or African-A,M,Medicare,Between_30-50K,7.8,150,86,Never,70,1,Commercial,Between_30-50K,7.7,116,80,Never,65,1
+S-351,Bristol,55,Non-Hispanic White,F,Medicaid,Below_30K,14.7,106,72,Former,103,1,Medicaid,Between_30-50K,12.1,120,76,Former,NA,1
+S-352,Bristol,41,Hispanic or Latinx,M,Medicaid,Higher_than_50K,7.2,121,80,Former,79,1,Medicaid,Between_30-50K,6.9,117,81,Former,113,1
+S-353,Franklin,68,Hispanic or Latinx,F,Medicare,Higher_than_50K,9,138,67,Former,109,1,Medicare,Between_30-50K,8.6,120,68,Former,83,1
+S-354,Bristol,56,Hispanic or Latinx,M,Commercial,Below_30K,6.4,182,81,Current,NA,1,Commercial,Between_30-50K,7.5,162,64,Former,NA,1
+S-355,Dover,59,Non-Hispanic White,M,Medicaid,Between_30-50K,6.6,103,59,Current,227,1,Medicaid,Between_30-50K,8.2,117,70,Current,208,1
+S-356,Franklin,65,Hispanic or Latinx,M,Medicare,Between_30-50K,6.2,118,62,Former,79,1,Commercial,Between_30-50K,8.5,138,72,Former,70,1
+S-357,Dover,59,Non-Hispanic White,M,Medicaid,Between_30-50K,8.5,128,66,Former,86,1,Medicaid,Between_30-50K,8.2,119,69,Former,NA,1
+S-358,Bristol,60,Non-Hispanic White,F,Medicaid,Between_30-50K,6.9,208,73,Former,113,1,Medicaid,Between_30-50K,9.8,146,47,Former,84,1
+S-359,Arlington,68,Non-Hispanic White,M,Medicare,Higher_than_50K,6.5,130,76,Former,85,1,Medicare,Higher_than_50K,6.4,124,72,Former,83,0
+S-360,Chester,57,Black or African-A,F,Uninsured,Below_30K,10.4,124,82,Current,106,1,Uninsured,Below_30K,7.8,130,70,Current,82,1
+S-361,Arlington,70,Black or African-A,M,Medicare,Below_30K,6.3,157,96,Former,127,1,Medicare,Below_30K,NA,128,78,Former,NA,0
+S-362,Arlington,70,Black or African-A,F,Medicare,Higher_than_50K,6.9,118,74,Never,98,1,Medicare,Between_30-50K,6.9,142,87,Never,82,1
+S-363,Dover,49,Non-Hispanic White,M,Commercial,Below_30K,7.8,141,80,Former,171,1,Commercial,Below_30K,7.7,134,77,Former,109,0
+S-364,Dover,54,Hispanic or Latinx,F,Medicaid,Between_30-50K,9.9,143,64,Never,86,1,Medicaid,Below_30K,7.4,116,60,Never,61,1
+S-365,Arlington,67,Black or African-A,F,Medicare,Higher_than_50K,6.9,121,71,Former,80,1,Medicare,Between_30-50K,7.8,118,64,Former,100,1
+S-366,Dover,62,Hispanic or Latinx,M,Medicaid,Between_30-50K,6.6,135,69,Former,87,1,Medicaid,Below_30K,6.7,119,65,Former,88,1
+S-367,Bristol,45,Black or African-A,F,Medicaid,Between_30-50K,8.8,116,69,Current,64,1,Uninsured,Below_30K,8.7,115,70,Current,107,0
+S-368,Arlington,58,Black or African-A,F,Medicare,Higher_than_50K,9.7,126,68,Never,85,1,Medicare,Higher_than_50K,5.1,124,76,Never,87,1
+S-369,Franklin,63,Hispanic or Latinx,M,Commercial,Between_30-50K,9.6,124,64,Never,46,1,Commercial,Below_30K,8.7,120,72,Never,55,1
+S-370,Arlington,68,Black or African-A,M,Medicare,Below_30K,7.6,118,64,Never,31,0,Medicare,Below_30K,6.8,132,68,Never,NA,0
+S-371,Bristol,54,Black or African-A,F,Medicaid,Below_30K,6.1,127,76,Current,73,1,Commercial,Below_30K,6.2,145,77,Current,88,1
+S-372,Bristol,43,Black or African-A,M,Medicaid,Between_30-50K,5.7,165,89,Current,99,1,Medicaid,Below_30K,5.9,171,98,Current,98,0
+S-373,Dover,50,Hispanic or Latinx,F,Uninsured,Below_30K,6.3,122,52,Former,112,1,Uninsured,Below_30K,7.6,113,64,Former,107,0
+S-374,Bristol,50,Black or African-A,F,Medicaid,Between_30-50K,11.8,138,70,Former,96,1,Medicaid,Between_30-50K,9.2,110,64,Former,76,1
+S-375,Bristol,62,Black or African-A,M,Medicaid,Below_30K,7.3,151,70,Current,NA,1,Medicare,Below_30K,6.4,162,90,Current,NA,1
+S-376,Arlington,67,Black or African-A,F,Medicare,Higher_than_50K,6.1,163,84,Former,172,0,Medicare,Between_30-50K,6,126,70,NA,158,0
+S-377,Chester,55,Black or African-A,F,Uninsured,Below_30K,6.4,150,88,Former,51,1,Uninsured,Between_30-50K,6.5,146,82,Former,58,1
+S-378,Dover,34,Hispanic or Latinx,M,Uninsured,Below_30K,9.1,132,87,Current,110,1,Uninsured,Below_30K,12.1,130,77,Current,118,0
+S-379,Bristol,46,Non-Hispanic White,M,Medicaid,Below_30K,6.3,116,48,Never,74,1,Medicaid,Between_30-50K,7.2,136,65,Never,95,1
+S-380,Chester,61,Non-Hispanic White,M,Medicaid,Between_30-50K,6.8,130,62,Never,93,1,Uninsured,Between_30-50K,6,149,76,Never,91,1
+S-381,Dover,59,Hispanic or Latinx,F,Medicaid,Higher_than_50K,5.5,106,64,Former,94,1,Medicaid,Below_30K,5.4,90,60,Former,71,1
+S-382,Franklin,65,Black or African-A,M,Medicare,Between_30-50K,6.6,132,64,Former,112,0,Commercial,Between_30-50K,6.1,128,64,Former,112,1
+S-383,Arlington,65,Black or African-A,F,Medicare,Between_30-50K,6.3,122,56,Current,82,1,Commercial,Below_30K,7.3,140,66,Current,73,1
+S-384,Bristol,62,Black or African-A,F,Uninsured,Below_30K,14,130,65,Former,NA,0,Uninsured,Below_30K,NA,120,70,Former,NA,0
+S-385,Bristol,59,Non-Hispanic White,F,Medicaid,Higher_than_50K,9.8,116,72,Current,89,1,Medicaid,Between_30-50K,10.6,139,83,Current,96,1
+S-386,Franklin,59,Black or African-A,F,Medicare,Between_30-50K,4.3,102,56,Never,52,0,Medicare,Between_30-50K,4.9,118,66,Never,56,0
+S-387,Dover,44,Hispanic or Latinx,F,Medicaid,Below_30K,13.6,130,77,Never,91,1,Medicaid,Below_30K,12.1,121,71,Never,120,1
+S-388,Bristol,60,Hispanic or Latinx,F,Commercial,Between_30-50K,7.2,109,68,Former,98,1,Commercial,Between_30-50K,6.2,103,66,Current,158,1
+S-389,Dover,39,Non-Hispanic White,F,Medicaid,Below_30K,7.1,144,71,Never,80,1,Medicaid,Below_30K,7.6,85,52,Never,84,1
+S-390,Dover,64,Non-Hispanic White,M,Medicaid,Between_30-50K,6.4,166,78,Current,NA,0,Medicaid,Between_30-50K,9.7,129,79,Former,NA,0
+S-391,Arlington,61,Black or African-A,M,Medicaid,Below_30K,7,121,78,Former,71,1,Commercial,Below_30K,6.7,138,80,Former,71,1
+S-392,Bristol,51,Black or African-A,M,Medicaid,Below_30K,6.8,163,87,Current,76,1,Medicaid,Below_30K,6.6,128,78,Current,93,1
+S-393,Bristol,42,Non-Hispanic White,F,Medicaid,Higher_than_50K,7.1,150,72,Never,104,1,Medicaid,Higher_than_50K,7.4,120,70,Never,76,1
+S-394,Bristol,50,Black or African-A,F,Medicaid,Between_30-50K,12.5,132,86,Never,149,1,Medicaid,Below_30K,8.8,139,86,Never,59,1
+S-395,Chester,53,Black or African-A,F,Commercial,Below_30K,13.6,132,76,Former,114,1,Commercial,Below_30K,11.2,122,72,Former,89,1
+S-396,Dover,53,Hispanic or Latinx,F,Uninsured,Between_30-50K,6.1,118,68,Former,72,1,Uninsured,Below_30K,6.6,100,60,Former,80,1
+S-397,Arlington,61,Non-Hispanic White,M,Commercial,Between_30-50K,8.7,124,60,Former,67,1,Commercial,Below_30K,8.3,130,68,Former,43,1
+S-398,Dover,43,Non-Hispanic White,M,Medicaid,Between_30-50K,11.2,154,81,Current,NA,1,Uninsured,Between_30-50K,6.5,117,69,Current,133,1
+S-399,Dover,31,Non-Hispanic White,F,Uninsured,NA,5.5,124,80,Former,72,1,Uninsured,Higher_than_50K,5.8,120,88,Former,139,1
+S-400,Arlington,70,Non-Hispanic White,M,Medicare,Between_30-50K,7,134,70,Never,83,1,Medicare,Below_30K,6.5,116,66,Never,100,1
+S-401,Bristol,49,Hispanic or Latinx,M,Medicaid,Below_30K,11,117,80,Former,112,0,Medicaid,Below_30K,8.7,94,62,Current,91,1
+S-402,Chester,60,Black or African-A,F,Commercial,Higher_than_50K,8.1,100,56,Current,90,1,Uninsured,Between_30-50K,7.9,136,87,Current,87,1
+S-403,Bristol,53,Non-Hispanic White,F,Medicaid,Below_30K,7.4,168,78,Never,110,1,Medicaid,Below_30K,5.5,135,81,Never,99,1
+S-404,Chester,57,Hispanic or Latinx,F,Uninsured,Between_30-50K,10.9,120,80,Never,158,1,Uninsured,Between_30-50K,7.8,132,80,Never,143,1
+S-405,Bristol,60,Non-Hispanic White,F,Medicaid,Between_30-50K,7,113,52,Never,74,1,Uninsured,Between_30-50K,11.1,148,64,Never,64,1
+S-406,Bristol,63,Non-Hispanic White,F,Medicaid,Higher_than_50K,8.1,132,70,Never,61,1,Medicaid,Higher_than_50K,7.9,126,64,Never,70,1
+S-407,Dover,54,Non-Hispanic White,M,Medicaid,Below_30K,4.8,135,86,Current,134,1,Medicaid,Below_30K,5.8,166,111,Former,144,1
+S-408,Dover,56,Non-Hispanic White,M,Medicaid,Between_30-50K,7.6,153,82,Former,60,1,Uninsured,Between_30-50K,9.9,159,74,Former,70,1
+S-409,Franklin,55,Hispanic or Latinx,F,Commercial,Below_30K,7.4,110,56,Never,71,1,Commercial,Below_30K,6.9,126,70,Never,62,1
+S-410,Dover,60,Hispanic or Latinx,F,Medicaid,Below_30K,6.5,135,76,Current,114,1,Medicaid,Below_30K,7.7,111,65,Current,147,0
+S-411,Arlington,58,Non-Hispanic White,M,Commercial,Between_30-50K,6.1,130,82,Former,92,1,Commercial,Below_30K,6,100,68,Former,70,1
+S-412,Dover,38,Non-Hispanic White,F,Medicaid,Below_30K,8.3,147,98,Never,70,0,Uninsured,Between_30-50K,7.4,128,90,Never,NA,0
+S-413,Dover,51,Hispanic or Latinx,M,Medicaid,Below_30K,7.9,120,61,Former,NA,1,Medicaid,Below_30K,6.8,123,67,Former,75,1
+S-414,Chester,52,Hispanic or Latinx,F,Medicaid,Below_30K,12.5,131,59,Never,99,1,Uninsured,Below_30K,8.2,150,80,Never,98,1
+S-415,Dover,44,Hispanic or Latinx,F,Medicaid,Between_30-50K,5.7,120,87,Never,NA,1,Medicaid,Below_30K,6.9,138,95,Never,177,1
+S-416,Dover,40,Hispanic or Latinx,F,Medicaid,Below_30K,6,123,68,Former,102,0,Medicaid,Below_30K,6.8,122,70,Former,122,0
+S-417,Arlington,58,Non-Hispanic White,M,Commercial,Between_30-50K,8.2,132,78,Former,65,1,Commercial,Between_30-50K,7.7,112,70,Former,79,1
+S-418,Franklin,69,Black or African-A,F,Medicare,Between_30-50K,7.7,110,64,Former,92,1,Medicare,Between_30-50K,7.2,120,60,Former,85,1
+S-419,Dover,47,Hispanic or Latinx,M,Medicaid,Between_30-50K,7.4,132,71,Never,88,1,Medicaid,Below_30K,6.8,109,58,Never,111,1
+S-420,Arlington,66,Non-Hispanic White,M,Medicare,Higher_than_50K,6,122,60,Former,NA,1,Medicare,Higher_than_50K,6.8,142,86,Former,64,0
+S-421,Arlington,60,Non-Hispanic White,F,Commercial,Between_30-50K,7.6,124,80,Former,120,1,Commercial,Between_30-50K,7,128,72,Never,126,1
+S-422,Chester,47,Non-Hispanic White,F,Commercial,Below_30K,10,137,85,Current,102,0,Commercial,Below_30K,10.8,146,95,Current,88,0
+S-423,Arlington,66,Non-Hispanic White,F,Medicare,Higher_than_50K,6.6,134,70,Never,99,0,Commercial,Between_30-50K,6.6,139,73,Never,113,0
+S-424,Dover,46,Non-Hispanic White,F,Medicaid,Between_30-50K,8.2,145,80,Never,NA,1,Uninsured,Between_30-50K,8.9,110,80,Never,83,1
+S-425,Arlington,57,Non-Hispanic White,F,Commercial,Below_30K,6,127,76,Current,55,1,Commercial,Below_30K,5.9,120,78,Never,59,1
+S-426,Franklin,65,Black or African-A,F,Medicare,Between_30-50K,6.3,114,68,Never,100,1,Commercial,Between_30-50K,5.8,120,74,Never,81,1
+S-427,Chester,54,Hispanic or Latinx,F,Uninsured,Between_30-50K,12.5,158,67,Never,86,1,Uninsured,Below_30K,10,142,74,Never,82,1
+S-428,Dover,62,Non-Hispanic White,F,Medicaid,Between_30-50K,6.7,162,71,Current,88,1,Medicaid,Between_30-50K,7.2,120,80,Current,102,1
+S-429,Franklin,48,Non-Hispanic White,M,Medicaid,Higher_than_50K,9.3,110,70,Former,166,1,Commercial,Higher_than_50K,8.9,124,64,Former,104,1
+S-430,Arlington,60,Black or African-A,M,Medicaid,Below_30K,6.7,100,62,Former,34,0,Commercial,Below_30K,7,110,64,Current,36,0
+S-431,Arlington,45,Hispanic or Latinx,M,Commercial,Between_30-50K,7.7,120,70,Former,77,0,Commercial,Between_30-50K,7.9,114,76,Former,67,0
