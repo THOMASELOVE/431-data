@@ -5,7 +5,7 @@ S-003,Chester,47,Black or African-A,F,Uninsured,NA,8.7,154,95,Former,105,1,Unins
 S-004,Dover,53,Non-Hispanic White,M,Commercial,Below_30K,6.5,138,87,Current,127,1,Commercial,Below_30K,5.8,120,70,Current,NA,1
 S-005,Franklin,64,Non-Hispanic White,F,Commercial,Between_30-50K,6.7,118,58,Former,100,1,Commercial,Between_30-50K,6.3,124,72,Former,86,1
 S-006,Bristol,48,Black or African-A,F,Medicare,Below_30K,5.8,124,60,Never,65,1,Medicare,Between_30-50K,6.5,135,53,Never,90,1
-S-006,Franklin,49,Black or African-A,M,Commercial,Below_30K,9.6,134,80,Former,137,0,Commercial,Below_30K,NA,128,82,NA,NA,0
+S-007,Franklin,49,Black or African-A,M,Commercial,Below_30K,9.6,134,80,Former,137,0,Commercial,Below_30K,NA,128,82,NA,NA,0
 S-008,Dover,63,Black or African-A,F,Medicaid,Between_30-50K,6.1,140,59,Never,112,1,Medicaid,Below_30K,7.2,142,59,Never,79,0
 S-009,Chester,55,Non-Hispanic White,M,Medicare,Below_30K,12.9,149,74,Former,38,1,Medicare,Below_30K,7.7,136,96,Former,42,1
 S-010,Chester,63,Black or African-A,F,Uninsured,Below_30K,6.7,109,52,Former,102,1,Uninsured,Between_30-50K,6.8,121,70,Former,94,1
