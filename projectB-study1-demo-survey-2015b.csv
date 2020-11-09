@@ -1,4 +1,4 @@
-S.id,sex,birth.yr,english,prior.r,height,weight,comfort.431,load.431
+S.id,sex,birth.yr,english,r.before,height,weight,comfort.431,load.431
 521,Female,1984,Yes,No,63,107,35,60
 522,Male,1990,Yes,Yes,71,175,90,30
 523,Female,1992,No,No,64,176.37,75,75
