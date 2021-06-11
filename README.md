@@ -1,6 +1,6 @@
 # 431-data
 
-Data and R code repository for 431 in Fall 2020
+Data and R code repository for 431. This will be updated in time for the new session of 431 in August.
 
 To obtain all of the data and code in this repository in a single zip file, click on the green button marked Code and click on Download ZIP.
 
