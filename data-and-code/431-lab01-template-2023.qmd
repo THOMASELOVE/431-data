@@ -1,0 +1,39 @@
+---
+title: "431 Lab 01"
+author: "Your Name Goes Here"
+date: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    date-format: iso
+    theme: materia
+---
+
+# Question 1
+
+This will be the video. No need to write anything about it here, except to specify the name of the file, which should ideally be ...
+
+`yourname-431lab01.mp4`
+
+# Question 2
+
+Write your paragraph here.
+
+If you need a second paragraph, place it here, with a blank line between paragraphs.
+
+# Question 3
+
+Your response goes here.
+
+# Question 4
+
+Your response goes here.
+
+# Session Information
+
+Use the code below to include your session information.
+
+```{r}
+sessioninfo::session_info()
+```
