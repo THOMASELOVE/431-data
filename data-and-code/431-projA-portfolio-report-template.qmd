@@ -1,5 +1,5 @@
 ---
-title: "431 Project A Proposal Template"
+title: "431 Project A Portfolio Report Template"
 author: "Your Name (or Names) Should Be Here"
 date: last-modified
 format: 
@@ -14,11 +14,11 @@ format:
 
 :::{.callout-tip title="Read the Sample Proposal"}
 
-You will get more out of this template if you work with it in combination with the **431 Project A Sample Proposal**, which provides more detail for each section of the Proposal. 
+You will get more out of this template if you work with it in combination with the **431 Project A Sample Portfolio**, which provides more detail for each section of the Portfolio. 
 
 See the [Project A Examples](https://thomaselove.github.io/431-projectA-2023/examples.html) for more details and useful links.
 
-*Be certain* to delete this note when you submit your final proposal, along with my other instructions.
+*Be certain* to delete this note when you submit your final portfolio, along with my other instructions.
 
 :::
 
@@ -165,15 +165,64 @@ Follow the relevant instructions for this section, and its subsections, found on
 
 ## Analysis 3 Research Question
 
-# Proposal Reflection
+# Analysis 1
 
 :::{.callout-tip title="Delete these instructions when submitting your work"}
 
-Here you will provide a paragraph describing the most challenging (or difficult) part of completing the work so far, and how you were able to overcome whatever it was that was most challenging.
-
-Your discussion of the biggest challenge includes a paragraph (or more) written in English, with attention paid to grammar, syntax and spelling. It needs to be clear to us from reading your reflection what your biggest issue was, and how you tried to address it.
+Follow the instructions on the [Analyses page](https://thomaselove.github.io/431-projectA-2023/analyses.html) carefully.
 
 :::
+
+## Variables
+
+## Summaries
+
+## Approach
+
+## Conclusions
+
+# Analysis 2
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions on the [Analyses page](https://thomaselove.github.io/431-projectA-2023/analyses.html) carefully.
+
+:::
+
+## Variables
+
+## Summaries
+
+## Approach
+
+## Conclusions
+
+# Analysis 3
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions on the [Analyses page](https://thomaselove.github.io/431-projectA-2023/analyses.html) carefully.
+
+:::
+
+## Variables
+
+## Summaries
+
+## Approach
+
+## Conclusions
+
+# Portfolio Reflections
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+The original "Proposal Reflections" section is only included as Section 13 in the Proposal, and should not be included in the final portfolio report. Instead, write a new paragraph (containing at least four well-constructed complete English sentences) to answer the following question:
+
+What was the most important thing you learned as a result of doing this project, and why?
+
+:::
+
 
 # Session Information
 
