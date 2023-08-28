@@ -2,9 +2,7 @@
 
 Data and R code repository for PQHS/CRSP/MPHP 431 with Professor Thomas Love at Case Western Reserve University
 
-## PLEASE NOTE: This site is still under revision.
-
-This repository will be continually updated as the semester progresses.
+### This repository will be continually updated as the semester progresses.
 
 To obtain all of the data and code in this repository in a single zip file, click on the green button marked Code and click on Download ZIP.
 
