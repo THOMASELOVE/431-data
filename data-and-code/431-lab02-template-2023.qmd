@@ -20,12 +20,13 @@ library(tidyverse)
 ## which should always be inserted above the tidyverse
 
 theme_set(theme_bw())  ## or use theme_set(theme_light())
+knitr::opts_chunk$set(comment = NA)
 ```
 
 ## Import the `lab02-data.csv` data to `lab2data`
 
 ```{r}
-lab2data <- read_csv("lab02-data.csv")
+lab2data <- read_csv("lab02-data.csv", show_col_types = FALSE)
 ```
 
 ## First Steps

@@ -13,11 +13,7 @@ format:
 
 ## Setup
 
-```{r setup, message = FALSE}
-knitr::opts_chunk$set(comment=NA)
-```
-
-```{r load_packages, message = FALSE, warning = FALSE}
+```{r, message = FALSE, warning = FALSE}
 library(palmerpenguins)
 library(tidyverse)
 
@@ -25,7 +21,8 @@ library(tidyverse)
 ## which should always be inserted above the tidyverse
 ## need palmerpenguins for Questions 1-3
 
-theme_set(theme_light())  ## or use theme_set(theme_bw())
+theme_set(theme_light())  # or use theme_set(theme_bw())
+knitr::opts_chunk$set(comment=NA)
 ```
 
 ## Import the `lab03-data.csv` data 
