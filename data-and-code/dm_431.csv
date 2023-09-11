@@ -1,0 +1,432 @@
+CLASS5_ID,AGE,INSURANCE,N_INCOME,HT,WT,SBP,DBP,A1C,LDL,TOBACCO,STATIN,EYE_EXAM,RACE_ETHNICITY,SEX,COUNTY
+S-001,57,Medicare,22139,1.71,91.22,120,79,6.2,148,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-002,63,Medicaid,39268,1.52,90.63,112,74,5.9,116,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-003,44,Commercial,56837,1.6,88.96,118,74,8,134,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-004,56,Uninsured,39962,1.7,88.91,140,80,14.3,42,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-005,38,Medicaid,40228,1.67,115.76,156,118,7.8,96,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-006,56,Commercial,43782,1.6,100.33,128,83,6,66,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-007,50,Medicaid,39574,1.69,80.88,136,60,6.3,110,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-008,49,Medicaid,38676,1.71,105.82,120,77,11.9,129,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-009,47,Commercial,71494,1.67,74.25,121,82,10.4,101,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-010,38,Medicaid,11690,1.49,81.82,131,85,5.6,128,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-011,64,Medicare,8748,1.62,110.13,125,64,6,73,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-012,56,Medicaid,29574,1.66,121.83,145,73,6.9,114,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-013,38,Medicaid,35203,1.6,111.4,124,89,10.5,125,Former,0,1,Non-Hispanic White,Female,Cuyahoga
+S-014,47,Medicaid,36620,1.7,133.72,142,71,8.3,139,Current,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-015,49,Medicare,23790,1.78,96.07,137,72,6.8,115,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-016,49,Medicaid,45308,1.58,105.05,107,52,6.7,78,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-017,44,Medicaid,65922,1.57,87,98,52,6.6,84,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-018,56,Commercial,23262,1.65,118.03,120,71,8.9,62,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-019,60,Medicaid,27914,1.64,97.5,123,72,7.2,75,Current,0,1,Non-Hispanic White,Female,Cuyahoga
+S-020,56,Commercial,25260,1.58,93.43,160,82,9.7,116,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-021,56,Commercial,94581,1.73,89.18,115,75,6.5,83,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-022,52,Commercial,17047,1.64,86.41,149,84,6.9,122,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-023,59,Medicaid,32298,1.7,85.78,154,77,9,183,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-024,42,Commercial,42788,1.6,80.47,136,84,8.1,127,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-025,60,Medicaid,39612,1.62,96.21,122,84,6.8,97,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-026,49,Medicaid,38234,1.6,127.01,130,100,8.3,120,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-027,57,Commercial,27033,1.7,105.95,121,94,5.6,81,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-028,55,Medicaid,42439,1.73,86.14,119,72,5.8,87,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-029,44,Commercial,24792,1.55,70.9,110,70,7.7,96,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-030,56,Medicaid,28040,1.6,72.21,139,77,6.6,114,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-031,60,Medicaid,33762,1.58,106.69,132,82,9.7,57,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-032,62,Commercial,33285,1.74,92.81,122,64,8.1,103,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-033,48,Commercial,42502,1.68,127.1,150,90,14.1,148,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-034,48,Medicaid,38280,1.66,102.33,118,81,6,134,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-035,52,Medicaid,11736,1.49,81.47,129,76,6.7,140,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-036,62,Medicare,37928,1.63,114.57,124,60,7.8,101,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-037,54,Commercial,61360,1.6,67.81,122,71,7.9,84,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-038,33,Medicaid,44409,1.8,165.79,137,78,7.2,148,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-039,57,Commercial,56278,1.61,126.64,104,67,7.1,67,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-040,55,Commercial,43030,1.67,94.76,140,73,7.4,72,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-041,57,Medicaid,16811,1.58,53.61,135,84,6,119,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-042,64,Uninsured,49749,1.55,66.4,129,68,7,60,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-043,55,Medicaid,30980,1.6,67.53,138,84,6.6,152,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-044,44,Commercial,53160,1.83,108.36,107,65,5.9,98,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-045,51,Medicare,50522,1.66,90.26,148,80,8.3,70,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-046,57,Commercial,47882,1.65,84.01,127,58,7.8,82,Former,0,1,Non-Hispanic White,Female,Cuyahoga
+S-047,52,Uninsured,30029,1.5,67.91,106,65,6.9,85,Former,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-048,42,Medicaid,20719,1.61,135.86,138,74,13.1,111,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-049,43,Medicaid,29952,1.75,92.98,121,72,9.3,77,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-050,57,Medicare,19914,1.56,135.36,120,63,7.5,78,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-051,53,Medicaid,20026,1.59,85.96,99,67,8,223,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-052,63,Medicaid,30982,1.59,84.09,150,75,10.5,166,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-053,46,Medicaid,12223,1.69,92.81,125,81,12.7,157,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-054,59,Medicaid,24826,1.72,83.73,101,63,5.3,80,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-055,39,Medicaid,25337,1.65,90.95,122,92,6,69,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-056,43,Commercial,33737,1.64,98.52,120,70,9.7,83,Never,0,1,Non-Hispanic White,Female,Cuyahoga
+S-057,58,Medicare,25146,1.71,112.21,132,77,7.1,130,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-058,53,Medicaid,24062,1.62,126.46,123,83,9.9,174,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-059,55,Medicare,37478,1.53,110.13,123,83,7.4,135,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-060,46,Medicaid,42632,1.71,81.89,136,80,7.4,156,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-061,43,Uninsured,72667,1.69,85.73,117,75,10.7,190,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-062,50,Medicare,18121,1.52,82.05,160,100,7.1,153,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-063,48,Medicaid,24420,1.68,132.18,126,84,9.7,71,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-064,63,Commercial,87405,1.66,95.71,135,79,6.4,109,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-065,43,Commercial,49058,1.68,110.05,128,81,5.7,84,Current,0,1,Non-Hispanic White,Female,Cuyahoga
+S-066,44,Medicare,60421,1.58,114.94,104,62,11.2,202,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-067,60,Medicaid,11196,1.61,94.85,125,74,6.4,106,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-068,59,Commercial,31279,1.55,83.78,138,58,6.4,148,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-069,51,Medicaid,24990,1.64,71.89,122,70,7,218,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-070,52,Medicaid,30546,1.49,73.21,127,67,16,84,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-071,58,Medicare,55494,1.54,103.51,140,82,9.1,150,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-072,52,Medicaid,16661,1.69,96.62,138,87,6.6,165,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-073,54,Medicare,14640,1.68,147.15,143,54,11.1,190,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-074,62,Medicaid,19013,1.54,72.17,133,73,6.3,39,Current,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-075,47,Medicaid,29444,1.63,100.28,176,84,13.3,141,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-076,50,Commercial,44991,1.67,117.48,106,53,7.1,79,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-077,59,Medicare,19608,1.65,96.2,100,74,5.9,95,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-078,55,Medicaid,51146,1.67,102.24,139,89,6.3,82,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-079,39,Medicaid,27324,1.66,112.49,96,65,9.9,139,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-080,62,Commercial,14990,1.53,75.5,112,50,7.6,118,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-081,47,Medicare,35115,1.59,71.62,118,54,7.9,232,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-082,59,Medicare,11449,1.53,71.67,152,78,7.4,180,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-083,54,Medicare,44686,1.43,69.22,156,86,6,92,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-084,47,Medicaid,16237,1.74,103.33,166,100,6.9,93,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-085,30,Medicaid,28955,1.64,84.46,114,72,6.4,63,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-086,64,Medicare,10666,1.68,131.9,112,72,6.6,44,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-087,55,Commercial,35509,1.67,104.15,121,67,5.9,108,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-088,64,Medicare,79057,1.69,87.73,130,60,7.6,85,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-089,50,Medicaid,14983,1.58,82.19,106,67,13.3,166,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-090,60,Medicaid,36262,1.58,68.13,160,86,7.3,182,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-091,43,Medicaid,17163,1.59,86.23,142,102,5.7,111,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-092,57,Commercial,66178,1.66,95.03,110,67,8.6,69,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-093,46,Medicaid,13048,1.76,83.73,141,90,8.8,89,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-094,60,Medicare,16219,1.55,108.68,128,62,7.1,112,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-095,47,Medicare,38660,1.58,85.45,117,67,6.5,71,Former,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-096,54,Medicaid,38342,1.57,99.24,138,88,7.9,72,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-097,61,Medicare,21585,1.67,98.29,121,66,9.7,159,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-098,47,Medicare,54648,1.65,128.46,130,61,8.9,88,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-099,59,Medicaid,17317,1.6,113.94,152,84,6,141,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-100,58,Medicaid,16124,1.72,110.58,141,74,6.4,89,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-101,33,Medicaid,23091,1.6,69.62,97,63,14.1,133,Current,0,0,Non-Hispanic White,Female,Cuyahoga
+S-102,58,Medicaid,56587,1.57,72.03,135,75,7.3,76,Current,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-103,53,Medicaid,9220,1.76,95.44,117,81,7,93,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-104,61,Medicare,11543,1.63,95.52,164,63,6,120,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-105,56,Medicaid,45889,1.62,87.09,137,81,6.8,73,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-106,57,Medicaid,9551,1.68,88.95,144,69,10.5,147,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-107,55,Uninsured,25233,1.53,76.16,110,60,5.4,63,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-108,42,Commercial,39933,1.6,79.38,110,69,5.3,49,Former,0,1,Non-Hispanic White,Female,Cuyahoga
+S-109,33,Medicaid,50651,1.74,92.86,179,94,7,91,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-110,55,Medicare,31076,1.68,132.35,130,61,6.4,67,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-111,63,Medicare,26532,1.56,50.35,147,80,7.7,128,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-112,59,Medicaid,11725,1.68,111.18,110,68,8.5,98,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-113,47,Medicaid,29649,1.73,99.16,124,78,7.6,118,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-114,46,Medicaid,27846,1.62,139.98,121,64,10.3,144,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-115,54,Medicare,32654,1.57,94.85,112,78,5.6,73,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-116,56,Medicaid,39340,1.61,97.66,118,78,7.9,93,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-117,36,Medicaid,30666,1.68,84.72,111,81,10.6,62,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-118,56,Commercial,19494,1.61,89.63,132,87,6.4,116,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-119,59,Medicaid,25860,1.61,73.21,145,90,13.9,74,Current,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-120,60,Commercial,59132,1.57,51.61,156,79,9.1,204,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-121,64,Medicare,40501,1.55,132.72,110,60,5.8,53,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-122,51,Medicaid,9018,1.56,111.32,113,69,5.8,98,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-123,63,Medicaid,21576,1.67,87.49,136,70,6.4,77,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-124,54,Medicare,19663,1.73,118.84,132,63,9.5,55,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-125,60,Medicare,68565,1.68,87.18,102,58,8.4,115,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-126,53,Medicaid,13977,1.64,96.17,132,87,7.8,179,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-127,51,Commercial,29231,1.57,79.93,137,52,6.3,105,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-128,64,Medicare,24685,1.49,90.67,122,63,6,88,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-129,32,Medicaid,23676,1.77,111.94,138,75,6.2,111,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-130,44,Medicare,17060,1.56,124.17,119,53,7.4,86,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-131,61,Medicaid,35875,1.56,67.72,135,65,12.9,185,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-132,52,Medicare,55606,1.55,76.66,139,83,10.2,102,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-133,64,Medicaid,19570,1.55,63.05,160,72,7.6,78,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-134,64,Medicare,21772,1.56,76.25,122,60,7.2,106,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-135,49,Medicaid,16582,1.68,76.39,121,60,5.7,94,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-136,62,Medicaid,31278,1.64,81.73,130,61,11.7,206,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-137,59,Medicaid,26492,1.54,81.52,162,64,6.6,143,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-138,53,Commercial,40329,1.53,74.44,136,88,5.4,106,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-139,52,Commercial,35055,1.67,83.19,128,78,7.1,135,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-140,55,Medicaid,22530,1.68,148.41,126,78,8.3,120,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-141,51,Medicare,26521,1.68,148.83,128,70,6.1,61,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-142,49,Commercial,38156,1.68,96.84,138,80,7.4,84,Never,0,0,Non-Hispanic White,Female,Cuyahoga
+S-143,59,Medicaid,60877,1.52,71.67,130,78,6.5,60,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-144,55,Uninsured,25800,1.69,135.53,118,86,7.4,83,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-145,59,Medicare,50002,1.59,94.75,112,80,10,132,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-146,62,Medicaid,14585,1.68,84.32,121,73,8.9,159,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-147,42,Medicaid,21401,1.65,124.28,128,76,6.7,55,Never,0,1,Non-Hispanic White,Female,Cuyahoga
+S-148,54,Commercial,23104,1.54,84.91,132,92,10.4,79,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-149,63,Uninsured,45459,1.76,98.71,133,79,10.2,177,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-150,38,Medicaid,38783,1.63,112.77,104,68,6,105,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-151,51,Medicare,23781,1.6,112.18,174,82,5.2,123,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-152,49,Medicaid,12350,1.58,65.59,124,86,12.2,57,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-153,50,Medicaid,30311,1.78,109.72,128,88,5.8,136,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-154,64,Medicaid,20556,1.55,52.07,150,77,6.6,83,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-155,34,Uninsured,29249,1.54,79.66,97,58,7.6,139,Never,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-156,40,Medicare,25325,1.77,144.05,132,71,12.5,49,Current,0,0,Non-Hispanic White,Female,Cuyahoga
+S-157,55,Medicaid,10933,1.54,76.84,120,68,11.2,136,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-158,64,Medicare,31787,1.4,77.84,150,62,9.5,87,Never,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-159,45,Commercial,25396,1.73,76.52,104,53,11.1,176,Never,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-160,62,Medicaid,7534,1.51,48.67,132,82,5.1,97,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-161,64,Medicare,24811,1.53,77.34,132,76,9.4,131,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-162,38,Medicaid,19432,1.68,118.88,139,83,7.3,66,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-163,64,Medicare,27722,1.6,55.07,100,54,5.2,127,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-164,63,Medicare,44005,1.75,74.29,121,60,5.8,83,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-165,55,Commercial,18648,1.63,90.77,129,74,6.3,39,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-166,54,Medicaid,45108,1.55,58.2,118,76,12.5,99,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-167,54,Commercial,43367,1.57,87.72,133,55,15.7,85,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-168,52,Uninsured,70224,1.6,82.91,98,68,8.5,102,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-169,32,Medicare,14311,1.53,78.7,125,82,11.7,81,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-170,48,Uninsured,15445,1.66,127.87,124,80,6.4,90,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-171,60,Medicaid,34612,1.52,59.78,130,70,7.6,183,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-172,58,Medicaid,33899,1.73,110,124,77,11.2,99,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-173,48,Medicare,53156,1.61,54.75,134,62,5.1,161,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-174,49,Medicaid,33351,1.73,135.8,132,84,16.8,69,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-175,53,Medicaid,24625,1.56,82.92,124,83,6.6,101,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-176,45,Medicaid,24768,1.6,117.12,128,67,8.8,107,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-177,41,Medicaid,33483,1.68,102.64,143,80,11.7,111,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-178,63,Commercial,9221,1.8,122.11,123,67,10.7,166,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-179,59,Medicare,71089,1.47,62,145,82,7,77,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-180,51,Uninsured,16171,1.73,87.95,129,71,9.6,146,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-181,54,Commercial,25329,1.76,114.95,107,80,6.4,102,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-182,53,Medicare,20751,1.6,114.94,148,78,8.1,160,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-183,52,Commercial,24453,1.66,104.27,117,78,7.3,105,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-184,47,Medicaid,14107,1.7,129.18,118,88,9.4,163,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-185,56,Medicaid,75161,1.6,71.57,130,74,7.2,95,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-186,56,Medicaid,20179,1.68,81.19,147,82,5.7,122,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-187,46,Uninsured,18530,1.5,92.35,122,60,9,120,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-188,58,Medicaid,22619,1.57,67.59,104,67,9.3,206,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-189,56,Commercial,28055,1.7,118.75,158,90,7.4,159,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-190,55,Medicaid,28422,1.6,76.49,102,68,6.1,100,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-191,59,Commercial,42937,1.58,76.84,149,88,7.1,88,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-192,63,Uninsured,42776,1.53,80.52,123,65,6.8,66,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-193,51,Commercial,16854,1.57,94.21,144,88,8.1,75,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-194,42,Commercial,41682,1.61,93.89,119,62,5.9,80,Former,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-195,53,Commercial,30345,1.64,142.97,140,82,12.6,104,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-196,52,Medicaid,31950,1.61,65.09,142,70,12.4,129,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-197,49,Medicaid,9831,1.54,94.4,112,76,5.6,92,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-198,51,Medicaid,25683,1.62,100.42,124,64,9.5,147,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-199,56,Medicare,44901,1.46,68.58,92,65,6.9,46,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-200,34,Medicaid,24742,1.84,195.63,124,64,5.6,86,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-201,41,Commercial,55540,1.55,120.93,124,64,8.3,149,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-202,63,Medicare,64081,1.65,107.83,124,46,6.6,72,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-203,54,Medicaid,10958,1.71,101.33,122,73,7.4,91,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-204,45,Commercial,93087,1.54,81.7,105,62,6.5,40,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-205,43,Commercial,64765,1.63,90.81,162,80,6.8,94,Never,0,1,Non-Hispanic White,Female,Cuyahoga
+S-206,56,Medicaid,21827,1.66,93.58,128,67,6.4,93,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-207,45,Commercial,37815,1.6,81.02,116,74,10.7,188,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-208,59,Medicaid,15043,1.7,92.95,156,70,6.7,94,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-209,36,Medicaid,81996,1.49,51.85,120,54,5.5,104,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-210,51,Commercial,68955,1.45,44.95,137,81,5.9,100,Current,0,1,Non-Hispanic White,Female,Cuyahoga
+S-211,45,Medicaid,23574,1.6,122.75,117,76,8.7,120,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-212,49,Uninsured,58401,1.59,54.16,100,61,5.6,80,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-213,41,Medicare,21874,1.6,77.15,109,78,12.7,122,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-214,42,Medicaid,40677,1.6,77.93,120,64,13.2,113,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-215,50,Medicaid,9161,1.68,77.11,143,86,13.1,208,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-216,57,Medicare,17134,1.67,120.93,129,64,9.4,106,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-217,44,Commercial,50205,1.6,81,139,76,8.6,108,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-218,42,Medicaid,25112,1.48,87.77,130,83,7.2,129,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-219,54,Medicare,8641,1.62,119.2,120,48,6.3,56,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-220,40,Medicaid,20206,1.58,111.86,110,86,7.9,154,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-221,58,Uninsured,21189,1.63,131,150,76,7.5,104,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-222,52,Uninsured,52955,1.72,87.45,165,94,6.5,138,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-223,54,Medicaid,22327,1.58,79.02,136,80,8.3,70,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-224,64,Commercial,12999,1.7,96.25,146,70,5.6,68,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-225,56,Medicaid,23302,1.55,61.46,102,60,5.3,93,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-226,57,Medicare,60970,1.57,89.95,134,87,6.9,108,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-227,58,Commercial,20993,1.64,82.29,121,72,6.1,116,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-228,50,Commercial,44266,1.71,77.21,133,95,14.1,197,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-229,62,Medicare,44825,1.67,79.28,128,72,6.9,97,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-230,59,Medicaid,23914,1.6,68.67,118,60,5.8,96,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-231,45,Uninsured,48232,1.6,90.58,138,80,7.1,121,Former,0,0,Non-Hispanic White,Female,Cuyahoga
+S-232,47,Commercial,26136,1.54,64.41,120,74,11,138,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-233,61,Medicaid,40028,1.63,74.61,141,74,6.6,128,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-234,46,Commercial,102672,1.8,110.95,122,80,9.6,144,Former,0,0,Non-Hispanic White,Female,Cuyahoga
+S-235,50,Medicaid,22771,1.55,64.41,118,68,8.8,107,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-236,63,Medicare,32948,1.55,71.63,173,75,9,191,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-237,36,Medicaid,38450,1.71,128.32,133,84,9.3,176,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-238,57,Commercial,50850,1.68,79.74,131,82,9.6,67,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-239,50,Medicaid,9811,1.66,134.6,116,63,12.5,97,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-240,41,Medicaid,35072,1.68,121.56,158,118,13.7,120,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-241,45,Medicaid,12129,1.54,73.3,127,64,9.6,71,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-242,51,Medicare,42839,1.61,103.1,125,73,8.2,118,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-243,54,Commercial,53366,1.54,72.66,126,80,7,122,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-244,56,Medicaid,32014,1.69,100.47,136,74,6.9,147,Current,0,0,Non-Hispanic White,Female,Cuyahoga
+S-245,57,Medicaid,25730,1.59,72.58,138,58,6,74,Former,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-246,55,Medicaid,20392,1.59,103.24,108,82,6.1,64,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-247,62,Medicare,25621,1.59,127.69,144,57,12.2,117,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-248,45,Uninsured,25416,1.66,106.6,134,73,6.1,166,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-249,63,Medicaid,12401,1.56,95.26,143,59,6.1,125,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-250,53,Commercial,26841,1.68,98.88,126,88,5.5,98,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-251,60,Uninsured,78998,1.62,87.82,139,84,8.4,81,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-252,61,Medicare,58500,1.65,102.97,102,70,5,148,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-253,55,Commercial,13512,1.65,87.37,120,76,9.8,120,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-254,56,Commercial,53658,1.47,66.22,140,86,6.8,144,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-255,59,Commercial,38984,1.59,108.59,138,81,6.5,74,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-256,50,Medicaid,25041,1.54,75.97,102,69,5.8,150,Current,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-257,48,Commercial,24704,1.66,122.06,131,76,7.1,91,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-258,51,Commercial,43281,1.61,63.86,116,80,6.3,107,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-259,56,Uninsured,57478,1.63,92.8,109,66,8,78,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-260,30,Uninsured,23244,1.71,120.47,113,77,5.4,103,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-261,60,Commercial,29699,1.71,88.94,133,64,13.3,102,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-262,41,Medicaid,44447,1.58,107.23,120,76,8.1,79,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-263,38,Commercial,24475,1.6,77.97,137,81,5.9,90,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-264,56,Medicaid,30862,1.6,104.69,109,58,9.6,96,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-265,57,Medicaid,23446,1.58,127.37,137,57,8,71,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-266,59,Medicaid,10936,1.76,119.15,122,62,6.9,71,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-267,48,Medicaid,20199,1.64,106,130,82,6.7,71,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-268,58,Medicaid,37840,1.59,81.46,134,85,6.7,145,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-269,63,Medicaid,13618,1.66,71.67,134,64,7.5,122,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-270,58,Medicaid,19509,1.62,60.96,119,69,5.3,111,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-271,59,Medicaid,18017,1.65,69.9,115,67,5.8,81,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-272,40,Uninsured,51078,1.57,126.38,115,64,6.9,94,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-273,63,Medicare,33830,1.63,119.47,104,61,8.1,72,Former,0,1,Non-Hispanic White,Female,Cuyahoga
+S-274,61,Commercial,27541,1.47,53.8,139,85,6.8,137,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-275,42,Commercial,38275,1.62,145.06,122,78,6.9,103,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-276,46,Commercial,22063,1.66,76.79,148,68,10.2,196,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-277,45,Medicare,37230,1.57,125.65,126,61,7,107,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-278,62,Medicaid,53752,1.63,99.43,150,70,6.9,170,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-279,58,Medicaid,30018,1.66,84.65,108,73,7.5,153,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-280,59,Medicare,42118,1.65,108.18,145,78,7.5,92,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-281,58,Medicaid,23512,1.62,101.6,138,72,6.8,53,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-282,43,Medicaid,27109,1.67,87.45,100,73,8.5,152,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-283,63,Medicaid,94022,1.56,65.59,148,86,5.4,79,Former,0,1,Non-Hispanic White,Female,Cuyahoga
+S-284,30,Medicaid,63386,1.55,91.26,95,66,11.2,144,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-285,34,Medicaid,22643,1.73,104.06,135,79,6.2,113,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-286,53,Medicaid,34344,1.64,97.79,132,85,6.1,102,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-287,40,Medicaid,65604,1.67,117.21,116,73,7.8,119,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-288,33,Medicaid,23644,1.71,92.81,112,65,13.3,99,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-289,56,Uninsured,25985,1.52,70.67,108,68,8.7,90,Never,0,0,Non-Hispanic White,Female,Cuyahoga
+S-290,46,Medicare,32613,1.55,96.35,116,75,8.4,83,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-291,59,Medicaid,26612,1.52,74.7,111,62,7.2,63,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-292,61,Commercial,27903,1.58,90.8,159,79,6.4,88,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-293,59,Medicare,30721,1.67,115.42,134,65,6.6,46,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-294,54,Medicare,19533,1.53,94.9,138,76,9.7,94,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-295,59,Medicare,12486,1.65,109.41,128,75,6,137,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-296,58,Medicaid,26188,1.58,101.97,137,55,8.1,76,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-297,58,Commercial,29953,1.69,97.52,121,83,6.9,156,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-298,61,Commercial,47484,1.55,74.39,124,69,8.9,119,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-299,64,Commercial,100437,1.61,72.12,97,58,6.5,38,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-300,46,Medicaid,76633,1.56,90.62,111,59,6.4,87,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-301,51,Commercial,53008,1.6,95.53,140,88,6.6,199,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-302,52,Medicaid,14726,1.66,79.83,142,82,8.1,130,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-303,36,Medicaid,23066,1.72,71.07,126,65,14.3,103,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-304,41,Medicaid,14743,1.67,79.61,131,65,10.5,102,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-305,63,Medicare,35598,1.7,112.49,144,69,11.6,62,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-306,40,Commercial,20900,1.7,130.73,156,88,6,122,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-307,62,Medicare,27591,1.54,85.59,124,86,7.9,80,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-308,43,Medicare,48335,1.68,93.89,119,76,8.3,78,Never,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-309,57,Commercial,25454,1.59,98.52,128,80,10.1,106,Former,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-310,59,Medicaid,29239,1.47,51.9,175,69,11.3,99,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-311,60,Medicare,38109,1.63,119.2,142,81,8.9,90,Current,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-312,55,Medicare,27104,1.67,72.31,180,96,9,53,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-313,52,Commercial,19242,1.54,71.66,119,76,8.7,126,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-314,61,Medicare,24759,1.65,88.36,151,80,8.3,105,Never,0,1,Non-Hispanic White,Female,Cuyahoga
+S-315,51,Commercial,26015,1.52,70.2,118,80,7.9,98,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-316,61,Medicare,43142,1.76,165.29,118,68,6.7,106,Never,0,0,Non-Hispanic White,Female,Cuyahoga
+S-317,44,Medicare,14436,1.63,137.8,191,73,10.1,124,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-318,37,Commercial,32423,1.72,78.2,106,76,10.6,179,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-319,52,Medicaid,25229,1.57,87.99,112,67,5.3,162,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-320,63,Medicare,38311,1.6,94.53,120,76,9.1,181,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-321,51,Medicaid,27205,1.59,111.82,143,71,6,138,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-322,61,Medicaid,12315,1.71,82.1,152,76,6.3,68,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-323,55,Medicaid,16644,1.71,75.29,129,65,7.2,64,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-324,63,Medicare,26725,1.65,84.86,115,79,6.4,94,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-325,51,Medicare,25513,1.49,78.97,106,50,7.3,60,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-326,53,Medicaid,26598,1.57,82.15,136,80,9.1,129,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-327,44,Medicaid,13337,1.52,47.08,122,71,6.7,129,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-328,54,Commercial,29526,1.6,64.28,122,67,7.8,91,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-329,39,Medicaid,37688,1.66,96.43,131,83,7.2,101,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-330,58,Uninsured,29260,1.76,90.76,118,86,7.2,85,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-331,64,Medicare,72794,1.53,96.43,124,80,6.7,51,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-332,57,Commercial,9163,1.63,111.35,132,70,7.9,105,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-333,47,Commercial,56300,1.77,95.48,124,67,8.3,143,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-334,57,Medicare,30652,1.67,116.04,134,82,9.3,165,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-335,62,Medicare,27778,1.78,79.06,115,71,5.3,98,Current,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-336,53,Medicaid,30262,1.67,95.15,106,64,5.5,64,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-337,61,Medicaid,16329,1.71,85.37,151,95,7,153,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-338,60,Medicaid,27281,1.65,116.31,133,84,10.6,98,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-339,39,Medicaid,56862,1.71,106.59,121,76,6.8,154,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-340,54,Medicare,18318,1.58,74.12,133,70,7.8,110,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-341,57,Medicare,9121,1.62,83.59,135,68,10.1,95,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-342,57,Medicaid,45433,1.6,68.31,149,85,5.5,44,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-343,51,Medicaid,18921,1.56,75.75,100,54,6.5,55,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-344,51,Medicaid,54340,1.73,126.55,143,70,5,127,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-345,53,Medicaid,15660,1.66,111.26,110,87,8.2,84,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-346,51,Medicare,12582,1.71,133.44,121,75,8.5,96,Never,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-347,57,Commercial,51097,1.65,89.81,136,91,6.4,122,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-348,51,Commercial,23801,1.5,70.95,118,76,7.2,133,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-349,56,Commercial,38012,1.59,85.46,108,62,6.4,210,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-350,64,Medicare,29022,1.57,111.31,137,56,5.6,102,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-351,59,Medicaid,39533,1.6,93.03,134,74,6.5,109,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-352,61,Uninsured,43971,1.64,105.23,133,68,10.7,131,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-353,48,Medicare,17981,1.63,112.35,133,56,10.9,89,Never,0,1,Hispanic or Latinx,Female,Cuyahoga
+S-354,58,Medicaid,12462,1.67,130.32,132,80,9.7,177,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-355,45,Medicaid,22485,1.72,146.7,131,74,8.9,183,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-356,63,Commercial,20836,1.54,108.82,112,74,6.3,105,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-357,57,Medicaid,20615,1.7,87.73,128,80,6.8,125,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-358,41,Commercial,16577,1.68,100.15,119,79,8.1,150,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-359,50,Medicare,13045,1.7,83.18,144,83,6.2,93,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-360,51,Uninsured,26954,1.52,83.73,156,78,6.9,61,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-361,52,Commercial,39279,1.63,83.65,139,72,15.5,110,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-362,60,Medicare,24453,1.73,114.03,126,90,6.6,67,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-363,57,Medicaid,23203,1.63,68.99,138,70,7.1,80,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-364,60,Medicare,26250,1.53,113.86,152,72,8.2,104,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-365,64,Medicare,38991,1.61,72.48,122,62,6.1,84,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-366,52,Uninsured,9789,1.9,80.15,88,63,9.3,101,Current,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-367,56,Medicaid,37191,1.62,112.13,120,74,6.6,164,Never,0,1,Non-Hispanic White,Female,Cuyahoga
+S-368,58,Commercial,29428,1.76,111.77,124,70,12.1,108,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-369,48,Medicaid,18129,1.5,74.16,118,80,13.1,100,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-370,59,Medicaid,19708,1.65,73.93,163,89,6,142,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-371,61,Medicare,23211,1.72,91.45,134,78,6.8,86,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-372,54,Commercial,27911,1.58,109.77,138,87,8,61,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-373,61,Medicaid,38409,1.76,77.83,138,66,6.9,105,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-374,31,Commercial,56938,1.61,110.18,149,92,6.8,121,Never,0,0,Non-Hispanic White,Female,Cuyahoga
+S-375,38,Medicaid,21014,1.67,79.38,126,76,9.4,97,Never,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-376,47,Medicaid,38088,1.52,104.6,103,63,8.5,62,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-377,62,Medicare,61043,1.63,98.16,137,76,6.3,100,Former,1,0,Non-Hispanic White,Female,Cuyahoga
+S-378,61,Medicaid,75597,1.64,112,134,71,10.1,72,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-379,59,Medicaid,24703,1.72,136.62,120,50,11.1,169,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-380,59,Medicare,22116,1.81,124.64,152,65,5.9,81,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-381,45,Medicaid,29260,1.59,108.78,114,71,12.1,121,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-382,58,Medicare,25664,1.52,71.21,137,73,8.8,116,Current,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-383,62,Medicare,15521,1.6,114.04,133,69,8.3,82,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-384,49,Medicaid,26638,1.7,81.92,128,73,5.7,93,Current,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-385,45,Commercial,14576,1.62,114.9,134,68,6.5,133,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-386,61,Commercial,19342,1.58,59.47,130,66,5.1,150,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-387,38,Medicaid,23299,1.68,91.62,124,84,12,96,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-388,57,Medicaid,24402,1.66,66.22,114,57,15.2,112,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-389,53,Medicare,16888,1.62,98.07,120,78,6.9,86,Never,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-390,55,Medicare,33559,1.54,86,138,72,6.2,116,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-391,62,Commercial,15238,1.43,110.31,132,74,8.6,136,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-392,48,Medicaid,41311,1.57,71.99,155,87,5.6,92,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-393,64,Medicaid,28652,1.56,58.42,143,80,9.3,106,Never,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-394,61,Commercial,64202,1.78,171.68,137,67,8.1,113,Current,0,1,Non-Hispanic White,Female,Cuyahoga
+S-395,59,Commercial,18498,1.69,112.58,102,52,6.8,112,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-396,60,Medicaid,22051,1.5,68.59,140,83,12.5,169,Never,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-397,62,Commercial,22086,1.61,63.68,119,65,5.5,124,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-398,63,Commercial,27161,1.56,59.29,129,68,6.4,96,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-399,56,Medicaid,11175,1.6,61.6,138,80,8.5,232,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-400,51,Medicaid,22798,1.65,106.4,136,78,5.6,189,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-401,57,Commercial,32786,1.71,115.39,142,64,5.9,97,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-402,38,Medicaid,44691,1.66,89.59,130,90,6.9,44,Current,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-403,62,Medicare,36283,1.66,128.54,120,50,6.1,116,Former,0,1,Non-Hispanic White,Female,Cuyahoga
+S-404,61,Commercial,24687,1.64,105.87,138,82,5.8,218,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-405,58,Medicare,28104,1.7,102.42,118,58,7.3,103,Never,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-406,48,Commercial,8213,1.59,110.95,139,69,8.3,116,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-407,58,Medicaid,18076,1.65,88.36,90,57,5.7,78,Current,1,0,Non-Hispanic White,Female,Cuyahoga
+S-408,55,Medicaid,93685,1.7,54.88,132,84,6,104,Former,0,0,Non-Hispanic White,Female,Cuyahoga
+S-409,36,Commercial,39119,1.61,55.91,136,74,8.8,82,Never,0,1,Non-Hispanic White,Female,Cuyahoga
+S-410,57,Commercial,43330,1.58,117.48,124,80,11.5,96,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-411,54,Commercial,37145,1.5,75.75,116,81,6.8,102,Former,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-412,41,Commercial,18212,1.52,76.29,143,82,8.2,190,Former,1,0,Hispanic or Latinx,Female,Cuyahoga
+S-413,51,Commercial,68180,1.73,97.34,173,97,5.8,90,Never,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-414,58,Uninsured,32466,1.64,73.16,135,64,5.9,165,Current,1,1,Non-Hispanic White,Female,Cuyahoga
+S-415,63,Medicare,22906,1.69,79.29,97,60,6.5,137,Current,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-416,58,Commercial,28516,1.68,68.26,118,76,5.6,149,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
+S-417,55,Medicare,49023,1.53,98.97,164,77,10.7,67,Never,1,0,Non-Hispanic White,Female,Cuyahoga
+S-418,53,Medicaid,21592,1.6,92.81,129,80,7,72,Former,1,0,Non-Hispanic Black,Female,Cuyahoga
+S-419,43,Medicaid,52641,1.6,116.12,147,85,6.3,114,Current,0,0,Non-Hispanic White,Female,Cuyahoga
+S-420,63,Commercial,31210,1.54,90.45,140,82,7.6,109,Former,0,0,Non-Hispanic Black,Female,Cuyahoga
+S-421,51,Medicare,30832,1.58,56.84,138,82,7.4,93,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-422,64,Medicare,19512,1.57,114.86,137,56,7.2,107,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-423,63,Commercial,61789,1.64,99.62,140,55,5.8,139,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-424,53,Commercial,37898,1.6,120.48,119,61,7.1,111,Former,1,1,Non-Hispanic White,Female,Cuyahoga
+S-425,47,Medicaid,14488,1.54,87.46,137,73,8.8,102,Former,0,0,Hispanic or Latinx,Female,Cuyahoga
+S-426,50,Medicaid,14630,1.58,79.38,112,79,5.4,159,Former,1,1,Hispanic or Latinx,Female,Cuyahoga
+S-427,56,Commercial,29623,1.66,98.84,112,69,7,184,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-428,63,Medicare,13013,1.6,76.94,135,82,7,59,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-429,50,Medicaid,32793,1.59,67.82,133,75,6.2,101,Former,1,1,Non-Hispanic Black,Female,Cuyahoga
+S-430,59,Uninsured,60335,1.58,99.52,120,82,8.8,106,Never,1,1,Non-Hispanic White,Female,Cuyahoga
+S-431,51,Commercial,23980,1.62,88.26,121,73,6.6,96,Former,0,1,Non-Hispanic Black,Female,Cuyahoga
