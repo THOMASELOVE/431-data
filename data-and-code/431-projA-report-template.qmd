@@ -151,6 +151,9 @@ Variable | Original | Role | NA | Distinct | Definition
 add other selected variables | - | - | - | - | - 
 **county_ranked** | -- | Check | *add code* | *add code* | *be sure that* all values are 1
 
+- [Missingness Check]: goes here.
+- [Distinct Values Check]: goes here.
+
 # Research Questions
 
 :::{.callout-tip title="Delete these instructions when submitting your work"}

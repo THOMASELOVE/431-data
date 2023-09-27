@@ -285,8 +285,8 @@ Variable | Original | Role | NA | Distinct | Definition
 
 We should check here that we don't have any variables with more than 20% missingness in any of our variables (other than the Analysis 2 predictor), and that we have at least 15 distinct values for all quantitative variables. You'll want to affirm this in your proposal, with statements like:
 
-- [Distinct Values Check]: We have no quantitative variables missing more than 40 of our 347 counties (11.5%) which is less than Project A's limit of 20%.
-- [Missingness Check]: We have at least 195 distinct values in each of our quantitative variables, which is much larger than the minimum count (15) for Project A.
+- [Missingness Check]: We have no quantitative variables missing more than 40 of our 347 counties (11.5%) which is less than Project A's limit of 20%.
+- [Distinct Values Check]: We have at least 195 distinct values in each of our quantitative variables, which is much larger than the minimum count (15) for Project A.
 
 # Research Questions
 
