@@ -141,7 +141,7 @@ Initial Name | New Name | Role | Description
 `v065_rawvalue` | `free_lunch` | A1 predictor | % of children enrolled in public schools that are eligible for free or reduced price lunch
 `v024_rawvalue` | `child_pov` | A2 outcome | % of people under 18 in poverty
 `v052_rawvalue` | `below_18` | A2 predictor | % of county residents below 18 years of age
-`v122_rawvalue` | `unins_kids` | Extra | % of children under age 19 without health insurance
+`v122_rawvalue` | `unins_kids` | A3 outcome | % of children under age 19 without health insurance
 
 ::: {.callout-tip}
 ## How Do I need to clean my variables?
