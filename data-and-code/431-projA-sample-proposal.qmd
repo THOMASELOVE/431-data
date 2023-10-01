@@ -302,7 +302,7 @@ Here is where you'll place your research question for Analysis 2, which in my ca
 
 ## Analysis 3 Research Question
 
-Here is where you'll place your research question for Analysis 2, which in my case involves comparing means of `unins_kids` in the 2019 report as compared to the 2014 report by CHR.
+Here is where you'll place your research question for Analysis 3, which in my case involves comparing means of `unins_kids` in the 2019 report as compared to the 2014 report by CHR.
 
 
 # Proposal Reflection
