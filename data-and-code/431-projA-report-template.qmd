@@ -38,7 +38,7 @@ Leave in the code below, augmenting it with additional packages as necessary, wh
 library(Hmisc)
 library(janitor)
 library(naniar)
-library(sessioninfo)
+library(xfun) ## or, if you prefer use library(sessioninfo)
 
 # if you wish to add other packages, do so here
 
@@ -151,8 +151,9 @@ Variable | Original | Role | NA | Distinct | Definition
 add other selected variables | - | - | - | - | - 
 **county_ranked** | -- | Check | *add code* | *add code* | *be sure that* all values are 1
 
-- [Missingness Check]: goes here.
-- [Distinct Values Check]: goes here.
+**Missingness Check** goes here.
+
+**Distinct Values Check** goes here.
 
 # Research Questions
 
