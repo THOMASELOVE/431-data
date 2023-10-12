@@ -1,0 +1,263 @@
+---
+title: "Your Favorite Movies: Analysis 2"
+subtitle: "An Example for 431 Project A"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+    code-overflow: wrap
+    theme: cosmo
+---
+
+# R Packages
+
+```{r}
+#| message: false
+
+library(Hmisc)
+library(janitor)
+library(naniar)
+
+library(xfun) ## or, if you prefer use library(sessioninfo)
+
+library(googlesheets4)
+library(gt)
+library(gtExtras)
+library(mosaic)
+
+library(broom)
+library(patchwork)
+
+library(tidyverse)
+
+url_boost <- "https://raw.githubusercontent.com/THOMASELOVE/431-data/main/data-and-code/Love-boost.R"
+
+source(url_boost) ## to get Love-boost.R functions like bootdif()
+
+theme_set(theme_bw())
+knitr::opts_chunk$set(comment = NA)
+```
+
+# Data Ingest
+
+```{r}
+gs4_deauth()
+
+movies2 <- 
+  read_sheet("https://docs.google.com/spreadsheets/d/1qJnQWSjXyOXFZOO8VZixpgZWbraUW66SfP5hE5bKW4k") |>
+  select(film_id, film, imdb_stars, dr_love) |>
+  mutate(film_id = as.character(film_id),
+         dr_love = factor(dr_love))
+
+dim(movies2)
+```
+
+# CWRU Colors
+
+I decided to show off here and make use of some of the [2023 official CWRU colors](https://case.edu/brand/visual-identity/color). 
+
+- Note that once I've named these in this way, based on their hexadecimal representations, I do not include quotes around them in ggplot-based plots.
+
+```{r}
+## CWRU colors
+
+cwru_blue <- '#003071'
+cwru_darkblue <- '#09143A'
+cwru_trueblue <- '#007AB8'
+cwru_lightblue <- '#A6D2E6'
+cwru_darkgray <- '#999999'
+cwru_lightgray <- '#D3D3D3'
+cwru_terracottaorange <- '#D63D1F'
+cwru_fallyellow <- '#E69E40'
+cwru_bluegreen <- '#377E72'
+cwru_violetpurple <- '#692C95'
+cwru_vividgreen <- '#61A530'
+```
+
+# An Important Message
+
+I wrote this document to help you get a feel for what we are looking for in Analysis 2 for Project A, and to make the scope of that work a bit clearer.
+
+Use **your own words**, not mine, in preparing your analytic work for Project A. Thanks.
+
+# Research Question
+
+For movies in our sample of "favorite movies", do the movies which Dr. Love has seen have meaningfully different IMDB Stars ratings on average as compared to the movies he has not seen?
+
+# Analysis
+
+## Variables
+
+Here our key variables include a quantitative outcome and a two-level predictor. We are interested in understanding something about the difference in `imdb_stars` between movies Dr. Love has and has not seen.
+
+Our **outcome** is `imdb_stars`, which is a proprietary rating available for each film on  IMDB, identified on a scale from 1 (lowest) to 10 (highest).
+
+Our **predictor** is `dr_love`, which is an indicator of whether Dr. Love has seen the movie. The available levels of the factor are Yes and No.
+
+Neither of these variables display any missing values within our sample, so we have a complete set of `r nrow(movies2)` movies.
+
+::: {.callout-tip}
+## What is our design?
+
+This Analysis 2 is about comparing two means with independent samples. You should be able to explain, in a clear English sentence or two, why your data were gathered using an independent-samples design. I'll leave that to you, but it's very important.
+:::
+
+::: {.callout-tip}
+## What to do about missing data
+
+In Project A, I would begin Analysis 2 by filtering to complete cases if I had missing values, and thus make a statement that you are assuming the appropriate missing data mechanism in that instance. I would not impute for Analysis 2.
+
+If you don't have missing values in the variables used in this analysis, there is no reason to specify a missing data mechanism or do any filtering or imputation.
+:::
+
+## Summaries
+
+### Distribution of the Outcome within Predictor Groups
+
+Here is a box and violin plot of the data, which is probably the most likely starting plot. Here we see that each of the distributions is somewhat left-skewed, with the mean well below the median.
+
+```{r}
+ggplot(movies2, aes(x = imdb_stars, y = dr_love)) +
+  geom_violin(fill = cwru_lightgray) +
+  geom_boxplot(width = 0.3, fill = cwru_lightblue, notch = TRUE,
+               outlier.color = cwru_blue, outlier.size = 3) +
+  stat_summary(fun = "mean", geom = "point", shape = 23, size = 3, 
+               fill = cwru_blue) +
+  labs(x = "IMDB Stars", y = "Has Dr. Love seen movie?",
+       title = "Favorite Movies Sample for Fall 2023")
+```
+
+The movies Dr. Love has seen seem to have a somewhat higher median and mean IMDB score than the movies he has not, within our sample.
+
+As we saw in Analysis 1, several of these movies are identified here as low outliers in terms of their IMDB Stars. Here's the set of films with the five lowest IMDB star ratings in our sample.
+
+```{r}
+movies2 |> arrange(imdb_stars) |> head(5)
+```
+
+We could also fit a pair of Normal Q-Q plots to describe the two groups (movies Dr. Love has seen and those he hasn't), if that was helpful in some substantial way. I don't know that it gives me any information I didn't already have from the previous plot in this case. I still think that the data are substantially left-skewed in each group.
+
+```{r}
+p1 <- ggplot(
+  data = movies2 |> filter(dr_love == "Yes"), aes(sample = imdb_stars)) +
+  geom_qq() + geom_qq_line(col = cwru_trueblue) +
+  theme(aspect.ratio = 1) + 
+  labs(title = "Movies Dr. Love has seen", y = "IMDB Stars",
+       x = "Expectation for Standard Normal")
+
+p2 <- ggplot(
+  data = movies2 |> filter(dr_love == "No"), aes(sample = imdb_stars)) +
+  geom_qq() + geom_qq_line(col = cwru_trueblue) +
+  theme(aspect.ratio = 1) + 
+  labs(title = "Movies Dr. Love hasn't seen", y = "IMDB Stars", 
+       x = "Expectation for Standard Normal")
+
+p1 + p2  
+```
+
+
+::: {.callout-tip}
+## Should I consider transforming the outcome in Analysis 2?
+
+Not in Project A, no.
+:::
+
+### Numerical Summaries
+
+```{r}
+key2 <- 
+  favstats(imdb_stars ~ dr_love, data = movies2)
+
+key2 |> gt() |> gt_theme_dark()
+```
+
+Again, we see that the "Yes" group has a higher mean and median `imdb_stars` value than the "No" group in our sample. 
+
+## Approach
+
+### 90% CI for difference in group means via t-based procedure
+
+Given the clear skew in our data, we'll focus on the bootstrap results that follow, but for now, we can also fit a 90% CI for the difference in mean `imdb_stars` between the two `dr_love` groups while either assuming equal variances (in the population) or not.
+
+Since we have an unbalanced design (as we see from the unequal sample sizes below), we must make a decision here as to whether assuming equal variances is reasonable. Here, the sample variances are:
+
+```{r}
+movies2 |> group_by(dr_love) |>
+  summarise(n = n(), var(imdb_stars))
+```
+
+The variance ratio is `r round(0.819/0.699,2)`, with the larger sample size group (Yes) associated with the larger sample variance. I'd worry about this more if the variance was at least 50% larger in one group than the other, but it's not hard to run this either making the assumption of equal population variances or not making that assumption.
+
+Here's a Welch t test approach, which does not assume equal variances.
+
+```{r}
+t.test(imdb_stars ~ dr_love, data = movies2, 
+       conf.int = TRUE, conf.level = 0.90) |>
+  tidy() |> 
+  gt() |> fmt_number(columns = where(is.numeric), decimals = 3) |> 
+  gt_theme_espn()
+```
+
+Here's a two-sample t test approach which *does* assume equal variances.
+
+```{r}
+t.test(imdb_stars ~ dr_love, data = movies2, var.equal = TRUE,
+       conf.int = TRUE, conf.level = 0.90) |>
+  tidy() |> 
+  gt() |> fmt_number(columns = where(is.numeric), decimals = 3) |> 
+  gt_theme_excel()
+```
+
+An equivalent way to get the "equal variances" 90% confidence interval result follows.
+
+```{r}
+m3 <- lm(imdb_stars ~ dr_love, data = movies2)
+
+tidy(m3, conf.int = TRUE, conf.level = 0.90) |> 
+  gt() |> fmt_number(columns = where(is.numeric), decimals = 3) |> 
+  gt_theme_excel()
+```
+
+### 90% CI for difference in group means via bootstrap
+
+In our setting, given the clear skew in the `imdb_stars` values within each of our groups (movies Dr. Love has and hasn't seen), we will want to focus on a bootstrap 90% confidence interval for the difference in means. We'll stick to a percentile bootstrap here.
+
+```{r}
+set.seed(4312023)
+bootdif(movies2$imdb_stars, movies2$dr_love, conf.level = 0.90, B.reps = 2000)
+```
+
+Our 90% bootstrap confidence interval for the difference in population means (Yes - No) in `imdb_stars` is (0.157, 0.576) with a point estimate of 0.372. I suppose the question now is whether or not this would be considered a meaningful difference in average `imdb_stars`.
+
+::: {.callout-note}
+
+As [the instructions](https://thomaselove.github.io/431-projectA-2023/analyses.html#advice-on-approach-1) suggest, you should show your work and your reasoning (not just your code), and comment on any analytic decisions you make. Be sure to actively present and justify any assumptions you are making.
+:::
+
+## Conclusions
+
+::: {.callout-note}
+
+Again, I'll just reprint the [Advice on Analysis 2 Conclusions from the Instructions](https://thomaselove.github.io/431-projectA-2023/analyses.html#advice-on-conclusions-1)...
+
+:::
+
+For Analysis 2, you’ll write two paragraphs.
+
+In the first paragraph, you should provide a clear restatement of your research question, followed by a clear and appropriate response to your research question, motivated by your results. Interpret your 90% confidence interval’s endpoints and width in context.
+
+Then, write a paragraph which summarizes the key limitations of your work in Analysis 2.
+
+- If you see problems with the assumptions behind your choice of interval, that would be a good thing to talk about here, for instance.
+- Another issue that is worth discussing is your target population, and what evidence you can describe that might indicate whether your selected states are a representative sample of the US as a whole, or perhaps some particular part of the United States.
+- You should also provide at least one useful “next step” that you could take to improve this analysis (just saying “get more data” isn’t a sufficient next step.)
+
+# Session Information
+
+```{r}
+session_info()
+```

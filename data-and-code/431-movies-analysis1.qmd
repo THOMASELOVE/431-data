@@ -1,0 +1,360 @@
+---
+title: "Your Favorite Movies: Analysis 1"
+subtitle: "An Example for 431 Project A"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+    code-overflow: wrap
+    theme: materia
+---
+
+# R Packages
+
+```{r}
+#| message: false
+
+library(Hmisc)
+library(janitor)
+library(naniar)
+
+library(xfun) ## or, if you prefer use library(sessioninfo)
+
+library(googlesheets4)
+library(gt)
+library(gtExtras)
+library(mosaic)
+library(car) # for Box-Cox
+
+library(broom)
+library(patchwork)
+
+library(tidyverse)
+
+theme_set(theme_bw())
+knitr::opts_chunk$set(comment = NA)
+```
+
+# Data Ingest
+
+```{r}
+gs4_deauth()
+
+movies1 <- 
+  read_sheet("https://docs.google.com/spreadsheets/d/1qJnQWSjXyOXFZOO8VZixpgZWbraUW66SfP5hE5bKW4k") |>
+  select(film_id, film, imdb_stars, imdb_pct10) |>
+  mutate(film_id = as.character(film_id))
+
+dim(movies1)
+```
+
+# CWRU Colors
+
+I decided to show off here and make use of some of the [2023 official CWRU colors](https://case.edu/brand/visual-identity/color). 
+
+- Note that once I've named these in this way, based on their hexadecimal representations, I do not include quotes around them in ggplot-based plots.
+
+```{r}
+## CWRU colors
+
+cwru_blue <- '#003071'
+cwru_darkblue <- '#09143A'
+cwru_trueblue <- '#007AB8'
+cwru_lightblue <- '#A6D2E6'
+cwru_darkgray <- '#999999'
+cwru_lightgray <- '#D3D3D3'
+cwru_terracottaorange <- '#D63D1F'
+cwru_fallyellow <- '#E69E40'
+cwru_bluegreen <- '#377E72'
+cwru_violetpurple <- '#692C95'
+cwru_vividgreen <- '#61A530'
+```
+
+# An Important Message
+
+I wrote this document to help you get a feel for what we are looking for in Analysis 1 for Project A, and to make the scope of that work a bit clearer.
+
+Use **your own words**, not mine, in preparing your analytic work for Project A. Thanks.
+
+# Research Question
+
+For movies in our sample of "favorite movies", how strong is the relationship between the proprietary IMDB star rating and the percentage of IMDB reviewers who rated the movie 10? 
+
+# Analysis
+
+## Variables
+
+The two key variables we are studying in this analysis are quantitative, and we are interested in the association between them.
+
+Our **outcome** is `imdb_stars`, which is a proprietary rating available for each film on  IMDB, identified on a scale from 1 (lowest) to 10 (highest).
+
+Our **predictor** is `imdb_pct10`, which is the percentage of user ratings, across the world, which rated the movie as a 10 on the 1-10 scale.
+
+Each is identified in R a quantitative variable, and neither display any missing values within our sample, so we have a complete set of `r nrow(movies1)` movies.
+
+::: {.callout-tip}
+## What to do about missing data
+
+In Project A, I would begin Analysis 1 by either filtering to complete cases or singly imputing any missing values. You should make a statement about what you are assuming about the missing data mechanism (either MCAR or MAR is reasonable - do not assume MNAR in Project A, no matter how compelling an argument might be) if you have missing values.
+
+If you don't have missing values in the variables used in this analysis, there is no reason to specify a missing data mechanism or do any filtering or imputation.
+:::
+
+## Summaries
+
+### Graphical Summaries of the Outcome-Predictor Association
+
+Here is an initial plot of the data, before considering any transformations.
+
+```{r}
+ggplot(movies1, aes(x = imdb_pct10, y = imdb_stars)) +
+  geom_point(col = "black") +
+  geom_smooth(method = "lm", col = cwru_trueblue, formula = y ~ x, se = TRUE) +
+  geom_smooth(method = "loess", col = cwru_darkblue, formula = y ~ x, se = FALSE) +
+  labs(x = "% of Ratings that are 10 out of 10", y = "IMDB Stars",
+       title = "Favorite Movies Sample for Fall 2023",
+       caption = str_glue("Pearson correlation = ", 
+                          round_half_up(cor(movies1$imdb_pct10, 
+                                            movies1$imdb_stars), 3)),
+       subtitle = "% of 10s and Stars seem to move together")
+```
+
+The association between "% of 10s" and "star rating" appears to have a positive slope, and be fairly strong (with a Pearson correlation of `r round_half_up(cor(movies1$imdb_pct10, movies1$imdb_stars), 3)`. The loess smooth suggests there is some potential for non-linearity, and some of the films (especially those with relatively low star ratings) are poorly fit by the simple linear regression model shown in red above.
+
+::: {.callout-tip}
+## What I would show
+
+In Project A, if you choose to use a transformation, I would show only two scatterplots in this section: the one of the raw outcome-predictor relationship, and the one with the transformation you choose to employ, rather than showing all possibilities as I have done here.
+
+In Project A, if you choose not to use a transformation, I would again show only two scatterplots: the one of the raw outcome-predictor relationship, and the one transformation that you felt was best among those you considered. Do not show us all of the plots you fit.
+:::
+
+Given the curve in the loess smooth, I attempted several transformations of the outcome. The most appealing transformation I found was to take the square of the outcome, shown in the lower right of the four plots below.
+
+```{r}
+p1 <- ggplot(movies1, aes(x = imdb_pct10, y = imdb_stars)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_trueblue, formula = y ~ x, se = FALSE) +
+  labs(title = "imdb_stars vs. imdb_pct10")
+
+p2 <- ggplot(movies1, aes(x = imdb_pct10, y = log(imdb_stars))) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_trueblue, formula = y ~ x, se = FALSE) +
+  labs(title = "log(imdb_stars) vs. imdb_pct10")
+
+p3 <- ggplot(movies1, aes(x = imdb_pct10, y = 1/imdb_stars)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_trueblue, formula = y ~ x, se = FALSE) +
+  labs(title = "1/imdb_stars vs. imdb_pct10")
+
+p4 <- ggplot(movies1, aes(x = imdb_pct10, y = imdb_stars^2)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_trueblue, formula = y ~ x, se = FALSE) +
+  labs(title = "imdb_stars^2 vs. imdb_pct10")
+
+(p1 + p2) / (p3 + p4)
+```
+
+I decided that the value of the square transformation of the outcome was pretty minimal in this setting, relative to the increased difficulty it created in interpreting the results, so I opted not to make a transformation.
+
+::: {.callout-tip}
+## Should I use / show the Box-Cox plot?
+
+Basically, I would suggest that you use the Box-Cox plot to suggest a potential transformation of the outcome if you want to, but please do not feel obligated. If you use the plot to make your transformation decision, though, you should show it.
+:::
+
+Note that the Box-Cox approach in this setting (as shown below) suggests trying the square of our outcome as a transformation, since the $\lambda$ value near 2 maximizes the log-likelihood. That doesn't mean I have to do it.
+
+```{r}
+boxCox(movies1$imdb_stars ~ movies1$imdb_pct10)
+```
+
+
+::: {.callout-tip}
+## Should I consider transforming the predictor as well?
+
+Another approach I might have taken was to consider transforming both the outcome and the predictor. Were I to do that in Project A, I think I would restrict myself to using the same transformation on each variable, as shown below, but again, I would not display any of these transformations unless they were the transformation I chose to use, or they were the best transformation of the data (even though I decided not to use it)
+:::
+
+Here are the plots I developed to consider a transformation of both the outcome and the predictor.
+
+```{r}
+p5 <- ggplot(movies1, aes(x = imdb_pct10, y = imdb_stars)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_terracottaorange, 
+              formula = y ~ x, se = FALSE) +
+  labs(title = "imdb_stars vs. imdb_pct10")
+
+p6 <- ggplot(movies1, aes(x = log(imdb_pct10), y = log(imdb_stars))) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_terracottaorange, 
+              formula = y ~ x, se = FALSE) +
+  labs(title = "log(imdb_stars) vs. log(imdb_pct10)")
+
+p7 <- ggplot(movies1, aes(x = 1/imdb_pct10, y = 1/imdb_stars)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_terracottaorange, 
+              formula = y ~ x, se = FALSE) +
+  labs(title = "1/imdb_stars vs. 1/imdb_pct10")
+
+p8 <- ggplot(movies1, aes(x = imdb_pct10^2, y = imdb_stars^2)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = cwru_terracottaorange, 
+              formula = y ~ x, se = FALSE) +
+  labs(title = "imdb_stars^2 vs. imdb_pct10^2")
+
+(p5 + p6) / (p7 + p8)
+```
+
+I see no real benefit from any of these transformations, so I will proceed to model the original outcome (`imdb_stars`) as a function of the original predictor (`imdb_pct10`.)
+
+
+### Graphical Summaries of the Outcome's Distribution
+
+Here are some plots of the sample distribution of the outcome I have selected, which is, of course, the raw `imdb_stars` variable. I would include any plots you find helpful in assessing whether a Normal distribution is a reasonable approximation for your outcome.
+
+::: {.callout-note}
+
+Had I decided to use a transformation of the outcome, I would instead present plots of the transformed values.
+
+:::
+
+
+```{r}
+## Normal Q-Q plot
+p1 <- ggplot(movies1, aes(sample = imdb_stars)) +
+  geom_qq(col = cwru_blue, size = 2) + geom_qq_line(col = cwru_trueblue) +
+  theme(aspect.ratio = 1) + 
+  labs(title = "Normal Q-Q plot",
+       y = "IMDB Stars Rating",
+       x = "Expectation under Standard Normal")
+
+## Histogram with Normal density superimposed
+p2 <- ggplot(movies1, aes(imdb_stars)) +
+  geom_histogram(aes(y = after_stat(density)), 
+                 bins = 7, fill = cwru_blue, col = cwru_lightgray) +
+  stat_function(fun = dnorm, 
+                args = list(mean = mean(movies1$imdb_stars, na.rm = TRUE), 
+                            sd = sd(movies1$imdb_stars, na.rm = TRUE)),
+                col = cwru_darkgray, lwd = 1.5) +
+  labs(title = "Histogram with Normal Density",
+       x = "IMDB Stars Rating")
+
+## Boxplot with notch and rug
+p3 <- ggplot(movies1, aes(x = imdb_stars, y = "")) +
+  geom_boxplot(fill = cwru_blue, notch = TRUE, 
+               outlier.color = cwru_blue, outlier.size = 2) + 
+  stat_summary(fun = "mean", geom = "point", 
+               shape = 23, size = 3, fill = cwru_lightgray) +
+  geom_rug(sides = "b") +
+  labs(title = "Boxplot with Notch and Rug",
+       x = "IMDB Stars Rating",
+       y = "")
+
+p1 + (p2 / p3 + plot_layout(heights = c(4,1))) +
+  plot_annotation(title = "IMDB Stars Rating",
+                  subtitle = str_glue("Our Favorite Movies: (n = ", 
+                                      nrow(movies1), ")"),
+      caption = str_glue("IMDB Stars: Sample Size = ", nrow(movies1), 
+                         ", Sample Median = ", round_half_up(median(movies1$imdb_stars),1),
+                         ", Mean = ", round_half_up(mean(movies1$imdb_stars),2), 
+                         " and SD = ", round_half_up(sd(movies1$imdb_stars),2)))
+```
+
+Several movies are identified here as low outliers. Here's the set of films with the five lowest IMDB stars ratings in our sample.
+
+```{r}
+movies1 |> arrange(imdb_stars) |> head(5)
+```
+
+
+### Numerical Summaries
+
+```{r}
+key1 <- 
+  bind_rows(
+    favstats(~ imdb_stars, data = movies1),
+    favstats(~ imdb_pct10, data = movies1)) |>
+  mutate(variable = c("imdb_stars", "imdb_pct10")) |>
+  relocate(variable)
+
+key1 |> gt() |> gt_theme_dark()
+```
+
+Again, I'll note that I have no missing values to deal with in this sample. 
+
+::: {.callout-note}
+
+Had I decided to use a transformation here, I would have summarized these transformed values, as well.
+
+:::
+
+## Approach
+
+### Fitted Model
+
+Here is the main model I chose to fit, which is a linear regression predicting `imdb_stars` using `imdb_pct10` across our sample of movies.
+
+```{r}
+m1 <- lm(imdb_stars ~ imdb_pct10, data = movies1)
+
+tidy(m1, conf.int = TRUE, conf.level = 0.90) |> 
+  gt() |> fmt_number(columns = where(is.numeric), decimals = 3) |>
+  gt_theme_guardian()
+
+glance(m1) |> select(r.squared, sigma, nobs) |> 
+  gt() |> fmt_number(columns = where(is.numeric), decimals = 3) |>
+  gt_theme_guardian()
+```
+
+The fitted model equation is `imdb_stars` = 6.411 + 0.066 `imdb_pct10`. We fit the model to all 201 observations, obtaining a model $R^2$ value of 46.2% and a residual standard deviation of 0.647, as compared to the initial standard deviation of the `imdb_stars` values, which was 0.880, from our earlier numerical summaries.
+
+### Residual Analysis
+
+```{r}
+par(mfrow=c(1,2)); plot(m1, which = 1:2); par(mfrow = c(1,1))
+```
+
+The residual plots are pretty disappointing. We have clear evidence of non-Normality in the Q-Q plot of the residuals, and some suggestion of a downward curve as the fitted values increase. So we are likely to have substantial problems with the assumptions of both linearity and Normality if we decide to use this model.
+
+The three outlying movies identified in this analysis are the three films with the largest negative residuals from the model, and are listed below.
+
+```{r}
+movies1_aug <- augment(m1, data = movies1)
+movies1_aug |> slice(163, 61, 115) |> 
+  select(film_id, film, imdb_stars, imdb_pct10, .fitted, .resid, .std.resid) |>
+  gt() |> gt_theme_guardian()
+```
+
+These are also the three movies with the smallest number of `imdb_stars` in the initial data.
+
+
+## Conclusions
+
+::: {.callout-note}
+
+Here, I'm just repeating the [relevant instructions from the Project A Analysis page](https://thomaselove.github.io/431-projectA-2023/analyses.html#advice-on-conclusions).
+
+Doing this work is, of course, a big part of your job.
+
+:::
+
+For Analysis 1, you’ll write two paragraphs.
+
+In the first paragraph, you should provide a clear restatement of your research question, followed by a clear and appropriate response to your research question, motivated by your results. Most of the time, one model won’t let you come to a strong conclusion about a question of interest, and it is your job to accurately present what information can be specified as a result of the model, without overstating your conclusions.
+
+Then, write a paragraph which summarizes the key limitations of your work in Analysis 1.
+
+- If you see problems with regression assumptions in your residual plot, that would be a good thing to talk about here, for instance.
+- Another issue that is worth discussing is your target population, and what evidence you can describe that might indicate whether your selected states are a representative sample of the US as a whole, or perhaps some particular part of the United States.
+- You should also provide at least one useful “next step” that you could take to improve this analysis (just saying “get more data” isn’t a sufficient next step.)
+
+# Session Information
+
+```{r}
+session_info()
+```
