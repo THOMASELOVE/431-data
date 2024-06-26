@@ -6,7 +6,7 @@ Data and R code repository for PQHS/CRSP/MPHP 431 with Professor Thomas Love at 
 
 To obtain all of the data and code in this repository in a single zip file, click on the green button marked Code and click on Download ZIP.
 
-Or, to download a single .Rmd or .csv file, navigate to the `data-and-code` folder above, then click on the file you want to download to view its contents, and then in the top right, right click (on Windows, on a Mac, use Control-Click) on the Raw button, and then save the plain text file that results to your computer, while ensuring that your machine doesn't add on a .txt extension. Details follow...
+Or, to download a single .Rmd or .csv file, navigate to the `data` folder above, then click on the file you want to download to view its contents, and then in the top right, right click (on Windows, on a Mac, use Control-Click) on the Raw button, and then save the plain text file that results to your computer, while ensuring that your machine doesn't add on a .txt extension. Details follow...
 
 ## Detailed steps for downloading individual .csv or .Rmd files from Github
 
@@ -31,7 +31,7 @@ Suppose you've identified a single .Rmd (R markdown) file you want to download o
 
 The resulting .Rmd file should open properly in RStudio.
 
-Suppose you've identified a .csv (data) file you want to download onto your PC from Github using Safari as your browser.
+Suppose you've identified a file you want to download onto your PC from Github using Safari as your browser.
 
 1. Click on the file name in Github to view its contents.
 2. On the top right of the document viewer window, click the `Raw` button. This will take you to a page that displays the text in the file.
@@ -44,7 +44,7 @@ The resulting .csv file should work for you in RStudio.
 
 ### Using a Mac, with Google Chrome
 
-Suppose you've identified a single .Rmd (R markdown) file you want to download onto your Mac from Github using Google Chrome as your browser.
+Suppose you've identified a file you want to download onto your Mac from Github using Google Chrome as your browser.
 
 1. Click on the file name in Github to view its contents.
 2. On the top right of the document viewer window, click the `Raw` button. This will take you to a page that displays the text in the file.
@@ -55,7 +55,7 @@ Suppose you've identified a single .Rmd (R markdown) file you want to download o
     4. Then hit Save.
 The resulting .Rmd file should open properly in RStudio.
 
-Suppose you've identified a .csv (data) file you want to download onto your Mac from Github using Google Chrome as your browser.
+Suppose you've identified a file you want to download onto your Mac from Github using Google Chrome as your browser.
 
 1. Click on the file name in Github to view its contents.
 2. On the top right of the document viewer window, click the `Raw` button. This will take you to a page that displays the text in the file.
@@ -70,9 +70,9 @@ The resulting .csv file should work for you in RStudio.
 
 ### Using a PC, with Google Chrome
 
-Suppose you've identified a .Rmd (R markdown) or .csv (comma-separated version data) file you want to download onto your PC from Github.
+Suppose you've identified a file you want to download onto your PC from Github.
 
-1. Click on the file (either .Rmd or .csv) to view its contents.
+1. Click on the file to view its contents.
 2. On the top right of the document viewer window, click the `Raw` button. This will take you to a page that displays the text in the file.
 3. Download that page by selecting Ctrl-S (or by right-clicking and selecting Save as.)
 4. Where you see Save as type: at the bottom of the download window select all files instead of text and then remove the `.txt` extension that your browser will attempt to append.
@@ -81,7 +81,7 @@ The resulting file should open properly in R Studio.
 
 ### Using Microsoft Edge on a PC
 
-Suppose you've identified a .Rmd (R markdown)  file you want to download onto your PC from Github using Microsoft's Edge browser.
+Suppose you've identified a file you want to download onto your PC from Github using Microsoft's Edge browser.
 
 1. Click on the file to view its contents.
 2. On the top right of the document viewer window, click the `Raw` button. This will take you to a page that displays the text in the file.
