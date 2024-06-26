@@ -1,0 +1,111 @@
+C_ID,Coaster_Name,Speed,Height,Drop,Length,Duration,Opened,Scale,State,Region,Park,Town
+C-001,American Eagle,66,127,147,4650,143,1981,Extreme,Illinois,Midwest,Six Flags Great America,Gurnee
+C-002,American Thunder,48,82,80,2713,NA,2008,Thrill,Missouri,Midwest,Six Flags St. Louis,Eureka
+C-003,Apocalypse the Ride,50.1,95,87.3,2877,180,2009,Extreme,California,West,Six Flags Magic Mountain,Valencia
+C-004,Arkansas Twister,NA,95,92,3340,NA,1992,Extreme,Arkansas,South,Magic Springs Theme and Water Park,Hot Springs
+C-005,Beast,64.8,110,141,7361,250,1979,Extreme,Ohio,Midwest,Kings Island,Mason
+C-006,Big Dipper,NA,NA,NA,NA,100,1958,Thrill,West Virginia,South,Camden Park,Huntington
+C-007,Blue Streak,40,78,72,2558,105,1964,Thrill,Ohio,Midwest,Cedar Point,Sandusky
+C-008,Boardwalk Bullet,51,96,92,3236,NA,2007,Extreme,Texas,South,Kemah Boardwalk,Kemah
+C-009,Bobcat,40,55.4,NA,1412,NA,2024,Family,New York,Northeast,Six Flags Great Escape,Queensbury
+C-010,Boss,66.3,122,150,4631,NA,2000,Extreme,Missouri,Midwest,Six Flags St. Louis,Eureka
+C-011,Boulder Dash,60,NA,115,4725,150,2000,Extreme,Connecticut,Northeast,Lake Compounce,Bristol
+C-012,Cannon Ball,50,70,70,2272,NA,1967,Thrill,Georgia,South,Lake Winnepesaukah,Rossville
+C-013,Classic Coaster,50,55,52,2650,105,1935,Thrill,Washington,West,Washington State Fair,Puyallup
+C-014,Coastersaurus,32,40,NA,1365,50,2004,Family,Florida,South,Legoland Florida,Winter Haven
+C-015,Comet,50,84,78,3360,105,1946,Extreme,Pennsylvania,Northeast,Hersheypark,Hershey
+C-016,Comet,55,95,87,4197,120,1994,Extreme,New York,Northeast,Six Flags Great Escape,Queensbury
+C-017,Comet,25,37,25,1300,84,1951,Family,Pennsylvania,Northeast,Waldameer,Erie
+C-018,Cornball Express,45,55,NA,2100,NA,2001,Thrill,Indiana,Midwest,Indiana Beach,Monticello
+C-019,Cyclone,60,75,NA,2850.3,110,1927,Thrill,New York,Northeast,Luna Park,Brooklyn
+C-020,Cyclops,58,70,75,1900,60,1995,Extreme,Wisconsin,Midwest,Mt. Olympus Water & Theme Park,Wisconsin Dells
+C-021,Dragon Coaster,NA,80,NA,3400,120,1929,Thrill,New York,Northeast,Playland Park,Rye
+C-022,El Toro,70,181,176,4400,102,2006,Extreme,New Jersey,Northeast,Six Flags Great Adventure,Jackson
+C-023,Excalibur,55,100,82,2700,118,1998,Extreme,Maine,Northeast,Funtown Splashtown U.S.A.,Saco
+C-024,GhostRider,56,118,108,4533,160,1998,Extreme,California,West,Knott's Berry Farm,Buena Park
+C-025,Giant Dipper,55,73,NA,2600,NA,1925,NA,California,West,Belmont Park,San Diego
+C-026,Giant Dipper,55,70,65,2640,112,1924,NA,California,West,Santa Cruz Beach Boardwalk,Santa Cruz
+C-027,Gold Striker,53.7,108.2,NA,3197,150,2013,Extreme,California,West,California's Great America,Santa Clara
+C-028,Goliath,72,165,180,3100,NA,2014,Extreme,Illinois,Midwest,Six Flags Great America,Gurnee
+C-029,Great American Scream Machine,57,105,89,3450,120,1973,Extreme,Georgia,South,Six Flags Over Georgia,Austell
+C-030,Great White,50,110,100,3300,120,1996,Extreme,New Jersey,Northeast,Morey's Piers,Wildwood
+C-031,Grizzly,55,91,NA,3250,160,1986,Extreme,California,West,California's Great America,Santa Clara
+C-032,Grizzly,NA,87,NA,3150,150,1982,Extreme,Virginia,South,Kings Dominion,Doswell
+C-033,Hades 360,60,136,140,4746,NA,2005,Extreme,Wisconsin,Midwest,Mt. Olympus Water & Theme Park,Wisconsin Dells
+C-034,Hell Cat,56,110,105,2602,90,2004,Extreme,New Jersey,Northeast,Clementon Park,Clementon
+C-035,High Roller,50,70,NA,2982,105,1976,Extreme,Minnesota,Midwest,Valleyfair!,Shakopee
+C-036,Hoosier Hurricane,51,77,NA,2891,NA,1994,Thrill,Indiana,Midwest,Indiana Beach,Monticello
+C-037,Hurler,50,83,NA,3157,120,1994,Extreme,North Carolina,South,Carowinds,Charlotte
+C-038,InvadR,48,NA,74,2118,NA,2017,Thrill,Virginia,South,Busch Gardens Williamsburg,Williamsburg
+C-039,Jack Rabbit,45,40,70,2132,96,1920,Thrill,Pennsylvania,Northeast,Kennywood,West Mifflin
+C-040,Jack Rabbit,NA,75,NA,2130,NA,1920,NA,New York,Northeast,Seabreeze,Rochester
+C-041,Judge Roy Scream,45,71,65,2670,90,1980,Thrill,Texas,South,Six Flags Over Texas,Arlington
+C-042,Kentucky Flyer,35,47,44,1288,NA,2019,Family,Kentucky,South,Kentucky Kingdom,Louisville
+C-043,Kentucky Rumbler,47.3,96,80.2,2827,NA,2006,Thrill,Kentucky,South,Beech Bend,Bowling Green
+C-044,Kiddy Coaster,NA,NA,NA,NA,NA,1928,Family,New York,Northeast,Playland Park,Rye
+C-045,Kingdom Coaster,40,55,NA,2000,90,1992,Thrill,Pennsylvania,Northeast,Dutch Wonderland,Lancaster
+C-046,Legend,NA,63,NA,NA,NA,1930,Thrill,Iowa,Midwest,Arnolds Park,Arnolds Park
+C-047,Legend,59,99,113,4042,120,1930,Extreme,Indiana,Midwest,Holiday World,Santa Claus
+C-048,Lightning Racer,51.1,91.6,90,3393,140,2000,Extreme,Pennsylvania,Northeast,Hersheypark,Hershey
+C-049,Lil' Dipper,NA,NA,NA,NA,65,1961,Family,West Virginia,South,Camden Park,Huntington
+C-050,Little Dipper,NA,28,NA,700,50,2010,Family,Illinois,Midwest,Six Flags Great America,Gurnee
+C-051,Lost Coaster of Superstition Mountain,20,35,NA,1400,NA,2002,Thrill,Indiana,Midwest,Indiana Beach,Monticello
+C-052,Meteor,NA,28,NA,900,50,2007,Family,Wisconsin,Midwest,Little Amerricka,Marshall
+C-053,Mine Blower,48.5,83,80.5,2290,NA,2017,Extreme,Florida,South,Fun Spot America,Kissimmee
+C-054,Mystic Timbers,53,109.2,NA,3265,NA,2017,Extreme,Ohio,Midwest,Kings Island,Mason
+C-055,New Mexico Rattler,47,80,75,2750,75,2002,Thrill,New Mexico,West,Cliff's Amusement Park,Albuquerque
+C-056,Oscar's Wacky Taxi,34,43,39,1205,NA,2018,Family,Pennsylvania,Northeast,Sesame Place,Langhorne
+C-057,Outlaw,48,67,NA,2800,120,1993,Thrill,Iowa,Midwest,Adventureland,Altoona
+C-058,Outlaw Run,68,107,162,2937,87,2013,Extreme,Missouri,Midwest,Silver Dollar City,Branson
+C-059,Pegasus,NA,60,45,NA,NA,1996,Family,Wisconsin,Midwest,Mt. Olympus Water & Theme Park,Wisconsin Dells
+C-060,Phoenix,45,78,72,3200,120,1985,Thrill,Pennsylvania,Northeast,Knoebels Amusement Resort,Elysburg
+C-061,Predator,50,95,NA,3400,110,1990,Extreme,New York,Northeast,Six Flags Darien Lake,Darien Center
+C-062,Prowler,51.2,102.3,84.9,3074,150,2009,Extreme,Missouri,Midwest,Worlds of Fun,Kansas City
+C-063,Racer,40,72.5,50,4500,92,1927,Thrill,Pennsylvania,Northeast,Kennywood,West Mifflin
+C-064,Racer,53,88,NA,3415,120,1972,Extreme,Ohio,Midwest,Kings Island,Mason
+C-065,Racer 75,56,85,NA,3368.5,135,1975,Extreme,Virginia,South,Kings Dominion,Doswell
+C-066,Raven,48,80,85,2800,90,1995,Extreme,Indiana,Midwest,Holiday World,Santa Claus
+C-067,Ravine Flyer II,57,80,118,2900,90,2008,Extreme,Pennsylvania,Northeast,Waldameer,Erie
+C-068,Renegade,51.3,97.5,91.4,3113,120,2007,Extreme,Minnesota,Midwest,Valleyfair!,Shakopee
+C-069,Roar,50.5,94.6,85,3468,112,1998,Extreme,Maryland,South,Six Flags America,Upper Marlboro
+C-070,Roar-O-Saurus,33,40,38,1240,NA,2014,Thrill,New Hampshire,Northeast,Story Land,Glen
+C-071,Roller Coaster,45,62,NA,2500,NA,1921,Thrill,Utah,West,Lagoon,Farmington
+C-072,Rollo Coaster,NA,27,NA,900,NA,1938,Family,Pennsylvania,Northeast,Idlewild & SoakZone,Ligonier
+C-073,Screamin' Eagle,62,110,92,3872,150,1976,Extreme,Missouri,Midwest,Six Flags St. Louis,Eureka
+C-074,Sea Dragon,25,35,NA,1320,90,1956,Family,Ohio,Midwest,Columbus Zoo and Aquarium,Powell
+C-075,Shivering Timbers,57,122,NA,5383,150,1998,Extreme,Michigan,Midwest,Michigan's Adventure,Muskegon
+C-076,Silver Comet,50,NA,82,2800,105,1999,Thrill,New York,Northeast,Niagara Amusement Park & Splash World,Grand Island
+C-077,Swamp Fox,50,72,62,2640,NA,1966,Thrill,South Carolina,South,Family Kingdom Amusement Park,Myrtle Beach
+C-078,Switchback,41,64,56,1196,NA,2015,Thrill,Texas,South,ZDT'S Amusement Park,Seguin
+C-079,Teddy Bear,NA,NA,NA,NA,63,1996,Family,Ohio,Midwest,Stricker's Grove,Ross
+C-080,Texas Stingray,55,96,100,3379,NA,2020,Thrill,Texas,South,SeaWorld San Antonio,San Antonio
+C-081,Thunder Run,53,90,NA,2850,114,1990,Thrill,Kentucky,South,Kentucky Kingdom,Louisville
+C-082,Thunderbolt,55,70,90,3250,101,1924,Extreme,Pennsylvania,Northeast,Kennywood,West Mifflin
+C-083,Thunderbolt,40,70,NA,2600,60,1941,Thrill,Massachusetts,Northeast,Six Flags New England,Agawam
+C-084,Thunderhawk,45,80,65,2767,78,1924,Thrill,Pennsylvania,Northeast,Dorney Park & Wildwater Kingdom,Allentown
+C-085,Thunderhead,53.7,100.4,100,3230,NA,2004,Extreme,Tennessee,South,Dollywood,Pigeon Forge
+C-086,Timber Terror,55,85,NA,2700,92,1996,Extreme,Idaho,West,Silverwood Theme Park,Athol
+C-087,Timber Wolf,53,100,95,4230,133,1989,Extreme,Missouri,Midwest,Worlds of Fun,Kansas City
+C-088,Timberhawk: Ride of Prey,50,75,NA,2600,NA,2003,Extreme,Washington,West,Wild Waves Theme & Water Park,Federal Way
+C-089,Tornado,58,93,NA,2840,120,1978,Thrill,Iowa,Midwest,Adventureland,Altoona
+C-090,Tornado,NA,NA,NA,NA,93,1993,Thrill,Ohio,Midwest,Stricker's Grove,Ross
+C-091,Tremors,50,85,99,3158,100,1999,Extreme,Idaho,West,Silverwood Theme Park,Athol
+C-092,Twister,51.5,101.6,89.6,3900,130,1999,Extreme,Pennsylvania,Northeast,Knoebels Amusement Resort,Elysburg
+C-093,Twister III: Storm Chaser,55,100,NA,4640,NA,1995,Extreme,Colorado,West,Elitch Gardens,Denver
+C-094,Underground,NA,15,NA,911,NA,1996,Family,Iowa,Midwest,Adventureland,Altoona
+C-095,Viper,50,100,80,3458,105,1995,Extreme,Illinois,Midwest,Six Flags Great America,Gurnee
+C-096,Voyage,67,159,154,6442,165,2006,Extreme,Indiana,Midwest,Holiday World,Santa Claus
+C-097,White Lightning,44.3,69.7,67.2,2032,75,2013,Thrill,Florida,South,Fun Spot America,Orlando
+C-098,Wild One,53,98,88,4000,112,1986,Extreme,Maryland,South,Six Flags America,Upper Marlboro
+C-099,Wildcat,46,75,65,2653,130,1991,Thrill,Oklahoma,South,Frontier City,Oklahoma City
+C-100,Wildcat,48,85,78,2746,75,1927,Thrill,Connecticut,Northeast,Lake Compounce,Bristol
+C-101,Wolverine Wildcat,55,85,NA,3000,120,1988,Extreme,Michigan,Midwest,Michigan's Adventure,Muskegon
+C-102,Wooden Warrior,35,32,36,1239,NA,2011,Family,Connecticut,Northeast,Quassy Amusement Park,Middlebury
+C-103,Woodstock Express,NA,NA,NA,NA,90,1975,Family,North Carolina,South,Carowinds,Charlotte
+C-104,Woodstock Express,35,35,NA,1385,100,1974,Family,Virginia,South,Kings Dominion,Doswell
+C-105,Woodstock Express,35,38.6,NA,1350,90,1972,Family,Ohio,Midwest,Kings Island,Mason
+C-106,Yankee Cannonball,35,63.5,NA,2000,NA,1936,NA,New Hampshire,Northeast,Canobie Lake Park,Salem
+C-107,Zach's Zoomer,NA,41,NA,1400,NA,1994,Family,Michigan,Midwest,Michigan's Adventure,Muskegon
+C-108,Zambezi Zinger,45,74,NA,2428,120,2023,Thrill,Missouri,Midwest,Worlds of Fun,Kansas City
+C-109,Zeus,60,90,85,2900,85,1997,Extreme,Wisconsin,Midwest,Mt. Olympus Water & Theme Park,Wisconsin Dells
+C-110,Zippin Pippin,42,70,63,2347,90,2011,Extreme,Wisconsin,Midwest,Bay Beach Amusement Park,Green Bay
