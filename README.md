@@ -2,11 +2,10 @@
 
 Data and R code repository for PQHS/CRSP/MPHP 431 with Professor Thomas Love at Case Western Reserve University
 
-### This repository will be continually updated as the semester progresses.
-
 To obtain all of the data and code in this repository in a single zip file, click on the green button marked Code and click on Download ZIP. We **strongly** recommend this approach even if only a few of our data files have changed.
 
-Or, to download a single .qmd or .csv file, navigate to the `data` folder above, then click on the file you want to download to view its contents, and then in the top right, right click (on Windows, on a Mac, use Control-Click) on the Raw button, and then save the plain text file that results to your computer, while ensuring that your machine doesn't add on a .txt extension. Details follow...
+## This repository will be continually updated as the semester progresses.
+
 
 ## Detailed steps for downloading individual .csv or .qmd files from Github
 
