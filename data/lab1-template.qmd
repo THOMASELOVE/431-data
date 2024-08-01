@@ -1,0 +1,126 @@
+---
+title: "431 Lab 1 Template (Replace this name)"
+author: "(Your Name Goes Here)"
+date: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+    date-format: iso
+    theme: materia
+---
+
+:::{.callout-important}
+
+Delete **all of the instructions** we provide to you in this template, in favor of your own words, before submitting your work. You are welcome to retain any or all of the R code we provide in this template as part of your response.
+
+:::
+
+## R Setup {.unnumbered}
+
+```{r}
+#| message: false
+
+library(knitr)
+
+## add additional packages here, as needed
+
+library(easystats)
+library(tidyverse)
+
+## should you choose to use the Love-431.R script, source it in here...
+
+```
+
+# Task 1
+
+Here is the heading of the data file, as shown in the instructions.
+
+```{r}
+cms_patient_experience |> head()
+```
+
+Here is an empty code chunk where you can put your code to obtain the desired numerical summaries.
+
+```{r}
+
+```
+
+
+Write your complete English sentences here.
+
+If you need a second paragraph, place it here, with a blank line between paragraphs.
+
+
+# Task 2
+
+Place your R code to fit the model here.
+
+```{r}
+
+```
+
+
+Summarize your findings here, being sure to specify everything we ask for in the instructions.
+
+# Task 3
+
+Place your R code to build your plot here.
+
+```{r}
+
+```
+
+Your interpretation of the plot should goes here.
+
+# Task 4
+
+Here is the code to create the subset of interest, from our instructions:
+
+```{r}
+task4dat <- cms_patient_experience |>
+  filter(measure_cd == "CAHPS_GRP_2" | measure_cd == "CAHPS_GRP_8") |>
+  pivot_wider(names_from = c(measure_cd, measure_title),
+              values_from = prf_rate) |>
+  rename("Communicate" = "CAHPS_GRP_2_CAHPS for MIPS SSM: How Well Providers Communicate",
+         "Staff" = "CAHPS_GRP_8_CAHPS for MIPS SSM: Courteous and Helpful Office Staff") |>
+  drop_na()
+
+head(task4dat)
+```
+
+
+
+Next, place the R code you use to fit and display the relevant linear model in the code chunk below.
+
+```{r}
+
+```
+
+Your interpretation of the model's slope and intercept should go here.
+
+Here is the code for the plot shown in the instructions, which you will need to modify appropriately:
+
+```{r}
+ggplot(task4dat, aes(x = Staff, y = Communicate)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x, se = TRUE, col = "red") +
+  theme_bw()
+```
+
+Here is where you should put your comments about what you learn by comparing the blue and red smooths from your revised plot.
+
+# Task 5
+
+This will be the video. No need to write anything about it here, except to specify the name of the file, which should ideally be ...
+
+`yourname-431lab1.mp4`
+
+# Session Information
+
+Use the code below to include your session information.
+
+```{r}
+xfun::session_info()
+```
