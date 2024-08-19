@@ -2,12 +2,14 @@
 
 Data and R code repository for PQHS/CRSP/MPHP 431 with Professor Thomas Love at Case Western Reserve University
 
+## Getting the Data (use this approach if possible.)
+
 To obtain all of the data and code in this repository in a single zip file, click on the green button marked Code and click on Download ZIP. We **strongly** recommend this approach even if only a few of our data files have changed.
 
 ## This repository will be continually updated as the semester progresses.
 
 
-## Detailed steps for downloading individual .csv or .qmd files from Github
+### Detailed steps for downloading individual .csv or .qmd files from Github (We hope you won't need to do this.)
 
 Below, we provide detailed steps for downloading such files ...
 
@@ -17,7 +19,7 @@ Below, we provide detailed steps for downloading such files ...
 4. using [Microsoft Edge on a PC](https://github.com/THOMASELOVE/431-data/blob/master/README.md#using-microsoft-edge-on-a-pc)
 
 
-### Using Safari on a Mac
+#### Using Safari on a Mac
 
 Suppose you've identified a single .qmd (Quarto) file you want to download onto your PC from Github using Safari as your browser.
 
@@ -41,7 +43,7 @@ Suppose you've identified a .csv file you want to download onto your PC from Git
 
 The resulting .csv file should work for you in RStudio.
 
-### Using a Mac, with Google Chrome
+#### Using a Mac, with Google Chrome
 
 Suppose you've identified a .qmd file you want to download onto your Mac from Github using Google Chrome as your browser.
 
@@ -67,7 +69,7 @@ The resulting .csv file should work for you in RStudio.
 
 
 
-### Using a PC, with Google Chrome
+#### Using a PC, with Google Chrome
 
 Suppose you've identified a file you want to download onto your PC from Github.
 
@@ -79,7 +81,7 @@ Suppose you've identified a file you want to download onto your PC from Github.
 
 The resulting file should open properly in R Studio.
 
-### Using Microsoft Edge on a PC
+#### Using Microsoft Edge on a PC
 
 Suppose you've identified a .qmd file you want to download onto your PC from Github using Microsoft's Edge browser.
 
