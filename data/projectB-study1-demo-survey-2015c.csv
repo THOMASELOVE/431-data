@@ -1,0 +1,34 @@
+S.id,ex.form,medium,fiction,grades,seat,r.pre,r.now,cl.enjoy,cl.ideal,cl.terrible,cl.recom,cl.safe
+521,cross training,B. Television,A. Comedy,A. Individual Assignments,A. On the left side as you face the screen,0,20,90,80,25,85,45
+522,strength training(weight lifiting),"C. Print (including books, comics, etc.)",E. Fantasy / Science Fiction,A. Individual Assignments,B. In the middle of the room,0,10,70,20,20,80,90
+523,yoga,A. Movies,E. Fantasy / Science Fiction,A. Individual Assignments,B. In the middle of the room,0,80,50,30,30,40,60
+524,jogging,"C. Print (including books, comics, etc.)",B. Drama,A. Individual Assignments,A. On the left side as you face the screen,0,10,90,60,30,90,60
+525,none,A. Movies,E. Fantasy / Science Fiction,A. Individual Assignments,C. On the right side (closest to the podium),0,80,70,50,50,50,20
+526,cardio muscle,A. Movies,C. Action,A. Individual Assignments,C. On the right side (closest to the podium),0,50,100,30,50,70,60
+527,None,B. Television,E. Fantasy / Science Fiction,A. Individual Assignments,A. On the left side as you face the screen,0,61,75,60,24,73,64
+528,"yoga, tennis",B. Television,B. Drama,A. Individual Assignments,A. On the left side as you face the screen,0,30,60,40,40,60,50
+529,Jogging,D. Other,E. Fantasy / Science Fiction,C. Group Assignments (you and 2 or more others),C. On the right side (closest to the podium),25,75,20,10,50,10,85
+530,Yoga,B. Television,E. Fantasy / Science Fiction,A. Individual Assignments,B. In the middle of the room,0,25,60,30,35,80,80
+531,crossfit,D. Other,A. Comedy,A. Individual Assignments,C. On the right side (closest to the podium),0,60,65,30,30,50,70
+532,running,B. Television,A. Comedy,A. Individual Assignments,C. On the right side (closest to the podium),50,65,30,15,75,15,58
+533,jogging,"C. Print (including books, comics, etc.)",A. Comedy,B. Partner Assignments (you and 1 other student),A. On the left side as you face the screen,0,0,100,60,70,70,30
+534,fitness,A. Movies,E. Fantasy / Science Fiction,A. Individual Assignments,C. On the right side (closest to the podium),70,80,80,80,30,95,70
+535,weight lifting1,D. Other,A. Comedy,A. Individual Assignments,B. In the middle of the room,0,95,80,50,30,60,30
+536,cross training,B. Television,A. Comedy,A. Individual Assignments,B. In the middle of the room,40,50,80,50,40,50,0
+537,Jogging,A. Movies,A. Comedy,A. Individual Assignments,C. On the right side (closest to the podium),70,75,75,15,50,70,60
+538,Stairs,"C. Print (including books, comics, etc.)",E. Fantasy / Science Fiction,A. Individual Assignments,A. On the left side as you face the screen,0,0,100,100,0,50,0
+539,Yoga,A. Movies,B. Drama,B. Partner Assignments (you and 1 other student),A. On the left side as you face the screen,0,60,90,60,10,90,20
+540,Running,"C. Print (including books, comics, etc.)",B. Drama,A. Individual Assignments,C. On the right side (closest to the podium),90,90,95,90,5,90,35
+541,Weightlifting,B. Television,B. Drama,C. Group Assignments (you and 2 or more others),A. On the left side as you face the screen,0,76,25,0,40,20,75
+542,Swimming,"C. Print (including books, comics, etc.)",B. Drama,A. Individual Assignments,C. On the right side (closest to the podium),10,40,90,85,10,90,80
+543,Running,B. Television,A. Comedy,A. Individual Assignments,B. In the middle of the room,0,20,80,50,25,75,50
+544,Strength Training,B. Television,C. Action,A. Individual Assignments,C. On the right side (closest to the podium),0,60,80,70,20,70,50
+545,tennis,"C. Print (including books, comics, etc.)",E. Fantasy / Science Fiction,A. Individual Assignments,C. On the right side (closest to the podium),15,27,0,0,90,15,97
+546,jogging,B. Television,C. Action,A. Individual Assignments,C. On the right side (closest to the podium),70,85,85,100,20,85,60
+547,jogging,B. Television,B. Drama,A. Individual Assignments,A. On the left side as you face the screen,0,70,85,50,25,75,35
+548,walking,B. Television,A. Comedy,A. Individual Assignments,B. In the middle of the room,0,70,75,65,20,88,20
+549,jogging,A. Movies,C. Action,A. Individual Assignments,C. On the right side (closest to the podium),0,60,50,0,40,60,50
+550,running,B. Television,A. Comedy,B. Partner Assignments (you and 1 other student),A. On the left side as you face the screen,0,0,80,60,20,85,70
+551,running,B. Television,B. Drama,C. Group Assignments (you and 2 or more others),B. In the middle of the room,90,90,50,10,40,90,85
+552,walk,B. Television,D. Horror / Thriller,A. Individual Assignments,B. In the middle of the room,60,80,90,70,22,80,40
+553,tennis,A. Movies,E. Fantasy / Science Fiction,A. Individual Assignments,B. In the middle of the room,60,70,30,20,30,0,80
