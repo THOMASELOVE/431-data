@@ -1,0 +1,74 @@
+---
+title: "A First Quarto Template"
+author: "Your Name Goes Here"
+date: last-modified
+format: 
+  html:
+    toc: TRUE
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+---
+
+## Load R Packages
+
+```{r library_load, message = FALSE}
+
+## add additional libraries/packages here, as needed
+## leaving easystats then tidyverse as the last two packages loaded
+
+library(easystats)
+library(tidyverse)
+
+theme_set(theme_bw())  ## or use theme_set(theme_light())
+knitr::opts_chunk$set(comment = NA)
+```
+
+## Load Dr. Love's R script
+
+```{r}
+## this assumes that the `431-Love.R` file from our web site
+## is loaded into your project directory
+
+source("431-Love.R")
+```
+
+
+## Load Data
+
+```{r load_data}
+## if you want to load in a data set called namebeta.csv
+## and then create a tibble from it called namealpha
+## then uncomment the next line by removing the #
+
+# namealpha <- read_csv("namebeta.csv") 
+```
+
+# Big Section Header
+
+## Subsection Header
+
+When you click the **Render** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r iris_summary}
+iris |> summary()
+```
+
+# Building the Next Section
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r iris_plot}
+ggplot(data = iris, aes(x = Sepal.Length)) +
+  geom_histogram(bins = 20, col = "white", fill = "blue")
+```
+
+# Session Information
+
+```{r session_info}
+sessioninfo::session_info()
+```
+
+
