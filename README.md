@@ -11,7 +11,7 @@ To obtain all of the data and code in this repository in a single zip file,
 
 We **strongly** recommend using this approach even if only a few of our data files have changed.
 
-## This repository will be continually updated as the semester progresses.
+### This repository will be continually updated as the semester progresses.
 
 
 ### Detailed steps for downloading individual .csv or .qmd files from Github (We hope you won't need to do this.)
