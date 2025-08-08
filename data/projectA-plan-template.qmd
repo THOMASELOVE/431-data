@@ -1,0 +1,224 @@
+---
+title: "431 Project A Plan Template (Replace This Title)"
+subtitle: "If you want a subtitle, here's where to put it."
+author: "Your Name (or Names) Should Be Here"
+date-modified: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+    code-overflow: wrap
+    code-tools: true
+    theme: default
+---
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Before submitting your Project A Plan,
+
+1. Place a meaningful title (that doesn't use "431" or "Project A" or "Template") of no more than 80 characters, **and** your full name(s) as author in the YAML at the top of this template. If you want to include a subtitle, something like "431 Project A Plan" is acceptable there. Otherwise, delete the subtitle section from the YAML.
+
+2. Delete this note and all of my other instructions from this document. Please leave the headings and subheadings as they are, but feel encouraged to augment the R code we provide here as needed, rather than being obliged to replace it entirely.
+
+3. Leave blank lines before and after every paragraph, every heading, and every code chunk in your Quarto file after the YAML.
+
+4. Run spell-check (hit F7) before rendering the document to HTML.
+
+:::
+
+# R Packages
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions in the R Packages section of the [Project A Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+```{r}
+#| message: false
+
+knitr::opts_chunk$set(comment = NA)
+
+library(janitor)
+library(naniar)
+library(xfun)
+
+# if you choose to add other packages, do so here
+
+library(easystats)
+library(tidyverse)
+
+theme_set(theme_bw())
+
+## if you choose to source in the Love-431.R script, do so here
+
+```
+
+# Data Ingest
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found in Data Task 1 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the Data Ingest section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+The sample code from Data Task 1 is included below.
+
+:::
+
+```{r}
+data_url <- 
+  "https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2025.csv"
+
+chr_2025_raw <- read_csv(data_url, skip = 1, guess_max = 4000,
+                         show_col_types = FALSE) |>
+  select(fipscode, county, state, county_clustered, year,
+         ends_with("rawvalue"))
+```
+
+# State Selection
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found in Data Task 2 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the State Selection section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+# Variable Selection
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found in Data Task 3 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the Variable Selection section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+
+:::
+
+# Variable Cleaning and Renaming
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found at the end of Data Task 3 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the Variable Cleaning and Renaming section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+.
+
+:::
+
+# Creating the Analysis 2 Predictor
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found in Data Task 4 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the Creating the Analysis 2 Predictor section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+.
+
+:::
+
+# Adding 2019 Data for the Analysis 3 Outcome
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found in Data Task 5 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the Adding 2019 Data for the Analysis 3 Outcome section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+# Arranging and Saving the Analytic Tibble
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the instructions for this section found in Data Task 6 on the [Data page](https://thomaselove.github.io/431-projectA-2025/data.html), as well as the Arranging and Saving the Analytic Tibble section of the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+# Print the Tibble
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the relevant instructions for this section found on the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+
+# Numerical Summaries
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the relevant instructions for this section found on the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+Those instructions will help you create the four subsections labeled below.
+
+:::
+
+## Table of States by Binary Factor
+
+
+## `describe_distribution()` results
+
+
+
+## `data_codebook()` results
+
+
+## Distinct Values
+
+
+# The Codebook
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the relevant instructions for this section found on the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+Our **add name of tibble** tibble contains *add code* counties and *add code* variables.
+
+
+Variable | Role | Old Name | Description | Year(s)
+:--------: | :----: | :--------: | :-----------: | :------:
+**fipscode** | ID | `fipscode` | FIPS code | --
+**state** | ID | `state` | State Abbreviation (list your states here) | --
+**county** | ID | `county` | County Name | --
+etc. | 
+**county_clustered** | check | `county_clustered` | Indicates county is ranked (all values should be 1) | 2025
+
+
+
+# Research Questions
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the relevant instructions for this section, and its subsections, found on the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+## Analysis 1 Research Question
+
+## Analysis 2 Research Question
+
+## Analysis 3 Research Question
+
+# Reflection
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+Follow the relevant instructions for this section found on the [Plan page](https://thomaselove.github.io/431-projectA-2025/plan.html).
+
+:::
+
+# AI Usage
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+All students should have an AI Usage section.
+
+- If you decide to get help from a large language model (like ChatGPT) to help with your phrasing of ideas, or building code, OK, but you need to describe what you did in some detail here. Use multiple clear and complete sentences.
+- If you use nothing outside of the spell-checker and code completion tools within RStudio, please write that here, as follows:
+
+In preparing this response, I made no use of AI outside of spell-check and code completion within RStudio.
+
+:::
+
+
+# Session Information
+
+```{r}
+xfun::session_info()
+```
+

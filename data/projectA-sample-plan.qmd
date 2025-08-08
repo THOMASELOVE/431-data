@@ -1,0 +1,428 @@
+---
+title: "Sample Plan for 431 Project A"
+subtitle: "Using data from CHR 2018 (and 2013)"
+author: "Thomas E. Love, Ph.D."
+date-modified: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+    code-overflow: wrap
+    code-tools: true
+    code-fold: show
+    theme: litera
+---
+
+:::{.callout-tip title="Some important notes"}
+
+1. A template for the Project A Plan is available to you, via the [Examples page on the Project A website](https://thomaselove.github.io/431-projectA-2025/examples.html). Please use it in combination with this document to prepare revisions, as needed, to your Plan. We used it to develop this document.
+
+2. You need to write your own comments and responses to the Plan’s requirements. You are welcome to use the words here as illustrative examples of what we're looking for, but these should be edited by you to be specific to your project.
+
+3. You need a real title (80 characters, maximum, without using “431” or “Project” or “Project A”) in your Plan. You can, as we have above, include a subtitle, but the main title must stand on its own. Of course, in this sample plan, we used some words you're not allowed to use, and **we will break other rules (and note them) in what follows.**
+
+:::
+
+# R Packages
+
+```{r}
+#| message: false
+
+knitr::opts_chunk$set(comment = NA)
+
+library(janitor)
+library(knitr)
+library(naniar)
+library(xfun)
+library(easystats)
+library(tidyverse)
+
+theme_set(theme_bw())
+
+url_script <- 
+  "https://raw.githubusercontent.com/THOMASELOVE/431-data/refs/heads/main/data/Love-431.R"
+
+source(url_script)
+```
+
+# Data Ingest
+
+:::{.callout-tip title="Our ingest is different than yours."}
+
+These are a few of the things we did differently to get our data.
+
+1. We are pulling data from CHR 2018 here (and CHR 2013 later) through its URL at the [County Health Rankings](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation) data and documentation site. You are working with CHR 2025 and CHR 2019 data.
+
+2. In 2013 and 2018, what is now called `county_clustered` was called `county_ranked`, and we need to account for that here.
+
+:::
+
+```{r}
+data_2018_url <- 
+  "https://www.countyhealthrankings.org/sites/default/files/analytic_data2018_0.csv"
+
+chr_2018_raw <- read_csv(data_2018_url, skip = 1, guess_max = 4000,
+                         show_col_types = FALSE) |>
+  rename(county_clustered = county_ranked) |>
+  select(fipscode, county, state, county_clustered, year,
+         ends_with("rawvalue")) 
+```
+
+Next, we filter these data to the rows which have `county_clustered` values of 1. 
+
+```{r}
+chr_2018_raw <- chr_2018_raw |>
+  filter(county_clustered == 1)
+```
+
+The resulting **chr_2018_raw** tibble now has `r nrow(chr_2018_raw)` rows, and `r ncol(chr_2018_raw)` columns.
+
+::: {.callout-tip}
+## Inline coding!
+
+Make sure you look at the Quarto file for this document, and note the use of inline coding to get R to tell me the number of rows and number of columns in the resulting `chr_2018_raw` tibble.
+
+Another approach would have been to use the `dim()` function here.
+
+:::
+
+# State Selection
+
+::: {.callout-tip title="We're using some states you cannot."}
+
+In selecting six states for this sample plan, we're using some states you're not permitted to use. Specifically, we have arbitrarily decided to use New York, Ohio, Massachusetts, Pennsylvania, Maine and North Carolina. 
+
+:::
+
+Here, we'll select our six states, then change the `state` to a factor variable.
+
+```{r}
+chr_2018 <- chr_2018_raw |>
+  filter(state %in% c("NY", "OH", "MA", "PA", "ME", "NC")) |>
+  mutate(state = factor(state))
+```
+
+Next, we'll look to see how many counties are in each `state`.
+
+```{r}
+chr_2018 |> count(state) 
+```
+
+We have selected `r n_distinct(chr_2018$state)` states, yielding a total of `r nrow(chr_2018)` clustered counties, which is between 300 and 800 so we're all set.
+
+::: {.callout-tip}
+## Inline coding, again!
+
+Again, in this last sentence, we've used inline coding to get R to tell me the number of states and the number of rows in the resulting `chr_2018` tibble.
+
+:::
+
+Here is the place to put a brief description as to why you selected the states that you selected. we will leave that work to you. As for our reason, these are six states in which Dr. Love has spent pleasant summer vacations.
+
+# Variable Selection
+
+::: {.callout-tip title="We chose variables you couldn't choose."}
+
+we have selected a set of five variables for this sample plan. None of these variables were available for you to choose.
+
+- The variables we selected for Analysis 1 turn out to have missing values. Yours may, or may not, in practice.
+- The variables we selected for Analyses 2 and 3 do not have missingness in their raw values, as it turns out.
+
+:::
+
+We've decided to select variables `v128`, `v065`, `v024`, `v052` and `v122`.
+
+```{r}
+chr_2018 <- chr_2018 |>
+  select(fipscode, state, county, county_clustered,
+         v128_rawvalue, v065_rawvalue, v024_rawvalue, 
+         v052_rawvalue, v122_rawvalue)
+```
+
+we now have a `chr_2018` tibble with exactly `r ncol(chr_2018)` columns, as required.
+
+# Variable Cleaning and Renaming
+
+The variables we are using describe the following measures:
+
+::: {.callout-tip}
+## Source for the detailed descriptions below
+
+- Use [this link](https://www.countyhealthrankings.org/explore-health-rankings/county-health-rankings-measures) for the current version of this information.
+:::
+
+Initial Name | New Name | Role | Description | Gathered
+:----------- | :---------- | :------ | :--------------------------------------- | :-----
+`v128_rawvalue` | `child_mort` | A1 outcome | Child mortality (deaths among residents under age 18 per 100,000 population) | 2013-16
+`v065_rawvalue` | `free_lunch` | A1 predictor | % of children enrolled in public schools that are eligible for free or reduced price lunch | 2015-16
+`v024_rawvalue` | `child_pov` | A2 outcome | % of people under 18 in poverty | 2016
+`v052_rawvalue` | `below_18` | A2 predictor | % of county residents below 18 years of age | 2016
+`v122_rawvalue` | `unins_kids_2018` | A3 outcome | % of children under age 19 without health insurance | 2015
+
+::: {.callout-tip}
+## How Do we need to clean our variables?
+
+- `v065`, `v024`, `v052` and `v122` are all proportions, that need to be multiplied by 100
+- `v128` is OK as is
+
+:::
+
+Here, we'll multiply the four variables that describe proportions by 100 to obtain percentages instead, to ease interpretation.
+
+```{r}
+chr_2018 <- chr_2018 |>
+  mutate(free_lunch = 100*v065_rawvalue,
+         child_pov = 100*v024_rawvalue,
+         below_18 = 100*v052_rawvalue,
+         unins_kids_2018 = 100*v122_rawvalue,
+         .keep = "unused") |>
+  rename(child_mort = v128_rawvalue)
+```
+
+::: {.callout-tip}
+## Let's check which variables we have now...
+
+```{r}
+dim(chr_2018)
+names(chr_2018)
+```
+
+What does this indicate to you about the use of `.keep = "unused"` in the `mutate()` function?
+
+- The `.keep = "unused"` in `mutate()` retains only the columns not used in the process of creating new columns. This is useful if, as in this case, you want to generate new columns, but no longer need the columns used to generate them. See [this reference on `mutate()`](https://dplyr.tidyverse.org/reference/mutate.html).
+
+we renamed `v122` as `unins_kids_2018` since it was reported in CHR 2018. Soon, we will create `unins_kids_2013` as well, for comparison in Analysis 3.
+:::
+
+
+# Creating the Analysis 2 Predictor
+
+To establish our cut points, we should look at the 40th and 60th percentiles of the existing data for our planned predictor for Analysis 2, which is `below_18`.
+
+```{r}
+chr_2018 |>
+  summarise(q40 = quantile(below_18, c(0.4)),
+            q60 = quantile(below_18, c(0.6)))
+            
+```
+
+So we will create a three-level variable where values of 20.4 and lower will fall in the "Low" group, and values of 21.7 and higher will fall in the "High" group^[We could have chosen to use "less than 20.4" and "higher than 21.7" as well, which would potentially have a small impact on our final groups.].
+
+```{r}
+chr_2018 <- chr_2018 |>
+  mutate(below18_grp = case_when(
+    below_18 <= 20.4 ~ "Low",
+    below_18 >= 21.7 ~ "High")) |>
+  mutate(below18_grp = factor(below18_grp))
+
+chr_2018 |> count(below18_grp)
+```
+
+It appears that we have 139 subjects (40% of the original 347) in the High group and the same number in the Low group, with the rest now listed as missing, and the `below18_grp` variable is now a factor, so that's fine. (If you have a slightly different number in "High" than in "Low", that would also be OK, so long as it's close to 40% in each group.)
+
+# Adding 2019 (in our case 2013) Data for the Analysis 3 Outcome
+
+:::{.callout-tip title="our approach here is a bit different from yours."}
+
+In our case, we'll add data from CHR 2013, since that's five years prior to the 2018 County Health Rankings report.
+
+Rather than pull this from a `.csv` file, we will pull it directly from the CHR website, as follows.
+
+The variables we need in our `chr_2013_raw` file are just the `fipscode` and our analysis 3 outcome, which starts as the `v122_rawvalue` variable.
+
+- The County Health Rankings [data documentation for CHR 2013 (pdf)](https://www.countyhealthrankings.org/sites/default/files/2013%20Analytic%20Documentation.pdf) tells me that the data on this variable (`v122_rawvalue`) come from Small Area Health Insurance Estimates for 2010. We'll need that year when we build the codebook, later.
+
+:::
+
+```{r}
+data_2013_url <- 
+  "https://www.countyhealthrankings.org/sites/default/files/analytic_data2013.csv"
+
+chr_2013 <- read_csv(data_2013_url, skip = 1, guess_max = 4000,
+                         show_col_types = FALSE) |>
+  rename(county_clustered = county_ranked) |>
+  filter(county_clustered == 1) |>
+  select(fipscode, v122_rawvalue) |>
+  mutate(unins_kids_2013 = 100*v122_rawvalue,
+         .keep = "unused")
+
+names(chr_2013)
+```
+
+Now, we'll join the two files.
+
+```{r}
+chr_2018 <- left_join(chr_2018, chr_2013, by = "fipscode")
+```
+
+Finally, we'll check to see if this has created any missing values (which would happen if a county in CHR 2018 had data on this variable but did not in CHR 2013.)
+
+```{r}
+n_miss(chr_2018$unins_kids_2013)
+```
+
+# Arranging and Saving the Analytic Tibble
+
+Now we arrange the variables in the specified order from Data Task 5, and then save the new result to a new .Rds file.
+
+```{r}
+chr_2018 <- chr_2018 |>
+  select(fipscode, state, county, 
+         child_mort, free_lunch, ## Analysis 1 variables
+         child_pov, below18_grp, ## Analysis 2 variables
+         below_18, ## Quantitative version of group
+         unins_kids_2018, unins_kids_2013, ## Analysis 3 variables
+         county_clustered)
+
+write_rds(chr_2018, file = "chr_2018_Thomas_Love.Rds")
+```
+
+:::{.callout-important}
+
+- We will make **no** changes to the **chr_2018** tibble after this point in the Plan.
+
+:::
+
+
+# Print the Tibble
+
+```{r}
+chr_2018
+```
+
+
+# Numerical Summaries
+
+## Table of States by Binary Factor
+
+```{r}
+chr_2018 |> tabyl(state, below18_grp) |> 
+  adorn_totals(where = c("row", "col"))
+```
+
+- As expected, there are some missing values in each column. We have some very small sample sizes in Massachusetts and Maine, but that's part of the reason why we didn't let you use those states in your work.
+
+## `describe_distribution()` results
+
+```{r}
+describe_distribution(chr_2018)
+```
+
+Here, we have minimum and maximum values that make sense for all of the quantitative variables in our data. All of the data reflect information for the appropriate number of counties, since, as mentioned [previously](#variable-selection), we have missing values in the two Analysis 1 variables we selected (`child_mort` and `free_lunch`.)
+
+## `data_codebook()` results
+
+```{r}
+data_codebook(chr_2018, max_values = 6, range_at = 15)
+```
+
+- All of our planned outcome and quantitative predictor values show reasonable minimum and maximum values.
+- We have less than 20% missing values in each of our Analysis 1 variables, and no missingness in our Analysis 2 or Analysis 3 outcomes, and we have, as expected, 20% missing data in our binary factor for Analysis 2.
+
+So, we pass all of the necessary checks.
+
+## Distinct Values
+
+::: {.callout-tip}
+## A problem with the initial instructions
+
+What I originally told you to do was this:
+
+```{r}
+chr_2018 |> 
+  summarise(across(everything(), ~ n_distinct(.)))
+```
+
+but the problem here is that some of the results we want to see don't turn up in the printed output.
+
+You could show, for instance, the counts for the last five variables in another call to this function, as follows:
+
+```{r}
+chr_2018 |> 
+  summarise(across(everything(), ~ n_distinct(.))) |>
+  select(7:11)
+```
+
+Another simple and attractive enough way to show the results of this check for all 11 variables, is to use the `kable()` function from the `knitr` package, as we have done below. There we can see all eleven results if we scroll through the HTML.
+
+:::
+
+```{r}
+chr_2018 |> 
+  summarise(across(everything(), ~ n_distinct(.))) |>
+  kable()
+```
+
+- We have a distinct fipscode for each of our `r nrow(chr_2018)` counties.
+- We have at least 15 distinct values in our outcomes (`child_mort`, `child_pov` and `unins_kids` in each year) and in our quantitative predictor (`free_lunch`) for Analysis 1.
+- We have 6 states and we have the same value (1) in `county_clustered` for every row of our data, so that's correct, too.
+
+So we pass all of the necessary checks here, as well.
+
+::: {.callout-tip}
+## Avoid scrolling here?
+
+Here's a way to avoid the scrolling window in HTML...
+
+```{r}
+tab10_4 <- chr_2018 |> 
+  summarise(across(everything(), ~ n_distinct(.)))
+
+tab10_4 |> select(1:5) |> kable()
+tab10_4 |> select(6:11) |> kable()
+```
+
+There are other, fancier, approaches we could use, but we will be happy with any of these, so long as we can see the results for all 11 columns.
+
+:::
+
+
+# The Codebook
+
+Our `chr_2018` tibble contains `r nrow(chr_2018)` counties and `r ncol(chr_2018)` variables.
+
+
+Variable | Role | Old Name | Description | Year(s)
+:--------: | :----: | :--------: | :-----------: | :------:
+**fipscode** | ID | `fipscode` | FIPS code | --
+**state** | ID | `state` | State Abbreviation (OH, MA, ME, NC, NY, PA) | --
+**county** | ID | `county` | County Name | --
+**child_mort** | A1 outcome | `v128` | Child mortality (deaths among residents under age 18 per 100,000 population) | 2013-16
+**free_lunch** | A1 predictor | `v065` | % of children enrolled in public schools that are eligible for free or reduced price lunch | 2015-16
+**child_pov** | A2 outcome | `v024` | % of people under 18 in poverty | 2016
+**below_18_grp** | A2 predictor | - | Low (below_18 $\leq$ 20.4) or High (below_18 $\geq$ 21.7) % of county residents below 18 years of age | 2016
+**below_18** | -- | `v052` | % of county residents below 18 years of age | 2016
+**unins_kids_2018** | A3 outcome | `v122` | % of children under age 19 without health insurance, CHR 2018 | 2015
+**unins_kids_2013** | A3 outcome | `v122` | % of children under age 19 without health insurance, CHR 2013 | 2010
+**county_clustered** | - | `county_clustered` | Indicates county is ranked (all values are 1, as required) | 2018
+
+# Research Questions
+
+## Analysis 1 Research Question
+
+Here is where you'll place your research question for Analysis 1, which in our case involves predicting `child_mort` from `free_lunch`.
+
+## Analysis 2 Research Question
+
+Here is where you'll place your research question for Analysis 2, which in our case involves comparing means of `child_pov` across our two groups in `below18_grp`.
+
+## Analysis 3 Research Question
+
+Here is where you'll place your research question for Analysis 3, which in our case involves comparing means of `unins_kids` in the 2018 report (where the data were measured in 2015) as compared to the 2013 report by CHR (where the data come from 2010).
+
+# Reflection
+
+Here is where you'll place your reflection. We'll leave that to you.
+
+# AI Usage
+
+An AI usage statement goes here.
+
+# Session Information
+
+```{r}
+xfun::session_info()
+```
+
