@@ -113,19 +113,34 @@ Here is where you should put your comments about what you learn by comparing the
 
 # Task 5
 
-This will be the video. No need to write anything about it here, except to specify the name of the file, which should ideally be ...
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+This will be the video. No need to write anything substantial here. You just need to specify the name of the file, which should ideally be ...
 
 `yourname-431lab1.mp4`
 
-# AI Help
+:::
 
-If you decide to get help from a large language model (like ChatGPT) to help with your phrasing of ideas, or building code, OK, but you need to describe what you did in some detail here. If you use nothing outside of the spell-checker and code completion tools within RStudio, please write that here, as follows:
+# AI Usage
+
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
+All students should have an AI Usage section.
+
+- If you decide to get help from a large language model (like ChatGPT) to help with your phrasing of ideas, or building code, OK, but you need to describe what you did in some detail here. Use multiple clear and complete sentences.
+- If you use nothing outside of the spell-checker and code completion tools within RStudio, please write that here, as follows:
 
 In preparing this response, I made no use of AI outside of spell-check and code completion within RStudio.
 
+:::
+
 # Session Information
 
+:::{.callout-tip title="Delete these instructions when submitting your work"}
+
 Use the code below to include your session information.
+
+:::
 
 ```{r}
 xfun::session_info()
