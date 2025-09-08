@@ -1,0 +1,396 @@
+---
+title: "Code used in Class 03"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+format: 
+  html:
+    toc: TRUE
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+---
+
+# Data Ingest
+
+## Load R Packages
+
+```{r library_load, message = FALSE}
+
+## add additional libraries/packages here, as needed
+
+library(janitor)
+library(patchwork)
+library(easystats)
+library(tidyverse) # always load tidyverse last
+
+theme_set(theme_bw())  ## or use theme_set(theme_light())
+knitr::opts_chunk$set(comment = NA)
+```
+
+## Load Data
+
+Our data come from the [Quick 15-item Survey](https://github.com/THOMASELOVE/431-classes-2025/blob/main/class02/431_surveyhandout_1perstudent_2025-09-04.pdf) we did in Class 02, and which we’ve done (in various forms) since 2014.
+
+```{r load_data}
+## Note: I have the quick_survey_2024.csv file stored in  
+## subfolder called data under my Class 03 project
+
+url_raw <- "https://raw.githubusercontent.com/THOMASELOVE/431-data/refs/heads/main/data/survey15_2014_to_2025.csv"
+
+surv15_raw <- 
+  read_csv(url_raw, show_col_types = FALSE) |>
+  janitor::clean_names()
+```
+
+## Result
+
+```{r}
+surv15_raw
+```
+
+## A more detailed look?
+
+```{r}
+glimpse(surv15_raw)
+```
+
+# Six Key Verbs
+
+## `filter()`
+
+```{r}
+surv15_raw |> filter(year == "2025")
+```
+
+## `select()`
+
+```{r}
+surv15_raw |> select(student, glasses, lastsleep)
+```
+
+## `arrange()`
+
+```{r}
+surv15_raw |> arrange(height_in) |> 
+  select(student, height_in)
+```
+
+## `mutate()`
+
+```{r}
+surv15_raw |> select(student, love_htcm, lovetrueht) |>
+  mutate(ht_error = love_htcm - lovetrueht)
+```
+
+## `group_by()` and `summarize()`
+
+```{r}
+surv15_raw |> 
+  filter(complete.cases(height_in), year > 2018) |> 
+  group_by(year) |> summarize(n(), median(height_in)) 
+```
+
+# Some Counting and Summarizing
+
+## Counting the `glasses` variable
+
+```{r}
+surv15_raw |> count(glasses)
+```
+
+## Counting `glasses` and `english`
+
+```{r}
+surv15_raw |> count(glasses, english)
+```
+
+## Favorite Color in 2025?
+
+```{r}
+surv15_raw |>
+    filter(year == "2025") |>
+    tabyl(favcolor) |>
+    adorn_pct_formatting()
+```
+
+## Using `summary()` on Quantities
+
+```{r}
+surv15_raw |> 
+  select(love_htcm, haircut, height_in, lastsleep) |>
+  summary()
+```
+
+## More Descriptive Summaries
+
+```{r}
+surv15_raw |>
+  select(love_htcm, haircut, height_in, lastsleep) |>
+  describe_distribution()
+```
+
+## Even More Descriptive Summaries
+
+```{r}
+surv15_raw |>
+  select(love_htcm, haircut, height_in, lastsleep) |>
+  describe_distribution(centrality = "median")
+```
+
+# Manage the data into an analytic tibble called `surv15`
+
+## Select our variables
+
+```{r}
+surv15 <- surv15_raw |>
+    select(student, year, english, smoke, 
+           pulse, height_in, haircut)
+```
+
+## What do we have now?
+
+```{r}
+dim(surv15)
+surv15
+```
+
+## Initial Numeric Summaries
+
+```{r}
+summary(surv15)
+```
+
+```{r}
+names(surv15)
+```
+
+## Categorical variables as factors
+
+```{r}
+#| echo: true
+surv15 <- surv15 |>
+    mutate(year = as_factor(year),
+           smoke = as_factor(smoke),
+           english = as_factor(english),
+           student = as.character(student))
+```
+
+## Now, how's our summary?
+
+```{r}
+summary(surv15)
+```
+
+```{r}
+surv15 |> tabyl(year) |> adorn_totals() |> adorn_pct_formatting()
+```
+
+# Three Exploratory Questions
+
+## Three Exploratory Questions
+
+1. What is the distribution of pulse rates among students in 431 since 2014?
+2. Does the distribution of student heights change materially over time?
+3. Is the Normal distribution a good model for student heights? How about for student haircut prices?
+
+# Question 1
+
+## Question 1 
+
+What is the distribution of pulse rates among students in 431 since 2014?
+
+```{r}
+surv15 |> tabyl(pulse) |> adorn_pct_formatting()
+```
+
+## Histogram, first try
+
+```{r}
+#| warning: true
+ggplot(data = surv15, aes(x = pulse)) +
+    geom_histogram(bins = 15, fill = "royalblue",  col = "seagreen1")
+```
+
+## Histogram (with warning suppressed)
+
+```{r}
+#| warning: false
+ggplot(data = surv15, aes(x = pulse)) +
+    geom_histogram(bins = 15, fill = "royalblue", col = "seagreen1")
+```
+
+## Some Key Numerical Summaries
+
+```{r}
+surv15 |> select(pulse) |> summary()
+```
+
+```{r}
+length(surv15$pulse)
+sd(surv15$pulse, na.rm = TRUE)
+mad(surv15$pulse, na.rm = TRUE)
+```
+
+## Histogram, version 2
+
+```{r}
+dat1 <- surv15 |>
+  filter(complete.cases(pulse))
+
+ggplot(data = dat1, aes(x = pulse)) +
+    geom_histogram(fill = "seagreen", col = "white", bins = 20) +
+    labs(title = "Pulse Rates of Dr. Love's students",
+         subtitle = "2014 - 2025",
+         y = "Number of Students",
+         x = "Pulse Rate (beats per minute)")
+```
+
+# Question 2
+
+## Question 2
+
+Does the distribution of student heights change over time?
+
+```{r}
+#| warning: true
+
+ggplot(surv15, aes(x = year, y = height_in)) +
+  geom_point(alpha = 0.7, color = "forestgreen")
+```
+
+
+## Yearly Five-Number Summaries
+
+```{r}
+surv15 |>
+    filter(complete.cases(height_in)) |>
+    group_by(year) |>
+    summarize(n = n(), min = min(height_in), q25 = quantile(height_in, 0.25),
+              median = median(height_in), q75 = quantile(height_in, 0.75),
+              max = max(height_in))
+```
+
+## Boxplot of Heights by Year
+
+```{r}
+dat1 <- surv15 |>
+    filter(complete.cases(height_in)) 
+
+ggplot(data = dat1, aes(x = year, y = height_in)) +
+    geom_boxplot() +
+    labs(title = "Heights of Dr. Love's students, by year",
+         subtitle = "2014 - 2025", x = "Year", y = "Height (in inches)")
+```
+
+## Adding a Violin to the Boxplot
+
+```{r}
+dat1 <- surv15 |>
+    filter(complete.cases(height_in))
+
+ggplot(data = dat1, aes(x = year, y = height_in)) +
+    geom_violin() +
+    geom_boxplot(aes(fill = year), width = 0.3) +
+    guides(fill = "none") +
+    scale_fill_viridis_d(alpha = 0.3) +
+    labs(title = "Heights of Dr. Love's students, by year",
+         subtitle = "2014 - 2025", x = "Year", y = "Height (in inches)")
+```
+
+## Key Numerical Summaries
+
+```{r}
+surv15 |>
+    filter(complete.cases(height_in)) |>
+    group_by(year) |>
+    summarize(n = n(), mean = mean(height_in), sd = sd(height_in),
+              median = median(height_in), mad = mad(height_in))
+```
+
+# Question 3
+
+## Question 3 
+
+Are the data on student heights in 2025 well described by a Normal distribution?
+
+- Can we use a mean and standard deviation to describe the center and spread of the data effectively?
+
+## Empirical Rule & 2025 Student Heights
+
+```{r}
+dat2 <- surv15 |>
+  filter(complete.cases(height_in),
+         year == "2025")
+
+describe_distribution(dat2$height_in)
+```
+
+## Histogram of 2025 Student Heights
+
+```{r}
+dat2 <- surv15 |>
+  filter(complete.cases(height_in)) |>
+  filter(year == "2025")
+
+ggplot(data = dat2, aes(x = height_in)) +
+    geom_histogram(fill = "salmon", col = "white", binwidth = 2) +
+    labs(title = "Heights of Dr. Love's students",
+         subtitle = "2025 (n = 53 students with height data)",
+         y = "Number of Students", x = "Height (inches)")
+```
+
+## Checking the 1-SD Empirical Rule
+
+```{r}
+surv15 |> filter(complete.cases(height_in)) |>
+    filter(year == "2025") |>
+    count(height_in >= 62.4 & height_in <= 69.7)
+
+33/(33+20)
+```
+
+## 2-SD Empirical Rule
+
+```{r}
+surv15 |> filter(complete.cases(height_in)) |>
+    filter(year == "2025") |>
+    count(height_in >= 58.75 & height_in <= 73.35)
+
+52/(52+1)
+```
+
+## 3-SD Empirical Rule
+
+```{r}
+surv15 |> filter(complete.cases(height_in)) |>
+    filter(year == "2025") |>
+    count(height_in >= 55.1 & height_in <= 77.0)
+
+53/(53+0)
+```
+
+## Boxplots: Height & Haircut Price
+
+```{r}
+dat2 <- surv15 |> filter(complete.cases(height_in), year == "2025")
+
+p2 <- ggplot(data = dat2, aes(x = "height (inches)", y = height_in)) +
+  geom_violin() + geom_boxplot(width = 0.3, fill = "tomato") +
+  labs(title = "Boxplot of 2025 Student Heights", x = "")
+
+dat3 <- surv15 |> filter(complete.cases(haircut), year == "2025")
+
+p3 <- ggplot(data = dat3, aes(x = "haircut ($)", y = haircut)) +
+  geom_violin() + geom_boxplot(width = 0.3, fill = "dodgerblue") +
+  labs(title = "Boxplot of 2025 Haircut Prices", x = "")
+
+p2 + p3 + 
+  plot_annotation(title = "2025 15-Question Survey Data")
+```
+
+# Session Information
+
+```{r}
+#| echo: true
+xfun::session_info()
+```
