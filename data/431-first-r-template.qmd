@@ -68,7 +68,7 @@ ggplot(data = iris, aes(x = Sepal.Length)) +
 # Session Information
 
 ```{r session_info}
-sessioninfo::session_info()
+xfun::session_info()
 ```
 
 
