@@ -22,8 +22,9 @@ Delete **all of the instructions** we provide to you in this template, in favor 
 ```{r}
 #| message: false
 
-library(infer)
 library(knitr)
+library(kableExtra)
+library(MKinfer)
 library(patchwork)
 library(rstanarm)
 
