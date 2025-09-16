@@ -1,0 +1,69 @@
+---
+title: "Quick Demo for Class 05"
+author: "YOUR NAME SHOULD BE HERE, INSTEAD OF THIS NONSENSE"
+date: last-modified
+format: 
+  html:
+    toc: TRUE
+    number-sections: true
+    date-format: iso
+    embed-resources: true
+---
+
+## Load R Packages
+
+```{r library_load, message = FALSE}
+
+## leaving easystats then tidyverse as the last two packages loaded
+
+library(knitr)
+library(kableExtra)
+library(easystats)
+library(tidyverse)
+
+theme_set(theme_bw())  
+knitr::opts_chunk$set(comment = NA)
+```
+
+# Live Coding
+
+## `iris`: `Sepal.Length` by `Species` (1/4)
+
+```{r}
+iris |> group_by(Species) |> 
+  describe_distribution(Sepal.Length)
+```
+
+## `iris`: `Sepal.Length` by `Species` (2/4)
+
+```{r}
+iris |> group_by(Species) |> 
+  describe_distribution(Sepal.Length) |>
+  kable(digits = 3) 
+```
+
+
+## `iris`: `Sepal.Length` by `Species` (3/4)
+
+```{r}
+iris |> group_by(Species) |> 
+  describe_distribution(Sepal.Length) |>
+  kable(digits = 3) |> kable_styling(font_size = 12)
+```
+
+## `iris`: `Sepal.Length` by `Species` (4/4)
+
+```{r}
+iris |> group_by(Species) |> 
+  describe_distribution(Sepal.Length) |>
+  print_md(digits = 3)
+```
+
+# Session Information
+
+```{r session_info}
+xfun::session_info()
+```
+
+
+
