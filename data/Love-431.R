@@ -9,7 +9,7 @@
     min = min(x, na.rm = TRUE),
     q25 = quantile(x, 0.25, na.rm = TRUE),
     q75 = quantile(x, 0.75, na.rm = TRUE),
-    max = max(x, na.rm = TRUE),
+    max = max(x, na.rm = TRUE)
   )
 }
 
