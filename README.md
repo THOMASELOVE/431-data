@@ -6,6 +6,8 @@ Data and R code repository for PQHS/CRSP/MPHP 431 with Professor Thomas Love at 
 
 **Everything** on this page is **preliminary**, and thus **subject to serious change** before class begins on 2026-08-25. In addition, changes and updates will continue through the semester.
 
+-----
+
 ## Getting the Data (use this approach if possible.)
 
 To obtain all of the data and code in this repository in a single zip file, 
