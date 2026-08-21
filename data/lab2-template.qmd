@@ -6,9 +6,12 @@ format:
   html:
     toc: true
     number-sections: true
+    code-fold: show
+    code-tools: true
+    code-overflow: wrap
     embed-resources: true
     date-format: iso
-    theme: materia
+    theme: flatly  ## change the theme if you prefer
 ---
 
 :::{.callout-important}

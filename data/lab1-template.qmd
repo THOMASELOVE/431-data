@@ -1,14 +1,17 @@
 ---
-title: "431 Lab 1 Template (Replace this name)"
+title: "431 Lab 1 Template (Drop the word template here)"
 author: "(Your Name Goes Here)"
 date: last-modified
 format: 
   html:
     toc: true
     number-sections: true
+    code-fold: show
+    code-tools: true
+    code-overflow: wrap
     embed-resources: true
     date-format: iso
-    theme: materia
+    theme: materia  ## change the theme if you prefer
 ---
 
 :::{.callout-important}
