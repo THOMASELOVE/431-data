@@ -1,0 +1,52 @@
+sid,state,crime,poverty,single,state.full
+1,AL,427.4,19.2,9.02,Alabama
+2,AK,635.8,11.4,7.63,Alaska
+3,AZ,399.9,18.2,8.31,Arizona
+4,AR,480.1,18.7,9.41,Arkansas
+5,CA,396.1,16.4,7.25,California
+6,CO,309.1,12.1,6.75,Colorado
+7,CT,236.9,10.8,8.04,Connecticut
+8,DE,489.1,13,6.52,Delaware
+9,DC,1244.4,18.4,8.41,District of Columbia
+10,FL,540.5,16.6,8.29,Florida
+11,GA,377.3,18.4,10.98,Georgia
+12,HI,259.2,11.5,6.14,Hawaii
+13,ID,212.2,14.8,4.48,Idaho
+14,IL,370,14.3,7.73,Illinois
+15,IN,365.3,15.2,8.2,Indiana
+16,IA,273.5,12.3,5.39,Iowa
+17,KS,348.6,13.5,7.22,Kansas
+18,KY,211.6,19,7.63,Kentucky
+19,LA,514.7,19.9,11.59,Louisiana
+20,ME,127.8,14,4.79,Maine
+21,MD,446.1,10.4,8.76,Maryland
+22,MA,391.4,11.7,8.92,Massachusetts
+23,MI,427.3,16.2,7.2,Michigan
+24,MN,229.1,11.4,5.24,Minnesota
+25,MS,278.5,21.9,11.36,Mississippi
+26,MO,442.9,15.5,10.05,Missouri
+27,MT,323.7,15.2,5.75,Montana
+28,NE,280.4,12.3,8.29,Nebraska
+29,NV,635.6,15.4,7.66,Nevada
+30,NH,196.1,9.2,6.18,New Hampshire
+31,NJ,261.2,11.1,6.56,New Jersey
+32,NM,597.4,20.6,10.43,New Mexico
+33,NY,381.8,15.9,8.6,New York
+34,NC,329.5,17.2,9.57,North Carolina
+35,ND,265.1,11.1,6.4,North Dakota
+36,OH,284.9,15.8,7.88,Ohio
+37,OK,406,16.6,7.88,Oklahoma
+38,OR,232.3,16.4,7.22,Oregon
+39,PA,314.1,13.6,7.1,Pennsylvania
+40,RI,219.2,14.8,6.89,Rhode Island
+41,SC,497.7,17.9,9.54,South Carolina
+42,SD,326.5,14.1,6.74,South Dakota
+43,TN,608.4,18.2,6.94,Tennessee
+44,TX,405.9,17.2,8.86,Texas
+45,UT,215.6,11.8,6.02,Utah
+46,VT,99.3,12.2,7.55,Vermont
+47,VA,196.2,11.8,8.23,Virginia
+48,WA,285.2,13.2,7.03,Washington
+49,WV,302,18.3,7.68,West Virginia
+50,WI,290.3,13.2,6.82,Wisconsin
+51,WY,195.5,10.6,5,Wyoming
