@@ -1,0 +1,111 @@
+C_ID,Coaster_N,Speed,Height,Duration,Opened,Park,Town,State,Region
+C-001,American Eagle,66,127,143,1981,Six Flags Great America,Gurnee,Illinois,Midwest
+C-002,American Thunder,48,82,NA,2008,Six Flags St. Louis,Eureka,Missouri,Midwest
+C-003,Apocalypse the Ride,50.1,95,180,2009,Six Flags Magic Mountain,Valencia,California,West
+C-004,Arkansas Twister,NA,95,NA,1992,Magic Springs Theme and Water Park,Hot Springs,Arkansas,South
+C-005,Beast,64.8,110,250,1979,Kings Island,Mason,Ohio,Midwest
+C-006,Big Dipper,NA,NA,100,1958,Camden Park,Huntington,West Virginia,South
+C-007,Blue Streak,40,78,105,1964,Cedar Point,Sandusky,Ohio,Midwest
+C-008,Boardwalk Bullet,51,96,NA,2007,Kemah Boardwalk,Kemah,Texas,South
+C-009,Bobcat,40,55.4,NA,2024,Six Flags Great Escape,Queensbury,New York,Northeast
+C-010,Boss,66.3,122,NA,2000,Six Flags St. Louis,Eureka,Missouri,Midwest
+C-011,Boulder Dash,60,NA,150,2000,Lake Compounce,Bristol,Connecticut,Northeast
+C-012,Cannon Ball,50,70,NA,1967,Lake Winnepesaukah,Rossville,Georgia,South
+C-013,Classic Coaster,50,55,105,1935,Washington State Fair,Puyallup,Washington,West
+C-014,Coastersaurus,32,40,50,2004,Legoland Florida,Winter Haven,Florida,South
+C-015,Comet,50,84,105,1946,Hersheypark,Hershey,Pennsylvania,Northeast
+C-016,Comet,55,95,120,1994,Six Flags Great Escape,Queensbury,New York,Northeast
+C-017,Comet,25,37,84,1951,Waldameer,Erie,Pennsylvania,Northeast
+C-018,Cornball Express,45,55,NA,2001,Indiana Beach,Monticello,Indiana,Midwest
+C-019,Cyclone,60,75,110,1927,Luna Park,Brooklyn,New York,Northeast
+C-020,Cyclops,58,70,60,1995,Mt. Olympus Water & Theme Park,Wisconsin Dells,Wisconsin,Midwest
+C-021,Dragon Coaster,NA,80,120,1929,Playland Park,Rye,New York,Northeast
+C-022,El Toro,70,181,102,2006,Six Flags Great Adventure,Jackson,New Jersey,Northeast
+C-023,Excalibur,55,100,118,1998,Funtown Splashtown U.S.A.,Saco,Maine,Northeast
+C-024,GhostRider,56,118,160,1998,Knott's Berry Farm,Buena Park,California,West
+C-025,Giant Dipper,55,73,NA,1925,Belmont Park,San Diego,California,West
+C-026,Giant Dipper,55,70,112,1924,Santa Cruz Beach Boardwalk,Santa Cruz,California,West
+C-027,Gold Striker,53.7,108.2,150,2013,California's Great America,Santa Clara,California,West
+C-028,Goliath,72,165,NA,2014,Six Flags Great America,Gurnee,Illinois,Midwest
+C-029,Great American Scream Machine,57,105,120,1973,Six Flags Over Georgia,Austell,Georgia,South
+C-030,Great White,50,110,120,1996,Morey's Piers,Wildwood,New Jersey,Northeast
+C-031,Grizzly,55,91,160,1986,California's Great America,Santa Clara,California,West
+C-032,Grizzly,NA,87,150,1982,Kings Dominion,Doswell,Virginia,South
+C-033,Hades 360,60,136,NA,2005,Mt. Olympus Water & Theme Park,Wisconsin Dells,Wisconsin,Midwest
+C-034,Hell Cat,56,110,90,2004,Clementon Park,Clementon,New Jersey,Northeast
+C-035,High Roller,50,70,105,1976,Valleyfair!,Shakopee,Minnesota,Midwest
+C-036,Hoosier Hurricane,51,77,NA,1994,Indiana Beach,Monticello,Indiana,Midwest
+C-037,Hurler,50,83,120,1994,Carowinds,Charlotte,North Carolina,South
+C-038,InvadR,48,NA,NA,2017,Busch Gardens Williamsburg,Williamsburg,Virginia,South
+C-039,Jack Rabbit,45,40,96,1920,Kennywood,West Mifflin,Pennsylvania,Northeast
+C-040,Jack Rabbit,NA,75,NA,1920,Seabreeze,Rochester,New York,Northeast
+C-041,Judge Roy Scream,45,71,90,1980,Six Flags Over Texas,Arlington,Texas,South
+C-042,Kentucky Flyer,35,47,NA,2019,Kentucky Kingdom,Louisville,Kentucky,South
+C-043,Kentucky Rumbler,47.3,96,NA,2006,Beech Bend,Bowling Green,Kentucky,South
+C-044,Kiddy Coaster,NA,NA,NA,1928,Playland Park,Rye,New York,Northeast
+C-045,Kingdom Coaster,40,55,90,1992,Dutch Wonderland,Lancaster,Pennsylvania,Northeast
+C-046,Legend,NA,63,NA,1930,Arnolds Park,Arnolds Park,Iowa,Midwest
+C-047,Legend,59,99,120,1930,Holiday World,Santa Claus,Indiana,Midwest
+C-048,Lightning Racer,51.1,91.6,140,2000,Hersheypark,Hershey,Pennsylvania,Northeast
+C-049,Lil' Dipper,NA,NA,65,1961,Camden Park,Huntington,West Virginia,South
+C-050,Little Dipper,NA,28,50,2010,Six Flags Great America,Gurnee,Illinois,Midwest
+C-051,Lost Coaster of Superstition Mountain,20,35,NA,2002,Indiana Beach,Monticello,Indiana,Midwest
+C-052,Meteor,NA,28,50,2007,Little Amerricka,Marshall,Wisconsin,Midwest
+C-053,Mine Blower,48.5,83,NA,2017,Fun Spot America,Kissimmee,Florida,South
+C-054,Mystic Timbers,53,109.2,NA,2017,Kings Island,Mason,Ohio,Midwest
+C-055,New Mexico Rattler,47,80,75,2002,Cliff's Amusement Park,Albuquerque,New Mexico,West
+C-056,Oscar's Wacky Taxi,34,43,NA,2018,Sesame Place,Langhorne,Pennsylvania,Northeast
+C-057,Outlaw,48,67,120,1993,Adventureland,Altoona,Iowa,Midwest
+C-058,Outlaw Run,68,107,87,2013,Silver Dollar City,Branson,Missouri,Midwest
+C-059,Pegasus,NA,60,NA,1996,Mt. Olympus Water & Theme Park,Wisconsin Dells,Wisconsin,Midwest
+C-060,Phoenix,45,78,120,1985,Knoebels Amusement Resort,Elysburg,Pennsylvania,Northeast
+C-061,Predator,50,95,110,1990,Six Flags Darien Lake,Darien Center,New York,Northeast
+C-062,Prowler,51.2,102.3,150,2009,Worlds of Fun,Kansas City,Missouri,Midwest
+C-063,Racer,40,72.5,92,1927,Kennywood,West Mifflin,Pennsylvania,Northeast
+C-064,Racer,53,88,120,1972,Kings Island,Mason,Ohio,Midwest
+C-065,Racer 75,56,85,135,1975,Kings Dominion,Doswell,Virginia,South
+C-066,Raven,48,80,90,1995,Holiday World,Santa Claus,Indiana,Midwest
+C-067,Ravine Flyer II,57,80,90,2008,Waldameer,Erie,Pennsylvania,Northeast
+C-068,Renegade,51.3,97.5,120,2007,Valleyfair!,Shakopee,Minnesota,Midwest
+C-069,Roar,50.5,94.6,112,1998,Six Flags America,Upper Marlboro,Maryland,South
+C-070,Roar-O-Saurus,33,40,NA,2014,Story Land,Glen,New Hampshire,Northeast
+C-071,Roller Coaster,45,62,NA,1921,Lagoon,Farmington,Utah,West
+C-072,Rollo Coaster,NA,27,NA,1938,Idlewild & SoakZone,Ligonier,Pennsylvania,Northeast
+C-073,Screamin' Eagle,62,110,150,1976,Six Flags St. Louis,Eureka,Missouri,Midwest
+C-074,Sea Dragon,25,35,90,1956,Columbus Zoo and Aquarium,Powell,Ohio,Midwest
+C-075,Shivering Timbers,57,122,150,1998,Michigan's Adventure,Muskegon,Michigan,Midwest
+C-076,Silver Comet,50,NA,105,1999,Niagara Amusement Park & Splash World,Grand Island,New York,Northeast
+C-077,Swamp Fox,50,72,NA,1966,Family Kingdom Amusement Park,Myrtle Beach,South Carolina,South
+C-078,Switchback,41,64,NA,2015,ZDT'S Amusement Park,Seguin,Texas,South
+C-079,Teddy Bear,NA,NA,63,1996,Stricker's Grove,Ross,Ohio,Midwest
+C-080,Texas Stingray,55,96,NA,2020,SeaWorld San Antonio,San Antonio,Texas,South
+C-081,Thunder Run,53,90,114,1990,Kentucky Kingdom,Louisville,Kentucky,South
+C-082,Thunderbolt,55,70,101,1924,Kennywood,West Mifflin,Pennsylvania,Northeast
+C-083,Thunderbolt,40,70,60,1941,Six Flags New England,Agawam,Massachusetts,Northeast
+C-084,Thunderhawk,45,80,78,1924,Dorney Park & Wildwater Kingdom,Allentown,Pennsylvania,Northeast
+C-085,Thunderhead,53.7,100.4,NA,2004,Dollywood,Pigeon Forge,Tennessee,South
+C-086,Timber Terror,55,85,92,1996,Silverwood Theme Park,Athol,Idaho,West
+C-087,Timber Wolf,53,100,133,1989,Worlds of Fun,Kansas City,Missouri,Midwest
+C-088,Timberhawk: Ride of Prey,50,75,NA,2003,Wild Waves Theme & Water Park,Federal Way,Washington,West
+C-089,Tornado,58,93,120,1978,Adventureland,Altoona,Iowa,Midwest
+C-090,Tornado,NA,NA,93,1993,Stricker's Grove,Ross,Ohio,Midwest
+C-091,Tremors,50,85,100,1999,Silverwood Theme Park,Athol,Idaho,West
+C-092,Twister,51.5,101.6,130,1999,Knoebels Amusement Resort,Elysburg,Pennsylvania,Northeast
+C-093,Twister III: Storm Chaser,55,100,NA,1995,Elitch Gardens,Denver,Colorado,West
+C-094,Underground,NA,15,NA,1996,Adventureland,Altoona,Iowa,Midwest
+C-095,Viper,50,100,105,1995,Six Flags Great America,Gurnee,Illinois,Midwest
+C-096,Voyage,67,159,165,2006,Holiday World,Santa Claus,Indiana,Midwest
+C-097,White Lightning,44.3,69.7,75,2013,Fun Spot America,Orlando,Florida,South
+C-098,Wild One,53,98,112,1986,Six Flags America,Upper Marlboro,Maryland,South
+C-099,Wildcat,46,75,130,1991,Frontier City,Oklahoma City,Oklahoma,South
+C-100,Wildcat,48,85,75,1927,Lake Compounce,Bristol,Connecticut,Northeast
+C-101,Wolverine Wildcat,55,85,120,1988,Michigan's Adventure,Muskegon,Michigan,Midwest
+C-102,Wooden Warrior,35,32,NA,2011,Quassy Amusement Park,Middlebury,Connecticut,Northeast
+C-103,Woodstock Express,NA,NA,90,1975,Carowinds,Charlotte,North Carolina,South
+C-104,Woodstock Express,35,35,100,1974,Kings Dominion,Doswell,Virginia,South
+C-105,Woodstock Express,35,38.6,90,1972,Kings Island,Mason,Ohio,Midwest
+C-106,Yankee Cannonball,35,63.5,NA,1936,Canobie Lake Park,Salem,New Hampshire,Northeast
+C-107,Zach's Zoomer,NA,41,NA,1994,Michigan's Adventure,Muskegon,Michigan,Midwest
+C-108,Zambezi Zinger,45,74,120,2023,Worlds of Fun,Kansas City,Missouri,Midwest
+C-109,Zeus,60,90,85,1997,Mt. Olympus Water & Theme Park,Wisconsin Dells,Wisconsin,Midwest
+C-110,Zippin Pippin,42,70,90,2011,Bay Beach Amusement Park,Green Bay,Wisconsin,Midwest

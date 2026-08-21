@@ -1,0 +1,193 @@
+C_NUM,COUNTRY_NAME,ISO_ALPHA3,UHC_INDEX,UNIV_CARE,GDP_PERCAP,WHO_REGION
+1,Afghanistan,AFG,41,no,356,Eastern Mediterranean
+2,Albania,ALB,64,yes,6810,European
+3,Algeria,DZA,74,yes,4343,African
+4,Andorra,AND,79,no,41993,European
+5,Angola,AGO,37,no,3000,African
+6,Antigua and Barbuda,ATG,76,no,19920,Americas
+7,Argentina,ARG,79,yes,13651,Americas
+8,Armenia,ARM,68,no,7018,European
+9,Australia,AUS,87,yes,65100,Western Pacific
+10,Austria,AUT,85,yes,52085,European
+11,Azerbaijan,AZE,66,no,7762,European
+12,Bahamas,BHS,77,yes,31458,Americas
+13,Bahrain,BHR,76,no,30147,Eastern Mediterranean
+14,Bangladesh,BGD,52,no,2688,Southeast Asian
+15,Barbados,BRB,77,no,20239,Americas
+16,Belarus,BLR,79,no,7888,European
+17,Belgium,BEL,86,yes,49927,European
+18,Belize,BLZ,68,no,6984,Americas
+19,Benin,BEN,38,no,1303,African
+20,Bhutan,BTN,60,yes,3560,Southeast Asian
+21,Bolivia (Plurinational State of),BOL,65,no,3600,Americas
+22,Bosnia and Herzegovina,BIH,66,no,7569,European
+23,Botswana,BWA,55,yes,7739,African
+24,Brazil,BRA,80,yes,8918,Americas
+25,Brunei Darussalam,BRN,78,no,37152,Western Pacific
+26,Bulgaria,BGR,73,yes,13974,European
+27,Burkina Faso,BFA,40,yes,830,African
+28,Burundi,BDI,41,no,259,African
+29,Cabo Verde,CPV,71,no,3754,African
+30,Cambodia,KHM,58,no,1760,Western Pacific
+31,Cameroon,CMR,44,no,1563,African
+32,Canada,CAN,91,yes,55522,Americas
+33,Central African Republic,CAF,32,no,427,African
+34,Chad,TCD,29,no,717,African
+35,Chile,CHL,82,yes,15355,Americas
+36,China,CHN,81,yes,12720,Western Pacific
+37,Colombia,COL,80,yes,6624,Americas
+38,Comoros,COM,48,no,1485,African
+39,Congo,COG,41,no,2649,African
+40,Costa Rica,CRI,81,yes,13365,Americas
+41,Côte d'Ivoire,CIV,43,no,2486,African
+42,Croatia,HRV,80,yes,18570,European
+43,Cuba,CUB,83,yes,9500,Americas
+44,Cyprus,CYP,81,no,32048,European
+45,Czechia,CZE,84,yes,27227,European
+46,Democratic People's Republic of Korea,PRK,68,yes,NA,Southeast Asian
+47,Democratic Republic of the Congo,COD,42,no,654,African
+48,Denmark,DNK,82,yes,67790,European
+49,Djibouti,DJI,44,no,3136,Eastern Mediterranean
+50,Dominica,DMA,49,no,8351,Americas
+51,Dominican Republic,DOM,77,no,10111,Americas
+52,Ecuador,ECU,77,no,6391,Americas
+53,Egypt,EGY,70,yes,4295,Eastern Mediterranean
+54,El Salvador,SLV,78,no,5127,Americas
+55,Equatorial Guinea,GNQ,46,no,7182,African
+56,Eritrea,ERI,45,no,NA,African
+57,Estonia,EST,79,no,28247,European
+58,Eswatini,SWZ,56,no,3987,African
+59,Ethiopia,ETH,35,no,1028,African
+60,Fiji,FJI,58,no,5356,Western Pacific
+61,Finland,FIN,86,yes,50872,European
+62,France,FRA,85,yes,40886,European
+63,Gabon,GAB,49,no,8820,African
+64,Gambia,GMB,46,no,808,African
+65,Georgia,GEO,68,yes,6675,European
+66,Germany,DEU,88,yes,48718,European
+67,Ghana,GHA,48,yes,2204,African
+68,Greece,GRC,77,yes,20867,European
+69,Grenada,GRD,70,no,9689,Americas
+70,Guatemala,GTM,59,no,5473,Americas
+71,Guinea,GIN,40,no,1515,African
+72,Guinea-Bissau,GNB,37,no,776,African
+73,Guyana,GUY,76,no,18199,Americas
+74,Haiti,HTI,54,no,1748,Americas
+75,Honduras,HND,64,no,3040,Americas
+76,Hungary,HUN,79,no,18390,European
+77,Iceland,ISL,89,yes,73467,European
+78,India,IND,63,yes,2411,Southeast Asian
+79,Indonesia,IDN,55,yes,4788,Southeast Asian
+80,Iran (Islamic Republic of),IRN,74,no,4670,Eastern Mediterranean
+81,Iraq,IRQ,59,no,5937,Eastern Mediterranean
+82,Ireland,IRL,83,yes,103983,European
+83,Israel,ISR,85,yes,54931,European
+84,Italy,ITA,84,yes,34776,European
+85,Jamaica,JAM,74,no,6047,Americas
+86,Japan,JPN,83,yes,34017,Western Pacific
+87,Jordan,JOR,65,no,4311,Eastern Mediterranean
+88,Kazakhstan,KAZ,80,no,11492,European
+89,Kenya,KEN,53,no,2099,African
+90,Kiribati,KIR,48,no,1702,Western Pacific
+91,Kuwait,KWT,78,yes,41080,Eastern Mediterranean
+92,Kyrgyzstan,KGZ,69,no,1655,European
+93,Lao People's Democratic Republic,LAO,52,no,2054,Western Pacific
+94,Latvia,LVA,75,no,21780,European
+95,Lebanon,LBN,73,no,4136,Eastern Mediterranean
+96,Lesotho,LSO,53,no,970,African
+97,Liberia,LBR,45,no,755,African
+98,Libya,LBY,62,no,6716,Eastern Mediterranean
+99,Lithuania,LTU,75,no,25065,European
+100,Luxembourg,LUX,83,yes,125006,European
+101,Madagascar,MDG,35,no,517,African
+102,Malawi,MWI,48,no,645,African
+103,Malaysia,MYS,76,yes,11993,Western Pacific
+104,Maldives,MDV,61,yes,11781,Southeast Asian
+105,Mali,MLI,41,no,833,African
+106,Malta,MLT,85,no,34128,European
+107,Marshall Islands,MHL,59,no,6225,Western Pacific
+108,Mauritania,MRT,40,no,2065,African
+109,Mauritius,MUS,66,yes,10256,African
+110,Mexico,MEX,75,yes,11497,Americas
+111,Micronesia (Federated States of),FSM,48,no,3714,Western Pacific
+112,Monaco,MCO,86,no,240862,European
+113,Mongolia,MNG,65,no,5046,Western Pacific
+114,Montenegro,MNE,72,no,10093,European
+115,Morocco,MAR,69,yes,3442,Eastern Mediterranean
+116,Mozambique,MOZ,44,no,558,African
+117,Myanmar,MMR,52,no,1149,Southeast Asian
+118,Namibia,NAM,63,no,5031,African
+119,Nauru,NRU,60,no,11971,Western Pacific
+120,Nepal,NPL,54,no,1337,Southeast Asian
+121,Netherlands (Kingdom of the),NLD,85,yes,57025,European
+122,New Zealand,NZL,85,yes,48419,Western Pacific
+123,Nicaragua,NIC,70,no,2255,Americas
+124,Niger,NER,35,no,585,African
+125,Nigeria,NGA,38,no,2163,African
+126,North Macedonia,MKD,74,no,6591,European
+127,Norway,NOR,87,yes,108729,European
+128,Oman,OMN,70,no,25057,Eastern Mediterranean
+129,Pakistan,PAK,45,yes,1589,Eastern Mediterranean
+130,Palau,PLW,65,no,12922,Western Pacific
+131,Panama,PAN,78,no,17358,Americas
+132,Papua New Guinea,PNG,30,no,3116,Western Pacific
+133,Paraguay,PRY,72,no,6153,Americas
+134,Peru,PER,71,yes,7126,Americas
+135,Philippines,PHL,58,yes,3499,Western Pacific
+136,Poland,POL,82,no,18688,European
+137,Portugal,PRT,88,yes,24515,European
+138,Qatar,QAT,76,no,87661,Eastern Mediterranean
+139,Republic of Korea,KOR,89,yes,32423,Western Pacific
+140,Republic of Moldova,MDA,71,no,5714,European
+141,Romania,ROU,78,yes,15787,European
+142,Russian Federation,RUS,79,yes,15271,European
+143,Rwanda,RWA,49,yes,966,African
+144,Saint Kitts and Nevis,KNA,79,no,20262,Americas
+145,Saint Lucia,LCA,77,no,13031,Americas
+146,Saint Vincent and the Grenadines,VCT,69,no,9125,Americas
+147,Samoa,WSM,55,no,3746,Western Pacific
+148,San Marino,SMR,77,no,54982,European
+149,Sao Tome and Principe,STP,59,no,2387,African
+150,Saudi Arabia,SAU,74,no,30448,Eastern Mediterranean
+151,Senegal,SEN,50,no,1599,African
+152,Serbia,SRB,72,yes,9538,European
+153,Seychelles,SYC,75,yes,13250,African
+154,Sierra Leone,SLE,41,no,476,African
+155,Singapore,SGP,89,yes,82808,Western Pacific
+156,Slovakia,SVK,82,no,21257,European
+157,Slovenia,SVN,84,no,28439,European
+158,Solomon Islands,SLB,47,no,2205,Western Pacific
+159,Somalia,SOM,27,no,592,Eastern Mediterranean
+160,South Africa,ZAF,71,yes,6766,African
+161,South Sudan,SSD,34,no,NA,African
+162,Spain,ESP,85,yes,29675,European
+163,Sri Lanka,LKA,67,yes,3354,Southeast Asian
+164,Sudan,SDN,44,no,1102,Eastern Mediterranean
+165,Suriname,SUR,63,yes,5859,Americas
+166,Sweden,SWE,85,yes,56424,European
+167,Switzerland,CHE,86,yes,93260,European
+168,Syrian Arab Republic,SYR,64,no,421,Eastern Mediterranean
+169,Tajikistan,TJK,67,no,1054,European
+170,Thailand,THA,82,yes,6910,Southeast Asian
+171,Timor-Leste,TLS,52,no,2389,Southeast Asian
+172,Togo,TGO,44,no,943,African
+173,Tonga,TON,57,no,4426,Western Pacific
+174,Trinidad and Tobago,TTO,75,yes,19629,Americas
+175,Tunisia,TUN,67,yes,3747,Eastern Mediterranean
+176,Türkiye,TUR,76,yes,10675,European
+177,Turkmenistan,TKM,75,no,8793,European
+178,Tuvalu,TUV,52,no,5222,Western Pacific
+179,Uganda,UGA,49,no,964,African
+180,Ukraine,UKR,76,no,4534,European
+181,United Arab Emirates,ARE,82,no,53708,Eastern Mediterranean
+182,United Kingdom of Great Britain and Northern Ireland,GBR,88,yes,46125,European
+183,United Republic of Tanzania,TZA,43,no,1193,African
+184,United States of America,USA,86,no,76330,Americas
+185,Uruguay,URY,82,no,20795,Americas
+186,Uzbekistan,UZB,75,no,2255,European
+187,Vanuatu,VUT,47,no,3231,Western Pacific
+188,Venezuela (Bolivarian Republic of),VEN,75,no,NA,Americas
+189,Viet Nam,VNM,68,no,4164,Western Pacific
+190,Yemen,YEM,42,no,650,Eastern Mediterranean
+191,Zambia,ZMB,56,no,1457,African
+192,Zimbabwe,ZWE,55,no,1677,African
