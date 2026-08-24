@@ -25,14 +25,16 @@ Delete **all of the instructions** we provide to you in this template, in favor 
 ```{r}
 #| message: false
 
+knitr::opts_chunk$set(comment = NA)
+
+source("https://raw.githubusercontent.com/THOMASELOVE/431-data/refs/heads/main/data/Love-431.R") ## add in the Love-431.R script straight from our 431-data page
+
 library(knitr)
 
 ## add additional packages here, as needed
 
 library(easystats)
 library(tidyverse)
-
-## should you choose to use the Love-431.R script, source it in here...
 
 ```
 

@@ -33,10 +33,10 @@ theme_set(theme_bw())
 ## Load Dr. Love's R script
 
 ```{r}
-## remove the ## below if the `Love-431.R` file from our web site
-## is loaded into your project directory and you want to include this script
+## remove the ## before source below to load the `Love-431.R` script 
+## from our 431-data web site and you want to include it in your work
 
-## source("Love-431.R")
+## source("https://raw.githubusercontent.com/THOMASELOVE/431-data/refs/heads/main/data/Love-431.R")
 ```
 
 

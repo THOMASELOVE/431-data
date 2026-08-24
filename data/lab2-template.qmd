@@ -25,6 +25,10 @@ Delete **all of the instructions** we provide to you in this template, in favor 
 ```{r}
 #| message: false
 
+knitr::opts_chunk$set(comment = NA)
+
+library(janitor)
+library(infer)
 library(knitr)
 library(kableExtra)
 library(MKinfer)
@@ -33,12 +37,12 @@ library(rstanarm)
 
 ## add additional packages here, as needed
 
+## should you choose to use the Love-431.R script, source it in here...
+
 library(easystats)
 library(tidyverse)
 
 theme_set(theme_bw()) ## select whatever theme you like best
-
-## should you choose to use the Love-431.R script, source it in here...
 
 ```
 
