@@ -1,0 +1,1000 @@
+subj_id,age,sex,diabetes,nses,bmi1,sbp1,insurance,tobacco,statin,diuretic,sbp2
+A0001,58,F,No,Low,24.41,147,Medicaid,never,0,1,138
+A0004,65,F,No,Very Low,50.5,134,Medicaid,never,1,1,134
+A0005,61,F,Yes,Very Low,29.76,170,Medicaid,current,1,1,140
+A0013,51,M,No,Very Low,41.83,118,Medicaid,quit,0,1,143
+A0015,61,F,No,Very Low,30.95,132,Medicaid,never,0,0,162
+A0017,45,F,No,Low,33.01,110,Medicaid,current,0,1,141
+A0018,40,F,Yes,Very Low,36.32,127,Medicaid,never,0,1,101
+A0019,50,F,Yes,Middle,30.76,152,Medicaid,never,0,1,154
+A0020,43,M,No,Low,23.13,125,Medicaid,current,0,0,111
+A0025,46,F,No,Middle,NA,161,Medicaid,never,0,1,154
+A0028,56,F,No,Low,36.48,140,Medicaid,quit,0,0,154
+A0030,52,F,No,Low,29.54,136,Medicaid,current,0,1,138
+A0032,58,M,No,Middle,32.84,130,Medicaid,quit,1,0,147
+A0037,59,F,No,Very Low,35.09,144,Medicaid,never,1,1,180
+A0041,54,M,Yes,Middle,36.23,118,Medicaid,current,0,1,108
+A0045,35,F,No,Very Low,49.91,130,Medicaid,never,0,1,145
+A0047,55,F,No,High,25.17,158,Medicaid,quit,1,1,108
+A0049,48,F,No,Low,45.18,112,Medicaid,current,0,1,96
+A0050,57,M,Yes,Low,34.6,128,Medicaid,quit,1,0,100
+A0052,61,M,No,High,21.13,130,Medicaid,current,0,1,161
+A0055,42,F,No,Middle,41.16,138,Medicaid,never,0,1,132
+A0058,62,F,Yes,Middle,34.69,168,Medicaid,quit,1,1,136
+A0063,47,F,Yes,Low,27.5,124,Medicaid,current,1,0,130
+A0065,62,F,No,Low,19.48,95,Medicaid,quit,0,1,123
+A0072,54,F,No,High,34.45,150,Medicaid,quit,1,1,130
+A0073,59,F,No,Very Low,27.79,142,Medicaid,NA,1,1,120
+A0075,35,M,Yes,Middle,32.01,151,Medicaid,current,1,0,129
+A0077,54,F,No,Low,25.2,122,Medicaid,current,1,1,102
+A0080,40,M,No,High,23.78,131,Medicaid,current,0,0,141
+A0085,56,F,No,Middle,27.22,140,Medicaid,current,0,0,150
+A0086,56,F,No,Middle,NA,160,Medicaid,quit,0,1,170
+A0089,36,M,No,Low,33.18,160,Medicaid,quit,1,1,177
+A0091,59,F,No,High,26.01,118,Medicaid,NA,0,1,123
+A0092,43,M,Yes,Low,38.91,155,Medicaid,current,1,1,172
+A0096,66,F,No,Middle,40.07,117,Medicaid,current,1,1,123
+A0098,44,M,No,High,39.02,118,Medicaid,quit,0,0,123
+A0100,41,M,No,High,35.73,124,Medicaid,current,1,0,134
+A0103,59,F,No,Middle,31.56,128,Medicaid,never,1,1,133
+A0105,62,F,No,High,21.54,116,Medicaid,current,1,0,90
+A0108,57,F,No,Low,35.25,124,Medicaid,never,0,1,109
+A0110,47,F,No,Low,20.11,130,Medicaid,never,0,1,139
+A0111,45,M,Yes,Low,33.12,131,Medicaid,NA,1,1,129
+A0112,45,M,No,High,39,170,Medicaid,current,1,0,121
+A0113,63,F,No,Low,31.7,146,Medicaid,never,0,1,127
+A0118,53,M,Yes,Middle,20.94,151,Medicaid,current,0,0,161
+A0120,46,F,Yes,Middle,34.19,140,Medicaid,current,1,0,119
+A0121,59,M,Yes,Low,20.59,158,Medicaid,quit,0,0,158
+A0126,61,M,Yes,Middle,25,109,Medicaid,current,0,0,148
+A0128,60,M,No,Low,29.14,119,Medicaid,current,0,1,152
+A0130,60,F,No,Low,43.8,117,Medicaid,never,1,1,125
+A0133,60,M,No,Low,32.27,109,Medicaid,current,1,1,117
+A0134,47,F,No,Middle,43.8,140,Medicaid,current,1,1,116
+A0136,64,F,No,Very Low,26.23,116,Medicaid,current,0,0,137
+A0137,54,M,No,Low,26.76,133,Medicaid,current,0,0,130
+A0141,56,F,No,High,39.93,144,Medicaid,never,1,1,118
+A0159,61,M,No,Low,24.54,134,Medicaid,current,0,1,143
+A0162,54,F,No,Low,34.05,151,Medicaid,never,0,1,130
+A0164,57,F,No,Very Low,38.5,116,Medicaid,current,0,1,115
+A0167,47,F,No,Middle,37.68,172,Medicaid,current,1,0,148
+A0169,53,F,No,Middle,41.93,134,Medicaid,never,1,0,127
+A0171,42,F,No,Middle,32.3,142,Medicaid,quit,0,1,106
+A0173,55,F,No,Low,31.25,116,Medicaid,current,1,1,131
+A0174,49,F,No,Middle,36.95,123,Medicaid,never,0,1,129
+A0178,52,M,No,Middle,28.75,144,Medicaid,never,1,1,141
+A0180,50,F,No,Low,28.05,145,Medicaid,quit,0,0,117
+A0181,43,M,No,NA,28.01,132,Medicaid,never,0,0,123
+A0183,61,F,No,Low,21.41,137,Medicaid,NA,1,1,138
+A0189,59,F,No,Very Low,41.08,156,Medicaid,quit,0,0,137
+A0190,53,M,No,Low,22.52,120,Medicaid,never,0,0,100
+A0191,44,M,No,Low,53.96,111,Medicaid,current,1,1,142
+A0194,49,M,No,Low,29.89,152,Medicaid,quit,1,0,122
+A0197,43,F,No,Low,28.84,110,Medicaid,current,0,1,120
+A0200,57,F,No,Very Low,33.07,155,Medicaid,never,1,1,148
+A0201,61,M,No,Middle,23.13,133,Medicaid,current,0,0,137
+A0202,51,F,No,Low,51.35,136,Medicaid,current,0,1,136
+A0203,61,M,No,Low,31.35,124,Medicaid,current,0,1,138
+A0204,53,F,No,High,36.41,167,Medicaid,NA,0,1,115
+A0207,51,F,Yes,Middle,33.93,111,Medicaid,current,1,0,124
+A0209,57,M,No,High,22.77,155,Medicaid,current,0,1,128
+A0213,56,F,Yes,Low,39.93,167,Medicaid,never,1,1,186
+A0219,58,M,Yes,Very Low,53.15,169,Medicaid,quit,1,1,127
+A0221,48,F,No,Middle,31.29,151,Medicaid,current,0,1,156
+A0226,47,M,No,Middle,35,139,Medicaid,current,0,0,129
+A0227,61,F,No,Very Low,18.44,176,Medicaid,current,0,0,124
+A0230,45,F,No,Very Low,NA,127,Medicaid,quit,0,1,134
+A0235,67,F,Yes,Low,32.13,146,Medicaid,current,1,1,108
+A0242,61,M,No,High,27.35,130,Medicaid,quit,0,1,126
+A0245,62,F,Yes,Low,24.13,146,Medicaid,quit,0,0,107
+A0247,51,F,No,High,40.72,134,Medicaid,quit,0,1,129
+A0248,53,M,Yes,High,28.97,133,Medicaid,quit,0,0,142
+A0249,37,M,No,Low,27.29,114,Medicaid,current,0,1,117
+A0250,41,F,No,Middle,56.49,136,Medicaid,never,0,1,137
+A0251,56,F,No,Low,38.68,142,Medicaid,never,0,1,116
+A0252,59,M,No,Low,26.96,136,Medicaid,never,0,0,141
+A0253,63,F,Yes,Low,32.75,127,Medicaid,never,1,0,133
+A0258,62,M,No,Middle,24.54,121,Medicaid,current,0,1,120
+A0259,50,F,No,Middle,32.52,128,Medicaid,quit,1,0,127
+A0261,46,M,No,Low,46.1,154,Medicaid,never,0,1,140
+A0262,55,M,Yes,Low,28.92,160,Medicaid,quit,1,1,120
+A0263,43,M,Yes,High,42.28,150,Medicaid,never,1,1,122
+A0267,59,F,No,Very Low,37.57,124,Medicaid,quit,0,1,140
+A0268,46,F,No,Middle,33.05,129,Medicaid,never,0,1,115
+A0270,53,M,No,Low,31.62,154,Medicaid,quit,1,0,150
+A0271,47,F,Yes,Low,31.32,138,Medicaid,never,1,1,125
+A0273,54,F,No,Low,26.09,118,Medicaid,quit,1,1,110
+A0275,43,F,No,Low,38.61,142,Medicaid,quit,0,1,135
+A0278,59,M,Yes,High,43.58,156,Medicaid,current,1,0,148
+A0279,49,M,Yes,Low,30.08,150,Medicaid,never,1,0,133
+A0281,60,F,No,Low,42.36,147,Medicaid,quit,1,1,148
+A0282,50,F,Yes,Low,44.61,142,Medicaid,quit,1,1,138
+A0285,43,M,Yes,Very Low,33.6,145,Medicaid,quit,1,1,140
+A0287,52,F,No,Middle,26.82,130,Medicaid,quit,0,0,116
+A0289,56,M,No,Low,26.31,110,Medicaid,quit,1,0,156
+A0290,35,F,No,Middle,40.49,151,Medicaid,current,0,1,139
+A0291,56,F,Yes,Very Low,32.6,148,Medicaid,quit,1,1,118
+A0296,63,M,No,Very Low,33.92,150,Medicaid,quit,1,0,140
+A0298,64,M,No,High,30.11,110,Medicaid,never,1,1,135
+A0299,33,M,No,Very Low,35.49,108,Medicaid,never,0,1,118
+A0302,46,F,No,High,27.19,145,Medicaid,never,0,1,129
+A0303,55,F,Yes,Low,51.05,151,Medicaid,quit,1,0,120
+A0304,52,F,Yes,Middle,33.31,162,Medicaid,current,0,0,168
+A0306,52,F,No,Middle,32.3,122,Medicaid,current,0,1,129
+A0307,60,F,No,Middle,28.34,150,Medicaid,quit,0,1,122
+A0309,55,M,Yes,High,25.11,130,Medicaid,current,1,0,121
+A0310,41,M,No,Middle,35.48,124,Medicaid,quit,0,1,120
+A0315,59,F,No,Low,29.35,118,Medicaid,never,0,1,166
+A0318,57,M,No,Low,28.52,139,Medicaid,quit,0,0,122
+A0319,54,M,Yes,Low,29.43,129,Medicaid,never,0,1,136
+A0321,53,M,No,Middle,29.39,132,Medicaid,quit,0,1,146
+A0323,61,F,Yes,High,32.78,147,Medicaid,current,0,1,141
+A0324,56,F,Yes,Very Low,29,128,Medicaid,quit,0,1,105
+A0326,52,M,No,High,26.65,132,Medicaid,never,0,1,121
+A0328,45,F,No,Low,39.69,125,Medicaid,never,1,1,97
+A0330,63,M,Yes,Low,36.71,141,Medicaid,quit,1,1,140
+A0331,60,F,Yes,Middle,26.58,130,Medicaid,quit,0,0,140
+A0338,55,F,No,High,30.11,142,Medicaid,current,0,1,137
+A0342,49,F,No,Very Low,22.96,100,Medicaid,current,0,0,124
+A0343,56,F,No,High,42.38,154,Medicaid,current,0,0,181
+A0344,38,F,No,Low,30.38,151,Medicaid,current,0,0,94
+A0349,54,M,No,Low,27.95,168,Medicaid,current,0,1,167
+A0351,52,F,No,Low,40.74,135,Medicaid,quit,1,0,129
+A0355,65,F,No,Low,39.34,128,Medicaid,never,0,1,137
+A0358,41,F,No,Low,27.3,121,Medicaid,never,1,1,148
+A0359,52,F,No,Low,39.79,109,Medicaid,quit,1,1,116
+A0361,50,F,No,Very Low,48.64,124,Medicaid,never,1,1,124
+A0362,33,M,Yes,Low,48.06,113,Medicaid,quit,1,1,120
+A0364,43,F,No,Low,18.62,130,Medicaid,current,0,1,136
+A0372,40,M,No,Low,33.83,128,Medicaid,quit,0,1,133
+A0374,60,F,No,Middle,45.24,136,Medicaid,never,1,1,136
+A0375,35,F,No,Middle,32.11,122,Medicaid,current,0,1,152
+A0378,63,M,No,High,46.92,150,Medicaid,current,0,1,157
+A0380,49,F,Yes,Middle,44.01,122,Medicaid,never,1,1,154
+A0384,45,M,No,High,27.22,138,Medicaid,current,0,1,115
+A0390,36,M,No,High,49.65,138,Medicaid,current,1,1,141
+A0393,39,F,No,Middle,30.23,154,Medicaid,current,0,1,143
+A0395,59,M,No,Middle,40.61,140,Medicaid,current,0,0,150
+A0402,59,M,No,Low,27.66,150,Medicaid,quit,0,1,134
+A0403,47,F,No,Middle,20.62,150,Medicaid,never,0,0,149
+A0412,49,F,No,Very Low,40.92,112,Medicaid,never,0,1,138
+A0413,52,M,No,Very Low,25.76,161,Medicaid,current,0,1,112
+A0414,61,F,No,NA,33.8,149,Medicaid,quit,0,1,147
+A0417,57,M,No,High,41.19,136,Medicaid,quit,0,1,127
+A0418,50,F,No,Low,65.43,129,Medicaid,never,1,1,100
+A0424,54,F,Yes,Middle,49.51,140,Medicaid,current,1,0,138
+A0425,56,F,No,Middle,20.75,144,Medicaid,never,0,0,120
+A0426,54,F,Yes,High,NA,145,Medicaid,current,0,1,127
+A0432,47,F,No,Middle,36.19,113,Medicaid,NA,0,1,137
+A0434,56,F,No,High,30.06,156,Medicaid,quit,1,1,137
+A0436,58,F,No,Middle,24.52,121,Medicaid,current,1,1,112
+A0439,39,F,No,Middle,35.52,154,Medicaid,quit,0,0,140
+A0441,55,F,No,High,30.34,151,Medicaid,never,1,0,129
+A0442,49,F,No,Very Low,29.83,146,Medicaid,current,1,1,121
+A0443,38,F,No,Low,65.46,146,Medicaid,current,0,0,157
+A0444,48,M,No,Very Low,25.55,129,Medicaid,current,0,0,129
+A0447,63,M,No,Very Low,29.18,186,Medicaid,NA,0,1,158
+A0448,49,F,No,Low,32.7,142,Medicaid,current,0,1,140
+A0449,53,M,No,Middle,28.04,143,Medicaid,current,0,1,119
+A0452,58,F,No,Very Low,23.73,138,Medicaid,quit,0,1,129
+A0454,45,M,Yes,Very Low,32.06,118,Medicaid,current,1,1,156
+A0455,50,M,Yes,Very Low,38.37,153,Medicaid,never,1,1,158
+A0458,51,M,No,Low,24.09,108,Medicaid,current,0,1,108
+A0463,62,M,Yes,Low,28.75,193,Medicaid,current,1,1,158
+A0464,36,F,Yes,High,50.66,114,Medicaid,never,0,0,136
+A0465,54,F,Yes,Middle,37.11,139,Medicaid,current,1,1,148
+A0472,45,F,Yes,High,39.8,138,Medicaid,quit,1,1,142
+A0475,36,F,Yes,High,28.92,153,Medicaid,current,0,1,114
+A0476,38,M,No,Middle,27.17,140,Medicaid,current,1,1,140
+A0477,62,F,No,Very Low,39.96,136,Medicaid,never,1,1,118
+A0478,50,F,Yes,Middle,52.71,150,Medicaid,quit,1,1,155
+A0480,54,M,No,Very Low,39.47,132,Medicaid,never,0,1,138
+A0481,65,F,Yes,Low,29.62,137,Medicaid,quit,1,1,144
+A0482,44,M,No,Very Low,41.75,140,Medicaid,quit,0,1,152
+A0486,59,F,Yes,High,33.47,118,Medicaid,quit,1,1,129
+A0487,63,F,Yes,Very Low,35.23,147,Medicaid,current,1,1,128
+A0488,53,F,Yes,Low,31.94,163,Medicaid,quit,1,0,164
+A0490,46,M,No,Low,30.52,133,Medicaid,never,0,1,140
+A0491,38,F,No,Low,30.13,124,Medicaid,current,0,1,138
+A0492,48,F,No,Low,32.46,122,Medicaid,current,1,1,135
+A0496,57,M,Yes,High,29.17,126,Medicaid,never,0,1,141
+A0497,55,M,No,Middle,33.63,115,Medicaid,never,0,1,151
+A0499,52,M,No,Low,27.32,123,Medicaid,quit,0,1,114
+A0500,44,F,Yes,Low,39.25,127,Medicaid,never,0,0,144
+A0510,58,M,No,Middle,36.63,148,Medicaid,current,1,1,148
+A0513,63,F,No,Low,24.94,170,Medicaid,current,0,1,200
+A0514,39,F,No,High,33.95,152,Medicaid,quit,0,1,142
+A0518,40,F,Yes,Very Low,53.77,121,Medicaid,never,1,1,131
+A0519,43,F,No,Low,45.53,93,Medicaid,current,1,1,116
+A0523,46,M,No,Very Low,29.25,149,Medicaid,never,1,1,148
+A0524,47,F,Yes,Low,35.61,140,Medicaid,quit,1,1,158
+A0525,54,F,Yes,Middle,27.06,146,Medicaid,quit,0,0,154
+A0527,54,M,No,High,39.07,140,Medicaid,current,0,0,143
+A0531,43,F,Yes,Middle,40.43,143,Medicaid,quit,0,1,159
+A0534,45,F,No,Very Low,29.57,158,Medicaid,current,0,1,130
+A0536,58,M,No,Middle,45.17,128,Medicaid,current,0,1,138
+A0537,52,F,No,Very Low,34.74,131,Medicaid,quit,0,0,156
+A0538,42,F,Yes,Middle,65.95,119,Medicaid,never,1,1,106
+A0545,54,F,No,Low,45.13,131,Medicaid,current,1,1,111
+A0548,61,F,No,Low,36.49,155,Medicaid,current,1,1,154
+A0550,50,F,No,Middle,31.3,110,Medicaid,current,0,1,144
+A0551,53,F,No,High,24.69,116,Medicaid,current,1,1,139
+A0553,55,F,No,High,36.03,175,Medicaid,quit,1,1,148
+A0554,48,F,No,High,29.22,153,Medicaid,never,1,0,130
+A0555,46,M,Yes,Very Low,33.79,162,Medicaid,never,1,0,140
+A0557,54,M,No,Very Low,29.16,144,Medicaid,never,0,1,136
+A0558,59,M,Yes,Low,29.9,120,Medicaid,quit,1,1,122
+A0559,34,M,No,Low,26.91,142,Medicaid,current,0,1,144
+A0561,59,F,No,Very Low,35.58,123,Medicaid,quit,0,1,156
+A0562,56,M,Yes,Low,26.24,155,Medicaid,quit,1,0,136
+A0564,49,F,No,High,27.29,156,Medicaid,never,0,1,122
+A0574,55,F,No,Very Low,24.51,147,Medicaid,never,1,0,138
+A0575,58,F,No,High,28.98,133,Medicaid,current,0,1,169
+A0580,48,M,No,Middle,29.76,164,Medicaid,never,0,0,119
+A0583,53,F,Yes,Low,51.93,124,Medicaid,never,1,1,126
+A0587,52,F,Yes,Low,34.07,117,Medicaid,quit,1,1,124
+A0588,57,F,No,High,40.37,143,Medicaid,current,1,0,154
+A0589,52,F,Yes,Low,36.94,128,Medicaid,never,0,1,148
+A0592,51,M,Yes,Low,33.38,156,Medicaid,never,0,0,135
+A0595,59,F,No,Very Low,31.8,140,Medicaid,quit,0,1,146
+A0597,42,F,No,Middle,39.35,172,Medicaid,current,0,1,156
+A0599,49,F,No,Middle,27.75,152,Medicaid,current,1,0,139
+A0602,40,M,No,Middle,31.98,111,Medicaid,quit,0,1,116
+A0605,49,F,Yes,NA,49.01,158,Medicaid,never,1,1,110
+A0608,60,M,No,Middle,38.28,131,Medicaid,current,1,0,152
+A0610,39,F,No,Low,42.39,123,Medicaid,current,1,1,122
+A0611,45,F,Yes,Very Low,53.53,119,Medicaid,current,1,1,149
+A0615,60,F,Yes,Low,39.14,115,Medicaid,quit,1,0,132
+A0618,61,F,No,Middle,25.07,124,Medicaid,quit,0,1,113
+A0622,59,F,Yes,Middle,27.12,136,Medicaid,never,1,1,122
+A0624,40,M,No,Middle,26.61,131,Medicaid,current,0,0,135
+A0625,52,M,No,Middle,28.21,119,Medicaid,never,1,1,113
+A0628,48,F,No,NA,22.31,118,Medicaid,current,0,1,163
+A0629,60,F,Yes,Very Low,37.82,126,Medicaid,never,1,1,140
+A0630,50,F,Yes,High,47.37,146,Medicaid,never,1,0,154
+A0634,50,F,No,Middle,42.05,179,Medicaid,never,0,1,141
+A0635,59,M,No,Very Low,20.25,100,Medicaid,current,1,1,122
+A0639,54,F,Yes,Middle,30.38,130,Medicaid,current,1,1,134
+A0642,48,F,No,Middle,42.97,141,Medicaid,NA,1,1,137
+A0643,57,M,No,High,24.77,143,Medicaid,never,0,0,124
+A0644,63,M,Yes,Very Low,37.84,140,Medicaid,NA,1,0,103
+A0646,54,F,No,Very Low,35.89,116,Medicaid,quit,1,0,122
+A0652,58,F,No,Middle,50.48,175,Medicaid,never,0,1,148
+A0653,60,F,No,Low,26.91,159,Medicaid,current,0,1,136
+A0659,46,F,Yes,Very Low,55.98,128,Medicaid,never,0,1,118
+A0662,60,M,Yes,Very Low,21.48,164,Medicaid,current,0,1,156
+A0664,55,F,Yes,Very Low,30.03,137,Medicaid,quit,1,1,141
+A0667,59,F,No,Middle,32.13,120,Medicaid,never,0,1,101
+A0668,49,F,No,Middle,38.28,127,Medicaid,never,0,1,135
+A0669,55,F,Yes,Middle,54.45,135,Medicaid,quit,1,1,130
+A0670,50,F,Yes,High,22.87,91,Medicaid,current,1,1,137
+A0672,64,M,Yes,High,32.24,121,Medicaid,quit,1,0,120
+A0674,51,F,No,Low,45.4,150,Medicaid,never,0,1,150
+A0676,64,F,Yes,Low,31.1,138,Medicaid,current,1,1,147
+A0677,54,M,No,High,44.7,130,Medicaid,never,0,1,113
+A0678,58,F,Yes,Low,53.44,140,Medicaid,quit,1,1,157
+A0682,50,F,No,Low,21.35,137,Medicaid,current,0,1,142
+A0684,56,M,Yes,Low,24.9,83,Medicaid,current,0,1,121
+A0686,57,F,Yes,Low,28.04,142,Medicaid,current,1,0,159
+A0688,61,F,No,Middle,37.02,164,Medicaid,never,1,1,180
+A0689,64,F,No,Very Low,37.73,158,Medicaid,never,1,1,140
+A0696,41,F,Yes,Very Low,40,153,Medicaid,current,1,1,137
+A0698,53,M,No,Low,30.23,140,Medicaid,current,1,1,135
+A0700,39,F,No,Low,18.66,107,Medicaid,current,0,0,90
+A0703,64,M,No,Middle,29.99,130,Medicaid,quit,1,1,178
+A0704,60,F,No,Low,30.29,142,Medicaid,never,0,0,138
+A0706,42,F,No,Low,33.1,121,Medicaid,never,0,1,110
+A0710,60,F,Yes,Very Low,24.39,108,Medicaid,never,1,0,137
+A0711,60,F,No,High,28.12,110,Medicaid,current,0,1,112
+A0713,61,F,No,Low,20.56,128,Medicaid,current,0,0,127
+A0721,61,F,No,Low,27.79,134,Medicaid,quit,0,1,112
+A0724,37,F,No,Low,30.37,137,Medicaid,current,0,1,172
+A0725,52,M,Yes,Low,32.73,147,Medicaid,quit,1,0,127
+A0727,36,F,No,High,29.29,138,Medicaid,never,1,1,159
+A0728,54,F,Yes,Low,45.69,135,Medicaid,quit,1,1,130
+A0730,61,F,No,Very Low,37.71,141,Medicaid,never,0,0,126
+A0731,37,F,No,Middle,46.5,131,Medicaid,current,1,1,143
+A0732,65,M,Yes,High,32.04,100,Medicaid,quit,1,1,128
+A0737,49,F,No,Low,31.01,150,Medicaid,quit,0,1,146
+A0739,59,F,No,Low,32.15,139,Medicaid,quit,0,1,149
+A0742,53,F,No,Low,35.2,142,Medicaid,quit,0,1,137
+A0743,61,F,No,Low,36.06,128,Medicaid,current,1,1,113
+A0745,46,F,No,Low,42.44,126,Medicaid,never,0,1,148
+A0749,57,F,No,Low,29.87,116,Medicaid,current,0,1,108
+A0750,56,F,No,Low,39.48,153,Medicaid,current,1,1,135
+A0752,52,F,No,Low,30.65,152,Medicaid,current,0,1,162
+A0757,53,M,Yes,Low,33.17,182,Medicaid,quit,1,1,166
+A0759,45,M,No,Low,74.65,185,Medicaid,never,0,1,148
+A0760,57,F,Yes,Low,28.84,125,Medicaid,never,0,0,157
+A0761,59,F,No,Low,24.88,142,Medicaid,never,0,0,119
+A0762,61,F,No,Middle,24.69,81,Medicaid,current,0,1,128
+A0764,55,M,Yes,Low,44.82,121,Medicaid,never,1,1,109
+A0766,45,F,No,Very Low,16.72,127,Medicaid,current,0,1,113
+A0768,51,F,No,Middle,41.32,168,Medicaid,never,0,1,166
+A0769,51,F,No,High,27.5,134,Medicaid,current,1,0,134
+A0771,58,M,No,Middle,22.73,150,Medicaid,current,0,0,160
+A0776,53,M,No,High,31.29,120,Medicaid,quit,0,0,143
+A0778,58,M,No,Middle,23.2,144,Medicaid,never,1,0,160
+A0779,52,F,No,Middle,31.38,168,Medicaid,current,0,1,112
+A0781,45,F,Yes,Low,64.3,162,Medicaid,never,1,1,113
+A0785,38,F,No,Very Low,40.04,131,Medicaid,current,0,0,141
+A0786,52,M,No,Very Low,32.74,121,Medicaid,current,1,1,143
+A0787,63,F,Yes,Very Low,59.31,138,Medicaid,current,1,1,128
+A0790,58,F,No,Middle,22.65,124,Medicaid,current,0,1,124
+A0791,42,F,No,Low,37.27,106,Medicaid,current,0,1,120
+A0794,54,F,No,Very Low,28.73,149,Medicaid,never,1,1,134
+A0796,47,M,Yes,High,29.12,168,Medicaid,never,1,0,130
+A0800,57,M,No,Middle,26.93,138,Medicaid,current,0,1,125
+A0806,52,M,No,Low,23.96,120,Medicaid,current,1,0,101
+A0807,50,F,Yes,Low,36.6,136,Medicaid,current,0,1,121
+A0808,66,M,No,Very Low,29.13,138,Medicaid,quit,0,1,118
+A0810,42,M,Yes,Low,59.96,146,Medicaid,current,1,1,145
+A0815,56,F,No,Middle,39.62,131,Medicaid,quit,1,0,132
+A0816,56,F,No,Very Low,21.42,115,Medicaid,current,1,1,116
+A0825,53,M,No,Very Low,35.01,109,Medicaid,quit,0,0,142
+A0828,59,M,No,Low,34.95,104,Medicaid,current,1,1,111
+A0829,56,F,Yes,Low,34.68,153,Medicaid,current,0,0,133
+A0832,54,F,Yes,Very Low,49.23,153,Medicaid,never,1,1,174
+A0834,48,M,No,Middle,26.48,136,Medicaid,current,0,0,138
+A0838,49,F,Yes,Very Low,43.34,143,Medicaid,never,1,0,131
+A0840,55,F,No,Middle,25.54,122,Medicaid,current,1,0,111
+A0844,60,M,Yes,High,29.25,128,Medicaid,current,1,1,150
+A0846,43,M,Yes,Low,50.5,129,Medicaid,never,1,1,137
+A0848,58,M,Yes,Low,29.99,107,Medicaid,current,1,0,122
+A0849,62,M,No,Low,27.29,119,Medicaid,current,0,1,105
+A0856,58,F,No,Very Low,36.32,110,Medicaid,current,1,1,120
+A0864,53,F,No,Middle,32.35,166,Medicaid,current,0,1,115
+A0865,58,F,No,Middle,43.13,137,Medicaid,quit,0,1,116
+A0866,59,F,Yes,Very Low,38.27,142,Medicaid,current,0,1,127
+A0867,59,F,No,High,30.79,121,Medicaid,quit,1,1,99
+A0869,53,F,No,Very Low,36.02,139,Medicaid,never,0,1,132
+A0871,60,M,No,High,32.23,159,Medicaid,quit,1,1,121
+A0874,51,F,No,Very Low,43.85,149,Medicaid,quit,1,0,118
+A0879,57,F,No,Middle,35.43,125,Medicaid,current,0,1,111
+A0880,64,F,No,Middle,48.04,162,Medicaid,never,1,0,140
+A0881,57,M,No,Low,28.1,124,Medicaid,never,0,1,100
+A0883,38,F,No,Very Low,34.03,131,Medicaid,quit,0,1,131
+A0886,60,F,Yes,Very Low,45.88,137,Medicaid,current,1,1,107
+A0891,53,F,No,Very Low,39.27,144,Medicaid,current,0,1,141
+A0892,57,F,No,High,40.1,157,Medicaid,quit,0,0,137
+A0894,45,F,No,Middle,42.34,132,Medicaid,never,0,0,130
+A0896,61,M,No,Middle,31.65,144,Medicaid,current,0,1,142
+A0898,60,F,No,Very Low,31.75,139,Medicaid,quit,1,1,115
+A0899,47,M,No,Middle,31.91,128,Medicaid,quit,0,0,138
+A0903,58,F,No,Middle,31.87,180,Medicaid,never,0,0,154
+A0906,62,F,Yes,High,25.34,100,Medicaid,current,0,0,109
+A0907,55,F,No,Low,26.73,117,Medicaid,current,0,1,158
+A0909,51,M,No,High,28.62,150,Medicaid,quit,0,1,121
+A0910,59,F,No,High,32.26,102,Medicaid,quit,1,1,112
+A0919,44,F,No,Low,47.52,162,Medicaid,current,0,1,145
+A0920,64,F,No,High,33.55,160,Medicaid,quit,1,1,182
+A0923,40,F,No,Low,36.83,128,Medicaid,quit,1,0,133
+A0926,65,F,Yes,Very Low,45.45,118,Medicaid,NA,1,1,142
+A0929,58,M,No,Very Low,28.81,161,Medicaid,never,1,0,136
+A0930,61,F,No,Very Low,27.39,133,Medicaid,never,1,0,121
+A0931,54,F,No,Low,50.34,125,Medicaid,never,0,1,119
+A0934,55,F,Yes,Middle,50.59,120,Medicaid,current,1,1,158
+A0936,49,F,Yes,Low,NA,122,Medicaid,current,1,0,114
+A0940,40,M,No,High,42.66,150,Medicaid,current,0,1,124
+A0942,52,M,Yes,Middle,27.21,155,Medicaid,current,1,0,121
+A0943,36,F,No,Middle,40.7,130,Medicaid,current,0,1,103
+A0948,56,F,No,High,39.94,123,Medicaid,never,1,1,128
+A0949,40,M,Yes,Very Low,27.29,140,Medicaid,quit,0,0,130
+A0954,50,M,No,Middle,38.7,158,Medicaid,current,1,1,118
+A0955,54,M,No,Low,19.21,143,Medicaid,current,0,0,155
+A0958,50,F,Yes,Very Low,35.24,145,Medicaid,current,1,1,149
+A0959,61,M,Yes,High,43.93,107,Medicaid,quit,1,1,100
+A0962,62,F,No,Middle,42.46,205,Medicaid,current,0,0,203
+A0964,50,F,No,Low,22.81,130,Medicaid,current,0,0,122
+A0966,40,M,No,Low,32.89,122,Medicaid,current,0,0,166
+A0969,53,M,No,Very Low,37.04,145,Medicaid,current,1,0,152
+A0970,50,M,No,Middle,29.89,134,Medicaid,current,0,0,149
+A0972,55,M,No,Low,36.3,148,Medicaid,quit,1,1,132
+A0973,52,F,No,Low,34.61,198,Medicaid,current,1,1,180
+A0974,38,F,Yes,Middle,28.51,160,Medicaid,current,0,0,100
+A0979,57,M,No,Middle,25.89,162,Medicaid,current,1,1,160
+A0981,63,F,Yes,High,28.91,115,Medicaid,NA,1,0,152
+A0984,60,F,Yes,Low,40.51,118,Medicaid,quit,1,1,116
+A0992,38,F,No,Low,31.96,136,Medicaid,never,1,1,144
+A0996,49,F,No,Very Low,33.84,122,Medicaid,current,1,1,138
+A0002,64,F,No,Low,30.79,130,Medicare,never,1,1,138
+A0006,70,F,Yes,Very Low,30.98,137,Medicare,never,1,0,150
+A0007,65,M,Yes,High,41.06,126,Medicare,quit,1,0,132
+A0008,56,F,Yes,Very Low,33.4,126,Medicare,quit,1,0,136
+A0009,57,F,No,High,30.95,133,Medicare,current,1,1,139
+A0010,72,F,No,Low,32.76,150,Medicare,quit,0,0,134
+A0012,68,F,Yes,Low,26.86,168,Medicare,never,1,1,136
+A0014,68,F,Yes,Very Low,30.38,151,Medicare,never,1,1,148
+A0016,79,F,No,Very Low,26.36,158,Medicare,quit,0,1,152
+A0021,79,F,No,High,23.62,134,Medicare,never,1,0,138
+A0022,67,F,No,High,33.09,139,Medicare,current,1,1,128
+A0023,71,F,Yes,Very Low,39.91,133,Medicare,never,1,1,101
+A0026,59,F,Yes,Low,41.23,146,Medicare,quit,1,0,124
+A0027,72,F,No,Middle,39.5,119,Medicare,NA,0,1,145
+A0029,62,M,No,High,33.43,160,Medicare,quit,1,0,143
+A0031,70,M,Yes,Middle,28.89,120,Medicare,never,1,0,123
+A0033,72,F,Yes,Very Low,28.15,140,Medicare,quit,1,1,169
+A0034,54,M,No,Very Low,17.79,112,Medicare,quit,1,0,106
+A0035,62,F,Yes,Very Low,26.06,125,Medicare,never,1,1,139
+A0036,77,F,No,High,30.98,127,Medicare,never,0,0,134
+A0038,43,M,Yes,Very Low,38.35,140,Medicare,quit,1,0,118
+A0042,63,F,Yes,Middle,28.12,147,Medicare,current,1,0,119
+A0043,37,M,Yes,Middle,28.86,137,Medicare,quit,1,0,150
+A0046,72,F,Yes,Low,19.48,136,Medicare,never,1,1,158
+A0048,50,F,No,Very Low,38.72,139,Medicare,never,0,1,132
+A0053,68,F,No,Low,25.23,132,Medicare,never,1,1,151
+A0054,73,F,Yes,Middle,24.92,143,Medicare,never,1,0,121
+A0056,76,M,Yes,Very Low,25.77,140,Medicare,quit,0,1,130
+A0057,56,F,No,Very Low,42.3,125,Medicare,never,1,0,138
+A0060,70,F,No,Very Low,26.66,130,Medicare,quit,0,0,142
+A0061,58,M,No,Middle,31.75,120,Medicare,current,1,0,155
+A0064,77,F,No,Middle,21.74,108,Medicare,quit,1,1,104
+A0066,62,F,No,Very Low,27.62,158,Medicare,never,1,1,150
+A0069,53,M,No,Middle,40.4,135,Medicare,quit,0,1,118
+A0070,74,M,No,Low,26.02,140,Medicare,current,0,0,158
+A0071,73,F,No,Low,36.21,143,Medicare,quit,1,1,104
+A0074,65,F,Yes,Middle,25.9,145,Medicare,quit,1,1,126
+A0076,56,F,No,Low,42.93,147,Medicare,quit,1,1,120
+A0079,63,M,No,Low,37.03,131,Medicare,never,1,1,124
+A0081,52,F,No,Middle,29.32,124,Medicare,current,1,1,124
+A0082,83,F,No,Low,27.59,128,Medicare,never,1,0,136
+A0083,64,M,No,Middle,25.84,115,Medicare,quit,0,1,132
+A0084,59,F,No,Low,37.42,143,Medicare,quit,0,1,112
+A0087,53,M,No,Middle,43.83,128,Medicare,never,0,1,151
+A0088,64,F,Yes,Middle,43.51,130,Medicare,never,1,0,95
+A0090,66,F,Yes,Middle,43.05,111,Medicare,never,1,1,127
+A0093,68,F,Yes,Middle,30.77,125,Medicare,never,1,0,147
+A0097,61,F,No,Low,22.48,123,Medicare,quit,0,0,136
+A0099,68,F,No,High,30.63,137,Medicare,never,0,1,157
+A0101,65,M,No,High,26.09,107,Medicare,quit,0,0,119
+A0104,79,F,No,Middle,33.8,142,Medicare,never,1,0,127
+A0106,54,F,No,Low,31.34,170,Medicare,current,0,1,113
+A0107,71,F,Yes,Middle,30.07,149,Medicare,never,0,0,149
+A0109,64,F,No,Middle,32.62,129,Medicare,quit,1,0,110
+A0114,72,M,Yes,Low,24.23,116,Medicare,quit,0,1,119
+A0115,76,M,Yes,Low,34.26,138,Medicare,quit,1,1,136
+A0116,75,F,No,Middle,24.3,134,Medicare,quit,1,1,142
+A0117,56,F,No,Middle,36.91,120,Medicare,never,0,1,128
+A0119,66,F,No,Low,34.83,111,Medicare,quit,1,0,128
+A0122,69,M,Yes,Middle,32.65,138,Medicare,never,1,1,130
+A0125,67,M,No,Low,32.34,159,Medicare,current,0,1,135
+A0129,72,F,No,Low,34.39,112,Medicare,quit,1,1,107
+A0132,61,M,No,High,34.58,100,Medicare,quit,1,1,124
+A0135,56,M,Yes,Very Low,32.44,142,Medicare,never,1,0,172
+A0138,57,F,No,Very Low,28.78,134,Medicare,current,0,0,134
+A0139,73,M,Yes,High,24.86,110,Medicare,quit,0,0,160
+A0140,57,M,No,Very Low,33.73,137,Medicare,never,1,0,106
+A0142,71,F,Yes,Low,30.2,143,Medicare,quit,1,1,153
+A0143,74,F,No,Low,33.29,107,Medicare,quit,1,0,100
+A0145,69,F,No,Middle,45.73,132,Medicare,quit,1,1,154
+A0147,78,F,No,Very Low,31.46,137,Medicare,quit,1,1,144
+A0148,74,F,No,Low,36.47,154,Medicare,quit,0,1,144
+A0156,71,M,Yes,Low,28.84,128,Medicare,quit,1,1,106
+A0158,74,M,No,Middle,26.93,138,Medicare,quit,0,1,104
+A0160,76,M,Yes,Low,35.44,146,Medicare,current,1,1,139
+A0161,77,F,No,Very Low,22.93,135,Medicare,never,0,0,137
+A0163,64,F,Yes,Low,46.57,104,Medicare,current,1,1,107
+A0165,71,M,Yes,Very Low,30.69,120,Medicare,quit,1,0,148
+A0166,79,M,No,Low,25.99,107,Medicare,never,1,0,148
+A0170,67,F,Yes,Middle,32.3,124,Medicare,never,1,0,124
+A0172,48,F,No,Low,57.08,113,Medicare,current,0,1,124
+A0175,68,M,No,Low,28.35,130,Medicare,never,0,0,140
+A0176,70,F,Yes,Very Low,33.3,156,Medicare,quit,1,0,168
+A0177,74,F,Yes,Middle,46.19,171,Medicare,quit,1,1,144
+A0179,49,F,No,High,34.29,155,Medicare,never,0,1,125
+A0182,46,F,Yes,Middle,31.43,115,Medicare,current,1,1,103
+A0184,56,M,Yes,Low,30.89,138,Medicare,never,1,0,148
+A0185,79,F,No,High,39.19,142,Medicare,never,1,1,134
+A0186,72,F,Yes,Very Low,34.8,149,Medicare,quit,1,1,149
+A0187,62,F,Yes,Low,40.41,132,Medicare,never,0,0,134
+A0188,66,F,Yes,Very Low,41.18,100,Medicare,never,1,1,130
+A0192,58,M,No,Middle,30.42,152,Medicare,quit,1,0,117
+A0193,74,M,No,Very Low,24.4,125,Medicare,quit,1,1,134
+A0195,66,F,No,NA,45.68,154,Medicare,quit,0,1,128
+A0198,75,F,No,Very Low,27.47,97,Medicare,never,1,1,129
+A0199,74,F,Yes,High,42.67,104,Medicare,never,1,0,104
+A0205,72,M,No,Very Low,30.22,141,Medicare,quit,0,0,131
+A0206,81,F,No,Low,39.22,146,Medicare,never,1,1,148
+A0208,67,M,Yes,Low,40.32,140,Medicare,quit,1,1,140
+A0212,69,M,Yes,Middle,31.34,147,Medicare,never,0,1,132
+A0214,65,M,No,High,23.38,140,Medicare,quit,0,0,170
+A0215,53,M,Yes,Low,59.04,120,Medicare,quit,0,0,114
+A0217,70,F,Yes,Very Low,24.92,163,Medicare,never,1,1,140
+A0218,72,F,Yes,Low,26.89,150,Medicare,never,1,0,128
+A0220,60,M,No,Middle,50.64,114,Medicare,quit,1,1,99
+A0222,59,F,Yes,Middle,39.83,130,Medicare,quit,1,1,138
+A0225,63,F,Yes,Low,29.61,124,Medicare,never,1,1,139
+A0228,59,F,Yes,Middle,36.97,142,Medicare,quit,1,0,138
+A0229,44,F,No,Low,38.37,146,Medicare,current,0,1,126
+A0232,57,M,No,Middle,20.68,150,Medicare,current,1,1,135
+A0233,58,F,No,Very Low,46.41,167,Medicare,never,0,1,149
+A0234,51,F,No,High,33.22,137,Medicare,current,1,1,127
+A0236,58,F,Yes,High,22.67,133,Medicare,quit,1,1,91
+A0238,79,M,No,Middle,42.12,126,Medicare,never,1,1,135
+A0239,66,M,Yes,Very Low,28.04,102,Medicare,quit,1,1,132
+A0240,70,F,Yes,Very Low,31.65,140,Medicare,quit,1,1,132
+A0244,54,M,Yes,Middle,29.45,116,Medicare,current,1,1,108
+A0246,43,M,No,Low,41.54,112,Medicare,current,0,1,137
+A0255,57,F,No,Middle,26.46,153,Medicare,current,0,1,134
+A0256,72,F,Yes,Low,31.02,144,Medicare,quit,1,0,148
+A0257,76,F,No,Low,29.76,163,Medicare,current,1,1,120
+A0260,76,F,No,High,23.92,140,Medicare,current,0,1,196
+A0264,82,F,No,Middle,35.38,150,Medicare,quit,1,1,179
+A0265,65,F,No,Low,27.3,130,Medicare,current,0,1,180
+A0266,74,F,No,Middle,28.65,190,Medicare,quit,0,0,148
+A0269,78,M,No,Very Low,28.08,121,Medicare,quit,1,0,138
+A0272,75,F,Yes,High,30.8,134,Medicare,quit,1,0,163
+A0276,70,F,No,Middle,42.32,181,Medicare,quit,0,1,147
+A0277,68,F,No,Very Low,29.83,120,Medicare,never,0,0,158
+A0283,59,F,No,Middle,36.69,145,Medicare,quit,0,0,130
+A0284,72,M,No,Low,28.32,136,Medicare,quit,1,0,149
+A0286,74,M,No,Middle,24.87,149,Medicare,quit,1,0,125
+A0288,62,M,No,Very Low,27.72,130,Medicare,never,1,0,130
+A0294,75,F,Yes,Low,34.12,130,Medicare,never,1,1,131
+A0300,61,F,Yes,Low,28.42,120,Medicare,quit,1,1,136
+A0305,56,F,Yes,Middle,44.87,120,Medicare,quit,1,1,146
+A0308,49,F,Yes,High,45.73,132,Medicare,quit,1,0,112
+A0313,60,F,Yes,Very Low,42.7,138,Medicare,never,1,1,134
+A0314,69,F,No,Very Low,45.91,134,Medicare,quit,1,1,135
+A0316,65,F,No,Low,40.59,119,Medicare,never,1,1,132
+A0317,80,F,No,Low,33.47,182,Medicare,never,0,1,129
+A0327,67,F,Yes,Very Low,23.84,130,Medicare,quit,1,1,115
+A0329,75,F,No,High,30.98,133,Medicare,never,0,1,137
+A0332,78,F,No,Low,30.83,150,Medicare,never,1,1,132
+A0334,75,F,No,Very Low,30.65,121,Medicare,never,1,1,130
+A0336,67,M,No,Very Low,26.44,107,Medicare,quit,1,0,132
+A0340,62,M,No,Low,33.16,139,Medicare,current,1,1,108
+A0346,65,F,No,Very Low,37.08,124,Medicare,never,1,1,146
+A0347,66,F,No,High,24.64,127,Medicare,current,1,0,135
+A0348,78,F,No,Low,35.34,162,Medicare,never,0,1,140
+A0350,67,F,No,Low,28.35,134,Medicare,quit,1,0,135
+A0353,57,M,Yes,Low,31.68,127,Medicare,quit,1,0,160
+A0354,60,M,Yes,Very Low,35.6,120,Medicare,never,1,0,137
+A0356,68,F,Yes,Low,44.48,110,Medicare,never,1,1,121
+A0360,64,F,No,Very Low,20.33,100,Medicare,quit,0,0,130
+A0365,51,M,No,Middle,62.28,118,Medicare,never,1,1,132
+A0366,82,F,No,Very Low,33.98,148,Medicare,never,1,1,111
+A0367,55,F,Yes,Middle,37.3,138,Medicare,never,1,0,155
+A0368,71,M,Yes,Very Low,30.17,118,Medicare,quit,1,1,130
+A0369,59,F,No,Very Low,42.08,156,Medicare,current,1,1,142
+A0373,65,M,No,Middle,26.16,110,Medicare,never,0,0,109
+A0376,64,F,No,High,34.15,139,Medicare,never,0,0,131
+A0382,58,F,No,Low,28.27,125,Medicare,current,0,1,138
+A0383,68,F,Yes,High,32.9,146,Medicare,quit,1,0,125
+A0386,61,F,Yes,Middle,28.33,178,Medicare,current,1,1,121
+A0387,67,M,No,Very Low,29.57,119,Medicare,quit,0,0,128
+A0388,74,M,No,High,22.84,150,Medicare,quit,1,1,114
+A0391,62,F,Yes,Middle,32.98,124,Medicare,never,0,0,139
+A0392,54,F,No,Middle,32.05,134,Medicare,current,0,1,122
+A0394,48,F,Yes,Very Low,33.99,118,Medicare,NA,1,1,119
+A0398,65,F,No,Low,39.99,129,Medicare,quit,0,1,111
+A0400,79,F,No,Low,41.82,123,Medicare,quit,0,1,126
+A0404,71,M,No,Middle,30.9,140,Medicare,quit,1,1,150
+A0405,69,F,No,Low,32.26,129,Medicare,quit,1,0,130
+A0406,68,M,Yes,High,23.58,134,Medicare,never,1,1,150
+A0408,68,F,Yes,Low,45.56,143,Medicare,quit,1,1,130
+A0409,79,F,Yes,Very Low,30.44,161,Medicare,quit,1,1,120
+A0410,76,M,No,Very Low,25.94,147,Medicare,current,0,1,119
+A0411,78,M,No,Low,27.78,168,Medicare,quit,1,0,120
+A0416,74,F,No,Low,27.22,153,Medicare,never,1,0,145
+A0419,69,M,No,Middle,23.19,123,Medicare,current,0,0,145
+A0420,61,M,No,Very Low,27.5,138,Medicare,quit,0,1,128
+A0423,41,F,No,Very Low,40.03,139,Medicare,never,0,0,128
+A0428,58,F,No,Middle,37.44,124,Medicare,never,1,1,128
+A0430,58,F,No,Low,28.61,151,Medicare,quit,0,0,141
+A0431,67,F,Yes,Middle,35.83,160,Medicare,never,1,1,127
+A0433,77,F,No,Very Low,28.01,117,Medicare,quit,1,1,125
+A0435,80,F,No,Low,26.73,161,Medicare,quit,1,1,133
+A0437,67,F,Yes,Middle,32.16,180,Medicare,quit,1,1,154
+A0438,79,F,No,Low,46.38,158,Medicare,quit,1,1,142
+A0446,62,M,No,Low,34.05,142,Medicare,quit,1,1,107
+A0450,74,F,No,Middle,21.63,163,Medicare,never,0,1,169
+A0453,76,M,No,Middle,23.79,134,Medicare,current,1,0,90
+A0461,55,F,Yes,Middle,39.64,164,Medicare,never,0,0,155
+A0462,59,M,Yes,Very Low,28.79,124,Medicare,current,1,1,118
+A0467,67,F,No,Very Low,24.08,131,Medicare,current,1,1,119
+A0470,76,F,Yes,Low,46.11,135,Medicare,never,1,1,138
+A0471,61,F,No,Low,34.78,123,Medicare,quit,1,1,133
+A0474,67,F,No,Low,33.83,153,Medicare,quit,0,0,131
+A0479,64,F,No,Middle,52.9,111,Medicare,quit,0,1,77
+A0483,67,M,No,Very Low,29.71,120,Medicare,current,1,1,109
+A0484,68,F,No,Low,34.01,142,Medicare,quit,1,1,139
+A0493,63,F,No,Very Low,37.25,136,Medicare,never,1,1,127
+A0495,65,F,Yes,Middle,33.9,111,Medicare,never,1,0,123
+A0498,39,F,Yes,Very Low,36.9,126,Medicare,never,0,1,129
+A0503,77,M,No,Middle,31.87,134,Medicare,never,1,1,95
+A0504,69,F,No,Very Low,33.31,130,Medicare,quit,1,1,116
+A0506,64,F,No,Middle,28.19,149,Medicare,quit,1,0,120
+A0509,61,M,Yes,Middle,38.99,140,Medicare,quit,1,1,166
+A0511,55,M,Yes,Very Low,23.92,128,Medicare,current,1,1,123
+A0512,76,F,No,Middle,30.3,154,Medicare,quit,1,0,136
+A0515,67,F,Yes,Low,24.3,130,Medicare,current,1,0,140
+A0516,64,M,No,High,32.53,141,Medicare,NA,0,1,140
+A0520,63,F,No,Low,39.51,145,Medicare,quit,1,1,124
+A0521,80,F,No,Low,23.57,136,Medicare,quit,1,1,144
+A0522,68,M,No,Low,24.97,123,Medicare,never,1,1,150
+A0528,66,F,No,Low,39.65,133,Medicare,never,0,1,136
+A0529,61,M,No,Low,30.01,144,Medicare,quit,0,0,172
+A0530,66,F,No,Very Low,41.28,126,Medicare,never,0,0,128
+A0533,74,M,Yes,High,30.31,134,Medicare,quit,1,1,130
+A0535,53,M,No,Very Low,33.34,116,Medicare,quit,1,0,114
+A0540,65,F,No,Low,36.42,140,Medicare,never,0,1,115
+A0543,79,F,No,Low,35.96,126,Medicare,quit,1,1,117
+A0544,75,F,No,Low,21.11,158,Medicare,current,1,0,128
+A0546,70,F,No,High,23.6,127,Medicare,quit,0,0,142
+A0547,70,M,No,Low,26.16,121,Medicare,current,1,1,140
+A0552,53,M,No,Low,28.89,110,Medicare,quit,1,1,133
+A0556,47,M,Yes,Low,27.11,138,Medicare,current,1,0,121
+A0563,75,M,No,Middle,21.37,140,Medicare,current,1,0,114
+A0565,82,F,No,Very Low,30.25,126,Medicare,quit,0,1,138
+A0566,50,F,No,Middle,42.21,131,Medicare,never,0,1,164
+A0567,65,M,No,Very Low,29.4,134,Medicare,quit,0,0,118
+A0569,59,F,No,Middle,26.39,128,Medicare,never,0,1,126
+A0571,60,M,Yes,Low,43.15,129,Medicare,quit,0,1,130
+A0572,58,M,Yes,Low,38.12,130,Medicare,quit,1,1,156
+A0573,68,F,Yes,Middle,35.98,159,Medicare,quit,1,0,132
+A0578,73,F,Yes,Low,32.18,122,Medicare,quit,1,1,148
+A0581,76,F,Yes,Low,32.1,127,Medicare,current,1,1,95
+A0584,66,M,Yes,Low,31.92,135,Medicare,quit,1,1,116
+A0585,59,M,No,High,20.34,106,Medicare,current,1,1,146
+A0590,65,F,Yes,Low,37.04,171,Medicare,quit,1,1,156
+A0593,71,F,Yes,Low,35.62,123,Medicare,quit,0,1,166
+A0594,58,M,No,Very Low,27.12,134,Medicare,current,1,1,156
+A0596,59,F,Yes,Very Low,34.04,125,Medicare,current,1,0,142
+A0598,70,F,No,Middle,28.96,145,Medicare,quit,0,1,126
+A0601,74,F,Yes,Low,34.41,130,Medicare,never,1,1,140
+A0603,56,F,Yes,Middle,44.11,143,Medicare,quit,0,1,164
+A0604,57,M,Yes,High,44.63,140,Medicare,never,1,1,167
+A0609,71,M,No,High,26.19,148,Medicare,quit,1,1,128
+A0613,73,F,No,High,35.87,134,Medicare,never,1,1,128
+A0614,65,F,Yes,Middle,40.51,144,Medicare,never,1,1,111
+A0616,69,M,No,Low,30.9,138,Medicare,quit,1,1,154
+A0617,70,F,Yes,Very Low,40.16,127,Medicare,never,1,1,122
+A0620,66,F,Yes,Very Low,36.93,121,Medicare,current,1,0,117
+A0633,63,M,No,Low,28.13,174,Medicare,quit,1,1,136
+A0637,43,F,Yes,High,52.58,159,Medicare,never,0,1,144
+A0641,61,F,No,Low,38.9,139,Medicare,never,0,1,134
+A0645,67,M,No,Low,30.77,112,Medicare,quit,1,1,112
+A0647,68,F,No,Low,32.38,141,Medicare,never,1,1,135
+A0648,71,F,Yes,Very Low,27.82,145,Medicare,current,1,0,140
+A0649,77,F,No,Low,29.82,131,Medicare,quit,0,1,137
+A0651,55,M,No,High,37.37,141,Medicare,NA,0,1,136
+A0655,55,M,No,High,34.39,131,Medicare,quit,1,1,102
+A0661,59,F,Yes,Middle,28.01,101,Medicare,never,1,1,100
+A0665,62,F,No,Middle,27.6,136,Medicare,current,1,1,122
+A0666,70,F,No,High,37.82,135,Medicare,never,1,0,120
+A0671,67,F,No,Very Low,34.73,140,Medicare,quit,0,0,138
+A0673,65,F,No,Very Low,41.77,142,Medicare,quit,0,1,140
+A0679,70,F,No,Middle,22.84,120,Medicare,never,0,0,136
+A0680,60,F,Yes,Middle,36.91,120,Medicare,current,1,1,148
+A0681,64,F,No,Middle,30.63,140,Medicare,quit,0,1,115
+A0683,71,F,No,Middle,22.81,137,Medicare,quit,1,0,127
+A0685,71,F,Yes,Low,37.22,144,Medicare,quit,1,1,119
+A0687,41,M,No,High,42.71,145,Medicare,never,0,0,122
+A0690,71,M,Yes,Low,26.04,167,Medicare,current,0,0,131
+A0694,72,F,Yes,Middle,31.29,144,Medicare,never,1,1,145
+A0695,65,M,No,Middle,37.58,145,Medicare,quit,0,1,160
+A0697,80,F,No,Low,32.08,137,Medicare,never,0,0,150
+A0699,64,F,Yes,High,32.14,132,Medicare,never,1,1,138
+A0701,79,F,No,Very Low,37.82,145,Medicare,quit,0,1,145
+A0702,80,F,No,Very Low,37.39,145,Medicare,quit,1,1,126
+A0705,76,F,No,Low,25.15,144,Medicare,never,0,1,150
+A0707,59,M,No,Very Low,35.05,130,Medicare,current,1,1,129
+A0708,61,F,Yes,Middle,38.6,143,Medicare,quit,1,1,121
+A0709,77,F,No,Low,32.22,155,Medicare,quit,0,1,168
+A0715,68,M,No,High,21.12,130,Medicare,current,0,0,139
+A0716,74,F,No,Middle,33.27,108,Medicare,never,0,1,136
+A0718,57,F,Yes,Low,39.39,119,Medicare,quit,1,0,132
+A0720,81,F,Yes,Low,47.62,137,Medicare,quit,1,1,146
+A0722,66,F,Yes,High,30.37,136,Medicare,current,1,1,153
+A0726,65,M,Yes,Middle,33.5,122,Medicare,quit,1,0,130
+A0729,63,M,No,Low,21.39,119,Medicare,quit,0,1,160
+A0733,68,F,Yes,Middle,28.03,132,Medicare,quit,1,1,142
+A0734,74,M,Yes,Middle,30.91,130,Medicare,quit,1,1,100
+A0735,72,F,No,Low,30.46,130,Medicare,never,0,0,124
+A0738,68,M,No,Low,21.96,115,Medicare,NA,0,1,120
+A0740,60,M,Yes,High,41.32,131,Medicare,quit,1,0,96
+A0744,67,M,No,Very Low,25.85,142,Medicare,current,0,0,162
+A0746,76,F,No,Very Low,35.59,130,Medicare,quit,0,1,131
+A0747,72,M,Yes,High,32.06,125,Medicare,quit,1,0,140
+A0748,76,F,Yes,Middle,37.58,136,Medicare,current,0,1,160
+A0753,56,F,No,Low,58.15,113,Medicare,quit,0,1,115
+A0754,59,M,Yes,Middle,29.68,150,Medicare,quit,1,1,119
+A0755,67,F,No,High,23,122,Medicare,quit,0,0,156
+A0765,60,F,Yes,Low,33.59,144,Medicare,current,1,1,134
+A0767,43,M,No,High,20.6,113,Medicare,never,1,0,107
+A0770,62,M,Yes,Middle,39.55,119,Medicare,quit,1,0,110
+A0772,79,F,No,High,24.61,140,Medicare,never,1,1,140
+A0774,61,F,Yes,Middle,39.19,122,Medicare,quit,1,1,127
+A0775,70,F,No,Very Low,23.86,115,Medicare,quit,1,0,139
+A0780,63,F,Yes,Very Low,22.56,160,Medicare,never,1,0,170
+A0784,64,M,Yes,Middle,30.57,115,Medicare,quit,1,1,159
+A0789,47,F,Yes,Low,27.52,137,Medicare,never,1,0,101
+A0792,70,F,No,Low,27.69,185,Medicare,quit,1,0,131
+A0793,73,M,Yes,Middle,34.53,107,Medicare,quit,1,0,130
+A0797,53,F,No,Very Low,51.56,143,Medicare,NA,1,1,158
+A0798,75,F,No,Middle,28.24,118,Medicare,quit,1,1,126
+A0802,69,F,No,Middle,50.54,201,Medicare,never,0,0,153
+A0804,48,M,Yes,Low,36.98,121,Medicare,current,1,0,140
+A0805,77,F,No,Middle,34.65,140,Medicare,never,1,1,140
+A0809,74,F,No,Very Low,44.95,96,Medicare,never,1,0,144
+A0811,70,M,No,Middle,34.32,117,Medicare,quit,1,1,121
+A0812,74,F,No,Middle,29.13,138,Medicare,quit,1,1,149
+A0813,57,M,No,Middle,36.47,137,Medicare,current,1,0,156
+A0814,71,M,Yes,Very Low,35.76,140,Medicare,quit,1,0,146
+A0818,73,M,No,High,25.91,120,Medicare,current,1,1,135
+A0820,62,M,No,High,28.83,148,Medicare,current,1,1,113
+A0823,66,M,No,Middle,30.2,176,Medicare,quit,1,1,120
+A0824,71,F,No,Very Low,38.31,118,Medicare,never,1,1,175
+A0830,65,F,No,Low,25.47,94,Medicare,quit,0,0,95
+A0831,65,F,Yes,Very Low,40.35,124,Medicare,quit,0,1,106
+A0833,70,F,No,High,30.31,160,Medicare,never,0,1,161
+A0835,72,M,Yes,Middle,44.94,144,Medicare,never,1,1,151
+A0836,43,F,No,Low,53.49,110,Medicare,never,1,1,141
+A0837,67,F,No,Low,21.32,119,Medicare,quit,1,0,108
+A0841,66,F,Yes,Low,51.75,162,Medicare,quit,1,1,156
+A0843,59,F,Yes,Middle,32.87,147,Medicare,NA,1,1,125
+A0845,49,F,Yes,Middle,51.8,125,Medicare,current,0,1,130
+A0847,48,F,No,Middle,28.58,159,Medicare,never,0,1,125
+A0850,63,F,No,Low,31.46,133,Medicare,never,1,1,151
+A0853,67,F,No,Middle,38.69,140,Medicare,quit,0,0,113
+A0854,75,M,No,Low,32.98,149,Medicare,quit,1,0,118
+A0855,74,F,No,High,34.56,140,Medicare,quit,0,1,140
+A0857,70,F,Yes,Low,49.56,134,Medicare,NA,1,0,114
+A0859,65,M,No,Middle,22.1,125,Medicare,current,1,0,138
+A0861,72,F,No,Middle,18,130,Medicare,current,0,1,145
+A0863,66,F,No,Middle,27.69,147,Medicare,current,0,0,156
+A0868,78,F,No,Very Low,26.46,135,Medicare,current,1,0,147
+A0870,64,M,Yes,Middle,36.99,108,Medicare,quit,1,0,118
+A0873,63,F,Yes,Low,32.74,181,Medicare,never,1,0,132
+A0875,63,F,Yes,Middle,34.93,150,Medicare,current,1,1,154
+A0877,68,F,No,Low,30.49,121,Medicare,quit,0,1,133
+A0885,71,M,Yes,Low,34.88,134,Medicare,quit,1,0,125
+A0887,62,M,Yes,Low,23.3,103,Medicare,quit,1,1,123
+A0888,72,M,Yes,Very Low,24.14,145,Medicare,current,0,0,125
+A0889,64,F,No,Low,37.47,151,Medicare,never,1,1,156
+A0895,68,F,No,Low,33.87,136,Medicare,never,0,1,126
+A0897,80,M,No,Low,27.71,180,Medicare,never,0,0,154
+A0900,70,F,No,Low,28.7,115,Medicare,never,1,1,127
+A0902,42,F,Yes,Low,52.67,145,Medicare,current,1,1,135
+A0904,60,M,No,Low,30.17,130,Medicare,quit,1,0,137
+A0905,73,F,No,Very Low,24.35,108,Medicare,quit,1,1,129
+A0908,48,F,Yes,Middle,34.45,147,Medicare,quit,1,0,130
+A0912,73,M,Yes,Very Low,24.18,136,Medicare,current,1,1,130
+A0913,69,F,No,Low,20.35,140,Medicare,quit,1,0,142
+A0914,73,F,No,Low,33.67,128,Medicare,never,1,1,129
+A0916,62,F,No,Low,27.05,134,Medicare,current,1,1,147
+A0917,72,F,No,Low,43.37,160,Medicare,never,0,1,130
+A0922,62,F,Yes,Low,28.41,136,Medicare,never,0,1,132
+A0925,65,M,No,Very Low,29.97,181,Medicare,quit,0,0,178
+A0927,69,F,No,Middle,18.54,158,Medicare,current,0,1,100
+A0932,57,F,No,Low,48,150,Medicare,quit,1,1,138
+A0933,33,F,Yes,Very Low,50.05,119,Medicare,current,0,0,111
+A0935,63,F,Yes,Middle,32.14,122,Medicare,quit,1,1,109
+A0937,47,F,Yes,Low,28.1,128,Medicare,current,1,1,117
+A0938,65,M,Yes,Very Low,24.2,134,Medicare,quit,1,1,130
+A0941,76,F,No,Very Low,33.14,154,Medicare,never,1,1,129
+A0944,78,M,No,Very Low,22.76,170,Medicare,quit,1,0,141
+A0945,73,F,No,Very Low,37.68,152,Medicare,never,1,0,134
+A0946,65,M,No,Low,28.31,140,Medicare,quit,0,1,97
+A0950,70,F,No,NA,39.7,130,Medicare,quit,1,1,130
+A0951,80,F,No,Low,28.41,146,Medicare,never,0,1,133
+A0952,74,M,No,Very Low,19.17,147,Medicare,quit,1,1,152
+A0956,46,M,No,Low,31.12,135,Medicare,never,0,1,131
+A0957,61,F,No,Very Low,29.65,159,Medicare,quit,1,1,114
+A0960,59,F,No,High,22.52,104,Medicare,quit,0,0,112
+A0967,75,F,No,Very Low,35.22,133,Medicare,quit,1,1,115
+A0968,65,M,Yes,Very Low,39.21,134,Medicare,never,1,1,140
+A0975,68,M,No,Low,20.4,117,Medicare,quit,1,0,116
+A0976,63,M,No,Very Low,23.46,109,Medicare,current,0,0,113
+A0977,67,F,No,Low,33.07,161,Medicare,never,1,1,136
+A0980,72,M,Yes,Very Low,35.15,133,Medicare,current,1,1,156
+A0983,59,M,No,Very Low,25.19,136,Medicare,quit,0,1,110
+A0985,47,F,No,Middle,28.52,172,Medicare,current,0,0,126
+A0988,69,F,Yes,Very Low,24.13,147,Medicare,quit,1,0,126
+A0989,74,F,No,Middle,26.75,158,Medicare,never,1,1,157
+A0990,78,F,No,High,24.33,140,Medicare,quit,0,1,153
+A0991,69,M,Yes,Low,27.78,127,Medicare,quit,1,0,136
+A0994,53,M,No,Low,37.4,106,Medicare,current,1,1,117
+A0995,79,M,No,Low,25.45,130,Medicare,quit,1,1,144
+A0998,68,F,Yes,Middle,30.76,119,Medicare,quit,1,0,140
+A0999,76,F,Yes,Middle,35.19,149,Medicare,quit,1,1,160
+A0839,57,M,No,Middle,26.14,96,Uninsured,current,0,1,113
+A0928,63,M,No,Middle,30.42,110,Uninsured,quit,1,0,128
+A0003,52,M,No,Middle,29.44,130,Private,quit,1,1,131
+A0011,78,F,No,Very Low,29.87,92,Private,never,1,1,120
+A0024,53,M,Yes,High,33.49,130,Private,never,1,1,133
+A0039,49,M,No,Middle,32.1,146,Private,never,1,0,118
+A0040,53,F,Yes,Very Low,47.58,180,Private,quit,1,1,180
+A0044,52,F,Yes,Low,25.33,138,Private,never,1,0,129
+A0051,61,M,No,Middle,40.6,142,Private,quit,1,1,156
+A0059,52,M,No,High,35.88,140,Private,never,0,1,132
+A0062,45,M,No,Low,31.87,135,Private,never,1,0,122
+A0067,61,F,Yes,Low,39.72,173,Private,never,1,1,144
+A0068,42,F,No,Middle,29.81,128,Private,never,0,0,134
+A0078,51,F,No,High,30.01,129,Private,current,0,1,121
+A0095,53,F,Yes,Very Low,25.7,118,Private,quit,0,0,141
+A0102,45,M,No,NA,23.04,154,Private,current,0,0,138
+A0123,53,F,No,Middle,26.22,126,Private,current,0,1,122
+A0124,62,F,No,Low,22.84,180,Private,current,0,1,160
+A0127,56,F,No,Low,38.04,162,Private,quit,0,0,134
+A0144,71,F,No,High,44.04,120,Private,quit,1,0,132
+A0146,47,F,No,Middle,37.08,141,Private,quit,0,1,123
+A0150,51,M,Yes,Very Low,41.36,161,Private,never,1,1,184
+A0151,49,F,No,Middle,37.2,108,Private,never,1,1,115
+A0152,62,M,No,Very Low,34.99,115,Private,current,1,0,109
+A0153,63,M,Yes,High,29.41,158,Private,current,0,0,136
+A0154,64,F,No,Low,27.69,162,Private,quit,1,0,138
+A0157,56,F,No,High,48.08,143,Private,never,1,1,128
+A0168,56,M,No,Middle,28.44,149,Private,current,1,1,140
+A0196,62,M,Yes,Very Low,24.98,134,Private,quit,1,0,117
+A0211,74,M,Yes,Middle,21.62,142,Private,current,1,1,102
+A0216,43,F,No,Low,44.7,116,Private,never,1,1,121
+A0223,59,F,No,Middle,40.7,135,Private,quit,1,0,169
+A0231,58,M,Yes,Middle,31.86,123,Private,never,1,0,129
+A0237,63,M,Yes,High,28.27,177,Private,quit,1,0,149
+A0241,52,F,No,Low,31.43,116,Private,quit,0,1,109
+A0243,59,M,No,Low,35.98,125,Private,never,1,1,152
+A0254,55,F,No,Very Low,32.28,154,Private,quit,0,1,126
+A0274,55,M,No,Very Low,27.46,111,Private,never,0,1,133
+A0280,48,F,No,Very Low,37.38,140,Private,never,1,1,134
+A0293,60,M,No,Middle,26.54,120,Private,current,1,1,134
+A0295,62,F,No,Middle,26.33,180,Private,never,1,1,142
+A0301,51,M,Yes,High,44.91,125,Private,current,0,0,136
+A0311,76,M,No,High,30.73,148,Private,quit,0,1,120
+A0312,55,F,No,Low,55.97,140,Private,never,0,1,121
+A0320,78,F,No,Very Low,36.58,146,Private,quit,1,1,140
+A0325,65,M,Yes,Low,30.81,137,Private,never,0,0,134
+A0333,79,F,No,High,33.81,130,Private,quit,1,1,130
+A0335,55,F,No,Middle,40.92,115,Private,quit,1,1,118
+A0337,57,F,Yes,Low,45.5,117,Private,quit,1,0,117
+A0339,59,M,No,Low,27.88,150,Private,quit,0,1,130
+A0341,48,F,No,Middle,40.67,135,Private,never,0,1,140
+A0345,79,F,No,Low,34.33,152,Private,never,1,1,141
+A0370,60,F,No,Middle,41.98,144,Private,never,1,1,129
+A0371,46,M,No,Low,28.34,202,Private,never,0,1,173
+A0377,61,F,No,Very Low,48.95,107,Private,quit,1,1,114
+A0379,48,F,Yes,Very Low,53.25,149,Private,never,0,1,135
+A0381,51,F,No,Low,41.67,124,Private,never,1,1,140
+A0385,46,F,No,Middle,31,133,Private,never,0,0,138
+A0396,54,F,No,Low,57.77,140,Private,quit,1,1,126
+A0397,60,F,No,Low,35.26,128,Private,never,1,1,141
+A0399,51,M,Yes,Low,31.19,144,Private,quit,1,0,142
+A0401,59,F,No,Middle,26.06,108,Private,quit,0,1,118
+A0407,57,F,No,Middle,48.75,191,Private,never,0,0,180
+A0415,69,F,Yes,Middle,20.62,168,Private,never,1,1,126
+A0421,61,M,Yes,Very Low,27.09,133,Private,quit,0,1,138
+A0427,51,F,Yes,Middle,36.75,150,Private,quit,1,1,150
+A0429,40,F,No,Low,44.5,170,Private,never,0,1,176
+A0440,51,F,No,High,28.06,141,Private,never,0,1,120
+A0456,58,M,No,High,26.87,138,Private,never,0,1,141
+A0457,55,M,No,Middle,31.86,142,Private,current,1,1,107
+A0459,57,F,No,Low,27.49,118,Private,current,0,1,126
+A0460,69,F,No,Very Low,29.01,139,Private,quit,1,1,140
+A0466,51,F,No,Very Low,30,128,Private,never,0,1,121
+A0468,50,M,Yes,Middle,35.4,116,Private,quit,1,0,137
+A0469,70,F,Yes,Low,52.82,130,Private,quit,1,1,138
+A0473,58,F,Yes,High,34.02,157,Private,quit,1,1,142
+A0485,55,M,No,Low,27.1,130,Private,never,1,1,113
+A0489,61,F,No,High,37.53,156,Private,current,0,1,177
+A0501,58,F,No,High,41.04,140,Private,quit,0,1,128
+A0505,60,M,No,High,30.95,135,Private,current,0,0,127
+A0507,39,M,No,Middle,31.96,116,Private,never,0,1,114
+A0508,67,F,Yes,Very Low,27.32,109,Private,never,1,1,110
+A0539,52,F,No,Middle,45.36,129,Private,current,1,1,122
+A0541,76,M,No,Middle,27.47,148,Private,quit,1,1,95
+A0542,60,F,Yes,Middle,24.51,128,Private,quit,0,1,126
+A0549,67,F,No,Low,38.9,152,Private,never,0,1,145
+A0560,51,M,No,High,25.53,137,Private,current,1,0,130
+A0568,62,F,No,Very Low,28.51,166,Private,never,1,0,139
+A0570,70,F,Yes,Very Low,34.8,92,Private,quit,1,1,106
+A0576,61,F,No,Very Low,21.89,162,Private,current,0,1,151
+A0579,79,M,No,Very Low,23.21,135,Private,current,1,0,108
+A0586,43,F,No,High,56.78,146,Private,never,0,0,120
+A0591,58,M,No,High,30.53,152,Private,current,0,1,127
+A0600,52,F,Yes,Very Low,36.09,138,Private,current,0,1,110
+A0606,55,M,No,Middle,31.6,179,Private,current,1,1,126
+A0619,80,F,No,Very Low,27.54,129,Private,never,1,1,140
+A0621,59,F,Yes,Middle,38.24,126,Private,current,1,0,160
+A0623,48,F,Yes,Middle,37.8,109,Private,never,0,1,103
+A0626,61,M,Yes,Middle,39.75,127,Private,never,1,1,140
+A0627,82,M,No,Low,20.84,120,Private,NA,1,1,121
+A0631,43,F,No,Middle,31.28,140,Private,current,0,0,128
+A0632,35,M,No,High,48.44,152,Private,current,0,1,117
+A0636,52,M,No,Middle,24.98,142,Private,current,0,0,133
+A0638,55,F,No,Very Low,21.5,161,Private,current,0,1,190
+A0640,57,F,No,High,35.15,188,Private,quit,1,0,153
+A0650,52,F,No,Low,29.43,103,Private,quit,1,0,102
+A0654,60,M,Yes,Low,30.3,122,Private,never,1,1,142
+A0656,48,F,No,High,54.19,185,Private,never,0,1,147
+A0657,66,F,Yes,High,40.53,120,Private,quit,1,1,114
+A0658,70,F,No,Low,44.39,124,Private,never,0,0,132
+A0660,58,F,Yes,Low,35.61,155,Private,current,1,1,149
+A0675,57,M,No,High,29.38,140,Private,current,1,0,160
+A0691,55,M,No,Middle,26.82,179,Private,never,0,1,155
+A0692,64,F,No,High,34.47,139,Private,never,1,1,154
+A0712,57,M,No,High,30.91,130,Private,never,0,1,138
+A0717,55,F,Yes,Middle,46.59,132,Private,current,0,0,155
+A0736,50,F,Yes,Middle,35.97,144,Private,quit,1,0,113
+A0741,58,F,No,Middle,26.62,150,Private,quit,0,1,125
+A0751,48,F,Yes,Middle,47.29,134,Private,never,1,1,125
+A0758,56,F,No,Very Low,29.19,182,Private,current,1,0,180
+A0763,59,F,No,Middle,34.77,137,Private,current,0,0,110
+A0773,73,F,Yes,Middle,25.16,158,Private,quit,1,1,138
+A0777,66,F,No,Low,31.24,121,Private,quit,1,1,129
+A0782,56,M,Yes,Low,28.84,133,Private,quit,1,1,130
+A0783,60,F,No,High,40.15,139,Private,quit,0,1,126
+A0788,59,M,No,Very Low,36.34,157,Private,never,0,1,148
+A0795,55,F,Yes,Middle,47.01,131,Private,never,0,0,137
+A0799,64,M,No,Low,29.95,154,Private,current,1,0,144
+A0803,69,M,Yes,Middle,25.87,140,Private,quit,0,0,130
+A0817,55,F,Yes,Low,52.55,148,Private,never,0,1,170
+A0819,44,F,No,Middle,54.39,157,Private,current,0,1,143
+A0821,64,F,Yes,Low,31.24,129,Private,never,1,1,131
+A0822,53,F,Yes,High,44.71,150,Private,never,1,1,153
+A0826,37,F,No,Low,31.55,138,Private,never,0,1,122
+A0827,39,F,No,Middle,63.54,130,Private,quit,0,1,142
+A0842,74,F,No,Low,30.27,152,Private,never,1,1,126
+A0851,65,M,No,High,30.64,109,Private,quit,1,1,130
+A0852,47,F,No,Low,36.1,145,Private,current,0,1,124
+A0860,64,F,No,Middle,23.01,120,Private,current,1,1,174
+A0862,52,F,No,Very Low,27.45,118,Private,quit,1,1,136
+A0872,59,F,No,High,40.79,118,Private,quit,0,1,143
+A0876,59,F,Yes,Very Low,26,121,Private,never,0,1,128
+A0882,47,M,No,Middle,32.62,118,Private,current,1,0,106
+A0884,57,F,No,Low,40.17,144,Private,never,1,1,118
+A0890,55,M,No,High,30.35,126,Private,never,0,0,160
+A0893,54,F,No,Middle,24.82,137,Private,quit,0,1,157
+A0915,64,F,Yes,Low,36.67,143,Private,never,1,1,140
+A0918,62,F,No,Middle,33.65,111,Private,never,1,0,130
+A0921,52,M,No,Middle,26.5,134,Private,current,0,1,151
+A0924,59,F,No,High,28.12,139,Private,never,1,1,149
+A0939,65,M,No,Very Low,27.42,144,Private,quit,0,0,140
+A0947,62,F,No,Very Low,45.94,144,Private,NA,0,1,126
+A0953,45,M,No,Very Low,31.65,168,Private,current,0,0,129
+A0963,61,F,Yes,Low,26.49,142,Private,NA,1,1,119
+A0965,53,F,No,Low,35.59,142,Private,current,0,1,119
+A0971,58,F,Yes,Middle,49.39,134,Private,never,0,1,118
+A0978,57,F,No,Middle,27.86,135,Private,never,0,1,120
+A0982,59,M,Yes,High,39.93,160,Private,quit,1,1,143
+A0986,57,F,Yes,Middle,40.41,148,Private,never,1,1,143
+A0987,59,F,Yes,Middle,28.99,145,Private,current,1,0,151
+A0993,40,M,No,Middle,45.75,154,Private,never,0,1,138
+A0997,48,F,No,Very Low,37.33,129,Private,quit,0,1,108
+A0094,46,M,No,High,29.93,127,Uninsured,current,0,1,118
+A0131,60,F,Yes,Low,55.6,152,Uninsured,quit,1,1,145
+A0149,65,F,No,Very Low,46.14,173,Uninsured,never,0,1,146
+A0155,43,F,Yes,Low,42.11,109,Uninsured,never,0,1,128
+A0210,58,F,Yes,Low,31.72,120,Uninsured,current,0,1,132
+A0224,53,F,No,NA,57.47,140,Uninsured,quit,1,0,136
+A0292,52,M,No,Low,29.97,142,Uninsured,never,0,0,143
+A0297,64,F,Yes,Middle,23.95,145,Uninsured,current,1,0,143
+A0322,55,F,No,Low,29.26,140,Uninsured,never,1,0,134
+A0352,51,F,Yes,High,25.33,113,Uninsured,NA,1,0,121
+A0357,56,F,No,Low,41.24,131,Uninsured,quit,0,1,149
+A0363,46,F,No,Low,29.44,145,Uninsured,never,0,1,138
+A0389,64,F,No,Middle,30.15,97,Uninsured,quit,0,1,117
+A0422,47,M,Yes,Middle,38.21,130,Uninsured,quit,1,0,128
+A0445,61,F,Yes,Very Low,31.74,148,Uninsured,quit,1,1,118
+A0451,47,F,No,Middle,35.31,132,Uninsured,quit,0,0,134
+A0494,48,F,No,Low,36.56,120,Uninsured,current,0,1,133
+A0502,64,F,No,Very Low,37.09,118,Uninsured,never,0,1,170
+A0517,44,F,No,Middle,34.26,144,Uninsured,never,0,0,158
+A0526,48,F,No,Very Low,36.84,118,Uninsured,quit,1,1,121
+A0532,44,F,No,Low,28.72,137,Uninsured,current,0,0,160
+A0577,63,F,Yes,Middle,35.32,150,Uninsured,never,1,1,128
+A0582,62,F,No,Very Low,39.75,147,Uninsured,current,1,0,140
+A0607,46,M,No,Middle,41.5,131,Uninsured,never,0,1,154
+A0612,48,F,Yes,Middle,48.92,138,Uninsured,quit,1,1,148
+A0663,55,M,No,Very Low,35.02,133,Uninsured,quit,0,0,133
+A0693,53,F,No,Middle,25.79,129,Uninsured,never,0,1,137
+A0714,49,F,No,Low,34.94,157,Uninsured,current,0,1,130
+A0719,45,F,No,Very Low,27.3,103,Uninsured,quit,1,1,128
+A0723,59,M,Yes,Low,26.31,141,Uninsured,current,0,1,138
+A0756,38,F,No,Middle,31.28,124,Uninsured,current,1,1,100
+A0801,46,F,No,Very Low,33.04,109,Uninsured,quit,0,0,116
+A0858,50,M,Yes,Very Low,35.32,139,Uninsured,quit,1,0,108
+A0878,59,M,No,High,24.82,136,Uninsured,current,0,0,140
+A0901,58,F,No,Low,39.58,118,Uninsured,never,0,1,110
+A0911,48,F,Yes,Middle,32.66,154,Uninsured,never,0,1,110
+A0961,64,F,No,Low,29,203,Uninsured,current,0,1,190
