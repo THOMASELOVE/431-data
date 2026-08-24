@@ -15,7 +15,7 @@ To obtain all of the data and code in this repository in a single zip file,
 1. click on the green button marked Code and click on Download ZIP. Save the zip file somewhere where you can find it and open it on your machine.
 2. Unzip the file on your machine into your data folder for 431 course materials.
 
-We **strongly** recommend using this approach even if only a few of our data files have changed.
+We **strongly** recommend using this approach as updates appear, even if only a few of our data files have changed.
 
 -----
 
