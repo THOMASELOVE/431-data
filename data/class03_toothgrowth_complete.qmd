@@ -1,0 +1,348 @@
+---
+title: "Class 03 ToothGrowth Example"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    code-fold: show
+    code-tools: true
+    code-overflow: wrap
+    embed-resources: true
+    date-format: iso
+    theme: default
+---
+
+## R Setup {.unnumbered}
+
+```{r}
+#| message: false
+
+knitr::opts_chunk$set(comment = NA)
+
+source("data/Love-431.R")
+
+library(janitor)
+library(knitr)
+library(patchwork)
+library(rstanarm)
+library(easystats)
+library(tidyverse)
+
+theme_set(theme_bw())
+```
+
+# The ToothGrowth data
+
+## Show me the data
+
+ToothGrowth is a built-in data frame in R^[For more details, consult the Help page for the ToothGrowth data, either by typing ?(ToothGrowth) into the Console in RStudio, or by selecting the Help window and typing in ToothGrowth in RStudio.]. 
+
+If you type in the name of this data frame, it prints out the entire data set, which can be very long and annoying.
+
+```{r}
+ToothGrowth
+```
+
+:::{.callout-note}
+
+When writing in Quarto, R code goes in **code chunks**, separated from plain text. 
+
+- You can use Code ... Insert Chunk to create a chunk in Quarto.
+- There are many keyboard shortcuts in Quarto. 
+    - Check them out with Tools ... Keyboard Shortcuts Help.
+    - Use Ctrl-Alt-I (or Command-Alt-I) to create a new code chunk in Quarto.
+
+:::
+
+## We prefer tibbles to data frames
+
+```{r}
+TG_new <- ToothGrowth |> as_tibble()
+TG_new
+```
+
+After creating a *tibble* called `TG_new` with the ToothGrowth data, printing that *tibble* shows (only) the first 10 rows as well as the tibble's dimensions (number of rows and columns) and specifies the *type* of each variable.
+
+- Here, `<dbl>` indicates a double-precision decimal numeric value.
+    - Sometimes numeric values can be integer type: `<int>`.
+- Also, we see that the `supp` information is stored as a categorical `factor` (type = `<fct>`) in R.
+
+## Exploring the Data
+
+Here is a general numeric summary.
+
+```{r}
+summary(TG_new)
+```
+
+### How many animals received each supply and dose?
+
+Let's tabulate the combinations of `supp` and `dose`
+
+```{r}
+TG_new |> tabyl(supp, dose)
+```
+
+Add `kable()` to make the table a bit prettier in HTML.
+
+```{r}
+TG_new |> tabyl(supp, dose) |> kable()
+```
+
+### What were the lengths?
+
+Can we sort the lengths (`len`) from low to high?
+
+```{r}
+sort(TG_new$len)
+```
+
+### Counting is more important than you think.
+
+How many of the lengths are less than 20 microns?
+
+```{r}
+TG_new |> count(len < 20)
+```
+
+### Filtering the data by row
+
+Which subjects received doses of 1.0 mg/day via OJ?
+
+```{r}
+TG_new |> filter(dose == 1, supp == "OJ")
+```
+
+
+## Describing the distribution of lengths, numerically
+
+We could use the `describe_distribution()` function to get some additional information about this quantitative variable: `len`.
+
+```{r}
+TG_new |> describe_distribution(len) |>
+    kable()
+```
+
+## Some of my favorite summaries
+
+Next, we'll use the `lovedist()` function that's part of the Love-431.R script.
+
+```{r}
+TG_new |> reframe(lovedist(len))
+```
+
+- *n* = 60 observations, 
+- *miss* = 0, so no missing data
+- *mean* = "average" (sum of values / number of values)
+- *med* = median (middle value when data are sorted)
+- *sd* = standard deviation (formula in [our book](https://thomaselove.github.io/431-book/03_summary.html#mean-and-sd-median-and-mad))
+- *mad* = median absolute deviation (formula in [our book](https://thomaselove.github.io/431-book/03_summary.html#mean-and-sd-median-and-mad))
+- *min*, *max* = minimum and maximum value
+- *q25*, *q75* = 25th and 75th quantiles (percentiles)
+
+Can we make this a little prettier?
+
+```{r}
+TG_new |> reframe(lovedist(len)) |> kable()
+```
+
+# Visualizing the odontoblast lengths
+
+## Histogram of odontoblast lengths
+
+At minimum, we need to specify the data frame (tibble, in our case) we use, and, for a histogram, the variable we want to put on the horizontal (x) axis.
+
+```{r}
+ggplot(data = TG_new, aes(x = len)) +
+  geom_histogram()
+```
+
+::: aside
+
+Note the message about binwidth. We can specify what we want to use. What makes sense to you? How wide do we want the bins to be?
+
+:::
+
+## Histogram, version 2
+
+Here, we'll adjust the width of the histogram's bins, and we'll also specify the color we want to use to fill the bars and the color that should separate the bars from the background.
+
+```{r}
+ggplot(data = TG_new, aes(x = len)) +
+  geom_histogram(binwidth = 1, fill = "navy", col = "yellow") 
+```
+
+::: aside
+
+Here's a list of the 657 named [colors in R](https://derekogle.com/NCGraphing/resources/colors). 
+
+:::
+
+## Histogram, version 3
+
+Rather than specifying a binwidth, we'll try just setting the number of bins to 10, and see what the computer comes up with. We'll also set up some better labels (titles for the plot itself, and for the axes.)
+
+```{r}
+#| echo: true
+ggplot(data = TG_new, aes(x = len)) +
+  geom_histogram(bins = 10, fill = "navy", col = "yellow") +
+  labs(title = "Odontoblast lengths for 60 guinea pigs",
+       x = "Odontoblast length", y = "Number of animals") 
+```
+
+# Estimating the mean length with a model
+
+We'll fit a linear regression model using ordinary least squares (OLS) to build one possible confidence interval. What we'll use to do this is a linear model fit with `lm()`.
+
+```{r}
+fit1 <- lm(len ~ 1, data = TG_new)
+
+model_parameters(fit1, ci = 0.95) |> kable()
+```
+
+Our 95% confidence interval for the mean odontoblast length provides a point estimate (sample mean) of 18.81 (micrometers, we believe) with a 95% confidence interval ranging from 16.84 to 20.79 micrometers.
+
+# How is `dose` related to `len`gth?
+
+## What to do about `dose`?
+
+The guinea pigs were randomly allocated to receive one of three doses:
+
+- 0.5 mg/day
+- 1.0 mg/day
+- 2.0 mg/day
+
+with 20 animals at each `dose`.
+
+- How can we picture the relationship between `dose` and odontoblast length (`len`)?
+
+## Plotting `len` by `dose` in a scatterplot?
+
+Let's build the simplest possible scatterplot, by specifying what should go on the x and y axes, and using `geom_point()` to plot the data.
+
+```{r}
+ggplot(TG_new, aes(x = dose, y = len)) +
+  geom_point()
+```
+
+## Violin plot, separating the doses
+
+There are only three doses used in this experiment. Let's plot again, but now treating `dose` as a categorical *factor* and adding a violin to the plots.
+
+```{r}
+ggplot(TG_new, aes(x = factor(dose), y = len)) +
+  geom_violin(fill = "tan") +
+  geom_point()
+```
+
+## Numerical summary (`len` by `dose`)
+
+```{r}
+#| echo: true
+TG_new <- TG_new |> mutate(dose_f = as_factor(dose))
+
+TG_new |> reframe(lovedist(len), .by = dose_f)
+```
+
+::: aside
+
+When assessing the center of these distributions by dose, does it seem to matter whether we use a mean or a median?
+
+:::
+
+# Ignoring dose, how does supply method relate to length?
+
+The guinea pigs were also randomly allocated to receive either ascorbic acid (`supp` = VC) or orange juice (`supp` = OJ) so that we have 30 animals with each supply method.
+
+## Visual Summary
+
+```{r}
+ggplot(TG_new, aes(x = supp, y = len)) +
+    geom_violin() +
+    geom_boxplot(aes(fill = supp, width = 0.2)) +
+    stat_summary(fun = mean, geom = "point", size = 3, col = "black") +
+    scale_fill_metro(palette = "light", reverse = TRUE) +
+    labs(title = "Comparing odontoblast length by supply method",
+         subtitle = "60 guinea pigs: The ToothGrowth data",
+         x = "Method of Supply (Orange Juice (OJ) or Ascorbic Acid (VC))",
+         y = "Odontoblast length")
+```
+
+## Numerical Summary
+
+```{r}
+#| echo: true
+
+TG_new |> group_by(supp) |> 
+    reframe(lovedist(len)) |>
+    kable()
+```
+
+## Estimate Difference in Means with Confidence Interval?
+
+We'll fit a linear regression model using ordinary least squares (OLS) to build one possible confidence interval.
+
+```{r}
+fit2 <- lm(len ~ (supp == "OJ"), data = TG_new)
+
+model_parameters(fit1, ci = 0.95) |> kable()
+```
+
+Our 95% confidence interval for the difference in mean length suggests that the OJ animals had odontoblasts that were 3.7 μm longer, with a 95% confidence interval ranging from -0.17 to 7.57 μm.
+
+:::{.callout-note}
+
+Notice the change when we fit the model without specifying the direction of effect that interests us.
+
+```{r}
+fit1_revised <- lm(len ~ supp, data = TG_new)
+
+model_parameters(fit1_revised, ci = 0.95) |> kable()
+```
+
+:::
+
+# How does method of supply (`supp`) affect the dose-length relationship?
+
+The guinea pigs were also randomly allocated to receive either ascorbic acid (`supp` = VC) or orange juice (`supp` = OJ) so that we have 10 animals at each combination of one of the three `dose`s and one of the two `supp`s.
+
+- How does the relationship we observed between `dose` and odontoblast length (`len`) change when we take into account the `supp` method?
+
+
+## Impact of `dose` *and* `supp`?
+
+One approach: show the same type of plot, but separated (faceted) by `supp`.
+
+```{r}
+#| echo: true
+#| output-location: slide
+
+ggplot(TG_new, aes(x = dose_f, y = len)) +
+  geom_violin(fill = "tan") +
+  geom_boxplot(aes(width = 0.2)) +
+  stat_summary(fun = mean, geom = "point", size = 3, col = "red") +
+  facet_wrap(~ supp, labeller = "label_both")
+```
+
+Here is a numerical summary of the lengths, broken down by both dose and supply method.
+
+```{r}
+#| echo: true
+
+TG_new |> group_by(dose_f, supp) |> 
+    reframe(lovedist(len)) |>
+    kable()
+```
+
+# Session Information
+
+This is very useful for replicating your results, as we'll see.
+
+```{r}
+xfun::session_info()
+```
+
+
+
