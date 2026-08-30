@@ -1,0 +1,516 @@
+---
+title: "Survey Analyses discussed in 431 Class 4"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+format: 
+  html:
+    toc: true
+    number-sections: true
+    code-fold: show
+    code-tools: true
+    code-overflow: wrap
+    embed-resources: true
+    date-format: iso
+    theme: default
+---
+
+## Load R Packages
+
+```{r}
+#| message: false
+
+knitr::opts_chunk$set(comment = NA)
+
+url1 <- "https://raw.githubusercontent.com/THOMASELOVE/431-data/refs/heads/main/data/Love-431.R"
+
+source(url1) 
+
+library(janitor)
+library(naniar)    ## this will help us identify missing values
+library(patchwork) ## stitch together two different ggplots
+library(easystats)
+library(tidyverse)
+
+theme_set(theme_bw()) 
+```
+
+# Data Intake and Management
+
+## Ingest 2014-2026 data
+
+```{r}
+url2 <- "https://raw.githubusercontent.com/THOMASELOVE/431-data/refs/heads/main/data/class02_survey_2014_to_2026.csv"
+
+s15 <- read_csv(url2, show_col_types = FALSE) |>
+  janitor::clean_names()
+
+s15
+```
+
+## Variables in the data
+
+```{r}
+names(s15)
+```
+
+Let's **select** just the variables we'll use today.
+
+```{r}
+s15 <- s15 |> select(student, glasses, english, love_htcm, 
+                     smoke, haircut, height_in, hand_span, 
+                     favcolor, lastsleep, pulse, year, 
+                     colors_13) 
+
+dim(s15)
+```
+
+## Variable types, as ingested
+
+- `<chr>` = character variable: as opposed to a *factor*
+- `<dbl>` = double-precision numeric variable
+
+```{r}
+glimpse(s15)
+```
+
+## The subject ID should be of the character type
+
+Some of the variables need to be of a different type:
+
+- `student` is just a code to identify each subject. We'd like that to be of `character` type, rather than `double`, so we don't accidentally use it in a model.
+
+```{r}
+s15 <- s15 |> mutate(student = as.character(student))
+```
+
+## Making some variables into factors
+
+- `glasses`, `english`, `favcolor`, and `colors13` should all be *factors*, rather than character variables.
+    - R made these characters because the values included non-numbers (specifically, letters.)
+    - A *factor* is easy to use in an analysis or summary, while a *character* variable isn't.
+
+```{r}
+s15 <- s15 |> mutate(glasses = factor(glasses),
+                     english = factor(english),
+                     favcolor = factor(favcolor),
+                     colors_13 = factor(colors_13))
+```
+
+## `smoke` is also categorical
+
+We'd also like to turn `smoke` into a factor, and use the actual names for the levels rather than the 1-2-3 codes.
+
+```{r}
+s15 <- s15 |> mutate(smoke = fct_recode(factor(smoke), 
+                                        "Never" = "1", 
+                                        "Quit" = "2", 
+                                        "Current" = "3"))
+
+s15 |> tabyl(smoke) |> adorn_pct_formatting()
+```
+
+## Missing values?
+
+- The `read_csv()` function recognizes (by default) NA or blank cells as missing. How many cells are missing?
+
+```{r}
+dim(s15)
+696 * 13
+n_miss(s15)
+pct_miss(s15)
+```
+
+We have 869 missing cells in our rectangular tibble, so 9.6% of the data are missing.
+
+## Missingness by variable?
+
+::: aside
+
+- I started asking for guesses of my height in *2021*.
+- I started asking about glasses in *2019*.
+
+:::
+
+```{r}
+miss_var_summary(s15)
+```
+
+## Missingness by row (case / subject)?
+
+```{r}
+miss_case_table(s15)
+```
+
+::: aside
+
+- About 42% of the cases are complete.
+
+:::
+
+## Quick Summary of All Variables
+
+```{r}
+summary(s15)
+```
+
+## Describing Quantities
+
+```{r}
+describe_distribution(s15)
+```
+
+# Exploratory Question 1
+
+What is the relationship between **hand span** and **height** for 431 students since 2014? Can we draw a scatterplot?
+
+```{r}
+
+#| warning: true
+ggplot(data = s15, aes(x = height_in, y = hand_span)) +
+  geom_point()
+```
+
+## Filtering to complete cases
+
+Let's require complete data on these variables...
+
+```{r}
+s15_q1 <- s15 |> filter(complete.cases(hand_span, height_in))
+
+s15_q1 |> reframe(lovedist(hand_span))
+s15_q1 |> reframe(lovedist(height_in))
+```
+
+## Scatterplot of Hand Span by Height
+
+```{r}
+ggplot(data = s15_q1, aes(x = height_in, y = hand_span)) +
+  geom_point()
+```
+
+## Lots of ties - can we show that?
+
+```{r}
+
+
+ggplot(data = s15_q1, aes(x = height_in, y = hand_span)) +
+  geom_jitter()
+```
+
+## Add a loess smooth, improve labels
+
+```{r}
+ggplot(data = s15_q1, aes(x = height_in, y = hand_span)) +
+  geom_smooth(method = "loess", col = "blue", formula = y ~ x, se = TRUE) +
+  geom_point() +
+  labs(x = "Height (in)", y = "Hand Span (cm)", 
+       title = "Association of student hand span and height",
+       subtitle = "n = 618 students in 431 between 2014 and 2026")
+```
+
+## Add a linear model, as well
+
+```{r}
+ggplot(data = s15_q1, aes(x = height_in, y = hand_span)) +
+  geom_smooth(method = "loess", col = "blue", 
+              formula = y ~ x, se = FALSE) +
+  geom_smooth(method = "lm", col = "red", 
+              formula = y ~ x, se = TRUE) +
+  geom_point() +
+  labs(x = "Height (in)", 
+       y = "Hand Span (cm)", 
+       title = "Association of student hand span and height",
+       subtitle = "n = 618 students in 431 between 2014 and 2026")
+```
+
+## What is the straight line fit?
+
+```{r}
+fit1 <- lm(hand_span ~ height_in, data = s15_q1)
+
+model_parameters(fit1, pretty_names = FALSE, ci = 0.95) 
+```
+
+::: aside
+
+Note the 95% confidence intervals around these OLS estimates.
+
+:::
+
+# Exploratory Question 2
+
+What is the relationship between **haircut** price and **height** among the 40 students responding in 2026?
+
+- What do we expect to see in this scatterplot? Why?
+
+Let's just look at 2026 data this time.
+
+```{r}
+s15_2026 <- s15 |> filter(year == 2026)
+```
+
+- What do the results below tell us?
+
+```{r}
+dim(s15_2026)
+s15_2026 |> select(haircut, height_in) |> n_miss()
+```
+
+## Haircut Price vs. Height in 2026
+
+```{r}
+ggplot(s15_2026, aes(x = height_in, y = haircut)) +
+  geom_jitter() +
+  geom_smooth(method = "loess", formula = y ~ x, 
+              se = FALSE, col = "blue") +
+  geom_smooth(method = "lm", formula = y ~ x, 
+              se = TRUE, col = "red") +
+  labs(title = "Association of haircut price and height",
+       subtitle = "n = 40 students in 431 for Fall 2026 (values jittered)",
+       x = "Height (in)", 
+       y = "Price of last haircut ($)")
+```
+
+## What is the OLS model here?
+
+```{r}
+fit2 <- lm(haircut ~ height_in, data = s15_2026)
+model_parameters(fit2, pretty_names = TRUE, ci = 0.90)
+```
+
+- How do we interpret the slope of `height_in`?
+- How do we interpret the intercept?
+- What does `pretty_names = TRUE, ci = 0.90` do?
+
+Are we likely to see a similar result in previous years?
+
+## Compare 2026 to 2014-2025
+
+```{r}
+plot1 <- ggplot(s15_2026, aes(x = height_in, y = haircut)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = y ~ x, se = FALSE, col = "blue") +
+  geom_smooth(method = "lm", formula = y ~ x, se = TRUE, col = "red") +
+  ylim(0, 300) + ## make limits of y axis 0 and 300
+  labs(title = "2026: Association of haircut price and height",
+       subtitle = "n = 40 students in 431 for Fall 2026", 
+       x = "Height (in)",  y = "Price of last haircut ($)")
+
+s15_q2 <- s15 |> filter(complete.cases(height_in, haircut)) |>
+  filter(year < 2026)  ## this contains 642 rows, it turns out
+
+plot2 <- ggplot(s15_q2, aes(x = height_in, y = haircut)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = y ~ x, se = FALSE, col = "blue") +
+  geom_smooth(method = "lm", formula = y ~ x, se = TRUE, col = "red") +
+  ylim(0, 300) + ## make limits of y axis 0 and 300 here, too
+  labs(title = "2014-2025: Association of haircut price and height",
+       subtitle = "n = 642 students in 431 for 2014-2025", 
+       x = "Height (in)",  y = "Price of last haircut ($)")
+
+plot1 + plot2 +                 ## "stitch" the plots together
+  plot_layout(axes = "collect") ## thanks to patchwork package
+```
+
+# Exploratory Question 3
+
+Students specified their height (`height_in`) and guessed mine (`love_htcm`), since 2021.
+
+- Did taller students guess that I was taller?
+- Let's convert the heights so each is in inches.
+
+```{r}
+s15_q3 <- s15 |> 
+  select(student, height_in, love_htcm) |>
+  filter(complete.cases(height_in, love_htcm)) |>
+  mutate(love_htin = round_half_up(love_htcm * 0.3937, 1)) |>
+  mutate(delta = love_htin - height_in)
+```
+
+So what's in this new tibble?
+
+## Contents of `s15_q3` tibble
+
+```{r}
+s15_q3
+```
+
+- What does `delta` mean?
+
+## Numerical Summaries
+
+- Student Guesses of My Height (in inches)
+
+```{r}
+s15_q3 |> reframe(lovedist(love_htin))
+```
+
+- Student Heights (in inches)
+
+```{r}
+s15_q3 |> reframe(lovedist(height_in))
+```
+
+Suppose we want to compare these means.
+
+## Visualizing the Distributions
+
+```{r}
+plot3 <- ggplot(s15_q3, aes(x = love_htin)) +
+  geom_histogram(binwidth = 1, fill = "tomato", col = "white") +
+  labs(title = "Histogram: Guess of Dr. Love's height (inches)",
+       x = "Guess of Dr. Love's height (in)", y = "# of students")
+
+plot4 <- ggplot(s15_q3, aes(x = love_htin)) +
+  geom_histogram(binwidth = 1, fill = "royalblue", col = "white") +
+  labs(title = "Histogram: Student height (inches)",
+       x = "Student's height (in)", y = "# of students")
+
+plot3 / plot4 + ## thanks, patchwork!
+  plot_annotation(title = "306 students in Dr. Love's 431 Class, 2021-2026") 
+```
+
+## Numerical Summaries
+
+Each subject gives us their guess of my height, and their height.
+
+- $\Delta$ = How much taller did I seem? (in inches)
+
+```{r}
+s15_q3 |> reframe(lovedist(delta))
+```
+
+These are the "paired" differences. What do they look like?
+
+## Histogram of $\Delta$
+
+```{r}
+ggplot(s15_q3, aes(x = delta)) +
+  geom_histogram(binwidth = 1, fill = "aquamarine", col = "black") +
+  labs(title = "How much taller did Dr. Love seem?",
+       subtitle = "306 students in his 2021-2026 431 classes",
+       x = "Guess of Dr. Love's height - Student's height (inches)",
+       y = "# of students")
+```
+
+## Estimating the mean $\Delta$
+
+Use a linear model to estimate the true mean difference between guesses of my height and actual student heights, using a **90%** confidence interval.
+
+```{r}
+fit3 <- lm(delta ~ 1, data = s15_q3)
+model_parameters(fit3, ci = 0.90)
+```
+
+- What would a **95%** confidence interval look like?
+
+```{r}
+model_parameters(fit3, ci = 0.95)
+```
+
+## Did taller people guess I'm taller?
+
+```{r}
+ggplot(s15_q3, aes(x = height_in, y = love_htin)) +
+  geom_jitter() +
+  geom_smooth(method = "loess", formula = y ~ x, col = "blue")
+```
+
+
+# Exploratory Question 4
+
+Did students for whom English is their primary language have larger (or smaller) hand spans?
+
+```{r}
+s15_q4 <- s15 |> filter(complete.cases(english, hand_span)) |>
+  select(student, english, hand_span, year)
+
+dim(s15_q4)
+summary(s15_q4)
+```
+
+## Visualizing the groups
+
+```{r}
+ggplot(s15_q4, aes(x = hand_span, y = english)) +
+  geom_violin(aes(fill = english)) +
+  geom_boxplot(width = 0.4) +
+  stat_summary(fun = "mean", geom = "point", 
+               size = 3, col = "royalblue") +
+  labs(title = "Comparing hand span by preferred language",
+       subtitle = "613 of Dr. Love's 431 students asked 'Is English your most comfortable language?'",
+       caption = "Sample means indicated by blue dots",
+       x = "Hand Span (in cm)",
+       y = "Prefers English?")
+```
+
+## Summarizing our Samples
+
+- Compare the English "Yes" vs. "No" group on **hand span**.
+
+```{r}
+s15_q4 |> group_by(english) |>
+  reframe(lovedist(hand_span))
+```
+
+- What seems to be happening here?
+- Does the difference in sample means look important?
+
+## Build a model
+
+Let's use a linear model to estimate the difference in hand span between those whose primary language is English and those whose primary language is not English...
+
+```{r}
+fit4 <- lm(hand_span ~ english, data = s15) 
+
+model_parameters(fit4, ci = 0.90)
+```
+
+- How would you describe the point estimate here?
+- What is the 90% confidence interval?
+
+# Some Categories
+
+## Your Favorite Colors
+
+```{r}
+s15 |> tabyl(favcolor) |> arrange(desc(n))
+```
+
+I collapsed these to 13 colors
+
+```{r}
+s15 |> tabyl(colors_13) |> arrange(desc(n)) |> 
+  adorn_totals() |> adorn_pct_formatting()
+```
+
+## Glasses vs. English
+
+This is a 2x2 table.
+
+```{r}
+s15 |> tabyl(glasses, english)
+
+s15 |> 
+  filter(complete.cases(glasses, english)) |>
+  tabyl(glasses, english) |>
+  adorn_totals(where = c("row", "col"))
+```
+
+## Smoking Status by English
+
+Here's a 3x2 table.
+
+```{r}
+s15 |> filter(complete.cases(smoke, english)) |>
+    tabyl(smoke, english) |>
+    adorn_totals(where = c("row", "col")) |> 
+    knitr::kable()
+```
+
+# Session Information
+
+```{r}
+xfun::session_info()
+```
+
