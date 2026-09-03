@@ -361,7 +361,7 @@ plot3 <- ggplot(s15_q3, aes(x = love_htin)) +
   labs(title = "Histogram: Guess of Dr. Love's height (inches)",
        x = "Guess of Dr. Love's height (in)", y = "# of students")
 
-plot4 <- ggplot(s15_q3, aes(x = love_htin)) +
+plot4 <- ggplot(s15_q3, aes(x = height_in)) +
   geom_histogram(binwidth = 1, fill = "royalblue", col = "white") +
   labs(title = "Histogram: Student height (inches)",
        x = "Student's height (in)", y = "# of students")
