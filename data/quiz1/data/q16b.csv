@@ -1,0 +1,202 @@
+nation,Location,Inf_mort_1995-2000,Inf_Mort_2015-2020
+n001,Afghanistan,96.17,51.71
+n002,Albania,26.33,8.03
+n003,Algeria,37.83,21.24
+n004,Angola,142.14,61.46
+n005,Antigua and Barbuda,15.13,5.2
+n006,Argentina,19.73,10.23
+n007,Armenia,34.87,10.78
+n008,Aruba (Netherlands),18.29,13.61
+n009,Australia,5.46,3.11
+n010,Austria,4.74,3.15
+n011,Azerbaijan,64.44,20.83
+n012,Bahamas,14.15,5.88
+n013,Bahrain,12.25,5.97
+n014,Bangladesh,70.3,26.85
+n015,Barbados,12.32,10.04
+n016,Belarus,14.89,2.97
+n017,Belgium,5.26,2.83
+n018,Belize,23.01,12.81
+n019,Benin,93.32,61.15
+n020,Bhutan,61.71,24.06
+n021,Bolivia,66.28,29.71
+n022,Bosnia and Herzegovina,11.14,6
+n023,Botswana,56.43,30.15
+n024,Brazil,32.34,12.52
+n025,Brunei,9.88,7.92
+n026,Bulgaria,15.24,6.29
+n027,Burkina Faso,99.47,54.21
+n028,Burundi,103.05,42.44
+n029,Cambodia,86.3,23.72
+n030,Cameroon,105.85,61.18
+n031,Canada,5.36,4.51
+n032,Cape Verde,36.86,16.89
+n033,Central African Republic,109.79,81.9
+n034,Chad,114.13,74.5
+n035,Chile,11.08,6.72
+n036,China,35.06,9.89
+n037,Colombia,22.46,12.64
+n038,Comoros,74,53.1
+n039,Congo,74.47,35.29
+n040,Costa Rica,12.37,7.32
+n041,Croatia,7.11,4
+n042,Cuba,7.98,4.49
+n043,Curaçao (Netherlands),15.21,9.05
+n044,Cyprus,7.15,3.54
+n045,Czech Republic,5.47,2.27
+n046,Denmark,4.92,3.13
+n047,Djibouti,71.75,33.36
+n048,Dominican Republic,41.27,25.85
+n049,DR Congo,112.82,64.92
+n050,Ecuador,31.17,13.6
+n051,Egypt,36.68,15.61
+n052,El Salvador,29.1,14.57
+n053,Equatorial Guinea,105.7,66.13
+n054,Eritrea,71.12,34.72
+n055,Estonia,11.97,1.99
+n056,Eswatini,76.42,41.36
+n057,Ethiopia,96.61,37
+n058,Federated States of Micronesia,42.83,23.49
+n059,Fiji,19.66,20.32
+n060,Finland,3.84,1.71
+n061,France,4.71,3.03
+n062,French Guiana (France),16.89,8.7
+n063,French Polynesia (France),10.17,6.66
+n064,Gabon,61.59,35.28
+n065,Gambia,67.08,44.83
+n066,Georgia,34.91,9.37
+n067,Germany,4.76,3.19
+n068,Ghana,66.9,35.63
+n069,Greece,6.61,2.82
+n070,Grenada,14.01,14.99
+n071,Guadeloupe (France),10.98,4.64
+n072,Guam (US),17.03,8.69
+n073,Guatemala,44.93,20.74
+n074,Guinea,111.65,51.64
+n075,Guinea-Bissau,114.74,57.12
+n076,Guyana,40.51,26.76
+n077,Haiti,79.35,54.3
+n078,Honduras,35.02,15.04
+n079,Hong Kong (China),3.6,1.32
+n080,Hungary,9.59,4.05
+n081,Iceland,3.71,1.25
+n082,India,71.25,32
+n083,Indonesia,45.48,18.91
+n084,Iran,31.87,12.82
+n085,Iraq,37.45,24.11
+n086,Ireland,6.09,2.7
+n087,Israel,6.18,2.73
+n088,Italy,5.48,2.6
+n089,Ivory Coast,99.26,60.42
+n090,Jamaica,20.46,11.78
+n091,Japan,3.66,1.76
+n092,Jersey  Channel Islands (UK),10.33,6.12
+n093,Jordan,25.57,14.63
+n094,Kazakhstan,43.51,7.67
+n095,Kenya,70.97,36.34
+n096,Kiribati,58.4,42.98
+n097,Kuwait,11.65,7.12
+n098,Kyrgyzstan,48.24,15.51
+n099,Laos,83.16,38.76
+n100,Latvia,15.72,3.34
+n101,Lebanon,18.84,9.42
+n102,Lesotho,73.1,62.25
+n103,Liberia,135.94,54.06
+n104,Libya,26.47,10.53
+n105,Lithuania,11.01,4.04
+n106,Luxembourg,4.86,2.87
+n107,Macau (China),6.4,2.62
+n108,Madagascar,77.73,29.04
+n109,Malawi,106.24,41.33
+n110,Malaysia,9.91,5.9
+n111,Maldives,44.36,6.77
+n112,Mali,121.16,65.8
+n113,Malta,6.91,4.97
+n114,Martinique (France),10.78,5.57
+n115,Mauritania,69.71,53.44
+n116,Mauritius,19.7,11.22
+n117,Mayotte (France),10.3,4.2
+n118,Mexico,24.98,13.51
+n119,Moldova,24.46,12.37
+n120,Mongolia,53.98,18.09
+n121,Montenegro,11.58,2.76
+n122,Morocco,44.02,19.86
+n123,Mozambique,121.33,53.91
+n124,Myanmar,65.13,38.4
+n125,Namibia,50.73,33.38
+n126,Nepal,68.42,27.93
+n127,Netherlands,5.28,2.51
+n128,New Caledonia (France),20.54,11.51
+n129,New Zealand,6.2,3.8
+n130,Nicaragua,33.55,16.78
+n131,Niger,102.62,46.31
+n132,Nigeria,118.5,62.14
+n133,North Korea,57.81,13.9
+n134,North Macedonia,18.43,10.69
+n135,Norway,3.98,2.07
+n136,Oman,21.7,7.27
+n137,Pakistan,91.75,61.33
+n138,Palestinian Authority,27.34,17.46
+n139,Panama,23.28,13.73
+n140,Papua New Guinea,60.62,41.95
+n141,Paraguay,30.07,19.02
+n142,Peru,36.18,12.79
+n143,Philippines,31.1,19.66
+n144,Poland,10.11,3.28
+n145,Portugal,6.37,2.96
+n146,Puerto Rico (US),10.95,5.45
+n147,Qatar,11.87,6.29
+n148,Réunion (France),10.3,2.67
+n149,Romania,20.28,6.68
+n150,Russia,20.96,5.76
+n151,Rwanda,122.28,29.18
+n152,Saint Lucia,16.17,12.49
+n153,Saint Vincent and the Grenadines,19.35,14.65
+n154,Samoa,19.58,13.45
+n155,São Tomé and Príncipe,71.35,26.42
+n156,Saudi Arabia,21.75,6.31
+n157,Senegal,68.24,32.75
+n158,Serbia,16.09,4.9
+n159,Seychelles,11.9,10.87
+n160,Sierra Leone,157.07,80.77
+n161,Singapore,3.73,1.63
+n162,Slovakia,9.03,4.76
+n163,Slovenia,4.91,1.87
+n164,Solomon Islands,26.35,15.46
+n165,Somalia,105.01,69.31
+n166,South Africa,47.25,27.24
+n167,South Korea,6.9,2.11
+n168,South Sudan,113.78,64.36
+n169,Spain,4.94,2.35
+n170,Sri Lanka,16.2,7.57
+n171,Sudan,70.1,42.86
+n172,Suriname,32.83,17.49
+n173,Sweden,3.57,2.04
+n174,Switzerland,4.78,3.37
+n175,Syria,21.25,15.54
+n176,Taiwan,6.8,3.71
+n177,Tajikistan,78.59,29.26
+n178,Tanzania,92.23,41.21
+n179,Thailand,20.89,7.75
+n180,Timor-Leste,89.79,37.34
+n181,Togo,80.18,49.68
+n182,Tonga,15.56,12.54
+n183,Trinidad and Tobago,28.55,21.98
+n184,Tunisia,28.67,12.68
+n185,Turkey,36.99,8.9
+n186,Turkmenistan,67.55,43.28
+n187,U.S. Virgin Islands (US),13.15,8.16
+n188,Uganda,93.51,46.15
+n189,Ukraine,16.62,7.2
+n190,United Arab Emirates,10.45,5.52
+n191,United Kingdom,5.84,3.76
+n192,United States,7.44,5.82
+n193,Uruguay,15.58,8.7
+n194,Uzbekistan,54.78,20.83
+n195,Vanuatu,24.76,22.38
+n196,Venezuela,20.43,25.7
+n197,Vietnam,27.79,16.71
+n198,Western Sahara (disputed),64.39,28.78
+n199,Yemen,74.88,43.23
+n200,Zambia,108.83,45.61
+n201,Zimbabwe,69.98,38.74
